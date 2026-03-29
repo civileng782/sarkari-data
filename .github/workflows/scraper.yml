@@ -19,6 +19,11 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v4
 
+      - name: Sync with remote (IMPORTANT)
+        run: |
+          git fetch origin main
+          git reset --hard origin/main
+
       - name: Setup Python
         uses: actions/setup-python@v5
         with:
@@ -30,7 +35,6 @@ jobs:
 
       - name: Run scraper
         run: |
-          ls -la
           python scraper.py
 
       - name: Commit and push safely
@@ -38,15 +42,8 @@ jobs:
           git config user.name "github-actions"
           git config user.email "actions@github.com"
 
-          # Sync with remote
-          git fetch origin main
-          git reset --hard origin/main
-
-          # Add changes
           git add jobs.json
 
-          # Commit if changed
           git diff --cached --quiet || git commit -m "Auto update jobs data"
 
-          # Push
           git push origin main
