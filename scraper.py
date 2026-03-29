@@ -89,7 +89,10 @@ def parse_notices(soup: BeautifulSoup, org: str, base_url: str) -> list:
 
     seen_links = set()
 
-    for tag in soup.find_all("a", href=True):
+    containers = soup.find_all(["table", "div", "section"])
+
+for container in containers:
+    for tag in container.find_all("a", href=True):
         text = tag.get_text(" ", strip=True)
         href = tag["href"]
 
