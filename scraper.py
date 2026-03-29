@@ -93,13 +93,13 @@ def parse_notices(soup: BeautifulSoup, org: str, base_url: str) -> list:
 
 for container in containers:
     for tag in container.find_all("a", href=True):
+
         text = tag.get_text(" ", strip=True)
         href = tag["href"]
 
-        # ─── FILTERING LOGIC ─────────────────────
         if (
             not text
-            or len(text) < 20                     # stronger threshold
+            or len(text) < 20
             or any(p in text for p in BAD_PATTERNS)
             or any(word in text.lower() for word in BAD_WORDS)
             or any(s in text.lower() for s in SKIP)
