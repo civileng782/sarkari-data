@@ -45,3 +45,15 @@ jobs:
           git diff --cached --quiet || git commit -m "Auto update jobs data"
           git pull --rebase origin main
           git push origin main
+```
+
+---
+
+**Final repo structure:**
+```
+.github/
+  workflows/
+    scraper.yml
+scraper.py
+jobs.json
+requirements.txt
