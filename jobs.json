@@ -1,575 +1,859 @@
 {
   "vacancies": [
     {
-      "id": 200,
-      "org": "UPPSC",
-      "title": "भारत सरकार GOVERNMENT OF INDIA",
-      "isNew": true,
-      "detailLink": "http://india.gov.in",
-      "applyLink": "http://india.gov.in",
-      "posts": "See notification",
-      "deadline": "See notification"
-    },
-    {
-      "id": 201,
-      "org": "UPPSC",
-      "title": "उत्तर प्रदेश Uttar Pradesh",
-      "isNew": true,
-      "detailLink": "http://up.gov.in/",
-      "applyLink": "http://up.gov.in/",
-      "posts": "See notification",
-      "deadline": "See notification"
-    },
-    {
-      "id": 202,
-      "org": "UPPSC",
-      "title": "{{'Setting_HM' | translate }}",
-      "isNew": true,
-      "detailLink": "https://uppsc.up.nic.in/#siteSettings",
-      "applyLink": "https://uppsc.up.nic.in/#siteSettings",
-      "posts": "See notification",
-      "deadline": "See notification"
-    },
-    {
-      "id": 203,
-      "org": "UPPSC",
-      "title": "{{'AboutUs_HM' | translate }}",
-      "isNew": true,
-      "detailLink": "https://uppsc.up.nic.in/#",
-      "applyLink": "https://uppsc.up.nic.in/#",
-      "posts": "See notification",
-      "deadline": "See notification"
-    },
-    {
-      "id": 204,
-      "org": "UPPSC",
-      "title": "{{'TheCommission_HM' | translate }}",
-      "isNew": true,
-      "detailLink": "https://uppsc.up.nic.in/PublicPages/com.aspx?ID=DE",
-      "applyLink": "https://uppsc.up.nic.in/PublicPages/com.aspx?ID=DE",
-      "posts": "See notification",
-      "deadline": "See notification"
-    },
-    {
-      "id": 205,
-      "org": "UPPSC",
-      "title": "{{'ConstitutionalProvisions_HM' | translate }}",
-      "isNew": true,
-      "detailLink": "https://uppsc.up.nic.in/PublicPages/com.aspx?ID=CP",
-      "applyLink": "https://uppsc.up.nic.in/PublicPages/com.aspx?ID=CP",
-      "posts": "See notification",
-      "deadline": "See notification"
-    },
-    {
-      "id": 206,
-      "org": "UPPSC",
-      "title": "{{'SetupofCommission_HM' | translate }}",
-      "isNew": true,
-      "detailLink": "https://uppsc.up.nic.in/PublicPages/com.aspx?ID=CC",
-      "applyLink": "https://uppsc.up.nic.in/PublicPages/com.aspx?ID=CC",
-      "posts": "See notification",
-      "deadline": "See notification"
-    },
-    {
-      "id": 207,
-      "org": "UPPSC",
-      "title": "{{'OrganisationStructure_HM' | translate }}",
-      "isNew": true,
-      "detailLink": "https://uppsc.up.nic.in/PublicPages/com.aspx?ID=OS",
-      "applyLink": "https://uppsc.up.nic.in/PublicPages/com.aspx?ID=OS",
-      "posts": "See notification",
-      "deadline": "See notification"
-    },
-    {
-      "id": 208,
-      "org": "UPPSC",
-      "title": "{{'FunctionCommission_HM' | translate }}",
-      "isNew": true,
-      "detailLink": "https://uppsc.up.nic.in/PublicPages/com.aspx?ID=FC",
-      "applyLink": "https://uppsc.up.nic.in/PublicPages/com.aspx?ID=FC",
-      "posts": "See notification",
-      "deadline": "See notification"
-    },
-    {
-      "id": 209,
-      "org": "UPPSC",
-      "title": "{{'CitizensCharter_HM' | translate }}",
-      "isNew": true,
-      "detailLink": "https://uppsc.up.nic.in/PublicPages/com.aspx?ID=CZ",
-      "applyLink": "https://uppsc.up.nic.in/PublicPages/com.aspx?ID=CZ",
-      "posts": "See notification",
-      "deadline": "See notification"
-    },
-    {
-      "id": 210,
-      "org": "UPPSC",
-      "title": "{{'Examinations_HM' | translate }}",
-      "isNew": true,
-      "detailLink": "https://uppsc.up.nic.in/#",
-      "applyLink": "https://uppsc.up.nic.in/#",
-      "posts": "See notification",
-      "deadline": "See notification"
-    },
-    {
-      "id": 211,
-      "org": "UPPSC",
-      "title": "{{'ActiveExam_HM' | translate }}",
-      "isNew": true,
-      "detailLink": "https://uppsc.up.nic.in/FooterPages/Upcoming-Exams",
-      "applyLink": "https://uppsc.up.nic.in/FooterPages/Upcoming-Exams",
-      "posts": "See notification",
-      "deadline": "See notification"
-    },
-    {
-      "id": 212,
-      "org": "UPPSC",
-      "title": "{{'ForthcomExam_HM' | translate }}",
-      "isNew": true,
-      "detailLink": "https://uppsc.up.nic.in/FooterPages/Upcoming-Exams",
-      "applyLink": "https://uppsc.up.nic.in/FooterPages/Upcoming-Exams",
-      "posts": "See notification",
-      "deadline": "See notification"
-    },
-    {
-      "id": 213,
-      "org": "UPPSC",
-      "title": "{{'ExamCal_HM' | translate }}",
-      "isNew": true,
-      "detailLink": "https://uppsc.up.nic.in/PublicPages/Examinations_Details.aspx?ID=EC",
-      "applyLink": "https://uppsc.up.nic.in/PublicPages/Examinations_Details.aspx?ID=EC",
-      "posts": "See notification",
-      "deadline": "See notification"
-    },
-    {
-      "id": 214,
-      "org": "UPPSC",
-      "title": "{{'DebardAppList_HM' | translate }}",
-      "isNew": true,
-      "detailLink": "https://uppsc.up.nic.in/PublicPages/ReptDebardList.aspx?ID=dcl",
-      "applyLink": "https://uppsc.up.nic.in/PublicPages/ReptDebardList.aspx?ID=dcl",
-      "posts": "See notification",
-      "deadline": "See notification"
-    },
-    {
-      "id": 215,
-      "org": "UPPSC",
-      "title": "{{'DebardECList_HM' | translate }}",
-      "isNew": true,
-      "detailLink": "https://uppsc.up.nic.in/PublicPages/ReptDebardList.aspx?ID=decl",
-      "applyLink": "https://uppsc.up.nic.in/PublicPages/ReptDebardList.aspx?ID=decl",
-      "posts": "See notification",
-      "deadline": "See notification"
-    },
-    {
-      "id": 216,
-      "org": "UPPSC",
-      "title": "{{'Recruitment_HM' | translate }}",
-      "isNew": true,
-      "detailLink": "https://uppsc.up.nic.in/#",
-      "applyLink": "https://uppsc.up.nic.in/#",
-      "posts": "See notification",
-      "deadline": "See notification"
-    },
-    {
-      "id": 217,
-      "org": "UPPSC",
-      "title": "{{'OnlineNotifications_HM' | translate }}",
-      "isNew": true,
-      "detailLink": "https://uppsc.up.nic.in/CandidatePages/Notifications.aspx",
-      "applyLink": "https://uppsc.up.nic.in/CandidatePages/Notifications.aspx",
-      "posts": "See notification",
-      "deadline": "See notification"
-    },
-    {
-      "id": 218,
-      "org": "UPPSC",
-      "title": "{{'ApplyOnline_HM' | translate }}",
-      "isNew": true,
-      "detailLink": "https://uppsc.up.nic.in/CandidatePages/Notifications.aspx",
-      "applyLink": "https://uppsc.up.nic.in/CandidatePages/Notifications.aspx",
-      "posts": "See notification",
-      "deadline": "See notification"
-    },
-    {
-      "id": 219,
-      "org": "UPPSC",
-      "title": "{{'InterviewOnly_HM' | translate }}",
-      "isNew": true,
-      "detailLink": "https://uppsc.up.nic.in/PublicPages/Recruitment_Details.aspx?ID=IO",
-      "applyLink": "https://uppsc.up.nic.in/PublicPages/Recruitment_Details.aspx?ID=IO",
-      "posts": "See notification",
-      "deadline": "See notification"
-    },
-    {
-      "id": 220,
-      "org": "UPPSC",
-      "title": "{{'ScreeningTestInt_HM' | translate }}",
-      "isNew": true,
-      "detailLink": "https://uppsc.up.nic.in/PublicPages/Recruitment_Details.aspx?ID=SI",
-      "applyLink": "https://uppsc.up.nic.in/PublicPages/Recruitment_Details.aspx?ID=SI",
-      "posts": "See notification",
-      "deadline": "See notification"
-    },
-    {
-      "id": 221,
-      "org": "UPPSC",
-      "title": "{{'ExaminationOnly_HM' | translate }}",
-      "isNew": true,
-      "detailLink": "https://uppsc.up.nic.in/PublicPages/Recruitment_Details.aspx?ID=EO",
-      "applyLink": "https://uppsc.up.nic.in/PublicPages/Recruitment_Details.aspx?ID=EO",
-      "posts": "See notification",
-      "deadline": "See notification"
-    },
-    {
-      "id": 222,
-      "org": "UPPSC",
-      "title": "{{'ExaminationAndInterviewOnly_HM' | translate }}",
-      "isNew": true,
-      "detailLink": "https://uppsc.up.nic.in/PublicPages/Recruitment_Details.aspx?ID=EI",
-      "applyLink": "https://uppsc.up.nic.in/PublicPages/Recruitment_Details.aspx?ID=EI",
-      "posts": "See notification",
-      "deadline": "See notification"
-    },
-    {
-      "id": 223,
-      "org": "UPPSC",
-      "title": "{{'PreExamMainExamInt_HM' | translate }}",
-      "isNew": true,
-      "detailLink": "https://uppsc.up.nic.in/PublicPages/Recruitment_Details.aspx?ID=EIM",
-      "applyLink": "https://uppsc.up.nic.in/PublicPages/Recruitment_Details.aspx?ID=EIM",
-      "posts": "See notification",
-      "deadline": "See notification"
-    },
-    {
-      "id": 224,
-      "org": "UPPSC",
-      "title": "{{'ExpertsCorner_HM' | translate }}",
-      "isNew": true,
-      "detailLink": "https://uppsc.up.nic.in/#",
-      "applyLink": "https://uppsc.up.nic.in/#",
-      "posts": "See notification",
-      "deadline": "See notification"
-    },
-    {
-      "id": 225,
-      "org": "UPPSC",
-      "title": "{{'ExpertForm_HM' | translate }}",
-      "isNew": true,
-      "detailLink": "https://uppsc.up.nic.in/ExpertCorner/Frm_ExpertBioData.aspx",
-      "applyLink": "https://uppsc.up.nic.in/ExpertCorner/Frm_ExpertBioData.aspx",
-      "posts": "See notification",
-      "deadline": "See notification"
-    },
-    {
-      "id": 226,
-      "org": "UPPSC",
-      "title": "{{'CandidateCorner_HM' | translate }}",
-      "isNew": true,
-      "detailLink": "https://uppsc.up.nic.in/#",
-      "applyLink": "https://uppsc.up.nic.in/#",
-      "posts": "See notification",
-      "deadline": "See notification"
-    },
-    {
-      "id": 227,
-      "org": "UPPSC",
-      "title": "{{'AppDashBoard_HM' | translate }}",
-      "isNew": true,
-      "detailLink": "https://uppsc.up.nic.in/CandidatePages/OTRAppForm/Applicant_OtrAuthentication.aspx?WEqGEem9m0+8Y4tNQqJiNYurmbKsjJR/fgSlThSTh6o=",
-      "applyLink": "https://uppsc.up.nic.in/CandidatePages/OTRAppForm/Applicant_OtrAuthentication.aspx?WEqGEem9m0+8Y4tNQqJiNYurmbKsjJR/fgSlThSTh6o=",
-      "posts": "See notification",
-      "deadline": "See notification"
-    },
-    {
-      "id": 228,
-      "org": "UPPSC",
-      "title": "{{'CheckApp_HM' | translate }}",
-      "isNew": true,
-      "detailLink": "https://uppsc.up.nic.in/CandidatePages/Status/ViewStatus.aspx",
-      "applyLink": "https://uppsc.up.nic.in/CandidatePages/Status/ViewStatus.aspx",
-      "posts": "See notification",
-      "deadline": "See notification"
-    },
-    {
-      "id": 229,
-      "org": "UPPSC",
-      "title": "{{'DwldAdminCard_HM' | translate }}",
-      "isNew": true,
-      "detailLink": "https://uppsc.up.nic.in/CandidatePages/Advertismentwise_DownloadDocument.aspx?inptprmtr=ac",
-      "applyLink": "https://uppsc.up.nic.in/CandidatePages/Advertismentwise_DownloadDocument.aspx?inptprmtr=ac",
-      "posts": "See notification",
-      "deadline": "See notification"
-    },
-    {
-      "id": 340,
-      "org": "RRB Bhubaneswar",
-      "title": "Main Content",
-      "isNew": true,
-      "detailLink": "https://www.rrbbbs.gov.in/#main",
-      "applyLink": "https://www.rrbbbs.gov.in/#main",
-      "posts": "See notification",
-      "deadline": "See notification"
-    },
-    {
-      "id": 341,
-      "org": "RRB Bhubaneswar",
-      "title": "Organization Structure",
-      "isNew": true,
-      "detailLink": "https://www.rrbbbs.gov.in/page.php?no=TWc9PQ==",
-      "applyLink": "https://www.rrbbbs.gov.in/page.php?no=TWc9PQ==",
-      "posts": "See notification",
-      "deadline": "See notification"
-    },
-    {
-      "id": 342,
-      "org": "RRB Bhubaneswar",
-      "title": "Vision & Mission",
-      "isNew": true,
-      "detailLink": "https://www.rrbbbs.gov.in/page.php?no=T0E9PQ==",
-      "applyLink": "https://www.rrbbbs.gov.in/page.php?no=T0E9PQ==",
-      "posts": "See notification",
-      "deadline": "See notification"
-    },
-    {
-      "id": 345,
-      "org": "RRB Bhubaneswar",
-      "title": "CEN 07/2024 : Schedule for DV & Medical Examination against CEN No. 07/2024 (Post-Jr. Translator/Hindi and Staff & Welfare Inspector).",
-      "isNew": true,
-      "detailLink": "https://www.rrbbbs.gov.in/documentexplorer.php?prmt=TVRneE9RPT0='",
-      "applyLink": "https://www.rrbbbs.gov.in/documentexplorer.php?prmt=TVRneE9RPT0='",
-      "posts": "See notification",
-      "deadline": "See notification"
-    },
-    {
-      "id": 347,
-      "org": "RRB Bhubaneswar",
-      "title": "View All Notices",
-      "isNew": true,
-      "detailLink": "https://www.rrbbbs.gov.in/notice.php",
-      "applyLink": "https://www.rrbbbs.gov.in/notice.php",
-      "posts": "See notification",
-      "deadline": "See notification"
-    },
-    {
-      "id": 348,
-      "org": "RRB Bhubaneswar",
-      "title": "Notifications (CEN)",
-      "isNew": true,
-      "detailLink": "https://www.rrbbbs.gov.in/notifications.php",
-      "applyLink": "https://www.rrbbbs.gov.in/notifications.php",
-      "posts": "See notification",
-      "deadline": "See notification"
-    },
-    {
-      "id": 350,
-      "org": "RRB Bhubaneswar",
-      "title": "Public Disclosure of Marks",
-      "isNew": true,
-      "detailLink": "https://www.rrbbbs.gov.in/marksdisclosure.php",
-      "applyLink": "https://www.rrbbbs.gov.in/marksdisclosure.php",
-      "posts": "See notification",
-      "deadline": "See notification"
-    },
-    {
-      "id": 351,
-      "org": "RRB Bhubaneswar",
-      "title": "Scheduled Programmes",
-      "isNew": true,
-      "detailLink": "https://www.rrbbbs.gov.in/scheduledprograms.php",
-      "applyLink": "https://www.rrbbbs.gov.in/scheduledprograms.php",
-      "posts": "See notification",
-      "deadline": "See notification"
-    },
-    {
-      "id": 352,
-      "org": "RRB Bhubaneswar",
-      "title": "Knowledge Center",
-      "isNew": true,
-      "detailLink": "https://www.rrbbbs.gov.in/#",
-      "applyLink": "https://www.rrbbbs.gov.in/#",
-      "posts": "See notification",
-      "deadline": "See notification"
-    },
-    {
-      "id": 353,
-      "org": "RRB Bhubaneswar",
-      "title": "Document Verification Process",
-      "isNew": true,
-      "detailLink": "https://www.rrbbbs.gov.in/kcpage.php?no=Tmc9PQ==",
-      "applyLink": "https://www.rrbbbs.gov.in/kcpage.php?no=Tmc9PQ==",
-      "posts": "See notification",
-      "deadline": "See notification"
-    },
-    {
-      "id": 354,
-      "org": "RRB Bhubaneswar",
-      "title": "Recruitment Process",
-      "isNew": true,
-      "detailLink": "https://www.rrbbbs.gov.in/kcpage.php?no=TlE9PQ==",
-      "applyLink": "https://www.rrbbbs.gov.in/kcpage.php?no=TlE9PQ==",
-      "posts": "See notification",
-      "deadline": "See notification"
-    },
-    {
-      "id": 370,
+      "id": 1774803589060,
       "org": "RRB Chandigarh",
-      "title": "SKIP TO MAIN CONTENT",
+      "title": "Ministry of Electronics & Information Technology, Government of India",
+      "detailLink": "http://meity.gov.in/",
       "isNew": true,
-      "detailLink": "https://www.rrbcdg.gov.in/#SkipContent",
-      "applyLink": "https://www.rrbcdg.gov.in/#SkipContent",
-      "posts": "See notification",
-      "deadline": "See notification"
+      "date_found": "2026-03-29T16:59:48.398213+00:00",
+      "applyLink": "http://meity.gov.in/",
+      "deadline": "See Link"
     },
     {
-      "id": 371,
+      "id": 1774803589059,
       "org": "RRB Chandigarh",
-      "title": "Social Media Links",
+      "title": "National Informatics Centre",
+      "detailLink": "http://www.nic.in/",
       "isNew": true,
-      "detailLink": "https://www.rrbcdg.gov.in/javascript:void(0);",
-      "applyLink": "https://www.rrbcdg.gov.in/javascript:void(0);",
-      "posts": "See notification",
-      "deadline": "See notification"
+      "date_found": "2026-03-29T16:59:48.398213+00:00",
+      "applyLink": "http://www.nic.in/",
+      "deadline": "See Link"
     },
     {
-      "id": 372,
+      "id": 1774803589058,
       "org": "RRB Chandigarh",
-      "title": "Accessibility Links",
+      "title": "असिस्टेंट लोको पायलट (वेतन स्तर-2) के पद हेतु केंद्रीकृत रोज़गार सूचना सं.01/2024",
+      "detailLink": "https://www.rrbcdg.gov.in/uploads/2024/01-ALP/Detailed CEN 01-2024 (Hindi).pdf",
       "isNew": true,
-      "detailLink": "https://www.rrbcdg.gov.in/javascript:void(0);",
-      "applyLink": "https://www.rrbcdg.gov.in/javascript:void(0);",
-      "posts": "See notification",
-      "deadline": "See notification"
+      "date_found": "2026-03-29T16:59:48.398213+00:00",
+      "applyLink": "https://www.rrbcdg.gov.in/uploads/2024/01-ALP/Detailed CEN 01-2024 (Hindi).pdf",
+      "deadline": "See Link"
     },
     {
-      "id": 373,
+      "id": 1774803589057,
       "org": "RRB Chandigarh",
-      "title": "Font Size Increase",
+      "title": "Centralised Employment Notice No. 01/2024 for pay level-2 post of Assistant Loco Pilot",
+      "detailLink": "https://www.rrbcdg.gov.in/uploads/2024/01-ALP/Detailed CEN 01-2024 (English).pdf",
       "isNew": true,
-      "detailLink": "https://www.rrbcdg.gov.in/#",
-      "applyLink": "https://www.rrbcdg.gov.in/#",
-      "posts": "See notification",
-      "deadline": "See notification"
+      "date_found": "2026-03-29T16:59:48.398213+00:00",
+      "applyLink": "https://www.rrbcdg.gov.in/uploads/2024/01-ALP/Detailed CEN 01-2024 (English).pdf",
+      "deadline": "See Link"
     },
     {
-      "id": 374,
+      "id": 1774803589056,
       "org": "RRB Chandigarh",
-      "title": "Font Size Decrease",
+      "title": "FAQs regarding application process for the post of Assistant Loco Pilot",
+      "detailLink": "https://www.rrbcdg.gov.in/uploads/2024/01-ALP/FAQ CEN 01-2024 ALP.pdf",
       "isNew": true,
-      "detailLink": "https://www.rrbcdg.gov.in/#",
-      "applyLink": "https://www.rrbcdg.gov.in/#",
-      "posts": "See notification",
-      "deadline": "See notification"
+      "date_found": "2026-03-29T16:59:48.398213+00:00",
+      "applyLink": "https://www.rrbcdg.gov.in/uploads/2024/01-ALP/FAQ CEN 01-2024 ALP.pdf",
+      "deadline": "See Link"
     },
     {
-      "id": 375,
+      "id": 1774803589055,
       "org": "RRB Chandigarh",
-      "title": "Text Spacing",
+      "title": "Advance notice regarding Centralised Employment Notification (CEN) for recruitment of Technicians in Indian Railways",
+      "detailLink": "https://www.rrbcdg.gov.in/uploads/2024/02-TECH/Advance Notice Technicians dt 290124.pdf",
       "isNew": true,
-      "detailLink": "https://www.rrbcdg.gov.in/#",
-      "applyLink": "https://www.rrbcdg.gov.in/#",
-      "posts": "See notification",
-      "deadline": "See notification"
+      "date_found": "2026-03-29T16:59:48.398213+00:00",
+      "applyLink": "https://www.rrbcdg.gov.in/uploads/2024/02-TECH/Advance Notice Technicians dt 290124.pdf",
+      "deadline": "See Link"
     },
     {
-      "id": 376,
+      "id": 1774803589054,
       "org": "RRB Chandigarh",
-      "title": "High Contrast",
+      "title": "Corrigendum to para 5.0 and 5.2 of the detailed CEN-01/2024 for the post of ALP",
+      "detailLink": "https://www.rrbcdg.gov.in/uploads/2024/01-ALP/Corrigendum CEN 01-2024 dt 29012024.pdf",
       "isNew": true,
-      "detailLink": "https://www.rrbcdg.gov.in/#",
-      "applyLink": "https://www.rrbcdg.gov.in/#",
-      "posts": "See notification",
-      "deadline": "See notification"
+      "date_found": "2026-03-29T16:59:48.398213+00:00",
+      "applyLink": "https://www.rrbcdg.gov.in/uploads/2024/01-ALP/Corrigendum CEN 01-2024 dt 29012024.pdf",
+      "deadline": "See Link"
     },
     {
-      "id": 377,
+      "id": 1774803589053,
       "org": "RRB Chandigarh",
-      "title": "Normal Contrast",
+      "title": "Tentative Timeline for CEN-01/2024",
+      "detailLink": "https://www.rrbcdg.gov.in/uploads/2024/01-ALP/2024-01 ALP - Timeline.pdf",
       "isNew": true,
-      "detailLink": "https://www.rrbcdg.gov.in/#",
-      "applyLink": "https://www.rrbcdg.gov.in/#",
-      "posts": "See notification",
-      "deadline": "See notification"
+      "date_found": "2026-03-29T16:59:48.398213+00:00",
+      "applyLink": "https://www.rrbcdg.gov.in/uploads/2024/01-ALP/2024-01 ALP - Timeline.pdf",
+      "deadline": "See Link"
     },
     {
-      "id": 378,
+      "id": 1774803589052,
       "org": "RRB Chandigarh",
-      "title": "Highlight Links",
+      "title": "Tentative Timeline of CEN-02/2024 for recruitment of Technicians",
+      "detailLink": "https://www.rrbcdg.gov.in/uploads/2024/02-TECH/2024-02 Tech - Timeline.pdf",
       "isNew": true,
-      "detailLink": "https://www.rrbcdg.gov.in/#",
-      "applyLink": "https://www.rrbcdg.gov.in/#",
-      "posts": "See notification",
-      "deadline": "See notification"
+      "date_found": "2026-03-29T16:59:48.398213+00:00",
+      "applyLink": "https://www.rrbcdg.gov.in/uploads/2024/02-TECH/2024-02 Tech - Timeline.pdf",
+      "deadline": "See Link"
     },
     {
-      "id": 379,
+      "id": 1774803589051,
       "org": "RRB Chandigarh",
-      "title": "Screen Reader",
+      "title": "Annual Calender for RRB recruitments in 2024",
+      "detailLink": "https://www.rrbcdg.gov.in/uploads/2024/2024 - Calendar.pdf",
       "isNew": true,
-      "detailLink": "https://www.rrbcdg.gov.in/#",
-      "applyLink": "https://www.rrbcdg.gov.in/#",
-      "posts": "See notification",
-      "deadline": "See notification"
+      "date_found": "2026-03-29T16:59:48.398213+00:00",
+      "applyLink": "https://www.rrbcdg.gov.in/uploads/2024/2024 - Calendar.pdf",
+      "deadline": "See Link"
     },
     {
-      "id": 380,
+      "id": 1774803589050,
       "org": "RRB Chandigarh",
-      "title": "&nbsp &nbsp भारत सरकार , Govt of India",
+      "title": "तकनीशियन के पदों हेतु केंद्रीकृत रोज़गार सूचना सं.02/2024",
+      "detailLink": "https://www.rrbcdg.gov.in/uploads/2024/02-TECH/Detailed CEN 02-2024 (Hindi).pdf",
       "isNew": true,
-      "detailLink": "https://www.india.gov.in/",
-      "applyLink": "https://www.india.gov.in/",
-      "posts": "See notification",
-      "deadline": "See notification"
+      "date_found": "2026-03-29T16:59:48.398213+00:00",
+      "applyLink": "https://www.rrbcdg.gov.in/uploads/2024/02-TECH/Detailed CEN 02-2024 (Hindi).pdf",
+      "deadline": "See Link"
     },
     {
-      "id": 381,
+      "id": 1774803589049,
       "org": "RRB Chandigarh",
-      "title": "रेल मंत्रालय , Ministry of Railways",
+      "title": "Centralised Employment Notice No. 02/2024 for the posts of Technicians",
+      "detailLink": "https://www.rrbcdg.gov.in/uploads/2024/02-TECH/Detailed CEN 02-2024 (English).pdf",
       "isNew": true,
-      "detailLink": "https://indianrailways.gov.in/",
-      "applyLink": "https://indianrailways.gov.in/",
-      "posts": "See notification",
-      "deadline": "See notification"
+      "date_found": "2026-03-29T16:59:48.398213+00:00",
+      "applyLink": "https://www.rrbcdg.gov.in/uploads/2024/02-TECH/Detailed CEN 02-2024 (English).pdf",
+      "deadline": "See Link"
     },
     {
-      "id": 382,
+      "id": 1774803589048,
       "org": "RRB Chandigarh",
-      "title": "रेलवे भर्ती बोर्ड, चंडीगढ़ Railway Recruitment Board, Chandigarh",
+      "title": "तकनीशियन पद हेतु आवेदन प्रक्रिया से सम्बन्धित प्राय: पूछे जाने वाले प्रश्न",
+      "detailLink": "https://www.rrbcdg.gov.in/uploads/2024/02-TECH/FAQ CEN 02-2024 Tech-Hi.pdf",
       "isNew": true,
-      "detailLink": "https://www.rrbcdg.gov.in/index.php",
-      "applyLink": "https://www.rrbcdg.gov.in/index.php",
-      "posts": "See notification",
-      "deadline": "See notification"
+      "date_found": "2026-03-29T16:59:48.398213+00:00",
+      "applyLink": "https://www.rrbcdg.gov.in/uploads/2024/02-TECH/FAQ CEN 02-2024 Tech-Hi.pdf",
+      "deadline": "See Link"
     },
     {
-      "id": 383,
+      "id": 1774803589047,
       "org": "RRB Chandigarh",
-      "title": "RRB Office, Railway Colony, Near Railway Station, Chandigarh 160002",
+      "title": "FAQs regarding application process for the post of Technicians",
+      "detailLink": "https://www.rrbcdg.gov.in/uploads/2024/02-TECH/FAQ CEN 02-2024 Tech.pdf",
       "isNew": true,
-      "detailLink": "https://www.rrbcdg.gov.in/ https://www.google.com/maps/place/Railway+Recruitment+Board+Chandigarh/@30.6998079,76.8216591,15.75z/data=!4m6!3m5!1s0x390fed164b894d71:0x2201a5d5fe2eee1!8m2!3d30.7019169!4d76.8312717!16s%2Fg%2F11gwmk7jhh?entry=ttu&g_ep=EgoyMDI1MDUwNy4wIKXMDSoASAFQAw%3D%3D",
-      "applyLink": "https://www.rrbcdg.gov.in/ https://www.google.com/maps/place/Railway+Recruitment+Board+Chandigarh/@30.6998079,76.8216591,15.75z/data=!4m6!3m5!1s0x390fed164b894d71:0x2201a5d5fe2eee1!8m2!3d30.7019169!4d76.8312717!16s%2Fg%2F11gwmk7jhh?entry=ttu&g_ep=EgoyMDI1MDUwNy4wIKXMDSoASAFQAw%3D%3D",
-      "posts": "See notification",
-      "deadline": "See notification"
+      "date_found": "2026-03-29T16:59:48.398213+00:00",
+      "applyLink": "https://www.rrbcdg.gov.in/uploads/2024/02-TECH/FAQ CEN 02-2024 Tech.pdf",
+      "deadline": "See Link"
     },
     {
-      "id": 384,
+      "id": 1774803589046,
       "org": "RRB Chandigarh",
-      "title": "Recruitment Notices",
+      "title": "Tentative date for publishing of CEN RPF-01/2024 and CEN RPF-02/2024",
+      "detailLink": "https://www.rrbcdg.gov.in/uploads/2024/Notice_RPF CEN 01_2024 & RPF CEN 02_2024.pdf",
       "isNew": true,
-      "detailLink": "https://www.rrbcdg.gov.in/employment-notices.php",
-      "applyLink": "https://www.rrbcdg.gov.in/employment-notices.php",
-      "posts": "See notification",
-      "deadline": "See notification"
+      "date_found": "2026-03-29T16:59:48.398213+00:00",
+      "applyLink": "https://www.rrbcdg.gov.in/uploads/2024/Notice_RPF CEN 01_2024 & RPF CEN 02_2024.pdf",
+      "deadline": "See Link"
+    },
+    {
+      "id": 1774803589045,
+      "org": "RRB Chandigarh",
+      "title": "उप-निरीक्षक (कार्यकारी) के पद हेतु केंद्रीकृत रोज़गार सूचना सं.(आरपीएफ) 01/2024",
+      "detailLink": "https://www.rrbcdg.gov.in/uploads/2024/RPF01-SI/CEN 2024-01 RPF-SI Hi.pdf",
+      "isNew": true,
+      "date_found": "2026-03-29T16:59:48.398213+00:00",
+      "applyLink": "https://www.rrbcdg.gov.in/uploads/2024/RPF01-SI/CEN 2024-01 RPF-SI Hi.pdf",
+      "deadline": "See Link"
+    },
+    {
+      "id": 1774803589044,
+      "org": "RRB Chandigarh",
+      "title": "CEN No. RPF 01/2024 for the post of Sub-Inspector (Executive)",
+      "detailLink": "https://www.rrbcdg.gov.in/uploads/2024/RPF01-SI/CEN 2024-01 RPF-SI.pdf",
+      "isNew": true,
+      "date_found": "2026-03-29T16:59:48.398213+00:00",
+      "applyLink": "https://www.rrbcdg.gov.in/uploads/2024/RPF01-SI/CEN 2024-01 RPF-SI.pdf",
+      "deadline": "See Link"
+    },
+    {
+      "id": 1774803589043,
+      "org": "RRB Chandigarh",
+      "title": "कांस्टेबल (कार्यकारी) के पद हेतु केंद्रीकृत रोज़गार सूचना सं.(आरपीएफ) 02/2024",
+      "detailLink": "https://www.rrbcdg.gov.in/uploads/2024/RPF02-CONS/CEN 2024-02 RPF-Const Hi.pdf",
+      "isNew": true,
+      "date_found": "2026-03-29T16:59:48.398213+00:00",
+      "applyLink": "https://www.rrbcdg.gov.in/uploads/2024/RPF02-CONS/CEN 2024-02 RPF-Const Hi.pdf",
+      "deadline": "See Link"
+    },
+    {
+      "id": 1774803589042,
+      "org": "RRB Chandigarh",
+      "title": "CEN No. RPF 02/2024 for the post of Constable (Executive)",
+      "detailLink": "https://www.rrbcdg.gov.in/uploads/2024/RPF02-CONS/CEN 2024-02 RPF-Const.pdf",
+      "isNew": true,
+      "date_found": "2026-03-29T16:59:48.398213+00:00",
+      "applyLink": "https://www.rrbcdg.gov.in/uploads/2024/RPF02-CONS/CEN 2024-02 RPF-Const.pdf",
+      "deadline": "See Link"
+    },
+    {
+      "id": 1774803589041,
+      "org": "RRB Chandigarh",
+      "title": "Additional Panel-6 for the post of \"Chemical & Metallurgical Assistant\" of CEN-03/2018",
+      "detailLink": "https://www.rrbcdg.gov.in/uploads/2018/03-JE/03-2018 AP6.pdf",
+      "isNew": true,
+      "date_found": "2026-03-29T16:59:48.398213+00:00",
+      "applyLink": "https://www.rrbcdg.gov.in/uploads/2018/03-JE/03-2018 AP6.pdf",
+      "deadline": "See Link"
+    },
+    {
+      "id": 1774803589040,
+      "org": "RRB Chandigarh",
+      "title": "FAQs regarding application process for the post of Sub-Inspector (Executive)",
+      "detailLink": "https://www.rrbcdg.gov.in/uploads/2024/RPF01-SI/FAQ RPF 01-2024 SI.pdf",
+      "isNew": true,
+      "date_found": "2026-03-29T16:59:48.398213+00:00",
+      "applyLink": "https://www.rrbcdg.gov.in/uploads/2024/RPF01-SI/FAQ RPF 01-2024 SI.pdf",
+      "deadline": "See Link"
+    },
+    {
+      "id": 1774803589039,
+      "org": "RRB Chandigarh",
+      "title": "FAQs regarding application process for the post of Constable (Executive)",
+      "detailLink": "https://www.rrbcdg.gov.in/uploads/2024/RPF02-CONS/FAQ RPF 02-2024 Const.pdf",
+      "isNew": true,
+      "date_found": "2026-03-29T16:59:48.398213+00:00",
+      "applyLink": "https://www.rrbcdg.gov.in/uploads/2024/RPF02-CONS/FAQ RPF 02-2024 Const.pdf",
+      "deadline": "See Link"
+    },
+    {
+      "id": 1774803589038,
+      "org": "RRB Chandigarh",
+      "title": "Additional Panel-7 for the post of \"Junior Engineers\" of CEN-03/2018",
+      "detailLink": "https://www.rrbcdg.gov.in/uploads/2018/03-JE/03-2018 AP7.pdf",
+      "isNew": true,
+      "date_found": "2026-03-29T16:59:48.398213+00:00",
+      "applyLink": "https://www.rrbcdg.gov.in/uploads/2018/03-JE/03-2018 AP7.pdf",
+      "deadline": "See Link"
+    },
+    {
+      "id": 1774803589037,
+      "org": "RRB Chandigarh",
+      "title": "Additional Panel-6 for the posts of Technicians of CEN-01/2018",
+      "detailLink": "https://www.rrbcdg.gov.in/uploads/2018/01-TECH/01-2018 AP6.pdf",
+      "isNew": true,
+      "date_found": "2026-03-29T16:59:48.398213+00:00",
+      "applyLink": "https://www.rrbcdg.gov.in/uploads/2018/01-TECH/01-2018 AP6.pdf",
+      "deadline": "See Link"
+    },
+    {
+      "id": 1774803589036,
+      "org": "RRB Chandigarh",
+      "title": "Click here to update Bank Account details. (Link will be live from 26-04-2024 10.00 AM to 05-05-2024 05.00 PM)",
+      "detailLink": "https://recruitapp.in/groupd19_refund/index.php",
+      "isNew": true,
+      "date_found": "2026-03-29T16:59:48.398213+00:00",
+      "applyLink": "https://recruitapp.in/groupd19_refund/index.php",
+      "deadline": "See Link"
+    },
+    {
+      "id": 1774803589035,
+      "org": "RRB Chandigarh",
+      "title": "परीक्षा-शुल्क की वापसी व बैंक खाते को पुनः अद्यतित करने के सन्दर्भ में नोटिस",
+      "detailLink": "https://www.rrbcdg.gov.in/uploads/2019/RRC01-LVL1/RRC012019-Refund Hi.pdf",
+      "isNew": true,
+      "date_found": "2026-03-29T16:59:48.398213+00:00",
+      "applyLink": "https://www.rrbcdg.gov.in/uploads/2019/RRC01-LVL1/RRC012019-Refund Hi.pdf",
+      "deadline": "See Link"
+    },
+    {
+      "id": 1774803589034,
+      "org": "RRB Chandigarh",
+      "title": "Notice on refund of Exam-Fees & re-updation of Bank Account details",
+      "detailLink": "https://www.rrbcdg.gov.in/uploads/2019/RRC01-LVL1/RRC012019-Refund.pdf",
+      "isNew": true,
+      "date_found": "2026-03-29T16:59:48.398213+00:00",
+      "applyLink": "https://www.rrbcdg.gov.in/uploads/2019/RRC01-LVL1/RRC012019-Refund.pdf",
+      "deadline": "See Link"
+    },
+    {
+      "id": 1774803589033,
+      "org": "RRB Chandigarh",
+      "title": "Additional Panel-7 for the posts of Technicians of CEN-01/2018",
+      "detailLink": "https://www.rrbcdg.gov.in/uploads/2018/01-ALP&T/01-2018 AP7.pdf",
+      "isNew": true,
+      "date_found": "2026-03-29T16:59:48.398213+00:00",
+      "applyLink": "https://www.rrbcdg.gov.in/uploads/2018/01-ALP&T/01-2018 AP7.pdf",
+      "deadline": "See Link"
+    },
+    {
+      "id": 1774803589032,
+      "org": "RRB Chandigarh",
+      "title": "उन आवेदकों के लिए आवेदन-शुल्क का भुगतान करने के लिए एक बार अवसर के संबंध में सूचना, जिन्होंने अंतिम तिथि से पहले बिना भुगतान के अपने आवेदन जमा कर दिए हैं",
+      "detailLink": "https://www.rrbcdg.gov.in/uploads/2024/RPF01-SI/RPF CEN 01&02-Notice for unpaid applicants-Hindi.pdf",
+      "isNew": true,
+      "date_found": "2026-03-29T16:59:48.398213+00:00",
+      "applyLink": "https://www.rrbcdg.gov.in/uploads/2024/RPF01-SI/RPF CEN 01&02-Notice for unpaid applicants-Hindi.pdf",
+      "deadline": "See Link"
+    },
+    {
+      "id": 1774803589031,
+      "org": "RRB Chandigarh",
+      "title": "Notice regarding one time opportunity to pay application-fee for the applicants who have submitted their applications unpaid before closing date",
+      "detailLink": "https://www.rrbcdg.gov.in/uploads/2024/RPF01-SI/RPF CEN 01&02 - Notice for unpaid applicants.pdf",
+      "isNew": true,
+      "date_found": "2026-03-29T16:59:48.398213+00:00",
+      "applyLink": "https://www.rrbcdg.gov.in/uploads/2024/RPF01-SI/RPF CEN 01&02 - Notice for unpaid applicants.pdf",
+      "deadline": "See Link"
+    },
+    {
+      "id": 1774803589030,
+      "org": "RRB Chandigarh",
+      "title": "एएलपी आवेदकों (सीईएन 01/2024) के लिए नई तस्वीर और हस्ताक्षर अपलोड करने की सुविधा के लिए सूचना, जिन्होंने मानक फोटो और हस्ताक्षर अपलोड नहीं किए हैं",
+      "detailLink": "https://www.rrbcdg.gov.in/uploads/2024/01-ALP/Uploading of foto & signature-Hindi.pdf",
+      "isNew": true,
+      "date_found": "2026-03-29T16:59:48.398213+00:00",
+      "applyLink": "https://www.rrbcdg.gov.in/uploads/2024/01-ALP/Uploading of foto & signature-Hindi.pdf",
+      "deadline": "See Link"
+    },
+    {
+      "id": 1774803589029,
+      "org": "RRB Chandigarh",
+      "title": "Notice for access to upload fresh photograph & signature for the ALP applicants (CEN 01/2024) who have not uploaded standard photo & Signature",
+      "detailLink": "https://www.rrbcdg.gov.in/uploads/2024/01-ALP/Uploading of foto & signature.pdf",
+      "isNew": true,
+      "date_found": "2026-03-29T16:59:48.398213+00:00",
+      "applyLink": "https://www.rrbcdg.gov.in/uploads/2024/01-ALP/Uploading of foto & signature.pdf",
+      "deadline": "See Link"
+    },
+    {
+      "id": 1774803589028,
+      "org": "RRB Chandigarh",
+      "title": "तकनीशियन आवेदकों (सीईएन 02/2024) के लिए नई तस्वीर और हस्ताक्षर अपलोड करने की सुविधा के लिए सूचना, जिन्होंने मानक फोटो और हस्ताक्षर अपलोड नहीं किए हैं",
+      "detailLink": "https://www.rrbcdg.gov.in/uploads/2024/02-TECH/Notice for uploading Photo and signature_CEN 02-2024(Technician)_Hindi.pdf",
+      "isNew": true,
+      "date_found": "2026-03-29T16:59:48.398213+00:00",
+      "applyLink": "https://www.rrbcdg.gov.in/uploads/2024/02-TECH/Notice for uploading Photo and signature_CEN 02-2024(Technician)_Hindi.pdf",
+      "deadline": "See Link"
+    },
+    {
+      "id": 1774803589027,
+      "org": "RRB Chandigarh",
+      "title": "Notice for access to upload fresh photograph & Signature for the Technician applicants (CEN 02/2024) who have not uploaded standard photo & Signature",
+      "detailLink": "https://www.rrbcdg.gov.in/uploads/2024/02-TECH/Notice for uploading Photo and signature_CEN 02-2024(Technician)_English.pdf",
+      "isNew": true,
+      "date_found": "2026-03-29T16:59:48.398213+00:00",
+      "applyLink": "https://www.rrbcdg.gov.in/uploads/2024/02-TECH/Notice for uploading Photo and signature_CEN 02-2024(Technician)_English.pdf",
+      "deadline": "See Link"
+    },
+    {
+      "id": 1774803589026,
+      "org": "RRB Chandigarh",
+      "title": "आरपीएफ पदों के आवेदकों के लिए नई तस्वीर और हस्ताक्षर अपलोड करने की सुविधा के लिए सूचना, जिन्होंने मानक फोटो और हस्ताक्षर अपलोड नहीं किए हैं",
+      "detailLink": "https://www.rrbcdg.gov.in/uploads/2024/RPF01-SI/RPF Photo & Sign. Re-upload _Hindi.pdf",
+      "isNew": true,
+      "date_found": "2026-03-29T16:59:48.398213+00:00",
+      "applyLink": "https://www.rrbcdg.gov.in/uploads/2024/RPF01-SI/RPF Photo & Sign. Re-upload _Hindi.pdf",
+      "deadline": "See Link"
+    },
+    {
+      "id": 1774803589025,
+      "org": "RRB Chandigarh",
+      "title": "Notice for access to upload fresh photograph & Signature for the RPF post applicants who have not uploaded standard photo & Signature",
+      "detailLink": "https://www.rrbcdg.gov.in/uploads/2024/RPF01-SI/RPF  Photo & Sign Re Upload _English.pdf",
+      "isNew": true,
+      "date_found": "2026-03-29T16:59:48.398213+00:00",
+      "applyLink": "https://www.rrbcdg.gov.in/uploads/2024/RPF01-SI/RPF  Photo & Sign Re Upload _English.pdf",
+      "deadline": "See Link"
+    },
+    {
+      "id": 1774803589024,
+      "org": "RRB Chandigarh",
+      "title": "Additional Panel-3 for paramedical posts of CEN-02/2019",
+      "detailLink": "https://www.rrbcdg.gov.in/uploads/2019/02-PMED/02-2019 AP3.pdf",
+      "isNew": true,
+      "date_found": "2026-03-29T16:59:48.398213+00:00",
+      "applyLink": "https://www.rrbcdg.gov.in/uploads/2019/02-PMED/02-2019 AP3.pdf",
+      "deadline": "See Link"
+    },
+    {
+      "id": 1774803589023,
+      "org": "RRB Chandigarh",
+      "title": "एएलपी पद की रिक्तियों की संख्या में वृद्धि के सम्बन्ध में सूचना",
+      "detailLink": "https://www.rrbcdg.gov.in/uploads/2024/01-ALP/CEN012024 Vacancy Enhancement Hi.pdf",
+      "isNew": true,
+      "date_found": "2026-03-29T16:59:48.398213+00:00",
+      "applyLink": "https://www.rrbcdg.gov.in/uploads/2024/01-ALP/CEN012024 Vacancy Enhancement Hi.pdf",
+      "deadline": "See Link"
+    },
+    {
+      "id": 1774803589022,
+      "org": "RRB Chandigarh",
+      "title": "Notice regarding enhancement in the number of vacancies for the post of ALP in CEN 01/2024",
+      "detailLink": "https://www.rrbcdg.gov.in/uploads/2024/01-ALP/CEN012024 Vacancy Enhancement.pdf",
+      "isNew": true,
+      "date_found": "2026-03-29T16:59:48.398213+00:00",
+      "applyLink": "https://www.rrbcdg.gov.in/uploads/2024/01-ALP/CEN012024 Vacancy Enhancement.pdf",
+      "deadline": "See Link"
+    },
+    {
+      "id": 1774803589021,
+      "org": "RRB Chandigarh",
+      "title": "एएलपी पद के लिए अधिसूचित रिक्तियों में वृद्धि हेतु शुद्धिपत्र सं. 1",
+      "detailLink": "https://www.rrbcdg.gov.in/uploads/2024/01-ALP/Corrigendum1 Hi.pdf",
+      "isNew": true,
+      "date_found": "2026-03-29T16:59:48.398213+00:00",
+      "applyLink": "https://www.rrbcdg.gov.in/uploads/2024/01-ALP/Corrigendum1 Hi.pdf",
+      "deadline": "See Link"
+    },
+    {
+      "id": 1774803589020,
+      "org": "RRB Chandigarh",
+      "title": "Corrigendum No.1 regarding enhancement of notified vacancies for the post of ALP of CEN 01/2024",
+      "detailLink": "https://www.rrbcdg.gov.in/uploads/2024/01-ALP/Corrigendum1",
+      "isNew": true,
+      "date_found": "2026-03-29T16:59:48.398213+00:00",
+      "applyLink": "https://www.rrbcdg.gov.in/uploads/2024/01-ALP/Corrigendum1",
+      "deadline": "See Link"
+    },
+    {
+      "id": 1774803589019,
+      "org": "RRB Chandigarh",
+      "title": "Additional Panel-4 for paramedical posts of CEN-02/2019",
+      "detailLink": "https://www.rrbcdg.gov.in/2019/02-PMED/02-2019 AP4.pdf",
+      "isNew": true,
+      "date_found": "2026-03-29T16:59:48.398213+00:00",
+      "applyLink": "https://www.rrbcdg.gov.in/2019/02-PMED/02-2019 AP4.pdf",
+      "deadline": "See Link"
+    },
+    {
+      "id": 1774803589018,
+      "org": "RRB Chandigarh",
+      "title": "Additional Panel-5 for paramedical posts of CEN-02/2019",
+      "detailLink": "https://www.rrbcdg.gov.in/uploads/2019/02-PMED/02-2019 AP5.pdf",
+      "isNew": true,
+      "date_found": "2026-03-29T16:59:48.398213+00:00",
+      "applyLink": "https://www.rrbcdg.gov.in/uploads/2019/02-PMED/02-2019 AP5.pdf",
+      "deadline": "See Link"
+    },
+    {
+      "id": 1774803589017,
+      "org": "RRB Chandigarh",
+      "title": "अनंतिम रूप से पात्र उम्मीदवारों के लिए आवेदन की स्थिति और आरआरबी और रेलवे जोन की प्राथमिकता में बदलाव के लिए विकल्प सुविधा के लिए महत्वपूर्ण सूचना",
+      "detailLink": "https://www.rrbcdg.gov.in/uploads/2024/01-ALP/Important Notice 22-07-2024 Hi.pdf",
+      "isNew": true,
+      "date_found": "2026-03-29T16:59:48.398213+00:00",
+      "applyLink": "https://www.rrbcdg.gov.in/uploads/2024/01-ALP/Important Notice 22-07-2024 Hi.pdf",
+      "deadline": "See Link"
+    },
+    {
+      "id": 1774803589016,
+      "org": "RRB Chandigarh",
+      "title": "Important Notice for Application status and option facility for change of RRB and Railway(s) zones preference for provisionally eligible candidates",
+      "detailLink": "https://www.rrbcdg.gov.in/uploads/2024/01-ALP/Important Notice 22-07-2024.pdf",
+      "isNew": true,
+      "date_found": "2026-03-29T16:59:48.398213+00:00",
+      "applyLink": "https://www.rrbcdg.gov.in/uploads/2024/01-ALP/Important Notice 22-07-2024.pdf",
+      "deadline": "See Link"
+    },
+    {
+      "id": 1774803589015,
+      "org": "RRB Chandigarh",
+      "title": "जूनियर इंजीनियर (जेई), डिपो सामग्री अधीक्षक (डीएमएस), रासायनिक और धातुकर्म सहायक (सीएमए), रासायनिक पर्यवेक्षक (अनुसंधान) और धातुकर्म पर्यवेक्षक (अनुसंधान) के विभिन्न पदों की भर्ती हेतु केंद्रीकृत रोज़गार सूचना सं.03/2024",
+      "detailLink": "https://www.rrbcdg.gov.in/uploads/2024/03-JE/CEN 03 2024_JE_Hi.pdf",
+      "isNew": true,
+      "date_found": "2026-03-29T16:59:48.398213+00:00",
+      "applyLink": "https://www.rrbcdg.gov.in/uploads/2024/03-JE/CEN 03 2024_JE_Hi.pdf",
+      "deadline": "See Link"
+    },
+    {
+      "id": 1774803589014,
+      "org": "RRB Chandigarh",
+      "title": "Centralised Employment Notice No. 03/2024 for recruitment of various posts of Junior Engineer (JE), Depot Material Superintendent (DMS), Chemical & Metallurgical Assistant (CMA), Chemical Supervisor (Research) and Metallurgical Supervisor (Research)",
+      "detailLink": "https://www.rrbcdg.gov.in/uploads/2024/03-JE/CEN 03 2024_JE.pdf",
+      "isNew": true,
+      "date_found": "2026-03-29T16:59:48.398213+00:00",
+      "applyLink": "https://www.rrbcdg.gov.in/uploads/2024/03-JE/CEN 03 2024_JE.pdf",
+      "deadline": "See Link"
+    },
+    {
+      "id": 1774803589013,
+      "org": "RRB Chandigarh",
+      "title": "केंद्रीकृत रोज़गार सूचना सं.03/2024 के विभिन्न पदों हेतु आवेदन प्रक्रिया से सम्बन्धित प्राय: पूछे जाने वाले प्रश्न",
+      "detailLink": "https://www.rrbcdg.gov.in/uploads/2024/03-JE/FAQ CEN 03 2024 JE Hindi.pdf",
+      "isNew": true,
+      "date_found": "2026-03-29T16:59:48.398213+00:00",
+      "applyLink": "https://www.rrbcdg.gov.in/uploads/2024/03-JE/FAQ CEN 03 2024 JE Hindi.pdf",
+      "deadline": "See Link"
+    },
+    {
+      "id": 1774803589012,
+      "org": "RRB Chandigarh",
+      "title": "FAQs regarding application process for various posts of JE / DMS / CMA / CS / MS in CEN 03/2024",
+      "detailLink": "https://www.rrbcdg.gov.in/uploads/2024/03-JE/FAQ CEN 03 2024 JEs English.pdf",
+      "isNew": true,
+      "date_found": "2026-03-29T16:59:48.398213+00:00",
+      "applyLink": "https://www.rrbcdg.gov.in/uploads/2024/03-JE/FAQ CEN 03 2024 JEs English.pdf",
+      "deadline": "See Link"
+    },
+    {
+      "id": 1774803589011,
+      "org": "RRB Chandigarh",
+      "title": "Additional Panel-6 for paramedical posts of CEN-02/2019",
+      "detailLink": "https://www.rrbcdg.gov.in/uploads/2019/02-PMED/02-2019 AP6.pdf",
+      "isNew": true,
+      "date_found": "2026-03-29T16:59:48.398213+00:00",
+      "applyLink": "https://www.rrbcdg.gov.in/uploads/2019/02-PMED/02-2019 AP6.pdf",
+      "deadline": "See Link"
     }
   ],
-  "admitCards": [],
+  "admitCards": [
+    {
+      "id": 1774803588936,
+      "org": "RRB Chandigarh",
+      "title": "Link to View/Download City Intimation Slip / E-Call Letter",
+      "detailLink": "https://rrb.digialm.com/EForms/configuredHtml/2667/92088/login.html",
+      "isNew": true,
+      "date_found": "2026-03-29T16:59:48.398213+00:00",
+      "downloadLink": "https://rrb.digialm.com/EForms/configuredHtml/2667/92088/login.html"
+    },
+    {
+      "id": 1774803588811,
+      "org": "RRB Chandigarh",
+      "title": "Click here to download your E-Call letter for the Physical Efficiency/Measurement Test & Document Verification / शारीरिक दक्षता/मापन परीक्षण एवं दस्तावेज़ सत्यापन के लिए अपना ई-कॉल लेटर डाउनलोड करने के लिए यहां क्लिक करें",
+      "detailLink": "https://rrb.digialm.com/EForms/configuredHtml/1181/91610/login.html",
+      "isNew": true,
+      "date_found": "2026-03-29T16:59:48.398213+00:00",
+      "downloadLink": "https://rrb.digialm.com/EForms/configuredHtml/1181/91610/login.html"
+    },
+    {
+      "id": 1774803588714,
+      "org": "RRB Chandigarh",
+      "title": "ई-कॉल लेटर डाउनलोड करने के लिए यहां क्लिक करें Click here to download E-Call letter for PET/PMT/DV",
+      "detailLink": "https://rrb.digialm.com/EForms/configuredHtml/33015/92912/login.html",
+      "isNew": true,
+      "date_found": "2026-03-29T16:59:48.398213+00:00",
+      "downloadLink": "https://rrb.digialm.com/EForms/configuredHtml/33015/92912/login.html"
+    },
+    {
+      "id": 1774803588682,
+      "org": "RRB Chandigarh",
+      "title": "कंप्यूटर-आधारित परीक्षा के लिए ई-बुलावा पत्र डाउनलोड करने का लिंक Click here to download E-Call letter for CBT",
+      "detailLink": "https://rrb.digialm.com/EForms/configuredHtml/33015/96410/login.html",
+      "isNew": true,
+      "date_found": "2026-03-29T16:59:48.398213+00:00",
+      "downloadLink": "https://rrb.digialm.com/EForms/configuredHtml/33015/96410/login.html"
+    },
+    {
+      "id": 1774803588647,
+      "org": "RRB Chandigarh",
+      "title": "द्वितीय चरण की कंप्यूटर-आधारित परीक्षा (सीबीटी-2) के लिए ई-बुलावा पत्र / E-Call letter 2nd stage of Computer Based Test (CBT-2)",
+      "detailLink": "https://rrb.digialm.com//EForms/configuredHtml/2667/95125/login.html",
+      "isNew": true,
+      "date_found": "2026-03-29T16:59:48.398213+00:00",
+      "downloadLink": "https://rrb.digialm.com//EForms/configuredHtml/2667/95125/login.html"
+    },
+    {
+      "id": 1774803588628,
+      "org": "RRB Chandigarh",
+      "title": "अनुवाद परीक्षा हेतु ई-बुलावा पत्र डाउनलोड करने के लिए यहाँ क्लिक करें Click to download E-Call letter for Translation Test",
+      "detailLink": "https://rrb.digialm.com//EForms/configuredHtml/33015/95530/login.html",
+      "isNew": true,
+      "date_found": "2026-03-29T16:59:48.398213+00:00",
+      "downloadLink": "https://rrb.digialm.com//EForms/configuredHtml/33015/95530/login.html"
+    },
+    {
+      "id": 1774803588627,
+      "org": "RRB Chandigarh",
+      "title": "सीबीएटी / सीबीटीएसटी परीक्षा हेतु ई-बुलावा पत्र डाउनलोड करने के लिए यहाँ क्लिक करें Click here to download E-Call letter for CBAT / CBTST",
+      "detailLink": "https://rrb.digialm.com/EForms/configuredHtml/33015/94346/login.html",
+      "isNew": true,
+      "date_found": "2026-03-29T16:59:48.398213+00:00",
+      "downloadLink": "https://rrb.digialm.com/EForms/configuredHtml/33015/94346/login.html"
+    },
+    {
+      "id": 1774803588596,
+      "org": "RRB Chandigarh",
+      "title": "हेल्प-डेस्क, टंकण-भाषा चयन, परीक्षा शहर पर्ची व ई-बुलावा पत्र का लिंक Helpdesk, Typing language, City Intimation & E-Call Letter link",
+      "detailLink": "https://rrb.digialm.com/EForms/configuredHtml/2667/95125/login.html",
+      "isNew": true,
+      "date_found": "2026-03-29T16:59:48.398213+00:00",
+      "downloadLink": "https://rrb.digialm.com/EForms/configuredHtml/2667/95125/login.html"
+    },
+    {
+      "id": 1774803588564,
+      "org": "RRB Chandigarh",
+      "title": "डीवी का ई-कॉल लेटर डाउनलोड करने का लिंक / Link to download E-Call Letter for DV",
+      "detailLink": "https://rrb.digialm.com/EForms/configuredHtml/1181/91195/login.html",
+      "isNew": true,
+      "date_found": "2026-03-29T16:59:48.398213+00:00",
+      "downloadLink": "https://rrb.digialm.com/EForms/configuredHtml/1181/91195/login.html"
+    },
+    {
+      "id": 1774803588562,
+      "org": "RRB Chandigarh",
+      "title": "डीवी का ई-कॉल लेटर डाउनलोड करने का लिंक / Link to download E-Call Letter for DV",
+      "detailLink": "https://rrb.digialm.com/EForms/configuredHtml/2667/92089/login.html",
+      "isNew": true,
+      "date_found": "2026-03-29T16:59:48.398213+00:00",
+      "downloadLink": "https://rrb.digialm.com/EForms/configuredHtml/2667/92089/login.html"
+    },
+    {
+      "id": 1774803588560,
+      "org": "RRB Chandigarh",
+      "title": "डीवी का ई-कॉल लेटर डाउनलोड करने का लिंक / Link to download E-Call Letter for DV",
+      "detailLink": "https://rrb.digialm.com/EForms/configuredHtml/1907/91775/login.html",
+      "isNew": true,
+      "date_found": "2026-03-29T16:59:48.398213+00:00",
+      "downloadLink": "https://rrb.digialm.com/EForms/configuredHtml/1907/91775/login.html"
+    },
+    {
+      "id": 1774803588558,
+      "org": "RRB Chandigarh",
+      "title": "डीवी का ई-कॉल लेटर डाउनलोड करने का लिंक / Link to download E-Call Letter for DV",
+      "detailLink": "https://rrb.digialm.com/EForms/configuredHtml/33015/93368/login.html",
+      "isNew": true,
+      "date_found": "2026-03-29T16:59:48.398213+00:00",
+      "downloadLink": "https://rrb.digialm.com/EForms/configuredHtml/33015/93368/login.html"
+    },
+    {
+      "id": 1774803588547,
+      "org": "RRB Chandigarh",
+      "title": "सीबीटी का ई-बुलावा पत्र देखने / डाउनलोड करने का लिंक Link to View/Download E-Call letter for CBT",
+      "detailLink": "https://rrb.digialm.com/EForms/configuredHtml/33128/98139/login.html",
+      "isNew": true,
+      "date_found": "2026-03-29T16:59:48.398213+00:00",
+      "downloadLink": "https://rrb.digialm.com/EForms/configuredHtml/33128/98139/login.html"
+    },
+    {
+      "id": 1774803588541,
+      "org": "RRB Chandigarh",
+      "title": "कंप्यूटर आधारित परीक्षा हेतु शहर सूचना पर्ची / ई-कॉल लेटर डाउनलोड करने का लिंक Link to download City-Intimation / E-Call letter for Computer Based Test /",
+      "detailLink": "https://rrb.digialm.com//EForms/configuredHtml/33128/98076/login.html",
+      "isNew": true,
+      "date_found": "2026-03-29T16:59:48.398213+00:00",
+      "downloadLink": "https://rrb.digialm.com//EForms/configuredHtml/33128/98076/login.html"
+    },
+    {
+      "id": 1774803588540,
+      "org": "RRB Chandigarh",
+      "title": "कंप्यूटर आधारित परीक्षा हेतु शहर सूचना पर्ची / ई-कॉल लेटर डाउनलोड करने का लिंक Link to download City-Intimation / E-Call letter for Computer Based Test /",
+      "detailLink": "https://rrb.digialm.com/EForms/configuredHtml/33128/98228/login.html",
+      "isNew": true,
+      "date_found": "2026-03-29T16:59:48.398213+00:00",
+      "downloadLink": "https://rrb.digialm.com/EForms/configuredHtml/33128/98228/login.html"
+    },
+    {
+      "id": 1774803588458,
+      "org": "UPPSC",
+      "title": "05 Apr 2026 NOTICE REGARDING DOWNLOAD ADMIT CARD FOR ADVT. NO. A-5/E-1/2025, ASSISTANT TEACHER, TRAINED GRADUATE GRADE (M/F BRANCH) (PRE.) EXAM-2025 (COMPUTER).",
+      "detailLink": "https://uppsc.up.nic.in/Open_PDF.aspx?I4PnQ0tBagkNK8YDNpyX+cxDC5gTNlwc",
+      "isNew": true,
+      "date_found": "2026-03-29T16:59:48.398213+00:00",
+      "downloadLink": "https://uppsc.up.nic.in/Open_PDF.aspx?I4PnQ0tBagkNK8YDNpyX+cxDC5gTNlwc"
+    },
+    {
+      "id": 1774803588446,
+      "org": "UPPSC",
+      "title": "CLICK HERE TO DOWNLOAD ADMIT CARD FOR ADVT. NO. A-5/E-1/2025, ASSISTANT TEACHER, TRAINED GRADUATE GRADE (M/F BRANCH) (PRE.) EXAM-2025 (COMPUTER).",
+      "detailLink": "https://uppsc.up.nic.in/CandidatePages/Advertismentwise_DownloadDocument.aspx?inptprmtr=ac",
+      "isNew": true,
+      "date_found": "2026-03-29T16:59:48.398213+00:00",
+      "downloadLink": "https://uppsc.up.nic.in/CandidatePages/Advertismentwise_DownloadDocument.aspx?inptprmtr=ac"
+    },
+    {
+      "id": 1774803588430,
+      "org": "UPPSC",
+      "title": "NOTICE REGARDING ADMIT CARD FOR ADVT. NO. A-1/E-1/2025, COMBINED STATE / UPPER S..",
+      "detailLink": "https://uppsc.up.nic.in/Open_PDF_DB.aspx?I4PnQ0tBagnylqFOWaRKI4iXvgXC/otW",
+      "isNew": true,
+      "date_found": "2026-03-29T16:59:48.398213+00:00",
+      "downloadLink": "https://uppsc.up.nic.in/Open_PDF_DB.aspx?I4PnQ0tBagnylqFOWaRKI4iXvgXC/otW"
+    },
+    {
+      "id": 1774803588427,
+      "org": "UPPSC",
+      "title": "NOTICE REGARDING DOWNLOAD ADMIT CARD FOR ADVT. NO. A-5/E-1/2025, ASSISTANT TEACH..",
+      "detailLink": "https://uppsc.up.nic.in/Open_PDF_DB.aspx?I4PnQ0tBagkNK8YDNpyX+YzV+V2yW0fQ",
+      "isNew": true,
+      "date_found": "2026-03-29T16:59:48.398213+00:00",
+      "downloadLink": "https://uppsc.up.nic.in/Open_PDF_DB.aspx?I4PnQ0tBagkNK8YDNpyX+YzV+V2yW0fQ"
+    }
+  ],
   "results": [
+    {
+      "id": 1774803588883,
+      "org": "RRB Chandigarh",
+      "title": "RESULT of first stage exam (CBT-1) for the post of ALP against CEN 01/2024",
+      "detailLink": "https://www.rrbcdg.gov.in/uploads/2024/01-ALP/CBT1-Result.pdf",
+      "isNew": true,
+      "date_found": "2026-03-29T16:59:48.398213+00:00",
+      "downloadLink": "https://www.rrbcdg.gov.in/uploads/2024/01-ALP/CBT1-Result.pdf"
+    },
+    {
+      "id": 1774803588882,
+      "org": "RRB Chandigarh",
+      "title": "SCORE-CARD & Objection-Tracker response link of CBT-1  / सीबीटी-1 स्कोर-कार्ड और आपत्ति-ट्रैकर परिणाम देखने के लिए लिंक",
+      "detailLink": "https://rrb.digialm.com/EForms/configuredHtml/1181/91195/login.html",
+      "isNew": true,
+      "date_found": "2026-03-29T16:59:48.398213+00:00",
+      "downloadLink": "https://rrb.digialm.com/EForms/configuredHtml/1181/91195/login.html"
+    },
+    {
+      "id": 1774803588880,
+      "org": "RRB Chandigarh",
+      "title": "RESULT of Computer-Based-Test (CBT) for the post of S.I. against CEN RPF 01/2024",
+      "detailLink": "https://www.rrbcdg.gov.in/uploads/2024/RPF01-SI/RPF_01-2024_SI_CBT_RESULT.pdf",
+      "isNew": true,
+      "date_found": "2026-03-29T16:59:48.398213+00:00",
+      "downloadLink": "https://www.rrbcdg.gov.in/uploads/2024/RPF01-SI/RPF_01-2024_SI_CBT_RESULT.pdf"
+    },
+    {
+      "id": 1774803588876,
+      "org": "RRB Chandigarh",
+      "title": "RESULT of 1st stage Computer-Based-Test (CBT-1) for the post of JE/DMS/CMA/CS/MS",
+      "detailLink": "https://www.rrbcdg.gov.in/uploads/2024/03-JE/032024JE_CBT-1_RESULT.pdf",
+      "isNew": true,
+      "date_found": "2026-03-29T16:59:48.398213+00:00",
+      "downloadLink": "https://www.rrbcdg.gov.in/uploads/2024/03-JE/032024JE_CBT-1_RESULT.pdf"
+    },
+    {
+      "id": 1774803588875,
+      "org": "RRB Chandigarh",
+      "title": "CBT-Scorecard & Objection-Tracker response / सीबीटी का स्कोरकार्ड और अब्जेक्शन-ट्रैकर का परिणाम देखने का लिंक",
+      "detailLink": "https://rrb.digialm.com/EForms/configuredHtml/1181/91610/login.html",
+      "isNew": true,
+      "date_found": "2026-03-29T16:59:48.398213+00:00",
+      "downloadLink": "https://rrb.digialm.com/EForms/configuredHtml/1181/91610/login.html"
+    },
+    {
+      "id": 1774803588874,
+      "org": "RRB Chandigarh",
+      "title": "Corrigendum-1 to the CBT result & cut-off marks of Female candidates for the post of Sub-Inspector under CEN RPF 01/2024",
+      "detailLink": "https://www.rrbcdg.gov.in/uploads/2024/RPF01-SI/RPF_012024_SI_CBT_RESULT-Corrigendum_Female.pdf",
+      "isNew": true,
+      "date_found": "2026-03-29T16:59:48.398213+00:00",
+      "downloadLink": "https://www.rrbcdg.gov.in/uploads/2024/RPF01-SI/RPF_012024_SI_CBT_RESULT-Corrigendum_Female.pdf"
+    },
+    {
+      "id": 1774803588870,
+      "org": "RRB Chandigarh",
+      "title": "SCORE-CARD & Objection-Tracker response link of CBT (Tech-I)  /  सीबीटी (तकनीशियन-I) स्कोर-कार्ड और आपत्ति-ट्रैकर परिणाम देखने के लिए लिंक",
+      "detailLink": "https://rrb.digialm.com/EForms/configuredHtml/2667/92088/login.html",
+      "isNew": true,
+      "date_found": "2026-03-29T16:59:48.398213+00:00",
+      "downloadLink": "https://rrb.digialm.com/EForms/configuredHtml/2667/92088/login.html"
+    },
+    {
+      "id": 1774803588868,
+      "org": "RRB Chandigarh",
+      "title": "RESULT of Computer-Based-Test (CBT) for the post of Technician Grade-I Signal",
+      "detailLink": "https://www.rrbcdg.gov.in/uploads/2024/02-TECH/Tech-1_CBT_RESULT.pdf",
+      "isNew": true,
+      "date_found": "2026-03-29T16:59:48.398213+00:00",
+      "downloadLink": "https://www.rrbcdg.gov.in/uploads/2024/02-TECH/Tech-1_CBT_RESULT.pdf"
+    },
+    {
+      "id": 1774803588863,
+      "org": "RRB Chandigarh",
+      "title": "SCORE-CARD & Objection-Tracker response link of CBT (Tech-III)  /  सीबीटी (तकनीशियन-III) स्कोर-कार्ड और आपत्ति-ट्रैकर परिणाम देखने के लिए लिंक",
+      "detailLink": "https://rrb.digialm.com/EForms/configuredHtml/2667/92089/login.html",
+      "isNew": true,
+      "date_found": "2026-03-29T16:59:48.398213+00:00",
+      "downloadLink": "https://rrb.digialm.com/EForms/configuredHtml/2667/92089/login.html"
+    },
+    {
+      "id": 1774803588861,
+      "org": "RRB Chandigarh",
+      "title": "RESULT of Computer-Based-Test (CBT) for various posts of Technician Grade-III",
+      "detailLink": "https://www.rrbcdg.gov.in/uploads/2024/02-TECH/Tech-3_CBT_RESULT.pdf",
+      "isNew": true,
+      "date_found": "2026-03-29T16:59:48.398213+00:00",
+      "downloadLink": "https://www.rrbcdg.gov.in/uploads/2024/02-TECH/Tech-3_CBT_RESULT.pdf"
+    },
+    {
+      "id": 1774803588794,
+      "org": "RRB Chandigarh",
+      "title": "Update regarding declaration of CBT-2 Result conducted on 22-04-2025  /  22-04-2025 को आयोजित CBT-2 परीक्षा के परिणाम की घोषणा संबंधी अपडेट",
+      "detailLink": "https://www.rrbcdg.gov.in/uploads/2024/03-JE/CBT2_CommonResultNotice.pdf",
+      "isNew": true,
+      "date_found": "2026-03-29T16:59:48.398213+00:00",
+      "downloadLink": "https://www.rrbcdg.gov.in/uploads/2024/03-JE/CBT2_CommonResultNotice.pdf"
+    },
+    {
+      "id": 1774803588780,
+      "org": "RRB Chandigarh",
+      "title": "Update regarding declaration of CBT-2 Result conducted on 04-06-2025  /  04-06-2025 को आयोजित CBT-2 परीक्षा के परिणाम की घोषणा संबंधी अपडेट",
+      "detailLink": "https://www.rrbcdg.gov.in/uploads/2024/03-JE/CBT2_CommonResultNotice21-7-2025.pdf",
+      "isNew": true,
+      "date_found": "2026-03-29T16:59:48.398213+00:00",
+      "downloadLink": "https://www.rrbcdg.gov.in/uploads/2024/03-JE/CBT2_CommonResultNotice21-7-2025.pdf"
+    },
+    {
+      "id": 1774803588779,
+      "org": "RRB Chandigarh",
+      "title": "SCORE-CARD & Objection-Tracker response link of CBT-2  /  सीबीटी-2 स्कोर-कार्ड और आपत्ति-ट्रैकर परिणाम देखने के लिए लिंक",
+      "detailLink": "https://rrb.digialm.com/EForms/configuredHtml/1907/91775/login.html",
+      "isNew": true,
+      "date_found": "2026-03-29T16:59:48.398213+00:00",
+      "downloadLink": "https://rrb.digialm.com/EForms/configuredHtml/1907/91775/login.html"
+    },
+    {
+      "id": 1774803588763,
+      "org": "RRB Chandigarh",
+      "title": "CBT Score-Card & Objection-Tracker response link / सीबीटी स्कोर-कार्ड और आपत्ति-ट्रैकर परिणाम देखने के लिए लिंक",
+      "detailLink": "https://rrb.digialm.com/EForms/configuredHtml/33015/93368/login.html",
+      "isNew": true,
+      "date_found": "2026-03-29T16:59:48.398213+00:00",
+      "downloadLink": "https://rrb.digialm.com/EForms/configuredHtml/33015/93368/login.html"
+    },
+    {
+      "id": 1774803588727,
+      "org": "RRB Chandigarh",
+      "title": "सीबीएटी का परिणाम व दस्तावेज-सत्यापन हेतु लघुसूचित किए गए अभ्यर्थियों की सूची CBAT result & list of candidates shortlisted for Document Verification",
+      "detailLink": "https://www.rrbcdg.gov.in/uploads/2024/01-ALP/012024ALP-CBAT_Result.pdf",
+      "isNew": true,
+      "date_found": "2026-03-29T16:59:48.398213+00:00",
+      "downloadLink": "https://www.rrbcdg.gov.in/uploads/2024/01-ALP/012024ALP-CBAT_Result.pdf"
+    },
+    {
+      "id": 1774803588659,
+      "org": "RRB Chandigarh",
+      "title": "Score-Card & Objection-Tracker response link स्कोर-कार्ड और आपत्ति-ट्रैकर परिणाम देखने के लिए लिंक",
+      "detailLink": "https://rrb.digialm.com//EForms/configuredHtml/33015/94346/login.html",
+      "isNew": true,
+      "date_found": "2026-03-29T16:59:48.398213+00:00",
+      "downloadLink": "https://rrb.digialm.com//EForms/configuredHtml/33015/94346/login.html"
+    },
+    {
+      "id": 1774803588600,
+      "org": "RRB Chandigarh",
+      "title": "Score-Card & Objection-Tracker response link स्कोर-कार्ड और आपत्ति-ट्रैकर परिणाम देखने के लिए लिंक",
+      "detailLink": "https://rrb.digialm.com/EForms/configuredHtml/2667/95125/login.html",
+      "isNew": true,
+      "date_found": "2026-03-29T16:59:48.398213+00:00",
+      "downloadLink": "https://rrb.digialm.com/EForms/configuredHtml/2667/95125/login.html"
+    },
+    {
+      "id": 1774803588452,
+      "org": "UPPSC",
+      "title": "25 Apr 2026 RESULT OF ADVT. NO. D-2/E-1/2025, UTTAR PRADESH AYUSH (UNANI) DEPARTMENT, LECTURER ILMUL JARAHAT, S-11/26",
+      "detailLink": "https://uppsc.up.nic.in/Open_PDF.aspx?I4PnQ0tBagkNK8YDNpyX+W6qaLvqV8Pf",
+      "isNew": true,
+      "date_found": "2026-03-29T16:59:48.398213+00:00",
+      "downloadLink": "https://uppsc.up.nic.in/Open_PDF.aspx?I4PnQ0tBagkNK8YDNpyX+W6qaLvqV8Pf"
+    },
+    {
+      "id": 1774803588426,
+      "org": "UPPSC",
+      "title": "RESULT OF ADVT. NO. D-2/E-1/2025, UTTAR PRADESH AYUSH (UNANI) DEPARTMENT, LECTUR..",
+      "detailLink": "https://uppsc.up.nic.in/Open_PDF_DB.aspx?I4PnQ0tBagkNK8YDNpyX+USwCXTbzztF",
+      "isNew": true,
+      "date_found": "2026-03-29T16:59:48.398213+00:00",
+      "downloadLink": "https://uppsc.up.nic.in/Open_PDF_DB.aspx?I4PnQ0tBagkNK8YDNpyX+USwCXTbzztF"
+    },
     {
       "id": 346,
       "org": "RRB Bhubaneswar",
       "title": "CEN 07/2024 : CBT result & cut off marks and list of candidates shortlisted for Document Verification & Medical Exam for the post of Jr. Translator (Hindi) and Staff & Welfare Inspector.",
       "isNew": true,
       "detailLink": "https://www.rrbbbs.gov.in/documentexplorer.php?prmt=TVRneE9BPT0='",
-      "downloadLink": "https://www.rrbbbs.gov.in/documentexplorer.php?prmt=TVRneE9BPT0='"
+      "downloadLink": "https://www.rrbbbs.gov.in/documentexplorer.php?prmt=TVRneE9BPT0='",
+      "date_found": "2026-03-29T16:59:48.398213+00:00"
     },
     {
       "id": 349,
@@ -577,17 +861,64 @@
       "title": "Results & Cutoffs",
       "isNew": true,
       "detailLink": "https://www.rrbbbs.gov.in/results.php",
-      "downloadLink": "https://www.rrbbbs.gov.in/results.php"
+      "downloadLink": "https://www.rrbbbs.gov.in/results.php",
+      "date_found": "2026-03-29T16:59:48.398213+00:00"
     }
   ],
   "answerKeys": [
+    {
+      "id": 1774803588797,
+      "org": "RRB Chandigarh",
+      "title": "Viewing of questions, responses & answer keys of CBT-1 and raising of objections (if any)",
+      "detailLink": "https://www.rrbcdg.gov.in/uploads/2024/05-NTPCG/052024-CBT1_ObjectionTracker.pdf",
+      "isNew": true,
+      "date_found": "2026-03-29T16:59:48.398213+00:00",
+      "downloadLink": "https://www.rrbcdg.gov.in/uploads/2024/05-NTPCG/052024-CBT1_ObjectionTracker.pdf"
+    },
+    {
+      "id": 1774803588736,
+      "org": "RRB Chandigarh",
+      "title": "Viewing of questions, responses & answer keys of CBT-1 and raising of objections (if any)",
+      "detailLink": "https://www.rrbcdg.gov.in/uploads/2024/06-NTPCUG/062024-CBT1-ObjectionTracker.pdf",
+      "isNew": true,
+      "date_found": "2026-03-29T16:59:48.398213+00:00",
+      "downloadLink": "https://www.rrbcdg.gov.in/uploads/2024/06-NTPCUG/062024-CBT1-ObjectionTracker.pdf"
+    },
+    {
+      "id": 1774803588724,
+      "org": "RRB Chandigarh",
+      "title": "Viewing of questions, responses & answer keys of CBT and raising of objections (if any)",
+      "detailLink": "https://www.rrbcdg.gov.in/uploads/2024/07-M&I/072024M&I-Objection_Tracker.pdf",
+      "isNew": true,
+      "date_found": "2026-03-29T16:59:48.398213+00:00",
+      "downloadLink": "https://www.rrbcdg.gov.in/uploads/2024/07-M&I/072024M&I-Objection_Tracker.pdf"
+    },
+    {
+      "id": 1774803588716,
+      "org": "RRB Chandigarh",
+      "title": "Viewing of questions, responses & answer keys of CBT-II and raising of objections (if any)",
+      "detailLink": "https://www.rrbcdg.gov.in/uploads/2024/05-NTPCG/052024NTPCG-CBT2_ObjectionTracker.pdf",
+      "isNew": true,
+      "date_found": "2026-03-29T16:59:48.398213+00:00",
+      "downloadLink": "https://www.rrbcdg.gov.in/uploads/2024/05-NTPCG/052024NTPCG-CBT2_ObjectionTracker.pdf"
+    },
+    {
+      "id": 1774803588633,
+      "org": "RRB Chandigarh",
+      "title": "Viewing of questions, responses & answer keys of CBT-2 and raising of objections (if any)",
+      "detailLink": "https://www.rrbcdg.gov.in/uploads/2024/06-NTPCUG/062024-CBT2_ObjectionTracker.pdf",
+      "isNew": true,
+      "date_found": "2026-03-29T16:59:48.398213+00:00",
+      "downloadLink": "https://www.rrbcdg.gov.in/uploads/2024/06-NTPCUG/062024-CBT2_ObjectionTracker.pdf"
+    },
     {
       "id": 343,
       "org": "RRB Bhubaneswar",
       "title": "CEN 02/2025 : Technician Grade I (Signal) - Notice for viewing and downloading questions and responses with option to raise objections against questions and answer keys.(Hindi)",
       "isNew": true,
       "detailLink": "https://www.rrbbbs.gov.in/documentexplorer.php?prmt=TVRneU1nPT0='",
-      "downloadLink": "https://www.rrbbbs.gov.in/documentexplorer.php?prmt=TVRneU1nPT0='"
+      "downloadLink": "https://www.rrbbbs.gov.in/documentexplorer.php?prmt=TVRneU1nPT0='",
+      "date_found": "2026-03-29T16:59:48.398213+00:00"
     },
     {
       "id": 344,
@@ -595,8 +926,9 @@
       "title": "CEN 02/2025 : Technician Grade I (Signal) - Notice for viewing and downloading questions and responses with option to raise objections against questions and answer keys.(English)",
       "isNew": true,
       "detailLink": "https://www.rrbbbs.gov.in/documentexplorer.php?prmt=TVRneU1BPT0='",
-      "downloadLink": "https://www.rrbbbs.gov.in/documentexplorer.php?prmt=TVRneU1BPT0='"
+      "downloadLink": "https://www.rrbbbs.gov.in/documentexplorer.php?prmt=TVRneU1BPT0='",
+      "date_found": "2026-03-29T16:59:48.398213+00:00"
     }
   ],
-  "last_updated": "2026-03-29T12:43:29.845907+00:00"
+  "last_updated": "2026-03-29T16:59:48.414298+00:00"
 }
