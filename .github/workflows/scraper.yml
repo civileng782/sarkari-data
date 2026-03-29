@@ -34,9 +34,7 @@ jobs:
           python -m pip install --upgrade pip
 
       - name: Run scraper
-        run: |
-         ls -la
-         python scraper.py
+        run: python scraper.py
 
       - name: Commit and push safely
         run: |
