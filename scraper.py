@@ -1,47 +1,48 @@
-name: Update Job Data
+import json
+from datetime import datetime, timezone
 
-env:
-  FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: "true"
+data = {
+    "vacancies": [
+        {
+            "id": 1,
+            "org": "SSC",
+            "title": "SSC CGL 2026 भर्ती",
+            "posts": "To be announced",
+            "deadline": "30 Apr 2026",
+            "applyLink": "https://ssc.gov.in",
+            "detailLink": "https://ssc.gov.in",
+            "isNew": True
+        }
+    ],
+    "admitCards": [
+        {
+            "id": 2,
+            "org": "UPPSC",
+            "title": "UPPSC Pre Admit Card",
+            "examDate": "10 May 2026",
+            "downloadLink": "#",
+            "detailLink": "#",
+            "isNew": True
+        }
+    ],
+    "results": [
+        {
+            "id": 3,
+            "org": "Railway",
+            "title": "RRB Group D Result",
+            "board": "RRB",
+            "downloadLink": "#",
+            "detailLink": "#",
+            "isNew": False
+        }
+    ],
+    "last_updated": datetime.now(timezone.utc).isoformat()
+}
 
-on:
-  schedule:
-    - cron: "0 */6 * * *"
-  workflow_dispatch:
-
-jobs:
-  update-data:
-    runs-on: ubuntu-latest
-    permissions:
-      contents: write
-    steps:
-      - name: Checkout repository
-        uses: actions/checkout@v4
-        with:
-          fetch-depth: 0
-
-      - name: Sync with remote
-        run: |
-          git fetch origin main
-          git reset --hard origin/main
-
-      - name: Setup Python
-        uses: actions/setup-python@v5
-        with:
-          python-version: "3.10"
-
-      - name: Install dependencies
-        run: |
-          python -m pip install --upgrade pip
-          pip install -r requirements.txt
-
-      - name: Run scraper
-        run: python scraper.py
-
-      - name: Commit and push safely
-        run: |
-          git config user.name "github-actions"
-          git config user.email "actions@github.com"
-          git add jobs.json
-          git diff --cached --quiet || git commit -m "Auto update jobs data"
-          git pull --rebase origin main
-          git push origin main
+try:
+    with open("jobs.json", "w", encoding="utf-8") as f:
+        json.dump(data, f, indent=2, ensure_ascii=False)
+    print("jobs.json written successfully.")
+except (OSError, ValueError) as e:
+    print(f"ERROR: Failed to write jobs.json: {e}")
+    raise SystemExit(1)
