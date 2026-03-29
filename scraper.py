@@ -32,7 +32,7 @@ def load_existing() -> dict:
                     if cat not in data:
                         data[cat] = []
                 return data
-        except Exception:                                    # Fix 4: removed redundant json.JSONDecodeError
+        except Exception:
             pass
     return {"vacancies": [], "admitCards": [], "results": [], "answerKeys": []}
 
@@ -40,17 +40,17 @@ def load_existing() -> dict:
 def fetch_page_hybrid(url: str) -> BeautifulSoup | None:
     """Tries static fetch first, falls back to Playwright if JS-heavy."""
     try:
-        log.info("Fetching (Static): %s", url)             # Fix 5: % style logging
+        log.info("Fetching (Static): %s", url)
         resp = requests.get(url, headers=HEADERS, timeout=TIMEOUT)
         resp.raise_for_status()
         soup = BeautifulSoup(resp.text, "lxml")
         if len(soup.find_all("a")) > 10:
             return soup
     except Exception as e:
-        log.warning("Static failed for %s: %s", url, e)    # Fix 5
+        log.warning("Static failed for %s: %s", url, e)
 
     try:
-        log.info("Falling back to Playwright: %s", url)    # Fix 5
+        log.info("Falling back to Playwright: %s", url)
         with sync_playwright() as p:
             browser = p.chromium.launch(headless=True)
             context = browser.new_context(user_agent=HEADERS["User-Agent"])
@@ -60,7 +60,7 @@ def fetch_page_hybrid(url: str) -> BeautifulSoup | None:
             browser.close()
             return BeautifulSoup(content, "lxml")
     except Exception as e:
-        log.error("Hybrid fetch failed for %s: %s", url, e) # Fix 5
+        log.error("Hybrid fetch failed for %s: %s", url, e)
         return None
 
 
@@ -79,49 +79,42 @@ def parse_notices(soup: BeautifulSoup, org: str, base_url: str) -> list:
     found = []
 
     SKIP = {"home", "login", "contact", "about", "register", "hindi", "english"}
-
     BAD_PATTERNS = ["{{", "}}", "translate", "javascript:void", "#"]
-
-    BAD_WORDS = [
-        "about", "contact", "home", "login", "register",
-        "faq", "help", "policy", "terms", "privacy"
-    ]
-
+    BAD_WORDS = ["about", "contact", "home", "login", "register",
+                 "faq", "help", "policy", "terms", "privacy"]
     seen_links = set()
 
-    containers = soup.find_all(["table", "div", "section"])
+    containers = soup.find_all(["table", "div", "section"])   # FIX: indented inside function
 
-for container in containers:
-    for tag in container.find_all("a", href=True):
+    for container in containers:                               # FIX: indented inside function
+        for tag in container.find_all("a", href=True):        # FIX: indented inside function
+            text = tag.get_text(" ", strip=True)
+            href = tag["href"]
 
-        text = tag.get_text(" ", strip=True)
-        href = tag["href"]
+            if (
+                not text
+                or len(text) < 20
+                or any(p in text for p in BAD_PATTERNS)
+                or any(word in text.lower() for word in BAD_WORDS)
+                or any(s in text.lower() for s in SKIP)
+                or href.startswith("#")
+            ):
+                continue
 
-        if (
-            not text
-            or len(text) < 20
-            or any(p in text for p in BAD_PATTERNS)
-            or any(word in text.lower() for word in BAD_WORDS)
-            or any(s in text.lower() for s in SKIP)
-            or href.startswith("#")
-        ):
-            continue
+            full_link = urljoin(base_url, href)
 
-        full_link = urljoin(base_url, href)
+            if full_link in seen_links:
+                continue
+            seen_links.add(full_link)
 
-        # ─── DEDUPLICATION ─────────────────────
-        if full_link in seen_links:
-            continue
-        seen_links.add(full_link)
+            found.append({
+                "org": org,
+                "title": text,
+                "link": full_link,
+                "category": classify(text),
+            })
 
-        found.append({
-            "org": org,
-            "title": text,
-            "link": full_link,
-            "category": classify(text),
-        })
-
-    return found
+    return found                                               # FIX: indented inside function
 
 
 # ─── Merge Engine ─────────────────────────────────────────────────────────────
@@ -133,7 +126,7 @@ def merge_data(existing: dict, scraped_items: list) -> dict:
     3. Flips 'isNew' to False after 3 days.
     """
     now = datetime.now(timezone.utc)
-    uid_counter = int(now.timestamp() * 1000)              # Fix 2: single base, incremented below
+    uid_counter = int(now.timestamp() * 1000)
 
     for item in scraped_items:
         cat = item["category"]
@@ -142,14 +135,14 @@ def merge_data(existing: dict, scraped_items: list) -> dict:
         exists = any(old["detailLink"] == link for old in existing[cat])
         if not exists:
             new_entry = {
-                "id": uid_counter,                         # Fix 2: unique per item
+                "id": uid_counter,
                 "org": item["org"],
                 "title": item["title"],
                 "detailLink": link,
                 "isNew": True,
                 "date_found": now.isoformat(),
             }
-            uid_counter += 1                               # Fix 2: increment after each use
+            uid_counter += 1
 
             if cat == "vacancies":
                 new_entry.update({"applyLink": link, "deadline": "See Link"})
@@ -158,20 +151,18 @@ def merge_data(existing: dict, scraped_items: list) -> dict:
 
             existing[cat].insert(0, new_entry)
 
-    # Post-processing: update isNew flag and trim size
     for cat in ["vacancies", "admitCards", "results", "answerKeys"]:
         for entry in existing[cat]:
-            # Fix 1: gracefully handle missing date_found on old entries
             raw_date = entry.get("date_found")
             if raw_date is None:
-                entry["date_found"] = now.isoformat()      # Fix 1: backfill missing field
-                continue                                    # Fix 1: skip flip — age unknown
+                entry["date_found"] = now.isoformat()
+                continue
             try:
                 found_date = datetime.fromisoformat(raw_date)
                 if now - found_date > timedelta(days=3):
                     entry["isNew"] = False
             except (ValueError, TypeError):
-                entry["date_found"] = now.isoformat()      # Fix 1: repair corrupted date
+                entry["date_found"] = now.isoformat()
 
         existing[cat] = existing[cat][:MAX_ITEMS_PER_CAT]
 
@@ -186,10 +177,10 @@ def main():
 
     all_scraped = []
     sources = [
-        ("https://ssc.gov.in/",        "SSC"),
-        ("https://uppsc.up.nic.in/",   "UPPSC"),
-        ("https://rrbbbs.gov.in/",   "RRB Bhubaneswar"),
-        ("https://www.rrbcdg.gov.in/", "RRB Chandigarh"),
+        ("https://ssc.gov.in/",          "SSC"),
+        ("https://uppsc.up.nic.in/",     "UPPSC"),
+        ("https://www.rrbbbs.gov.in/",   "RRB Bhubaneswar"),  # www. prefix required
+        ("https://www.rrbcdg.gov.in/",   "RRB Chandigarh"),
     ]
 
     for url, org in sources:
@@ -200,10 +191,10 @@ def main():
     updated_data = merge_data(data, all_scraped)
     updated_data["last_updated"] = datetime.now(timezone.utc).isoformat()
 
-    try:                                                    # Fix 3: error handling on write
+    try:
         with open(OUTPUT_FILE, "w", encoding="utf-8") as f:
             json.dump(updated_data, f, indent=2, ensure_ascii=False)
-        log.info("Done! Updated %s", OUTPUT_FILE)          # Fix 5
+        log.info("Done! Updated %s", OUTPUT_FILE)
         log.info(
             "Final counts — vacancies: %d | admitCards: %d | results: %d | answerKeys: %d",
             len(updated_data["vacancies"]),
@@ -211,7 +202,7 @@ def main():
             len(updated_data["results"]),
             len(updated_data["answerKeys"]),
         )
-    except (OSError, ValueError) as e:                     # Fix 3
+    except (OSError, ValueError) as e:
         log.error("Failed to write %s: %s", OUTPUT_FILE, e)
         raise SystemExit(1)
 
