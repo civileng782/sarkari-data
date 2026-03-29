@@ -1,43 +1,47 @@
-import json
-from datetime import datetime
+name: Update Job Data
 
-data = {
-    "vacancies": [
-        {
-            "id": 1,
-            "org": "SSC",
-            "title": "SSC CGL 2026 भर्ती",
-            "posts": "7500+ Posts",
-            "deadline": "30 Apr 2026",
-            "applyLink": "https://ssc.nic.in",
-            "detailLink": "https://ssc.nic.in",
-            "isNew": True
-        }
-    ],
-    "admitCards": [
-        {
-            "id": 2,
-            "org": "UPPSC",
-            "title": "UPPSC Pre Admit Card",
-            "examDate": "10 May 2026",
-            "downloadLink": "#",
-            "detailLink": "#",
-            "isNew": True
-        }
-    ],
-    "results": [
-        {
-            "id": 3,
-            "org": "Railway",
-            "title": "RRB Group D Result",
-            "board": "RRB",
-            "downloadLink": "#",
-            "detailLink": "#",
-            "isNew": False
-        }
-    ],
-    "last_updated": datetime.utcnow().isoformat()
-}
+env:
+  FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: "true"
 
-with open("jobs.json", "w") as f:
-    json.dump(data, f, indent=2)
+on:
+  schedule:
+    - cron: "0 */6 * * *"
+  workflow_dispatch:
+
+jobs:
+  update-data:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Sync with remote
+        run: |
+          git fetch origin main
+          git reset --hard origin/main
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.10"
+
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install -r requirements.txt
+
+      - name: Run scraper
+        run: python scraper.py
+
+      - name: Commit and push safely
+        run: |
+          git config user.name "github-actions"
+          git config user.email "actions@github.com"
+          git add jobs.json
+          git diff --cached --quiet || git commit -m "Auto update jobs data"
+          git pull --rebase origin main
+          git push origin main
