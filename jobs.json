@@ -1,5 +1,602 @@
 {
-  "vacancies": [],
+  "vacancies": [
+    {
+      "id": 200,
+      "org": "UPPSC",
+      "title": "भारत सरकार GOVERNMENT OF INDIA",
+      "isNew": true,
+      "detailLink": "http://india.gov.in",
+      "applyLink": "http://india.gov.in",
+      "posts": "See notification",
+      "deadline": "See notification"
+    },
+    {
+      "id": 201,
+      "org": "UPPSC",
+      "title": "उत्तर प्रदेश Uttar Pradesh",
+      "isNew": true,
+      "detailLink": "http://up.gov.in/",
+      "applyLink": "http://up.gov.in/",
+      "posts": "See notification",
+      "deadline": "See notification"
+    },
+    {
+      "id": 202,
+      "org": "UPPSC",
+      "title": "{{'Setting_HM' | translate }}",
+      "isNew": true,
+      "detailLink": "https://uppsc.up.nic.in/#siteSettings",
+      "applyLink": "https://uppsc.up.nic.in/#siteSettings",
+      "posts": "See notification",
+      "deadline": "See notification"
+    },
+    {
+      "id": 203,
+      "org": "UPPSC",
+      "title": "{{'AboutUs_HM' | translate }}",
+      "isNew": true,
+      "detailLink": "https://uppsc.up.nic.in/#",
+      "applyLink": "https://uppsc.up.nic.in/#",
+      "posts": "See notification",
+      "deadline": "See notification"
+    },
+    {
+      "id": 204,
+      "org": "UPPSC",
+      "title": "{{'TheCommission_HM' | translate }}",
+      "isNew": true,
+      "detailLink": "https://uppsc.up.nic.in/PublicPages/com.aspx?ID=DE",
+      "applyLink": "https://uppsc.up.nic.in/PublicPages/com.aspx?ID=DE",
+      "posts": "See notification",
+      "deadline": "See notification"
+    },
+    {
+      "id": 205,
+      "org": "UPPSC",
+      "title": "{{'ConstitutionalProvisions_HM' | translate }}",
+      "isNew": true,
+      "detailLink": "https://uppsc.up.nic.in/PublicPages/com.aspx?ID=CP",
+      "applyLink": "https://uppsc.up.nic.in/PublicPages/com.aspx?ID=CP",
+      "posts": "See notification",
+      "deadline": "See notification"
+    },
+    {
+      "id": 206,
+      "org": "UPPSC",
+      "title": "{{'SetupofCommission_HM' | translate }}",
+      "isNew": true,
+      "detailLink": "https://uppsc.up.nic.in/PublicPages/com.aspx?ID=CC",
+      "applyLink": "https://uppsc.up.nic.in/PublicPages/com.aspx?ID=CC",
+      "posts": "See notification",
+      "deadline": "See notification"
+    },
+    {
+      "id": 207,
+      "org": "UPPSC",
+      "title": "{{'OrganisationStructure_HM' | translate }}",
+      "isNew": true,
+      "detailLink": "https://uppsc.up.nic.in/PublicPages/com.aspx?ID=OS",
+      "applyLink": "https://uppsc.up.nic.in/PublicPages/com.aspx?ID=OS",
+      "posts": "See notification",
+      "deadline": "See notification"
+    },
+    {
+      "id": 208,
+      "org": "UPPSC",
+      "title": "{{'FunctionCommission_HM' | translate }}",
+      "isNew": true,
+      "detailLink": "https://uppsc.up.nic.in/PublicPages/com.aspx?ID=FC",
+      "applyLink": "https://uppsc.up.nic.in/PublicPages/com.aspx?ID=FC",
+      "posts": "See notification",
+      "deadline": "See notification"
+    },
+    {
+      "id": 209,
+      "org": "UPPSC",
+      "title": "{{'CitizensCharter_HM' | translate }}",
+      "isNew": true,
+      "detailLink": "https://uppsc.up.nic.in/PublicPages/com.aspx?ID=CZ",
+      "applyLink": "https://uppsc.up.nic.in/PublicPages/com.aspx?ID=CZ",
+      "posts": "See notification",
+      "deadline": "See notification"
+    },
+    {
+      "id": 210,
+      "org": "UPPSC",
+      "title": "{{'Examinations_HM' | translate }}",
+      "isNew": true,
+      "detailLink": "https://uppsc.up.nic.in/#",
+      "applyLink": "https://uppsc.up.nic.in/#",
+      "posts": "See notification",
+      "deadline": "See notification"
+    },
+    {
+      "id": 211,
+      "org": "UPPSC",
+      "title": "{{'ActiveExam_HM' | translate }}",
+      "isNew": true,
+      "detailLink": "https://uppsc.up.nic.in/FooterPages/Upcoming-Exams",
+      "applyLink": "https://uppsc.up.nic.in/FooterPages/Upcoming-Exams",
+      "posts": "See notification",
+      "deadline": "See notification"
+    },
+    {
+      "id": 212,
+      "org": "UPPSC",
+      "title": "{{'ForthcomExam_HM' | translate }}",
+      "isNew": true,
+      "detailLink": "https://uppsc.up.nic.in/FooterPages/Upcoming-Exams",
+      "applyLink": "https://uppsc.up.nic.in/FooterPages/Upcoming-Exams",
+      "posts": "See notification",
+      "deadline": "See notification"
+    },
+    {
+      "id": 213,
+      "org": "UPPSC",
+      "title": "{{'ExamCal_HM' | translate }}",
+      "isNew": true,
+      "detailLink": "https://uppsc.up.nic.in/PublicPages/Examinations_Details.aspx?ID=EC",
+      "applyLink": "https://uppsc.up.nic.in/PublicPages/Examinations_Details.aspx?ID=EC",
+      "posts": "See notification",
+      "deadline": "See notification"
+    },
+    {
+      "id": 214,
+      "org": "UPPSC",
+      "title": "{{'DebardAppList_HM' | translate }}",
+      "isNew": true,
+      "detailLink": "https://uppsc.up.nic.in/PublicPages/ReptDebardList.aspx?ID=dcl",
+      "applyLink": "https://uppsc.up.nic.in/PublicPages/ReptDebardList.aspx?ID=dcl",
+      "posts": "See notification",
+      "deadline": "See notification"
+    },
+    {
+      "id": 215,
+      "org": "UPPSC",
+      "title": "{{'DebardECList_HM' | translate }}",
+      "isNew": true,
+      "detailLink": "https://uppsc.up.nic.in/PublicPages/ReptDebardList.aspx?ID=decl",
+      "applyLink": "https://uppsc.up.nic.in/PublicPages/ReptDebardList.aspx?ID=decl",
+      "posts": "See notification",
+      "deadline": "See notification"
+    },
+    {
+      "id": 216,
+      "org": "UPPSC",
+      "title": "{{'Recruitment_HM' | translate }}",
+      "isNew": true,
+      "detailLink": "https://uppsc.up.nic.in/#",
+      "applyLink": "https://uppsc.up.nic.in/#",
+      "posts": "See notification",
+      "deadline": "See notification"
+    },
+    {
+      "id": 217,
+      "org": "UPPSC",
+      "title": "{{'OnlineNotifications_HM' | translate }}",
+      "isNew": true,
+      "detailLink": "https://uppsc.up.nic.in/CandidatePages/Notifications.aspx",
+      "applyLink": "https://uppsc.up.nic.in/CandidatePages/Notifications.aspx",
+      "posts": "See notification",
+      "deadline": "See notification"
+    },
+    {
+      "id": 218,
+      "org": "UPPSC",
+      "title": "{{'ApplyOnline_HM' | translate }}",
+      "isNew": true,
+      "detailLink": "https://uppsc.up.nic.in/CandidatePages/Notifications.aspx",
+      "applyLink": "https://uppsc.up.nic.in/CandidatePages/Notifications.aspx",
+      "posts": "See notification",
+      "deadline": "See notification"
+    },
+    {
+      "id": 219,
+      "org": "UPPSC",
+      "title": "{{'InterviewOnly_HM' | translate }}",
+      "isNew": true,
+      "detailLink": "https://uppsc.up.nic.in/PublicPages/Recruitment_Details.aspx?ID=IO",
+      "applyLink": "https://uppsc.up.nic.in/PublicPages/Recruitment_Details.aspx?ID=IO",
+      "posts": "See notification",
+      "deadline": "See notification"
+    },
+    {
+      "id": 220,
+      "org": "UPPSC",
+      "title": "{{'ScreeningTestInt_HM' | translate }}",
+      "isNew": true,
+      "detailLink": "https://uppsc.up.nic.in/PublicPages/Recruitment_Details.aspx?ID=SI",
+      "applyLink": "https://uppsc.up.nic.in/PublicPages/Recruitment_Details.aspx?ID=SI",
+      "posts": "See notification",
+      "deadline": "See notification"
+    },
+    {
+      "id": 221,
+      "org": "UPPSC",
+      "title": "{{'ExaminationOnly_HM' | translate }}",
+      "isNew": true,
+      "detailLink": "https://uppsc.up.nic.in/PublicPages/Recruitment_Details.aspx?ID=EO",
+      "applyLink": "https://uppsc.up.nic.in/PublicPages/Recruitment_Details.aspx?ID=EO",
+      "posts": "See notification",
+      "deadline": "See notification"
+    },
+    {
+      "id": 222,
+      "org": "UPPSC",
+      "title": "{{'ExaminationAndInterviewOnly_HM' | translate }}",
+      "isNew": true,
+      "detailLink": "https://uppsc.up.nic.in/PublicPages/Recruitment_Details.aspx?ID=EI",
+      "applyLink": "https://uppsc.up.nic.in/PublicPages/Recruitment_Details.aspx?ID=EI",
+      "posts": "See notification",
+      "deadline": "See notification"
+    },
+    {
+      "id": 223,
+      "org": "UPPSC",
+      "title": "{{'PreExamMainExamInt_HM' | translate }}",
+      "isNew": true,
+      "detailLink": "https://uppsc.up.nic.in/PublicPages/Recruitment_Details.aspx?ID=EIM",
+      "applyLink": "https://uppsc.up.nic.in/PublicPages/Recruitment_Details.aspx?ID=EIM",
+      "posts": "See notification",
+      "deadline": "See notification"
+    },
+    {
+      "id": 224,
+      "org": "UPPSC",
+      "title": "{{'ExpertsCorner_HM' | translate }}",
+      "isNew": true,
+      "detailLink": "https://uppsc.up.nic.in/#",
+      "applyLink": "https://uppsc.up.nic.in/#",
+      "posts": "See notification",
+      "deadline": "See notification"
+    },
+    {
+      "id": 225,
+      "org": "UPPSC",
+      "title": "{{'ExpertForm_HM' | translate }}",
+      "isNew": true,
+      "detailLink": "https://uppsc.up.nic.in/ExpertCorner/Frm_ExpertBioData.aspx",
+      "applyLink": "https://uppsc.up.nic.in/ExpertCorner/Frm_ExpertBioData.aspx",
+      "posts": "See notification",
+      "deadline": "See notification"
+    },
+    {
+      "id": 226,
+      "org": "UPPSC",
+      "title": "{{'CandidateCorner_HM' | translate }}",
+      "isNew": true,
+      "detailLink": "https://uppsc.up.nic.in/#",
+      "applyLink": "https://uppsc.up.nic.in/#",
+      "posts": "See notification",
+      "deadline": "See notification"
+    },
+    {
+      "id": 227,
+      "org": "UPPSC",
+      "title": "{{'AppDashBoard_HM' | translate }}",
+      "isNew": true,
+      "detailLink": "https://uppsc.up.nic.in/CandidatePages/OTRAppForm/Applicant_OtrAuthentication.aspx?WEqGEem9m0+8Y4tNQqJiNYurmbKsjJR/fgSlThSTh6o=",
+      "applyLink": "https://uppsc.up.nic.in/CandidatePages/OTRAppForm/Applicant_OtrAuthentication.aspx?WEqGEem9m0+8Y4tNQqJiNYurmbKsjJR/fgSlThSTh6o=",
+      "posts": "See notification",
+      "deadline": "See notification"
+    },
+    {
+      "id": 228,
+      "org": "UPPSC",
+      "title": "{{'CheckApp_HM' | translate }}",
+      "isNew": true,
+      "detailLink": "https://uppsc.up.nic.in/CandidatePages/Status/ViewStatus.aspx",
+      "applyLink": "https://uppsc.up.nic.in/CandidatePages/Status/ViewStatus.aspx",
+      "posts": "See notification",
+      "deadline": "See notification"
+    },
+    {
+      "id": 229,
+      "org": "UPPSC",
+      "title": "{{'DwldAdminCard_HM' | translate }}",
+      "isNew": true,
+      "detailLink": "https://uppsc.up.nic.in/CandidatePages/Advertismentwise_DownloadDocument.aspx?inptprmtr=ac",
+      "applyLink": "https://uppsc.up.nic.in/CandidatePages/Advertismentwise_DownloadDocument.aspx?inptprmtr=ac",
+      "posts": "See notification",
+      "deadline": "See notification"
+    },
+    {
+      "id": 340,
+      "org": "RRB Bhubaneswar",
+      "title": "Main Content",
+      "isNew": true,
+      "detailLink": "https://www.rrbbbs.gov.in/#main",
+      "applyLink": "https://www.rrbbbs.gov.in/#main",
+      "posts": "See notification",
+      "deadline": "See notification"
+    },
+    {
+      "id": 341,
+      "org": "RRB Bhubaneswar",
+      "title": "Organization Structure",
+      "isNew": true,
+      "detailLink": "https://www.rrbbbs.gov.in/page.php?no=TWc9PQ==",
+      "applyLink": "https://www.rrbbbs.gov.in/page.php?no=TWc9PQ==",
+      "posts": "See notification",
+      "deadline": "See notification"
+    },
+    {
+      "id": 342,
+      "org": "RRB Bhubaneswar",
+      "title": "Vision & Mission",
+      "isNew": true,
+      "detailLink": "https://www.rrbbbs.gov.in/page.php?no=T0E9PQ==",
+      "applyLink": "https://www.rrbbbs.gov.in/page.php?no=T0E9PQ==",
+      "posts": "See notification",
+      "deadline": "See notification"
+    },
+    {
+      "id": 345,
+      "org": "RRB Bhubaneswar",
+      "title": "CEN 07/2024 : Schedule for DV & Medical Examination against CEN No. 07/2024 (Post-Jr. Translator/Hindi and Staff & Welfare Inspector).",
+      "isNew": true,
+      "detailLink": "https://www.rrbbbs.gov.in/documentexplorer.php?prmt=TVRneE9RPT0='",
+      "applyLink": "https://www.rrbbbs.gov.in/documentexplorer.php?prmt=TVRneE9RPT0='",
+      "posts": "See notification",
+      "deadline": "See notification"
+    },
+    {
+      "id": 347,
+      "org": "RRB Bhubaneswar",
+      "title": "View All Notices",
+      "isNew": true,
+      "detailLink": "https://www.rrbbbs.gov.in/notice.php",
+      "applyLink": "https://www.rrbbbs.gov.in/notice.php",
+      "posts": "See notification",
+      "deadline": "See notification"
+    },
+    {
+      "id": 348,
+      "org": "RRB Bhubaneswar",
+      "title": "Notifications (CEN)",
+      "isNew": true,
+      "detailLink": "https://www.rrbbbs.gov.in/notifications.php",
+      "applyLink": "https://www.rrbbbs.gov.in/notifications.php",
+      "posts": "See notification",
+      "deadline": "See notification"
+    },
+    {
+      "id": 350,
+      "org": "RRB Bhubaneswar",
+      "title": "Public Disclosure of Marks",
+      "isNew": true,
+      "detailLink": "https://www.rrbbbs.gov.in/marksdisclosure.php",
+      "applyLink": "https://www.rrbbbs.gov.in/marksdisclosure.php",
+      "posts": "See notification",
+      "deadline": "See notification"
+    },
+    {
+      "id": 351,
+      "org": "RRB Bhubaneswar",
+      "title": "Scheduled Programmes",
+      "isNew": true,
+      "detailLink": "https://www.rrbbbs.gov.in/scheduledprograms.php",
+      "applyLink": "https://www.rrbbbs.gov.in/scheduledprograms.php",
+      "posts": "See notification",
+      "deadline": "See notification"
+    },
+    {
+      "id": 352,
+      "org": "RRB Bhubaneswar",
+      "title": "Knowledge Center",
+      "isNew": true,
+      "detailLink": "https://www.rrbbbs.gov.in/#",
+      "applyLink": "https://www.rrbbbs.gov.in/#",
+      "posts": "See notification",
+      "deadline": "See notification"
+    },
+    {
+      "id": 353,
+      "org": "RRB Bhubaneswar",
+      "title": "Document Verification Process",
+      "isNew": true,
+      "detailLink": "https://www.rrbbbs.gov.in/kcpage.php?no=Tmc9PQ==",
+      "applyLink": "https://www.rrbbbs.gov.in/kcpage.php?no=Tmc9PQ==",
+      "posts": "See notification",
+      "deadline": "See notification"
+    },
+    {
+      "id": 354,
+      "org": "RRB Bhubaneswar",
+      "title": "Recruitment Process",
+      "isNew": true,
+      "detailLink": "https://www.rrbbbs.gov.in/kcpage.php?no=TlE9PQ==",
+      "applyLink": "https://www.rrbbbs.gov.in/kcpage.php?no=TlE9PQ==",
+      "posts": "See notification",
+      "deadline": "See notification"
+    },
+    {
+      "id": 370,
+      "org": "RRB Chandigarh",
+      "title": "SKIP TO MAIN CONTENT",
+      "isNew": true,
+      "detailLink": "https://www.rrbcdg.gov.in/#SkipContent",
+      "applyLink": "https://www.rrbcdg.gov.in/#SkipContent",
+      "posts": "See notification",
+      "deadline": "See notification"
+    },
+    {
+      "id": 371,
+      "org": "RRB Chandigarh",
+      "title": "Social Media Links",
+      "isNew": true,
+      "detailLink": "https://www.rrbcdg.gov.in/javascript:void(0);",
+      "applyLink": "https://www.rrbcdg.gov.in/javascript:void(0);",
+      "posts": "See notification",
+      "deadline": "See notification"
+    },
+    {
+      "id": 372,
+      "org": "RRB Chandigarh",
+      "title": "Accessibility Links",
+      "isNew": true,
+      "detailLink": "https://www.rrbcdg.gov.in/javascript:void(0);",
+      "applyLink": "https://www.rrbcdg.gov.in/javascript:void(0);",
+      "posts": "See notification",
+      "deadline": "See notification"
+    },
+    {
+      "id": 373,
+      "org": "RRB Chandigarh",
+      "title": "Font Size Increase",
+      "isNew": true,
+      "detailLink": "https://www.rrbcdg.gov.in/#",
+      "applyLink": "https://www.rrbcdg.gov.in/#",
+      "posts": "See notification",
+      "deadline": "See notification"
+    },
+    {
+      "id": 374,
+      "org": "RRB Chandigarh",
+      "title": "Font Size Decrease",
+      "isNew": true,
+      "detailLink": "https://www.rrbcdg.gov.in/#",
+      "applyLink": "https://www.rrbcdg.gov.in/#",
+      "posts": "See notification",
+      "deadline": "See notification"
+    },
+    {
+      "id": 375,
+      "org": "RRB Chandigarh",
+      "title": "Text Spacing",
+      "isNew": true,
+      "detailLink": "https://www.rrbcdg.gov.in/#",
+      "applyLink": "https://www.rrbcdg.gov.in/#",
+      "posts": "See notification",
+      "deadline": "See notification"
+    },
+    {
+      "id": 376,
+      "org": "RRB Chandigarh",
+      "title": "High Contrast",
+      "isNew": true,
+      "detailLink": "https://www.rrbcdg.gov.in/#",
+      "applyLink": "https://www.rrbcdg.gov.in/#",
+      "posts": "See notification",
+      "deadline": "See notification"
+    },
+    {
+      "id": 377,
+      "org": "RRB Chandigarh",
+      "title": "Normal Contrast",
+      "isNew": true,
+      "detailLink": "https://www.rrbcdg.gov.in/#",
+      "applyLink": "https://www.rrbcdg.gov.in/#",
+      "posts": "See notification",
+      "deadline": "See notification"
+    },
+    {
+      "id": 378,
+      "org": "RRB Chandigarh",
+      "title": "Highlight Links",
+      "isNew": true,
+      "detailLink": "https://www.rrbcdg.gov.in/#",
+      "applyLink": "https://www.rrbcdg.gov.in/#",
+      "posts": "See notification",
+      "deadline": "See notification"
+    },
+    {
+      "id": 379,
+      "org": "RRB Chandigarh",
+      "title": "Screen Reader",
+      "isNew": true,
+      "detailLink": "https://www.rrbcdg.gov.in/#",
+      "applyLink": "https://www.rrbcdg.gov.in/#",
+      "posts": "See notification",
+      "deadline": "See notification"
+    },
+    {
+      "id": 380,
+      "org": "RRB Chandigarh",
+      "title": "&nbsp &nbsp भारत सरकार , Govt of India",
+      "isNew": true,
+      "detailLink": "https://www.india.gov.in/",
+      "applyLink": "https://www.india.gov.in/",
+      "posts": "See notification",
+      "deadline": "See notification"
+    },
+    {
+      "id": 381,
+      "org": "RRB Chandigarh",
+      "title": "रेल मंत्रालय , Ministry of Railways",
+      "isNew": true,
+      "detailLink": "https://indianrailways.gov.in/",
+      "applyLink": "https://indianrailways.gov.in/",
+      "posts": "See notification",
+      "deadline": "See notification"
+    },
+    {
+      "id": 382,
+      "org": "RRB Chandigarh",
+      "title": "रेलवे भर्ती बोर्ड, चंडीगढ़ Railway Recruitment Board, Chandigarh",
+      "isNew": true,
+      "detailLink": "https://www.rrbcdg.gov.in/index.php",
+      "applyLink": "https://www.rrbcdg.gov.in/index.php",
+      "posts": "See notification",
+      "deadline": "See notification"
+    },
+    {
+      "id": 383,
+      "org": "RRB Chandigarh",
+      "title": "RRB Office, Railway Colony, Near Railway Station, Chandigarh 160002",
+      "isNew": true,
+      "detailLink": "https://www.rrbcdg.gov.in/ https://www.google.com/maps/place/Railway+Recruitment+Board+Chandigarh/@30.6998079,76.8216591,15.75z/data=!4m6!3m5!1s0x390fed164b894d71:0x2201a5d5fe2eee1!8m2!3d30.7019169!4d76.8312717!16s%2Fg%2F11gwmk7jhh?entry=ttu&g_ep=EgoyMDI1MDUwNy4wIKXMDSoASAFQAw%3D%3D",
+      "applyLink": "https://www.rrbcdg.gov.in/ https://www.google.com/maps/place/Railway+Recruitment+Board+Chandigarh/@30.6998079,76.8216591,15.75z/data=!4m6!3m5!1s0x390fed164b894d71:0x2201a5d5fe2eee1!8m2!3d30.7019169!4d76.8312717!16s%2Fg%2F11gwmk7jhh?entry=ttu&g_ep=EgoyMDI1MDUwNy4wIKXMDSoASAFQAw%3D%3D",
+      "posts": "See notification",
+      "deadline": "See notification"
+    },
+    {
+      "id": 384,
+      "org": "RRB Chandigarh",
+      "title": "Recruitment Notices",
+      "isNew": true,
+      "detailLink": "https://www.rrbcdg.gov.in/employment-notices.php",
+      "applyLink": "https://www.rrbcdg.gov.in/employment-notices.php",
+      "posts": "See notification",
+      "deadline": "See notification"
+    }
+  ],
   "admitCards": [],
-  "results": []
+  "results": [
+    {
+      "id": 346,
+      "org": "RRB Bhubaneswar",
+      "title": "CEN 07/2024 : CBT result & cut off marks and list of candidates shortlisted for Document Verification & Medical Exam for the post of Jr. Translator (Hindi) and Staff & Welfare Inspector.",
+      "isNew": true,
+      "detailLink": "https://www.rrbbbs.gov.in/documentexplorer.php?prmt=TVRneE9BPT0='",
+      "downloadLink": "https://www.rrbbbs.gov.in/documentexplorer.php?prmt=TVRneE9BPT0='"
+    },
+    {
+      "id": 349,
+      "org": "RRB Bhubaneswar",
+      "title": "Results & Cutoffs",
+      "isNew": true,
+      "detailLink": "https://www.rrbbbs.gov.in/results.php",
+      "downloadLink": "https://www.rrbbbs.gov.in/results.php"
+    }
+  ],
+  "answerKeys": [
+    {
+      "id": 343,
+      "org": "RRB Bhubaneswar",
+      "title": "CEN 02/2025 : Technician Grade I (Signal) - Notice for viewing and downloading questions and responses with option to raise objections against questions and answer keys.(Hindi)",
+      "isNew": true,
+      "detailLink": "https://www.rrbbbs.gov.in/documentexplorer.php?prmt=TVRneU1nPT0='",
+      "downloadLink": "https://www.rrbbbs.gov.in/documentexplorer.php?prmt=TVRneU1nPT0='"
+    },
+    {
+      "id": 344,
+      "org": "RRB Bhubaneswar",
+      "title": "CEN 02/2025 : Technician Grade I (Signal) - Notice for viewing and downloading questions and responses with option to raise objections against questions and answer keys.(English)",
+      "isNew": true,
+      "detailLink": "https://www.rrbbbs.gov.in/documentexplorer.php?prmt=TVRneU1BPT0='",
+      "downloadLink": "https://www.rrbbbs.gov.in/documentexplorer.php?prmt=TVRneU1BPT0='"
+    }
+  ],
+  "last_updated": "2026-03-29T11:37:56.646019+00:00"
 }
