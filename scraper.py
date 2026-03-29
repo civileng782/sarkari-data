@@ -98,6 +98,14 @@ def parse_notices(
         or text.lower() in SKIP
     ):
         continue
+        # Skip navigation-heavy words
+    BAD_WORDS = [
+        "about", "contact", "home", "login",
+        "register", "faq", "help", "policy"
+    ]
+
+    if any(word in text.lower() for word in BAD_WORDS):
+    continue
         if text.lower().strip() in SKIP:
             continue
         if text in seen:
