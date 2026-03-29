@@ -30,12 +30,22 @@ jobs:
           ls -la
           python scraper.py
 
-      - name: Commit and push if changed
+      -       - name: Commit and push safely
         run: |
           git config user.name "github-actions"
           git config user.email "actions@github.com"
-          git pull --rebase origin main
+
+          # Fetch full history (fix shallow clone issues)
+          git fetch origin main
+
+          # Reset to latest remote (strong fix)
+          git reset --hard origin/main
+
+          # Add new changes
           git add jobs.json
-          git status
-          git diff --quiet || git commit -m "Auto update jobs data"
-          git push
+
+          # Commit only if changes exist
+          git diff --cached --quiet || git commit -m "Auto update jobs data"
+
+          # Push
+          git push origin main
