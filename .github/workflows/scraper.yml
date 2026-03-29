@@ -52,3 +52,5 @@ jobs:
           else
             echo "No changes detected in jobs.json. Skipping push."
           fi
+      - name: Trigger WordPress Import
+        run: curl "https://aihub.cooo.in/wp-json/jobs/v1/import?key=mysecret123"
