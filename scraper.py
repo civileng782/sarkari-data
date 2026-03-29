@@ -157,7 +157,7 @@ def main():
     sources = [
         ("https://ssc.gov.in/",        "SSC"),
         ("https://uppsc.up.nic.in/",   "UPPSC"),
-        ("https://rrbapply.gov.in/",   "RRB Central"),
+        ("https://rrbbs.gov.in/",   "RRB Bhubaneswar"),
         ("https://www.rrbcdg.gov.in/", "RRB Chandigarh"),
     ]
 
