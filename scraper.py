@@ -41,7 +41,7 @@ def fetch_page_hybrid(url: str) -> BeautifulSoup | None:
     """Tries static fetch first, falls back to Playwright if JS-heavy."""
     try:
         log.info("Fetching (Static): %s", url)             # Fix 5: % style logging
-        resp = requests.get(url, headers=HEADERS, timeout=15)
+        resp = requests.get(url, headers=HEADERS, timeout=TIMEOUT)
         resp.raise_for_status()
         soup = BeautifulSoup(resp.text, "lxml")
         if len(soup.find_all("a")) > 10:
