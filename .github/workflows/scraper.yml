@@ -35,7 +35,7 @@ jobs:
           pip install -r requirements.txt        # Fix 2: single install from requirements.txt only
 
       - name: Install Playwright browser
-        run: python -m playwright install --with-deps chromium   # Fix 1+3: sudo-safe, atomic
+        run:  playwright install --with-deps chromium   # Fix 1+3: sudo-safe, atomic
 
       - name: Run scraper
         run: python scraper.py
