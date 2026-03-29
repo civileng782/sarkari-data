@@ -1,5 +1,6 @@
 env:
   FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: true
+
 name: Update Job Data
 
 on:
@@ -23,7 +24,7 @@ jobs:
         with:
           python-version: "3.10"
 
-      - name: Install dependencies (safe step)
+      - name: Install dependencies
         run: |
           python -m pip install --upgrade pip
 
@@ -32,21 +33,19 @@ jobs:
           ls -la
           python scraper.py
 
-      -       - name: Commit and push safely
+      - name: Commit and push safely
         run: |
           git config user.name "github-actions"
           git config user.email "actions@github.com"
 
-          # Fetch full history (fix shallow clone issues)
+          # Sync with remote
           git fetch origin main
-
-          # Reset to latest remote (strong fix)
           git reset --hard origin/main
 
-          # Add new changes
+          # Add changes
           git add jobs.json
 
-          # Commit only if changes exist
+          # Commit if changed
           git diff --cached --quiet || git commit -m "Auto update jobs data"
 
           # Push
