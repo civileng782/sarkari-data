@@ -77,19 +77,47 @@ def classify(title: str) -> str:
 
 def parse_notices(soup: BeautifulSoup, org: str, base_url: str) -> list:
     found = []
+
     SKIP = {"home", "login", "contact", "about", "register", "hindi", "english"}
+
+    BAD_PATTERNS = ["{{", "}}", "translate", "javascript:void", "#"]
+
+    BAD_WORDS = [
+        "about", "contact", "home", "login", "register",
+        "faq", "help", "policy", "terms", "privacy"
+    ]
+
+    seen_links = set()
 
     for tag in soup.find_all("a", href=True):
         text = tag.get_text(" ", strip=True)
         href = tag["href"]
-        if not text or len(text) < 12 or any(s in text.lower() for s in SKIP):
+
+        # ─── FILTERING LOGIC ─────────────────────
+        if (
+            not text
+            or len(text) < 20                     # stronger threshold
+            or any(p in text for p in BAD_PATTERNS)
+            or any(word in text.lower() for word in BAD_WORDS)
+            or any(s in text.lower() for s in SKIP)
+            or href.startswith("#")
+        ):
             continue
+
+        full_link = urljoin(base_url, href)
+
+        # ─── DEDUPLICATION ─────────────────────
+        if full_link in seen_links:
+            continue
+        seen_links.add(full_link)
+
         found.append({
             "org": org,
             "title": text,
-            "link": urljoin(base_url, href),
+            "link": full_link,
             "category": classify(text),
         })
+
     return found
 
 
