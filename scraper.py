@@ -87,8 +87,17 @@ def parse_notices(
         text = tag.get_text(" ", strip=True)
         href = tag["href"]
 
-        if not text or len(text) < 12:
-            continue
+        # Skip junk / UI / Angular / navigation
+    if (
+        not text
+        or len(text) < 15
+        or "{{" in text
+        or "}}" in text
+        or "translate" in text.lower()
+        or text.lower().startswith("click")
+        or text.lower() in SKIP
+    ):
+        continue
         if text.lower().strip() in SKIP:
             continue
         if text in seen:
