@@ -9,12 +9,15 @@ jobs:
   update-data:
     runs-on: ubuntu-latest
 
+    permissions:
+      contents: write   # ✅ FIX push error
+
     steps:
       - name: Checkout repo
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4   # ✅ updated version
 
       - name: Setup Python
-        uses: actions/setup-python@v4
+        uses: actions/setup-python@v5   # ✅ updated version
         with:
           python-version: "3.10"
 
@@ -26,5 +29,5 @@ jobs:
           git config user.name "github-actions"
           git config user.email "actions@github.com"
           git add jobs.json
-          git commit -m "Auto update jobs data" || echo "No changes"
+          git diff --quiet && echo "No changes" || git commit -m "Auto update jobs data"
           git push
