@@ -1,21 +1,24 @@
 import json
 import logging
+import sys
 from datetime import datetime, timezone
+from urllib.parse import urljoin
 
 import requests
 from bs4 import BeautifulSoup
+from playwright.sync_api import sync_playwright
 
 # ─── Config ───────────────────────────────────────────────────────────────────
 
 OUTPUT_FILE = "jobs.json"
-TIMEOUT = 15
+TIMEOUT = 20  # Seconds
 HEADERS = {
     "User-Agent": (
         "Mozilla/5.0 (Windows NT 10.0; Win64; x64) "
         "AppleWebKit/537.36 (KHTML, like Gecko) "
         "Chrome/122.0.0.0 Safari/537.36"
     ),
-    "Accept-Language": "en-IN,en;q=0.9,hi;q=0.8",
+    "Accept-Language": "en-US,en;q=0.9",
 }
 
 logging.basicConfig(
@@ -24,9 +27,10 @@ logging.basicConfig(
 )
 log = logging.getLogger(__name__)
 
-# ─── Helpers ──────────────────────────────────────────────────────────────────
+# ─── Core Logic ───────────────────────────────────────────────────────────────
 
 def load_existing() -> dict:
+    """Loads previous results to avoid losing data if a scrape fails."""
     try:
         with open(OUTPUT_FILE, encoding="utf-8") as f:
             return json.load(f)
@@ -34,13 +38,38 @@ def load_existing() -> dict:
         return {"vacancies": [], "admitCards": [], "results": [], "answerKeys": []}
 
 
-def fetch_page(url: str) -> BeautifulSoup | None:
+def fetch_page_hybrid(url: str) -> BeautifulSoup | None:
+    """
+    Tries static requests first. If the page is empty/JS-heavy, 
+    falls back to Playwright.
+    """
+    # 1. Try Static Fetch
     try:
+        log.info(f"Fetching (Static): {url}")
         resp = requests.get(url, headers=HEADERS, timeout=TIMEOUT)
         resp.raise_for_status()
-        return BeautifulSoup(resp.text, "lxml")
-    except requests.RequestException as e:
-        log.warning("Could not fetch %s — %s", url, e)
+        soup = BeautifulSoup(resp.text, "lxml")
+        
+        # Check if we found substantial content
+        if len(soup.find_all("a")) > 10:
+            return soup
+        log.info(f"Page {url} appears JS-heavy. Switching to Playwright...")
+    except Exception as e:
+        log.warning(f"Static fetch failed for {url}: {e}")
+
+    # 2. Try Dynamic Fetch (Playwright)
+    try:
+        with sync_playwright() as p:
+            browser = p.chromium.launch(headless=True)
+            context = browser.new_context(user_agent=HEADERS["User-Agent"])
+            page = context.new_page()
+            # Wait for network to settle so JS content loads
+            page.goto(url, wait_until="networkidle", timeout=TIMEOUT * 1000)
+            content = page.content()
+            browser.close()
+            return BeautifulSoup(content, "lxml")
+    except Exception as e:
+        log.error(f"Dynamic fetch also failed for {url}: {e}")
         return None
 
 
@@ -55,178 +84,108 @@ def classify(title: str) -> str:
     return "vacancies"
 
 
-def make_entry(uid: int, org: str, title: str, link: str, category: str) -> dict:
-    base = {"id": uid, "org": org, "title": title, "isNew": True, "detailLink": link}
-    if category == "vacancies":
-        base["applyLink"] = link
-        base["posts"] = "See notification"
-        base["deadline"] = "See notification"
-    else:
-        base["downloadLink"] = link
-    return base
-
-
-def parse_notices(
-    soup: BeautifulSoup,
-    org: str,
-    base_url: str,
-    uid_start: int,
-    limit: int = 30,
-) -> dict:
+def parse_notices(soup: BeautifulSoup, org: str, base_url: str, uid_start: int, limit: int = 20) -> dict:
     categories = {"vacancies": [], "admitCards": [], "results": [], "answerKeys": []}
-    seen: set[str] = set()
+    seen_links = set()
     uid = uid_start
-    total = 0
+    count = 0
 
-    SKIP = {
-        "home", "contact us", "login", "register", "hindi", "english",
-        "back", "more", "click here", "view more", "download", "notification",
-    }
+    SKIP_TEXTS = {"home", "login", "contact", "about", "register", "back", "more", "hindi", "english"}
 
     for tag in soup.find_all("a", href=True):
         text = tag.get_text(" ", strip=True)
         href = tag["href"]
 
-        # Skip junk / UI / Angular / navigation
-    if (
-        not text
-        or len(text) < 15
-        or "{{" in text
-        or "}}" in text
-        or "translate" in text.lower()
-        or text.lower().startswith("click")
-        or text.lower() in SKIP
-    ):
-        continue
-        # Skip navigation-heavy words
-    BAD_WORDS = [
-        "about", "contact", "home", "login",
-        "register", "faq", "help", "policy"
-    ]
-
-    if any(word in text.lower() for word in BAD_WORDS):
-    continue
-        if text.lower().strip() in SKIP:
+        # Filter out junk
+        if not text or len(text) < 12 or any(s in text.lower() for s in SKIP_TEXTS):
             continue
-        if text in seen:
+        
+        full_url = urljoin(base_url, href)
+        if full_url in seen_links:
             continue
-        seen.add(text)
+        seen_links.add(full_url)
 
-        if href.startswith("http"):
-            full_url = href
-        elif href.startswith("/"):
-            full_url = base_url.rstrip("/") + href
+        cat = classify(text)
+        entry = {
+            "id": uid,
+            "org": org,
+            "title": text,
+            "detailLink": full_url,
+            "isNew": True,
+            "date_found": datetime.now(timezone.utc).strftime("%Y-%m-%d")
+        }
+        
+        # Add category-specific keys
+        if cat == "vacancies":
+            entry.update({"applyLink": full_url, "deadline": "See Link"})
         else:
-            full_url = base_url.rstrip("/") + "/" + href
+            entry["downloadLink"] = full_url
 
-        category = classify(text)
-        entry = make_entry(uid, org, text, full_url, category)
-        categories[category].append(entry)
-
+        categories[cat].append(entry)
         uid += 1
-        total += 1
-        if total >= limit:
+        count += 1
+        if count >= limit:
             break
 
-    log.info(
-        "%s: %d notices — vacancies=%d, admitCards=%d, results=%d, answerKeys=%d",
-        org, total,
-        len(categories["vacancies"]),
-        len(categories["admitCards"]),
-        len(categories["results"]),
-        len(categories["answerKeys"]),
-    )
+    log.info(f"Processed {org}: {count} items found.")
     return categories
 
 
 # ─── Scrapers ─────────────────────────────────────────────────────────────────
 
 def scrape_ssc() -> dict:
-    empty = {"vacancies": [], "admitCards": [], "results": [], "answerKeys": []}
-    soup = fetch_page("https://ssc.gov.in/")
-    if soup is None:
-        log.warning("SSC: site unreachable — keeping existing data.")
-        return empty
-    return parse_notices(soup, "SSC", "https://ssc.gov.in", uid_start=100, limit=30)
-
+    soup = fetch_page_hybrid("https://ssc.gov.in/")
+    return parse_notices(soup, "SSC", "https://ssc.gov.in", 100) if soup else {}
 
 def scrape_uppsc() -> dict:
-    empty = {"vacancies": [], "admitCards": [], "results": [], "answerKeys": []}
-    soup = fetch_page("https://uppsc.up.nic.in/")
-    if soup is None:
-        log.warning("UPPSC: site unreachable — keeping existing data.")
-        return empty
-    return parse_notices(soup, "UPPSC", "https://uppsc.up.nic.in", uid_start=200, limit=30)
-
+    soup = fetch_page_hybrid("https://uppsc.up.nic.in/")
+    return parse_notices(soup, "UPPSC", "https://uppsc.up.nic.in", 200) if soup else {}
 
 def scrape_rrb() -> dict:
-    empty = {"vacancies": [], "admitCards": [], "results": [], "answerKeys": []}
     combined = {"vacancies": [], "admitCards": [], "results": [], "answerKeys": []}
-
+    # RRB has many regional sites; these are the main hubs
     sources = [
-        ("https://rrbapply.gov.in/",   "RRB",             300),
-        ("https://www.rrbbbs.gov.in/", "RRB Bhubaneswar", 340),
-        ("https://www.rrbcdg.gov.in/", "RRB Chandigarh",  370),
+        ("https://rrbapply.gov.in/", "RRB Central", 300),
+        ("https://www.rrbcdg.gov.in/", "RRB Chandigarh", 400)
     ]
-
-    all_unreachable = True
-    for url, org, uid_start in sources:
-        soup = fetch_page(url)
-        if soup is None:
-            log.warning("%s: unreachable, skipping.", org)
-            continue
-        all_unreachable = False
-        result = parse_notices(soup, org, url, uid_start=uid_start, limit=15)
-        for cat in combined:
-            combined[cat].extend(result.get(cat, []))
-
-    if all_unreachable:
-        log.warning("RRB: all sources unreachable — keeping existing data.")
-        return empty
-
+    for url, name, start_id in sources:
+        soup = fetch_page_hybrid(url)
+        if soup:
+            res = parse_notices(soup, name, url, start_id, limit=10)
+            for k in combined: combined[k].extend(res.get(k, []))
     return combined
 
+# ─── Merge & Main ─────────────────────────────────────────────────────────────
 
-# ─── Merge ────────────────────────────────────────────────────────────────────
+def merge_data(existing: dict, *new_sources: dict) -> dict:
+    final = {"vacancies": [], "admitCards": [], "results": [], "answerKeys": []}
+    for cat in final:
+        all_new = []
+        for src in new_sources:
+            all_new.extend(src.get(cat, []))
+        
+        # Update logic: If we got new data today, use it. 
+        # Otherwise, keep the old data so the JSON isn't empty.
+        final[cat] = all_new if all_new else existing.get(cat, [])
+    return final
 
-def merge(existing: dict, *sources: dict) -> dict:
-    merged = {"vacancies": [], "admitCards": [], "results": [], "answerKeys": []}
-    for category in merged:
-        fresh = []
-        for source in sources:
-            fresh.extend(source.get(category, []))
-        merged[category] = fresh if fresh else existing.get(category, [])
-    return merged
-
-
-# ─── Main ─────────────────────────────────────────────────────────────────────
-
-def main() -> None:
+def main():
+    log.info("Starting Job Scraper...")
     existing = load_existing()
-    log.info("Loaded existing jobs.json as fallback.")
-
-    ssc_data   = scrape_ssc()
-    uppsc_data = scrape_uppsc()
-    rrb_data   = scrape_rrb()
-
-    data = merge(existing, ssc_data, uppsc_data, rrb_data)
-    data["last_updated"] = datetime.now(timezone.utc).isoformat()
-
+    
+    ssc = scrape_ssc()
+    uppsc = scrape_uppsc()
+    rrb = scrape_rrb()
+    
+    final_data = merge_data(existing, ssc, uppsc, rrb)
+    final_data["last_updated"] = datetime.now(timezone.utc).isoformat()
+    
     try:
         with open(OUTPUT_FILE, "w", encoding="utf-8") as f:
-            json.dump(data, f, indent=2, ensure_ascii=False)
-        log.info("jobs.json written successfully.")
-        log.info(
-            "Final counts — vacancies: %d | admitCards: %d | results: %d | answerKeys: %d",
-            len(data["vacancies"]),
-            len(data["admitCards"]),
-            len(data["results"]),
-            len(data["answerKeys"]),
-        )
-    except (OSError, ValueError) as e:
-        log.error("Failed to write jobs.json: %s", e)
-        raise SystemExit(1)
-
+            json.dump(final_data, f, indent=2, ensure_ascii=False)
+        log.info(f"Successfully saved to {OUTPUT_FILE}")
+    except Exception as e:
+        log.error(f"Save failed: {e}")
 
 if __name__ == "__main__":
     main()
