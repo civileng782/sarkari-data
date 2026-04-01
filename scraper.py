@@ -1,6 +1,7 @@
 import json
 import logging
 import os
+import re
 from datetime import datetime, timezone, timedelta
 from urllib.parse import urljoin
 
@@ -10,161 +11,206 @@ from playwright.sync_api import sync_playwright
 
 # ─── Config ───────────────────────────────────────────────────────────────────
 
-OUTPUT_FILE = "jobs.json"
-TIMEOUT = 45
-MAX_ITEMS_PER_CAT = 50
-HEADERS = {
-    "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36",
+OUTPUT_FILE  = "jobs.json"
+TIMEOUT      = 45
+MAX_PER_CAT  = 50
+HEADERS      = {
+    "User-Agent":      "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 "
+                       "(KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36",
     "Accept-Language": "en-US,en;q=0.9,hi;q=0.8",
 }
+
+# Canonical category keys used everywhere (scraper → API → WordPress)
+CATEGORIES = ["vacancy", "admit", "result", "answer"]
 
 logging.basicConfig(level=logging.INFO, format="%(asctime)s [%(levelname)s] %(message)s")
 log = logging.getLogger(__name__)
 
-# ─── Core Logic ───────────────────────────────────────────────────────────────
+# ─── Sources ──────────────────────────────────────────────────────────────────
+
+SOURCES = [
+    ("https://ssc.gov.in/",            "SSC"),
+    ("https://uppsc.up.nic.in/",       "UPPSC"),
+    ("https://upsc.gov.in/",           "UPSC"),
+    ("https://www.ibps.in/",           "IBPS"),
+    ("https://www.rrbbbs.gov.in/",     "RRB Bhubaneswar"),
+    ("https://www.rrbcdg.gov.in/",     "RRB Chandigarh"),
+    ("https://www.rrbmumbai.gov.in/",  "RRB Mumbai"),
+    ("https://www.rrbald.gov.in/",     "RRB Allahabad"),
+    ("https://www.rpfonlinereg.org/",  "EPFO / RPF"),
+    ("https://nta.ac.in/",             "NTA"),
+]
+
+# Pre-compiled date pattern — compiled once at module load, not per-call
+_DATE_RE = re.compile(r"\b\d{1,2}[/-]\d{1,2}[/-]\d{2,4}\b")
+
+# ─── Helpers ──────────────────────────────────────────────────────────────────
 
 def load_existing() -> dict:
+    """Load jobs.json if it exists, ensuring all category keys are present."""
     if os.path.exists(OUTPUT_FILE):
         try:
             with open(OUTPUT_FILE, "r", encoding="utf-8") as f:
                 data = json.load(f)
-                for cat in ["vacancies", "admitCards", "results", "answerKeys"]:
-                    if cat not in data:
-                        data[cat] = []
-                return data
-        except Exception:
-            pass
-    return {"vacancies": [], "admitCards": [], "results": [], "answerKeys": []}
+            for cat in CATEGORIES:
+                data.setdefault(cat, [])
+            return data
+        except Exception as exc:
+            log.warning("Could not load existing data: %s", exc)
+    return {cat: [] for cat in CATEGORIES}
 
 
-def fetch_page_hybrid(url: str) -> BeautifulSoup | None:
-    """Tries static fetch first, falls back to Playwright if JS-heavy."""
+def fetch_page(url: str):
+    """Static fetch → Playwright fallback."""
     try:
-        log.info("Fetching (Static): %s", url)
+        log.info("Fetching (static): %s", url)
         resp = requests.get(url, headers=HEADERS, timeout=TIMEOUT)
         resp.raise_for_status()
         soup = BeautifulSoup(resp.text, "lxml")
         if len(soup.find_all("a")) > 10:
             return soup
-    except Exception as e:
-        log.warning("Static failed for %s: %s", url, e)
+    except Exception as exc:
+        log.warning("Static fetch failed (%s): %s", url, exc)
 
     try:
-        log.info("Falling back to Playwright: %s", url)
-        with sync_playwright() as p:
-            browser = p.chromium.launch(headless=True)
-            context = browser.new_context(user_agent=HEADERS["User-Agent"])
-            page = context.new_page()
+        log.info("Playwright fallback: %s", url)
+        with sync_playwright() as pw:
+            browser = pw.chromium.launch(headless=True)
+            ctx     = browser.new_context(user_agent=HEADERS["User-Agent"])
+            page    = ctx.new_page()
             page.goto(url, wait_until="networkidle", timeout=TIMEOUT * 1000)
-            content = page.content()
+            html    = page.content()
             browser.close()
-            return BeautifulSoup(content, "lxml")
-    except Exception as e:
-        log.error("Hybrid fetch failed for %s: %s", url, e)
+        return BeautifulSoup(html, "lxml")
+    except Exception as exc:
+        log.error("Playwright failed (%s): %s", url, exc)
         return None
 
 
 def classify(title: str) -> str:
+    """Return canonical category key for a job notice title."""
     t = title.lower()
-    if any(k in t for k in ("admit card", "hall ticket", "call letter", "प्रवेश पत्र")):
-        return "admitCards"
-    if any(k in t for k in ("result", "merit list", "cut off", "scorecard", "परिणाम")):
-        return "results"
-    if any(k in t for k in ("answer key", "response sheet", "उत्तर कुंजी")):
-        return "answerKeys"
-    return "vacancies"
+    if any(k in t for k in ("admit card", "hall ticket", "call letter",
+                             "interview letter", "प्रवेश पत्र")):
+        return "admit"
+    if any(k in t for k in ("answer key", "response sheet", "answer sheet",
+                             "उत्तर कुंजी")):
+        return "answer"
+    if any(k in t for k in ("result", "merit list", "cut off", "cutoff",
+                             "scorecard", "final list", "परिणाम")):
+        return "result"
+    return "vacancy"
+
+
+# ─── Parser ───────────────────────────────────────────────────────────────────
+
+_SKIP_WORDS    = {"home", "login", "contact", "about", "register",
+                  "hindi", "english", "sitemap", "privacy"}
+_SKIP_PATTERNS = ["{{", "}}", "javascript:void", "#"]
+_SKIP_PHRASES  = ["about us", "contact us", "terms", "privacy policy",
+                  "faq", "help", "feedback", "careers"]
 
 
 def parse_notices(soup: BeautifulSoup, org: str, base_url: str) -> list:
+    """Extract job notice links from a parsed page."""
+    seen  = set()
     found = []
 
-    SKIP = {"home", "login", "contact", "about", "register", "hindi", "english"}
-    BAD_PATTERNS = ["{{", "}}", "translate", "javascript:void", "#"]
-    BAD_WORDS = ["about", "contact", "home", "login", "register",
-                 "faq", "help", "policy", "terms", "privacy"]
-    seen_links = set()
+    for tag in soup.find_all("a", href=True):
+        text = tag.get_text(" ", strip=True)
+        href = tag["href"].strip()
 
-    containers = soup.find_all(["table", "div", "section"])   # FIX: indented inside function
+        # ── Basic guards ──────────────────────────────────────────
+        if not text or len(text) < 18:
+            continue
+        if any(p in text for p in _SKIP_PATTERNS):
+            continue
+        if href.startswith(("#", "javascript:", "mailto:", "tel:")):
+            continue
+        text_lower = text.lower()
+        if any(w in text_lower for w in _SKIP_WORDS):
+            continue
+        if any(ph in text_lower for ph in _SKIP_PHRASES):
+            continue
 
-    for container in containers:                               # FIX: indented inside function
-        for tag in container.find_all("a", href=True):        # FIX: indented inside function
-            text = tag.get_text(" ", strip=True)
-            href = tag["href"]
+        full_link = urljoin(base_url, href)
+        if full_link in seen:
+            continue
+        seen.add(full_link)
 
-            if (
-                not text
-                or len(text) < 20
-                or any(p in text for p in BAD_PATTERNS)
-                or any(word in text.lower() for word in BAD_WORDS)
-                or any(s in text.lower() for s in SKIP)
-                or href.startswith("#")
-            ):
-                continue
+        cat = classify(text)
 
-            full_link = urljoin(base_url, href)
+        # ── Try to pull deadline hint from sibling/parent text ───
+        deadline = ""
+        parent   = tag.find_parent(["td", "li", "div", "tr"])
+        if parent:
+            raw   = parent.get_text(" ", strip=True)
+            dates = _DATE_RE.findall(raw)
+            if dates:
+                deadline = dates[-1]           # last date is usually the deadline
 
-            if full_link in seen_links:
-                continue
-            seen_links.add(full_link)
+        found.append({
+            "org":          org,
+            "title":        text,
+            "detailLink":   full_link,
+            "applyLink":    full_link if cat == "vacancy" else "",
+            "downloadLink": full_link if cat != "vacancy" else "",
+            "deadline":     deadline or "See Official Site",
+            "category":     cat,
+        })
 
-            found.append({
-                "org": org,
-                "title": text,
-                "link": full_link,
-                "category": classify(text),
-            })
-
-    return found                                               # FIX: indented inside function
+    return found
 
 
 # ─── Merge Engine ─────────────────────────────────────────────────────────────
 
-def merge_data(existing: dict, scraped_items: list) -> dict:
+def merge_data(existing: dict, scraped: list) -> dict:
     """
-    1. Checks for duplicates by link.
-    2. Keeps old jobs that are still relevant.
-    3. Flips 'isNew' to False after 3 days.
+    Merge freshly scraped items into existing data.
+    - Skips duplicates (by detailLink).
+    - Marks entries older than 3 days as not-new.
+    - Trims each category to MAX_PER_CAT.
     """
-    now = datetime.now(timezone.utc)
-    uid_counter = int(now.timestamp() * 1000)
+    now     = datetime.now(timezone.utc)
+    uid_ctr = int(now.timestamp() * 1000)
 
-    for item in scraped_items:
-        cat = item["category"]
-        link = item["link"]
+    for item in scraped:
+        cat  = item["category"]
+        link = item["detailLink"]
 
-        exists = any(old["detailLink"] == link for old in existing[cat])
-        if not exists:
-            new_entry = {
-                "id": uid_counter,
-                "org": item["org"],
-                "title": item["title"],
-                "detailLink": link,
-                "isNew": True,
-                "date_found": now.isoformat(),
-            }
-            uid_counter += 1
+        if any(e["detailLink"] == link for e in existing[cat]):
+            continue                        # already known
 
-            if cat == "vacancies":
-                new_entry.update({"applyLink": link, "deadline": "See Link"})
-            else:
-                new_entry["downloadLink"] = link
+        entry = {
+            "id":           uid_ctr,
+            "org":          item["org"],
+            "title":        item["title"],
+            "detailLink":   link,
+            "applyLink":    item["applyLink"],
+            "downloadLink": item["downloadLink"],
+            "deadline":     item["deadline"],
+            "isNew":        True,
+            "date_found":   now.isoformat(),
+            "category":     cat,
+        }
+        uid_ctr += 1
+        existing[cat].insert(0, entry)
 
-            existing[cat].insert(0, new_entry)
-
-    for cat in ["vacancies", "admitCards", "results", "answerKeys"]:
+    # Age-out isNew flag + trim
+    for cat in CATEGORIES:
         for entry in existing[cat]:
-            raw_date = entry.get("date_found")
-            if raw_date is None:
+            raw = entry.get("date_found")
+            if not raw:
                 entry["date_found"] = now.isoformat()
                 continue
             try:
-                found_date = datetime.fromisoformat(raw_date)
-                if now - found_date > timedelta(days=3):
+                found_dt = datetime.fromisoformat(raw)
+                if (now - found_dt) > timedelta(days=3):
                     entry["isNew"] = False
             except (ValueError, TypeError):
                 entry["date_found"] = now.isoformat()
 
-        existing[cat] = existing[cat][:MAX_ITEMS_PER_CAT]
+        existing[cat] = existing[cat][:MAX_PER_CAT]
 
     return existing
 
@@ -172,38 +218,30 @@ def merge_data(existing: dict, scraped_items: list) -> dict:
 # ─── Main ─────────────────────────────────────────────────────────────────────
 
 def main():
-    log.info("Starting Scraper...")
-    data = load_existing()
-
+    log.info("=== Sarkari Job Scraper starting ===")
+    data        = load_existing()
     all_scraped = []
-    sources = [
-        ("https://ssc.gov.in/",          "SSC"),
-        ("https://uppsc.up.nic.in/",     "UPPSC"),
-        ("https://www.rrbbbs.gov.in/",   "RRB Bhubaneswar"),  # www. prefix required
-        ("https://www.rrbcdg.gov.in/",   "RRB Chandigarh"),
-    ]
 
-    for url, org in sources:
-        soup = fetch_page_hybrid(url)
-        if soup:
-            all_scraped.extend(parse_notices(soup, org, url))
+    for url, org in SOURCES:
+        soup = fetch_page(url)
+        if not soup:
+            continue
+        items = parse_notices(soup, org, url)
+        log.info("  %-20s → %d notices found", org, len(items))
+        all_scraped.extend(items)
 
-    updated_data = merge_data(data, all_scraped)
-    updated_data["last_updated"] = datetime.now(timezone.utc).isoformat()
+    updated = merge_data(data, all_scraped)
+    updated["last_updated"] = datetime.now(timezone.utc).isoformat()
+
+    counts = {cat: len(updated[cat]) for cat in CATEGORIES}
+    log.info("Totals: %s", counts)
 
     try:
         with open(OUTPUT_FILE, "w", encoding="utf-8") as f:
-            json.dump(updated_data, f, indent=2, ensure_ascii=False)
-        log.info("Done! Updated %s", OUTPUT_FILE)
-        log.info(
-            "Final counts — vacancies: %d | admitCards: %d | results: %d | answerKeys: %d",
-            len(updated_data["vacancies"]),
-            len(updated_data["admitCards"]),
-            len(updated_data["results"]),
-            len(updated_data["answerKeys"]),
-        )
-    except (OSError, ValueError) as e:
-        log.error("Failed to write %s: %s", OUTPUT_FILE, e)
+            json.dump(updated, f, indent=2, ensure_ascii=False)
+        log.info("Saved → %s", OUTPUT_FILE)
+    except (OSError, ValueError) as exc:
+        log.error("Write failed: %s", exc)
         raise SystemExit(1)
 
 
