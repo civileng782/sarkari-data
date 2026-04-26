@@ -29,9 +29,9 @@ jobs:
           pip install requests beautifulsoup4 lxml playwright
 
       # ✅ CRITICAL FIX
-      - name: Install Playwright browsers (with deps)
+      - name: Install Playwright browsers (without deps)
         run: |
-          playwright install --with-deps chromium
+          playwright install chromium
 
       - name: Run scraper
         run: python scraper.py
