@@ -2,7 +2,6 @@ import json
 import logging
 import os
 import re
-import time
 import random
 from datetime import datetime, timezone, timedelta
 from urllib.parse import urljoin
@@ -14,9 +13,10 @@ from playwright.sync_api import sync_playwright
 
 # ─── CONFIG ─────────────────────────────────────────────
 
-OUTPUT_FILE = "jobs.json"
+OUTPUT_FILE      = "jobs.json"
+PROXY_CACHE_FILE = "proxy_cache.json"
+CACHE_MAX_AGE_HOURS = 24        # Cache expires after this many hours
 TIMEOUT = 60
-MAX_PER_CAT = 50
 
 urllib3.disable_warnings(urllib3.exceptions.InsecureRequestWarning)
 
@@ -25,8 +25,6 @@ HEADERS = {
     "Accept-Language": "en-IN,en;q=0.9,hi;q=0.8",
     "Referer": "https://www.google.co.in/",
 }
-
-CATEGORIES = ["vacancy", "admit", "result", "answer"]
 
 # ─── LOGGING ────────────────────────────────────────────
 
@@ -40,8 +38,6 @@ SOURCES = [
     ("https://ssc.gov.in/", "SSC"),
     ("https://uppsc.up.nic.in/", "UPPSC"),
 ]
-
-_DATE_RE = re.compile(r"\b\d{1,2}[/-]\d{1,2}[/-]\d{2,4}\b")
 
 # ─── PROXY SOURCES ─────────────────────────────────────
 
@@ -58,119 +54,156 @@ PROXY_SOURCES = [
     "https://www.proxy-list.download/api/v1/get?type=https",
 ]
 
-# ─── GEO CACHE ──────────────────────────────────────────
-
-GEO_CACHE = {}
-
-def is_indian_ip(ip):
-    if ip in GEO_CACHE:
-        return GEO_CACHE[ip]
-
-    try:
-        r = requests.get(
-            f"http://ip-api.com/json/{ip}?fields=countryCode",
-            timeout=5
-        )
-        result = r.json().get("countryCode") == "IN"
-        GEO_CACHE[ip] = result
-        return result
-    except:
-        GEO_CACHE[ip] = False
-        return False
-
 # ─── NORMALIZE PROXY ────────────────────────────────────
 
 def normalize_proxy(p):
     p = p.strip()
-
     if not p or ":" not in p:
         return None
-
     if "://" in p:
         p = p.split("://", 1)[1]
-
     if "@" in p:
         p = p.split("@")[-1]
-
     parts = p.split(":")
     if len(parts) != 2:
         return None
-
     ip, port = parts
-
     if not ip.replace(".", "").isdigit():
         return None
-
     try:
         port = int(port)
         if not (1 <= port <= 65535):
             return None
-    except:
+    except Exception:
         return None
-
     return f"http://{ip}:{port}"
 
-# ─── FETCH PROXIES ─────────────────────────────────────
+# ─── FETCH PROXIES (fast collection, no geo check here) ─
 
 def fetch_free_proxies():
     proxies = set()
-
     for url in PROXY_SOURCES:
         try:
             log.info("Fetching proxies from: %s", url)
             r = requests.get(url, timeout=10)
-
             if not r.text.strip():
-                log.warning("Empty proxy list from source")
+                log.warning("Empty response from: %s", url)
                 continue
-
             for line in r.text.splitlines():
                 proxy = normalize_proxy(line)
-                if not proxy:
-                    continue
-
-                ip = proxy.split("://")[1].split(":")[0]
-
-                if not is_indian_ip(ip):
-                    continue
-
-                proxies.add(proxy)
-
+                if proxy:
+                    proxies.add(proxy)
         except Exception as e:
-            log.warning("Proxy source failed: %s", e)
+            log.warning("Proxy source failed (%s): %s", url, e)
 
     proxies = list(proxies)
     random.shuffle(proxies)
-
-    log.info("Total UNIQUE Indian proxies: %d", len(proxies))
+    log.info("Collected %d raw unique proxies", len(proxies))
     return proxies
 
 # ─── PROXY POOL ─────────────────────────────────────────
 
-PROXY_POOL = []
+PROXY_POOL     = []
+WORKING_PROXIES = []   # Collects every proxy confirmed working this run → saved to cache at end
 
 def build_proxies(proxy):
     return {"http": proxy, "https": proxy}
 
+# ─── PROXY CACHE ─────────────────────────────────────────
+#
+# proxy_cache.json stores proxies confirmed working in the LAST run.
+# On startup we test these first — if any still work we skip scraping
+# the full proxy list entirely, saving ~30–60s of fetch + test time.
+# Cache auto-expires after CACHE_MAX_AGE_HOURS so stale proxies don't
+# accumulate forever.
+
+def load_proxy_cache():
+    """Return list of cached proxies if cache exists and hasn't expired."""
+    try:
+        with open(PROXY_CACHE_FILE, "r", encoding="utf-8") as f:
+            data = json.load(f)
+
+        saved_at = datetime.fromisoformat(data["saved_at"])
+        age      = datetime.now(timezone.utc) - saved_at
+        max_age  = timedelta(hours=CACHE_MAX_AGE_HOURS)
+
+        if age > max_age:
+            log.info("Proxy cache expired (%.1f hrs old, limit %d hrs) — will scrape fresh",
+                     age.total_seconds() / 3600, CACHE_MAX_AGE_HOURS)
+            return []
+
+        proxies = data.get("proxies", [])
+        log.info("Loaded %d cached proxies (%.1f hrs old)", len(proxies), age.total_seconds() / 3600)
+        return proxies
+
+    except FileNotFoundError:
+        log.info("No proxy cache found — will scrape fresh")
+        return []
+    except Exception as e:
+        log.warning("Could not read proxy cache: %s", e)
+        return []
+
+
+def save_proxy_cache(proxies):
+    """Persist this run's confirmed-working proxies for the next run."""
+    if not proxies:
+        log.info("No working proxies to cache.")
+        return
+    try:
+        data = {
+            "saved_at": datetime.now(timezone.utc).isoformat(),
+            "count":    len(proxies),
+            "proxies":  proxies,
+        }
+        with open(PROXY_CACHE_FILE, "w", encoding="utf-8") as f:
+            json.dump(data, f, indent=2)
+        log.info("Proxy cache saved → %s (%d proxies)", PROXY_CACHE_FILE, len(proxies))
+    except Exception as e:
+        log.warning("Failed to save proxy cache: %s", e)
+
+# ─── TEST PROXY + VERIFY INDIAN IP (single call) ────────
+#
+# Uses ip-api.com through the proxy itself.
+# One request does TWO things:
+#   1. Proves the proxy is alive and reachable
+#   2. Confirms the exit IP is in India (countryCode == "IN")
+# No httpbin.org. No separate is_indian_ip() call.
+
 def test_proxy(proxy):
     try:
         r = requests.get(
-            "http://httpbin.org/ip",
+            "http://ip-api.com/json?fields=countryCode",
             proxies=build_proxies(proxy),
             timeout=6
         )
         if r.status_code == 200:
-            log.info("[PROXY OK] %s", proxy)
-            return True
-    except:
+            country = r.json().get("countryCode", "")
+            if country == "IN":
+                log.info("[PROXY OK 🇮🇳] %s", proxy)
+                # Track every confirmed-working proxy for end-of-run cache save
+                if proxy not in WORKING_PROXIES:
+                    WORKING_PROXIES.append(proxy)
+                return True
+            else:
+                log.debug("[PROXY NOT IN] %s → %s", proxy, country)
+    except Exception:
         pass
-
-    log.warning("[PROXY FAIL] %s", proxy)
     return False
 
 def get_working_proxy():
     global PROXY_POOL
 
+    # ── Step 1: Try cached proxies from last run first ────
+    cached = load_proxy_cache()
+    if cached:
+        log.info("Testing %d cached proxies before scraping fresh list...", len(cached))
+        for proxy in cached:
+            if test_proxy(proxy):
+                log.info("Cache HIT — skipping proxy list scrape")
+                return proxy
+        log.info("All cached proxies dead — falling back to fresh scrape")
+
+    # ── Step 2: Fall back to scraping fresh proxy lists ───
     if not PROXY_POOL:
         log.info("Fetching fresh proxy list...")
         PROXY_POOL = fetch_free_proxies()
@@ -179,29 +212,35 @@ def get_working_proxy():
         if test_proxy(proxy):
             return proxy
 
-    if PROXY_POOL:
-        fallback = random.choice(PROXY_POOL)
-        log.warning("Using fallback proxy: %s", fallback)
-        return fallback
-
+    log.warning("No verified Indian proxy found in pool.")
     return None
 
-# ─── FETCH PAGE (FULL 4-STAGE FLOW) ─────────────────────
+# ─── FETCH PAGE (4-STAGE WATERFALL, NO RETRY ON SUCCESS) ─
+#
+# Each stage returns immediately on success.
+# The next stage only runs if the previous one raised an exception.
+#
+#   Stage 1 success → return soup  (S2, S3, S4 never run)
+#   Stage 2 success → return soup  (S3, S4 never run)
+#   Stage 3 success → return soup  (S4 never runs)
+#   Stage 4 success → return soup
+#   All fail        → return None
 
 def fetch_page(url):
 
-    # STEP 1: DIRECT
+    # ── STAGE 1: Direct requests (fastest) ───────────────
     try:
-        log.info("Direct fetch: %s", url)
+        log.info("[S1] Direct fetch: %s", url)
         resp = requests.get(url, headers=HEADERS, timeout=TIMEOUT, verify=False)
         resp.raise_for_status()
+        log.info("[S1] Success")
         return BeautifulSoup(resp.text, "lxml")
     except Exception as e:
-        log.warning("Direct failed: %s", e)
+        log.warning("[S1] Failed: %s", e)
 
-    # STEP 2: PLAYWRIGHT DIRECT
+    # ── STAGE 2: Playwright / Chromium (no proxy) ─────────
     try:
-        log.info("Playwright direct: %s", url)
+        log.info("[S2] Playwright direct: %s", url)
         with sync_playwright() as pw:
             browser = pw.chromium.launch(headless=True, args=["--no-sandbox"])
             ctx = browser.new_context(
@@ -215,36 +254,40 @@ def fetch_page(url):
             page.wait_for_timeout(5000)
             html = page.content()
             browser.close()
+        log.info("[S2] Success")
         return BeautifulSoup(html, "lxml")
     except Exception as e:
-        log.warning("Playwright direct failed: %s", e)
+        log.warning("[S2] Failed: %s", e)
 
-    # STEP 3: PROXY STATIC
+    # ── Get Indian proxy once for both S3 and S4 ──────────
     proxy = get_working_proxy()
-    proxies = build_proxies(proxy) if proxy else None
+    if not proxy:
+        log.warning("No Indian proxy available — skipping S3 & S4 for: %s", url)
+        return None
 
-    log.info("Using proxy: %s", proxy)
-
+    # ── STAGE 3: Proxy + requests ─────────────────────────
     try:
+        log.info("[S3] Proxy static: %s via %s", url, proxy)
         resp = requests.get(
             url,
             headers=HEADERS,
             timeout=TIMEOUT + 10,
             verify=False,
-            proxies=proxies
+            proxies=build_proxies(proxy)
         )
         resp.raise_for_status()
+        log.info("[S3] Success")
         return BeautifulSoup(resp.text, "lxml")
     except Exception as e:
-        log.warning("Proxy static failed: %s", e)
+        log.warning("[S3] Failed: %s", e)
 
-    # STEP 4: PLAYWRIGHT + PROXY
+    # ── STAGE 4: Proxy + Playwright / Chromium ────────────
     try:
-        log.info("Playwright proxy: %s", proxy)
+        log.info("[S4] Playwright proxy: %s via %s", url, proxy)
         with sync_playwright() as pw:
             browser = pw.chromium.launch(
                 headless=True,
-                proxy={"server": proxy} if proxy else None,
+                proxy={"server": proxy},
                 args=["--no-sandbox"]
             )
             ctx = browser.new_context(
@@ -258,13 +301,15 @@ def fetch_page(url):
             page.wait_for_timeout(5000)
             html = page.content()
             browser.close()
+        log.info("[S4] Success")
         return BeautifulSoup(html, "lxml")
     except Exception as e:
-        log.error("Playwright proxy failed: %s", e)
+        log.error("[S4] Failed: %s", e)
 
+    log.error("All 4 stages failed for: %s", url)
     return None
 
-# ─── PARSER ─────────────────────────────────────────────
+# ─── CLASSIFY ───────────────────────────────────────────
 
 def classify(title):
     t = title.lower()
@@ -276,51 +321,61 @@ def classify(title):
         return "result"
     return "vacancy"
 
+# ─── PARSER ─────────────────────────────────────────────
+
 def parse_notices(soup, org, base_url):
     seen = set()
     out = []
-
     for tag in soup.find_all("a", href=True):
         text = tag.get_text(strip=True)
-
         if len(text) < 15:
             continue
-
         link = urljoin(base_url, tag["href"])
-
         if link in seen:
             continue
         seen.add(link)
-
         out.append({
             "org": org,
             "title": text,
             "detailLink": link,
             "category": classify(text)
         })
-
     return out
 
 # ─── MAIN ───────────────────────────────────────────────
 
 def main():
     log.info("=== SCRAPER START ===")
-
     all_items = []
+    seen_links = set()  # Global dedup across all orgs
 
     for url, org in SOURCES:
         soup = fetch_page(url)
         if not soup:
+            log.warning("Skipping %s — all fetch stages failed", org)
             continue
 
         items = parse_notices(soup, org, url)
-        log.info("%s → %d items", org, len(items))
-        all_items.extend(items)
 
-    with open(OUTPUT_FILE, "w", encoding="utf-8") as f:
-        json.dump(all_items, f, indent=2)
+        added = 0
+        for item in items:
+            if item["detailLink"] not in seen_links:
+                seen_links.add(item["detailLink"])
+                all_items.append(item)
+                added += 1
 
-    log.info("Saved → %s", OUTPUT_FILE)
+        log.info("%s → %d items (%d new after dedup)", org, len(items), added)
+
+    try:
+        with open(OUTPUT_FILE, "w", encoding="utf-8") as f:
+            json.dump(all_items, f, indent=2, ensure_ascii=False)
+        log.info("Saved %d total items → %s", len(all_items), OUTPUT_FILE)
+    except Exception as e:
+        log.error("Failed to write output: %s", e)
+
+    # ── Save working proxies discovered this run for next run's cache ──
+    save_proxy_cache(WORKING_PROXIES)
+    log.info("=== SCRAPER DONE ===")
 
 if __name__ == "__main__":
     main()
