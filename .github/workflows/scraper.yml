@@ -8,6 +8,7 @@ on:
 jobs:
   run-scraper:
     runs-on: ubuntu-latest
+    timeout-minutes: 25        # Job-level hard cap (default is 6h — this is safer)
 
     steps:
 
@@ -24,9 +25,6 @@ jobs:
           python-version: "3.11"
 
       # ─── Restore proxy cache from last run ───────────────
-      # key includes run_id so a fresh entry is always saved.
-      # restore-keys finds the latest matching entry from any
-      # previous run, giving the scraper its warm proxy list.
       - name: Restore proxy cache
         uses: actions/cache@v3
         with:
@@ -63,56 +61,40 @@ jobs:
           echo "=== Geo ==="
           curl -s https://ipinfo.io || true
           echo ""
-
-      # ─── Proxy connectivity debug ────────────────────────
-      # Uses ip-api.com — same endpoint our scraper uses for
-      # proxy testing — so this confirms it's reachable.
-      - name: Proxy endpoint debug
-        run: |
           echo "=== ip-api.com reachability ==="
           curl -s "http://ip-api.com/json?fields=countryCode" || true
           echo ""
 
-      # ─── Run scraper (unbuffered + timeout + single retry) ─
+      # ─── Run scraper ─────────────────────────────────────
+      # Timeout raised to 20m to cover:
+      #   - S1 fail x 3 sources: 3 x 20s  =  60s
+      #   - S2 fail x 3 sources: 3 x 30s  =  90s
+      #   - Concurrent proxy test (300, 25 workers): ~72s max
+      #   - Actual page fetch + parse:               ~30s
+      #   Total worst case: ~4.5 min — 20m is safe headroom.
       - name: Run scraper
         run: |
-          timeout 10m python -u scraper.py || (
-            echo "First attempt failed — retrying once after 10s..."
-            sleep 10
-            timeout 10m python -u scraper.py
+          timeout 20m python -u scraper.py || (
+            echo "First attempt failed — retrying once after 15s..."
+            sleep 15
+            timeout 20m python -u scraper.py
           )
 
-      # ─── Upload jobs.json as artifact (always) ───────────
-      - name: Upload jobs.json
-        if: always()
-        uses: actions/upload-artifact@v4
-        with:
-          name: jobs-output
-          path: jobs.json
-
       # ─── Commit and push ─────────────────────────────────
-      # CORRECT ORDER:
-      #   1. fetch + rebase  → pull in any changes pushed since checkout
-      #   2. stage files     → jobs.json + proxy_cache.json
-      #   3. commit          → only if there are actual changes
-      #   4. push            → now safe, no conflict
-      #
-      # [skip ci] in the message prevents this push from
-      # triggering another workflow run in a loop.
+      # Artifact upload removed — git commit is the source of truth.
+      # jobs.json is merged (not overwritten) by the scraper itself,
+      # so existing data is preserved even if a source times out.
       - name: Commit and push
         run: |
           git config user.name  "github-actions"
           git config user.email "actions@github.com"
 
-          # Sync with remote BEFORE staging (not after!)
           git fetch origin
           git rebase origin/main
 
-          # Stage output files
           git add jobs.json
           [ -f proxy_cache.json ] && git add proxy_cache.json || true
 
-          # Commit only if something actually changed
           git diff --staged --quiet \
             && echo "No changes to commit — skipping." \
             || git commit -m "chore: auto-update jobs data [skip ci]"
