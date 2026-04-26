@@ -39,7 +39,7 @@ jobs:
       # ─── Playwright install ─────────────────────────
       - name: Install Playwright browser
         run: |
-          playwright install chromium --with-deps
+          playwright install chromium
 
       # ─── Network debug ──────────────────────────────
       - name: Network debug
