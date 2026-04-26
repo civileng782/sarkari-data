@@ -34,7 +34,7 @@ jobs:
 
       - name: Install Playwright browser
         run: |
-          playwright install chromium --with-deps
+          playwright install chromium
 
       - name: Network debug
         run: |
