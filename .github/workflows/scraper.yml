@@ -10,64 +10,79 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      # ─── Checkout ────────────────────────────────────
+
+      # ─── Checkout ────────────────────────────────────────
       - name: Checkout repository
         uses: actions/checkout@v4
         with:
           fetch-depth: 0
 
-      # ─── Python setup ───────────────────────────────
+      # ─── Python setup ────────────────────────────────────
       - name: Setup Python
         uses: actions/setup-python@v5
         with:
           python-version: "3.11"
 
-      # ─── Debug environment ──────────────────────────
+      # ─── Restore proxy cache from last run ───────────────
+      # key includes run_id so a fresh entry is always saved.
+      # restore-keys finds the latest matching entry from any
+      # previous run, giving the scraper its warm proxy list.
+      - name: Restore proxy cache
+        uses: actions/cache@v3
+        with:
+          path: proxy_cache.json
+          key: proxy-cache-${{ runner.os }}-${{ github.run_id }}
+          restore-keys: |
+            proxy-cache-${{ runner.os }}-
+
+      # ─── Debug environment ───────────────────────────────
       - name: Debug environment
         run: |
-          echo "Commit SHA: $GITHUB_SHA"
-          echo "Branch: $GITHUB_REF"
+          echo "Commit SHA : $GITHUB_SHA"
+          echo "Branch     : $GITHUB_REF"
           date
           python --version
 
-      # ─── Install dependencies ───────────────────────
+      # ─── Install dependencies ────────────────────────────
       - name: Install dependencies
         run: |
           python -m pip install --upgrade pip
           pip install -r requirements.txt
 
-      # ─── Playwright install ─────────────────────────
+      # ─── Playwright install ──────────────────────────────
       - name: Install Playwright browser
         run: |
           playwright install chromium
 
-      # ─── Network debug ──────────────────────────────
+      # ─── Network debug ───────────────────────────────────
       - name: Network debug
         run: |
-          echo "Public IP:"
+          echo "=== Public IP ==="
           curl -s https://api.ipify.org || true
           echo ""
-          echo "Geo:"
+          echo "=== Geo ==="
           curl -s https://ipinfo.io || true
           echo ""
 
-      # ─── Direct IP test ─────────────────────────────
-      - name: Proxy debug test
+      # ─── Proxy connectivity debug ────────────────────────
+      # Uses ip-api.com — same endpoint our scraper uses for
+      # proxy testing — so this confirms it's reachable.
+      - name: Proxy endpoint debug
         run: |
-          echo "Testing direct IP:"
-          curl -s http://httpbin.org/ip || true
+          echo "=== ip-api.com reachability ==="
+          curl -s "http://ip-api.com/json?fields=countryCode" || true
           echo ""
 
-      # ─── Run scraper (UNBUFFERED + timeout + retry) ─
-      - name: Run scraper (with retry)
+      # ─── Run scraper (unbuffered + timeout + single retry) ─
+      - name: Run scraper
         run: |
           timeout 10m python -u scraper.py || (
-            echo "Retrying once..."
+            echo "First attempt failed — retrying once after 10s..."
             sleep 10
             timeout 10m python -u scraper.py
           )
 
-      # ─── Upload output ──────────────────────────────
+      # ─── Upload jobs.json as artifact (always) ───────────
       - name: Upload jobs.json
         if: always()
         uses: actions/upload-artifact@v4
@@ -75,21 +90,31 @@ jobs:
           name: jobs-output
           path: jobs.json
 
-      # ─── SAFE Git commit (FIXED) ────────────────────
-      - name: Commit and push (safe)
+      # ─── Commit and push ─────────────────────────────────
+      # CORRECT ORDER:
+      #   1. fetch + rebase  → pull in any changes pushed since checkout
+      #   2. stage files     → jobs.json + proxy_cache.json
+      #   3. commit          → only if there are actual changes
+      #   4. push            → now safe, no conflict
+      #
+      # [skip ci] in the message prevents this push from
+      # triggering another workflow run in a loop.
+      - name: Commit and push
         run: |
-          git config user.name "github-actions"
+          git config user.name  "github-actions"
           git config user.email "actions@github.com"
 
-          # stage changes first
-          git add jobs.json
-
-          # commit if changes exist
-          git commit -m "Auto update jobs data" || echo "No changes"
-
-          # force sync with remote (prevents rebase conflict)
+          # Sync with remote BEFORE staging (not after!)
           git fetch origin
-          git reset --hard origin/main
+          git rebase origin/main
 
-          # push safely
+          # Stage output files
+          git add jobs.json
+          [ -f proxy_cache.json ] && git add proxy_cache.json || true
+
+          # Commit only if something actually changed
+          git diff --staged --quiet \
+            && echo "No changes to commit — skipping." \
+            || git commit -m "chore: auto-update jobs data [skip ci]"
+
           git push origin main
