@@ -8,23 +8,20 @@ on:
 jobs:
   run-scraper:
     runs-on: ubuntu-latest
-    timeout-minutes: 25        # Job-level hard cap (default is 6h — this is safer)
+    timeout-minutes: 25
 
     steps:
 
-      # ─── Checkout ────────────────────────────────────────
       - name: Checkout repository
         uses: actions/checkout@v4
         with:
           fetch-depth: 0
 
-      # ─── Python setup ────────────────────────────────────
       - name: Setup Python
         uses: actions/setup-python@v5
         with:
           python-version: "3.11"
 
-      # ─── Restore proxy cache from last run ───────────────
       - name: Restore proxy cache
         uses: actions/cache@v3
         with:
@@ -33,7 +30,6 @@ jobs:
           restore-keys: |
             proxy-cache-${{ runner.os }}-
 
-      # ─── Debug environment ───────────────────────────────
       - name: Debug environment
         run: |
           echo "Commit SHA : $GITHUB_SHA"
@@ -41,18 +37,15 @@ jobs:
           date
           python --version
 
-      # ─── Install dependencies ────────────────────────────
       - name: Install dependencies
         run: |
           python -m pip install --upgrade pip
           pip install -r requirements.txt
 
-      # ─── Playwright install ──────────────────────────────
       - name: Install Playwright browser
         run: |
           playwright install chromium
 
-      # ─── Network debug ───────────────────────────────────
       - name: Network debug
         run: |
           echo "=== Public IP ==="
@@ -65,13 +58,6 @@ jobs:
           curl -s "http://ip-api.com/json?fields=countryCode" || true
           echo ""
 
-      # ─── Run scraper ─────────────────────────────────────
-      # Timeout raised to 20m to cover:
-      #   - S1 fail x 3 sources: 3 x 20s  =  60s
-      #   - S2 fail x 3 sources: 3 x 30s  =  90s
-      #   - Concurrent proxy test (300, 25 workers): ~72s max
-      #   - Actual page fetch + parse:               ~30s
-      #   Total worst case: ~4.5 min — 20m is safe headroom.
       - name: Run scraper
         run: |
           timeout 20m python -u scraper.py || (
@@ -80,17 +66,13 @@ jobs:
             timeout 20m python -u scraper.py
           )
 
-      # ─── Commit and push ─────────────────────────────────
-      # Artifact upload removed — git commit is the source of truth.
-      # jobs.json is merged (not overwritten) by the scraper itself,
-      # so existing data is preserved even if a source times out.
+      # ✅ FIXED STEP (properly inside steps + correct indentation)
       - name: Commit and push
         run: |
           git config user.name  "github-actions"
           git config user.email "actions@github.com"
 
-          git fetch origin
-          git rebase origin/main
+          git checkout main
 
           git add jobs.json
           [ -f proxy_cache.json ] && git add proxy_cache.json || true
@@ -98,5 +80,7 @@ jobs:
           git diff --staged --quiet \
             && echo "No changes to commit — skipping." \
             || git commit -m "chore: auto-update jobs data [skip ci]"
+
+          git pull --rebase origin main || echo "Rebase skipped"
 
           git push origin main
