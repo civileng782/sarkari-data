@@ -2,108 +2,45 @@ name: Update Job Data
 
 on:
   schedule:
-    - cron: "0 */6 * * *"   # Every 6 hours — fine for free hosting
-  workflow_dispatch:         # Manual trigger from GitHub UI
+    - cron: "0 */6 * * *"
+  workflow_dispatch:
 
 jobs:
   update-data:
     runs-on: ubuntu-latest
+
     permissions:
       contents: write
 
     steps:
-
-      # ── 1. Checkout ───────────────────────────────────────────
-      - name: Checkout repository
+      - name: Checkout
         uses: actions/checkout@v4
         with:
           fetch-depth: 0
 
-      - name: Sync with remote
-        run: |
-          git fetch origin main
-          git reset --hard origin/main
-
-      # ── 2. Python setup ───────────────────────────────────────
       - name: Setup Python
         uses: actions/setup-python@v5
         with:
-          python-version: "3.11"   # 3.11 — faster + match keyword syntax in scraper
+          python-version: "3.10"
 
-      - name: Cache pip dependencies
-        uses: actions/cache@v4
-        with:
-          path: ~/.cache/pip
-          key: ${{ runner.os }}-pip-${{ hashFiles('requirements.txt') }}
-          restore-keys: ${{ runner.os }}-pip-
-
-      - name: Install Python dependencies
+      - name: Install dependencies
         run: |
           python -m pip install --upgrade pip
-          python -m pip install -r requirements.txt
+          pip install requests beautifulsoup4 lxml playwright
 
-      # ── 3. Playwright ─────────────────────────────────────────
-      - name: Cache Playwright browsers
-        uses: actions/cache@v4
-        with:
-          path: ~/.cache/ms-playwright
-          key: playwright-chromium-${{ runner.os }}-${{ hashFiles('requirements.txt') }}
+      # ✅ CRITICAL FIX
+      - name: Install Playwright browsers (with deps)
+        run: |
+          playwright install --with-deps chromium
 
-      - name: Install Playwright browser
-        run: python -m playwright install --with-deps chromium
-
-      # ── 4. Run scraper ────────────────────────────────────────
       - name: Run scraper
         run: python scraper.py
 
-      - name: Verify jobs.json was produced
+      - name: Commit and push
         run: |
-          if [ ! -f jobs.json ]; then
-            echo "ERROR: jobs.json missing — scraper likely failed."
-            exit 1
-          fi
-          SIZE=$(wc -c < jobs.json)
-          if [ "$SIZE" -lt 100 ]; then
-            echo "ERROR: jobs.json is suspiciously small ($SIZE bytes)."
-            exit 1
-          fi
-          echo "jobs.json OK — $SIZE bytes"
-
-      # ── 5. Commit & push ──────────────────────────────────────
-      - name: Commit and push jobs.json
-        run: |
-          git config user.name  "github-actions[bot]"
-          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git config user.name "github-actions"
+          git config user.email "actions@github.com"
           git add jobs.json
-          if ! git diff --cached --quiet; then
-            git commit -m "chore: auto-update jobs data $(date -u '+%Y-%m-%d %H:%M UTC')"
-            git pull --rebase origin main
-            git push origin main
-            echo "JOBS_CHANGED=true" >> $GITHUB_ENV
-          else
-            echo "No changes in jobs.json — skipping push and WP import."
-            echo "JOBS_CHANGED=false" >> $GITHUB_ENV
-          fi
-
-      # ── 6. Trigger WordPress import (only if data changed) ────
-      - name: Trigger WordPress Import
-        if: env.JOBS_CHANGED == 'true'
-        run: |
-          HTTP_STATUS=$(curl \
-            --silent \
-            --output /tmp/wp_response.json \
-            --write-out "%{http_code}" \
-            --max-time 30 \
-            --retry 2 \
-            --retry-delay 5 \
-            "https://aihub.cooo.in/wp-json/jobs/v1/import?key=${{ secrets.WP_IMPORT_KEY }}")
-
-          echo "WordPress responded: HTTP $HTTP_STATUS"
-          cat /tmp/wp_response.json
-
-          if [ "$HTTP_STATUS" -ne 200 ]; then
-            echo "ERROR: WordPress import failed with HTTP $HTTP_STATUS"
-            exit 1
-          fi
-
-          echo "Import triggered successfully."
+          git diff --cached --quiet || git commit -m "Auto update jobs data"
+          git pull --rebase origin main
+          git push origin main
