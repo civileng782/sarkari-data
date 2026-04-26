@@ -1,46 +1,65 @@
-name: Update Job Data
+name: Run Job Scraper
 
 on:
   schedule:
-    - cron: "0 */6 * * *"
+    - cron: "*/30 * * * *"   # every 30 minutes
   workflow_dispatch:
 
 jobs:
-  update-data:
-    runs-on: ubuntu-22.04
-
-    permissions:
-      contents: write
+  run-scraper:
+    runs-on: ubuntu-latest
 
     steps:
-      - name: Checkout
+      # ─── Checkout latest code ─────────────────────────
+      - name: Checkout repository
         uses: actions/checkout@v4
         with:
           fetch-depth: 0
 
+      # ─── Setup Python ────────────────────────────────
       - name: Setup Python
         uses: actions/setup-python@v5
         with:
-          python-version: "3.10"
+          python-version: "3.11"
 
+      # ─── Debug: confirm latest workflow ──────────────
+      - name: Debug environment
+        run: |
+          echo "Commit SHA: $GITHUB_SHA"
+          echo "Branch: $GITHUB_REF"
+          date
+          python --version
+
+      # ─── Install dependencies ────────────────────────
       - name: Install dependencies
         run: |
           python -m pip install --upgrade pip
-          pip install requests beautifulsoup4 lxml playwright
+          pip install -r requirements.txt
 
-      # ✅ CRITICAL FIX
-      - name: Install Playwright browsers (without deps)
+      # ─── Install Playwright Chromium ────────────────
+      - name: Install Playwright browser
         run: |
           playwright install chromium
 
-      - name: Run scraper
-        run: python scraper.py
-
-      - name: Commit and push
+      # ─── Network diagnostics (very useful for proxies) ─
+      - name: Network debug
         run: |
-          git config user.name "github-actions"
-          git config user.email "actions@github.com"
-          git add jobs.json
-          git diff --cached --quiet || git commit -m "Auto update jobs data"
-          git pull --rebase origin main
-          git push origin main
+          echo "Public IP:"
+          curl -s https://api.ipify.org || true
+          echo ""
+          echo "Geo:"
+          curl -s https://ipinfo.io || true
+          echo ""
+
+      # ─── Run scraper ────────────────────────────────
+      - name: Run scraper
+        run: |
+          python scraper.py
+
+      # ─── Upload output (for inspection) ─────────────
+      - name: Upload jobs.json
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: jobs-output
+          path: jobs.json
