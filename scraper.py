@@ -28,15 +28,43 @@ HEADERS = {
 
 CATEGORIES = ["vacancy", "admit", "result", "answer"]
 
-# ─── PROXY POOL ─────────────────────────────────────────
+# ─── PROXY SOURCES (ADDED) ─────────────────────────────
 
-PROXY_POOL = [
-    "socks4://103.81.117.122:4153",
-    "http://20.192.2.50:443",
+PROXY_SOURCES = [
+    "https://api.proxyscrape.com/v2/?request=getproxies&protocol=http&country=IN",
+    "https://api.proxyscrape.com/v2/?request=getproxies&protocol=socks4&country=IN",
 ]
 
+def fetch_free_proxies():
+    proxies = []
+
+    for url in PROXY_SOURCES:
+        try:
+            r = requests.get(url, timeout=10)
+            lines = r.text.splitlines()
+
+            for p in lines:
+                p = p.strip()
+                if not p:
+                    continue
+
+                # auto detect type
+                if ":1080" in p or ":5678" in p:
+                    proxies.append(f"socks4://{p}")
+                else:
+                    proxies.append(f"http://{p}")
+
+        except Exception as e:
+            log.warning("Proxy source failed: %s", e)
+
+    return proxies
+
+# ─── PROXY POOL (REPLACED) ─────────────────────────────
+
+PROXY_POOL = []
+
 def get_proxy():
-    return random.choice(PROXY_POOL)
+    return random.choice(PROXY_POOL) if PROXY_POOL else None
 
 def build_proxies(proxy):
     return {"http": proxy, "https": proxy}
@@ -56,11 +84,10 @@ SOURCES = [
 
 _DATE_RE = re.compile(r"\b\d{1,2}[/-]\d{1,2}[/-]\d{2,4}\b")
 
-# ─── PROXY TEST (ENHANCED) ──────────────────────────────
+# ─── PROXY TEST (UNCHANGED) ─────────────────────────────
 
 def is_valid_ip_response(text):
     text = text.strip()
-    # must be plain IP, not HTML or page
     return "." in text and len(text) < 20 and "<" not in text
 
 def test_proxy(proxy):
@@ -83,14 +110,22 @@ def test_proxy(proxy):
         log.warning("[PROXY FAIL] %s → %s", proxy, e)
         return False
 
-def get_working_proxy():
-    proxies = PROXY_POOL[:]
-    random.shuffle(proxies)
+# ─── UPDATED PROXY RESOLUTION ───────────────────────────
 
-    for proxy in proxies:
+def get_working_proxy():
+    global PROXY_POOL
+
+    # refresh pool if empty
+    if not PROXY_POOL:
+        log.info("Fetching fresh proxy list...")
+        PROXY_POOL = fetch_free_proxies()
+        random.shuffle(PROXY_POOL)
+
+    for proxy in PROXY_POOL:
         if test_proxy(proxy):
             return proxy
 
+    log.warning("No working proxy found in fetched list")
     return None
 
 # ─── FETCH ──────────────────────────────────────────────
@@ -104,7 +139,6 @@ def fetch_page(url):
     else:
         log.warning("No working proxy found, using direct connection")
 
-    # ── STATIC ──
     try:
         log.info("Fetching: %s", url)
 
@@ -122,7 +156,6 @@ def fetch_page(url):
     except Exception as e:
         log.warning("HTTPS failed: %s", e)
 
-    # ── HTTP FALLBACK ──
     try:
         http_url = url.replace("https://", "http://")
         log.info("Retry HTTP: %s", http_url)
@@ -141,7 +174,6 @@ def fetch_page(url):
     except Exception as e:
         log.warning("HTTP failed: %s", e)
 
-    # ── PLAYWRIGHT ──
     try:
         log.info("Playwright fallback: %s", url)
 
