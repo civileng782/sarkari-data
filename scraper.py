@@ -28,45 +28,6 @@ HEADERS = {
 
 CATEGORIES = ["vacancy", "admit", "result", "answer"]
 
-# ─── PROXY SOURCES ─────────────────────────────────────
-
-PROXY_SOURCES = [
-    "https://api.proxyscrape.com/v2/?request=getproxies&protocol=http",
-    "https://api.proxyscrape.com/v2/?request=getproxies&protocol=socks4",
-]
-
-def fetch_free_proxies():
-    proxies = []
-
-    for url in PROXY_SOURCES:
-        try:
-            log.info("Fetching proxies from: %s", url)
-            r = requests.get(url, timeout=10)
-
-            if not r.text.strip():
-                log.warning("Empty proxy list from source")
-                continue
-
-            for p in r.text.splitlines():
-                p = p.strip()
-                if not p or ":" not in p:
-                    continue
-
-                proxies.append(f"http://{p}")
-
-        except Exception as e:
-            log.warning("Proxy source failed: %s", e)
-
-    log.info("Total proxies fetched: %d", len(proxies))
-    return proxies
-
-# ─── PROXY POOL ─────────────────────────────────────────
-
-PROXY_POOL = []
-
-def build_proxies(proxy):
-    return {"http": proxy, "https": proxy}
-
 # ─── LOGGING ────────────────────────────────────────────
 
 logging.basicConfig(level=logging.INFO, format="%(asctime)s [%(levelname)s] %(message)s")
@@ -82,7 +43,114 @@ SOURCES = [
 
 _DATE_RE = re.compile(r"\b\d{1,2}[/-]\d{1,2}[/-]\d{2,4}\b")
 
-# ─── PROXY TEST (RELAXED) ───────────────────────────────
+# ─── PROXY SOURCES ─────────────────────────────────────
+
+PROXY_SOURCES = [
+    "https://api.proxyscrape.com/v2/?request=getproxies&protocol=http",
+    "https://api.proxyscrape.com/v2/?request=getproxies&protocol=socks4",
+    "https://api.openproxylist.xyz/http.txt",
+    "https://api.openproxylist.xyz/socks5.txt",
+    "https://www.proxyscan.io/download?type=http",
+    "https://www.proxyscan.io/download?type=https",
+    "https://raw.githubusercontent.com/TheSpeedX/PROXY-List/master/http.txt",
+    "https://raw.githubusercontent.com/TheSpeedX/PROXY-List/master/socks5.txt",
+    "https://www.proxy-list.download/api/v1/get?type=http",
+    "https://www.proxy-list.download/api/v1/get?type=https",
+]
+
+# ─── GEO CACHE ──────────────────────────────────────────
+
+GEO_CACHE = {}
+
+def is_indian_ip(ip):
+    if ip in GEO_CACHE:
+        return GEO_CACHE[ip]
+
+    try:
+        r = requests.get(
+            f"http://ip-api.com/json/{ip}?fields=countryCode",
+            timeout=5
+        )
+        result = r.json().get("countryCode") == "IN"
+        GEO_CACHE[ip] = result
+        return result
+    except:
+        GEO_CACHE[ip] = False
+        return False
+
+# ─── NORMALIZE PROXY ────────────────────────────────────
+
+def normalize_proxy(p):
+    p = p.strip()
+
+    if not p or ":" not in p:
+        return None
+
+    if "://" in p:
+        p = p.split("://", 1)[1]
+
+    if "@" in p:
+        p = p.split("@")[-1]
+
+    parts = p.split(":")
+    if len(parts) != 2:
+        return None
+
+    ip, port = parts
+
+    if not ip.replace(".", "").isdigit():
+        return None
+
+    try:
+        port = int(port)
+        if not (1 <= port <= 65535):
+            return None
+    except:
+        return None
+
+    return f"http://{ip}:{port}"
+
+# ─── FETCH PROXIES ─────────────────────────────────────
+
+def fetch_free_proxies():
+    proxies = set()
+
+    for url in PROXY_SOURCES:
+        try:
+            log.info("Fetching proxies from: %s", url)
+            r = requests.get(url, timeout=10)
+
+            if not r.text.strip():
+                log.warning("Empty proxy list from source")
+                continue
+
+            for line in r.text.splitlines():
+                proxy = normalize_proxy(line)
+                if not proxy:
+                    continue
+
+                ip = proxy.split("://")[1].split(":")[0]
+
+                if not is_indian_ip(ip):
+                    continue
+
+                proxies.add(proxy)
+
+        except Exception as e:
+            log.warning("Proxy source failed: %s", e)
+
+    proxies = list(proxies)
+    random.shuffle(proxies)
+
+    log.info("Total UNIQUE Indian proxies: %d", len(proxies))
+    return proxies
+
+# ─── PROXY POOL ─────────────────────────────────────────
+
+PROXY_POOL = []
+
+def build_proxies(proxy):
+    return {"http": proxy, "https": proxy}
 
 def test_proxy(proxy):
     try:
@@ -91,12 +159,10 @@ def test_proxy(proxy):
             proxies=build_proxies(proxy),
             timeout=6
         )
-
         if r.status_code == 200:
-            log.info("[PROXY OK] %s → %s", proxy, r.text.strip())
+            log.info("[PROXY OK] %s", proxy)
             return True
-
-    except Exception:
+    except:
         pass
 
     log.warning("[PROXY FAIL] %s", proxy)
@@ -108,7 +174,6 @@ def get_working_proxy():
     if not PROXY_POOL:
         log.info("Fetching fresh proxy list...")
         PROXY_POOL = fetch_free_proxies()
-        random.shuffle(PROXY_POOL)
 
     for proxy in PROXY_POOL:
         if test_proxy(proxy):
@@ -116,66 +181,49 @@ def get_working_proxy():
 
     if PROXY_POOL:
         fallback = random.choice(PROXY_POOL)
-        log.warning("Using unverified proxy: %s", fallback)
+        log.warning("Using fallback proxy: %s", fallback)
         return fallback
 
     return None
 
-# ─── FETCH (REORDERED FLOW) ─────────────────────────────
+# ─── FETCH PAGE (FULL 4-STAGE FLOW) ─────────────────────
 
 def fetch_page(url):
 
-    # ── STEP 1: DIRECT STATIC ─────────────────────────
+    # STEP 1: DIRECT
     try:
-        log.info("Fetching (direct): %s", url)
-
-        resp = requests.get(
-            url,
-            headers=HEADERS,
-            timeout=TIMEOUT,
-            verify=False
-        )
+        log.info("Direct fetch: %s", url)
+        resp = requests.get(url, headers=HEADERS, timeout=TIMEOUT, verify=False)
         resp.raise_for_status()
-
         return BeautifulSoup(resp.text, "lxml")
-
     except Exception as e:
         log.warning("Direct failed: %s", e)
 
-    # ── STEP 2: DIRECT PLAYWRIGHT ─────────────────────
+    # STEP 2: PLAYWRIGHT DIRECT
     try:
         log.info("Playwright direct: %s", url)
-
         with sync_playwright() as pw:
-            browser = pw.chromium.launch(
-                headless=True,
-                args=["--no-sandbox"]
-            )
-
+            browser = pw.chromium.launch(headless=True, args=["--no-sandbox"])
             ctx = browser.new_context(
                 ignore_https_errors=True,
                 user_agent=HEADERS["User-Agent"],
                 locale="en-IN",
                 timezone_id="Asia/Kolkata"
             )
-
             page = ctx.new_page()
             page.goto(url, wait_until="domcontentloaded", timeout=60000)
             page.wait_for_timeout(5000)
-
             html = page.content()
             browser.close()
-
         return BeautifulSoup(html, "lxml")
-
     except Exception as e:
         log.warning("Playwright direct failed: %s", e)
 
-    # ── STEP 3: PROXY STATIC ──────────────────────────
+    # STEP 3: PROXY STATIC
     proxy = get_working_proxy()
     proxies = build_proxies(proxy) if proxy else None
 
-    log.info("DEBUG proxy being used: %s", proxy)
+    log.info("Using proxy: %s", proxy)
 
     try:
         resp = requests.get(
@@ -186,59 +234,47 @@ def fetch_page(url):
             proxies=proxies
         )
         resp.raise_for_status()
-
         return BeautifulSoup(resp.text, "lxml")
-
     except Exception as e:
         log.warning("Proxy static failed: %s", e)
 
-    # ── STEP 4: PROXY PLAYWRIGHT ──────────────────────
+    # STEP 4: PLAYWRIGHT + PROXY
     try:
-        log.info("Playwright proxy fallback: %s", url)
-
+        log.info("Playwright proxy: %s", proxy)
         with sync_playwright() as pw:
             browser = pw.chromium.launch(
                 headless=True,
-                proxy={"server": proxy} if proxy and proxy.startswith("http") else None,
+                proxy={"server": proxy} if proxy else None,
                 args=["--no-sandbox"]
             )
-
             ctx = browser.new_context(
                 ignore_https_errors=True,
                 user_agent=HEADERS["User-Agent"],
                 locale="en-IN",
                 timezone_id="Asia/Kolkata"
             )
-
             page = ctx.new_page()
             page.goto(url, wait_until="domcontentloaded", timeout=60000)
             page.wait_for_timeout(5000)
-
             html = page.content()
             browser.close()
-
         return BeautifulSoup(html, "lxml")
-
     except Exception as e:
-        log.error("Proxy Playwright failed: %s", e)
+        log.error("Playwright proxy failed: %s", e)
 
     return None
 
-# ─── CLASSIFY ───────────────────────────────────────────
+# ─── PARSER ─────────────────────────────────────────────
 
 def classify(title):
     t = title.lower()
-
     if "admit" in t:
         return "admit"
     if "answer" in t:
         return "answer"
     if "result" in t:
         return "result"
-
     return "vacancy"
-
-# ─── PARSER ─────────────────────────────────────────────
 
 def parse_notices(soup, org, base_url):
     seen = set()
@@ -256,13 +292,11 @@ def parse_notices(soup, org, base_url):
             continue
         seen.add(link)
 
-        cat = classify(text)
-
         out.append({
             "org": org,
             "title": text,
             "detailLink": link,
-            "category": cat
+            "category": classify(text)
         })
 
     return out
