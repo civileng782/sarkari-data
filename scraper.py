@@ -18,7 +18,7 @@ OUTPUT_FILE         = "jobs.json"
 PROXY_CACHE_FILE    = "proxy_cache.json"
 CACHE_MAX_AGE_HOURS = 24    # Cache expires after this many hours
 TIMEOUT             = 20    # S1 requests timeout (was 60 — saves 40s per failed source)
-MAX_PROXY_TEST      = 300   # Max proxies to test per run (caps unbounded sequential scan)
+MAX_PROXY_TEST      = 5000   # Max proxies to test per run (caps unbounded sequential scan)
 PROXY_TEST_WORKERS  = 25    # Concurrent proxy test threads
 
 urllib3.disable_warnings(urllib3.exceptions.InsecureRequestWarning)
