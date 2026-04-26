@@ -3,6 +3,7 @@ import logging
 import os
 import re
 import random
+from concurrent.futures import ThreadPoolExecutor, as_completed
 from datetime import datetime, timezone, timedelta
 from urllib.parse import urljoin
 
@@ -13,10 +14,12 @@ from playwright.sync_api import sync_playwright
 
 # ─── CONFIG ─────────────────────────────────────────────
 
-OUTPUT_FILE      = "jobs.json"
-PROXY_CACHE_FILE = "proxy_cache.json"
-CACHE_MAX_AGE_HOURS = 24        # Cache expires after this many hours
-TIMEOUT = 60
+OUTPUT_FILE         = "jobs.json"
+PROXY_CACHE_FILE    = "proxy_cache.json"
+CACHE_MAX_AGE_HOURS = 24    # Cache expires after this many hours
+TIMEOUT             = 20    # S1 requests timeout (was 60 — saves 40s per failed source)
+MAX_PROXY_TEST      = 300   # Max proxies to test per run (caps unbounded sequential scan)
+PROXY_TEST_WORKERS  = 25    # Concurrent proxy test threads
 
 urllib3.disable_warnings(urllib3.exceptions.InsecureRequestWarning)
 
@@ -203,16 +206,30 @@ def get_working_proxy():
                 return proxy
         log.info("All cached proxies dead — falling back to fresh scrape")
 
-    # ── Step 2: Fall back to scraping fresh proxy lists ───
+    # ── Step 2: Scrape fresh proxy list if pool empty ─────
     if not PROXY_POOL:
         log.info("Fetching fresh proxy list...")
         PROXY_POOL = fetch_free_proxies()
 
-    for proxy in PROXY_POOL:
-        if test_proxy(proxy):
-            return proxy
+    # ── Step 3: Concurrent batch test (fast) ─────────────
+    # Test up to MAX_PROXY_TEST proxies with PROXY_TEST_WORKERS
+    # threads in parallel. Sequential testing of 10k proxies at
+    # 6s each would take hours — concurrent cuts it to ~72s max.
+    sample = PROXY_POOL[:MAX_PROXY_TEST]
+    log.info("Concurrent-testing %d proxies (%d workers)...", len(sample), PROXY_TEST_WORKERS)
 
-    log.warning("No verified Indian proxy found in pool.")
+    with ThreadPoolExecutor(max_workers=PROXY_TEST_WORKERS) as executor:
+        future_to_proxy = {executor.submit(test_proxy, p): p for p in sample}
+        for future in as_completed(future_to_proxy):
+            if future.result():
+                found = future_to_proxy[future]
+                # Cancel remaining pending futures (best-effort)
+                for f in future_to_proxy:
+                    f.cancel()
+                log.info("Found working Indian proxy after concurrent scan")
+                return found
+
+    log.warning("No verified Indian proxy found in %d tested.", len(sample))
     return None
 
 # ─── FETCH PAGE (4-STAGE WATERFALL, NO RETRY ON SUCCESS) ─
@@ -250,8 +267,8 @@ def fetch_page(url):
                 timezone_id="Asia/Kolkata"
             )
             page = ctx.new_page()
-            page.goto(url, wait_until="domcontentloaded", timeout=60000)
-            page.wait_for_timeout(5000)
+            page.goto(url, wait_until="domcontentloaded", timeout=30000)
+            page.wait_for_timeout(3000)
             html = page.content()
             browser.close()
         log.info("[S2] Success")
@@ -297,8 +314,8 @@ def fetch_page(url):
                 timezone_id="Asia/Kolkata"
             )
             page = ctx.new_page()
-            page.goto(url, wait_until="domcontentloaded", timeout=60000)
-            page.wait_for_timeout(5000)
+            page.goto(url, wait_until="domcontentloaded", timeout=30000)
+            page.wait_for_timeout(3000)
             html = page.content()
             browser.close()
         log.info("[S4] Success")
@@ -346,8 +363,22 @@ def parse_notices(soup, org, base_url):
 
 def main():
     log.info("=== SCRAPER START ===")
-    all_items = []
-    seen_links = set()  # Global dedup across all orgs
+
+    # ── Load existing jobs.json to merge into ────────────
+    existing_items = []
+    existing_links = set()
+    if os.path.exists(OUTPUT_FILE):
+        try:
+            with open(OUTPUT_FILE, "r", encoding="utf-8") as f:
+                existing_items = json.load(f)
+            existing_links = {item["detailLink"] for item in existing_items}
+            log.info("Loaded %d existing items from %s", len(existing_items), OUTPUT_FILE)
+        except Exception as e:
+            log.warning("Could not read existing %s (starting fresh): %s", OUTPUT_FILE, e)
+
+    # ── Scrape new items ──────────────────────────────────
+    new_items = []
+    seen_links = set()
 
     for url, org in SOURCES:
         soup = fetch_page(url)
@@ -361,11 +392,21 @@ def main():
         for item in items:
             if item["detailLink"] not in seen_links:
                 seen_links.add(item["detailLink"])
-                all_items.append(item)
+                new_items.append(item)
                 added += 1
 
-        log.info("%s → %d items (%d new after dedup)", org, len(items), added)
+        log.info("%s → %d items (%d unique this run)", org, len(items), added)
 
+    # ── Merge: new items first, then existing not in new ─
+    # New items take priority (fresher data). Existing items
+    # that weren't re-scraped this run are preserved as-is.
+    merged_links = {item["detailLink"] for item in new_items}
+    preserved    = [item for item in existing_items if item["detailLink"] not in merged_links]
+    all_items    = new_items + preserved
+
+    log.info("Merge: %d new + %d preserved = %d total", len(new_items), len(preserved), len(all_items))
+
+    # ── Write merged output ───────────────────────────────
     try:
         with open(OUTPUT_FILE, "w", encoding="utf-8") as f:
             json.dump(all_items, f, indent=2, ensure_ascii=False)
@@ -373,7 +414,7 @@ def main():
     except Exception as e:
         log.error("Failed to write output: %s", e)
 
-    # ── Save working proxies discovered this run for next run's cache ──
+    # ── Save working proxies for next run ─────────────────
     save_proxy_cache(WORKING_PROXIES)
     log.info("=== SCRAPER DONE ===")
 
