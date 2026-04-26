@@ -56,32 +56,53 @@ SOURCES = [
 
 _DATE_RE = re.compile(r"\b\d{1,2}[/-]\d{1,2}[/-]\d{2,4}\b")
 
-# ─── PROXY TEST ─────────────────────────────────────────
+# ─── PROXY TEST (ENHANCED) ──────────────────────────────
+
+def is_valid_ip_response(text):
+    text = text.strip()
+    # must be plain IP, not HTML or page
+    return "." in text and len(text) < 20 and "<" not in text
 
 def test_proxy(proxy):
     try:
         r = requests.get(
             "https://api.ipify.org",
             proxies=build_proxies(proxy),
-            timeout=10,
+            timeout=8,
             verify=False
         )
-        log.info("[PROXY OK] %s → %s", proxy, r.text)
-        return True
+
+        if is_valid_ip_response(r.text):
+            log.info("[PROXY OK] %s → %s", proxy, r.text)
+            return True
+        else:
+            log.warning("[PROXY FAKE] %s → returned non-IP", proxy)
+            return False
+
     except Exception as e:
         log.warning("[PROXY FAIL] %s → %s", proxy, e)
         return False
 
+def get_working_proxy():
+    proxies = PROXY_POOL[:]
+    random.shuffle(proxies)
+
+    for proxy in proxies:
+        if test_proxy(proxy):
+            return proxy
+
+    return None
+
 # ─── FETCH ──────────────────────────────────────────────
 
 def fetch_page(url):
-    proxy = get_proxy()
-    proxies = build_proxies(proxy)
+    proxy = get_working_proxy()
+    proxies = build_proxies(proxy) if proxy else None
 
-    # TEST proxy first
-    if not test_proxy(proxy):
-        log.warning("Skipping bad proxy: %s", proxy)
-        proxies = None
+    if proxy:
+        log.info("Using proxy: %s", proxy)
+    else:
+        log.warning("No working proxy found, using direct connection")
 
     # ── STATIC ──
     try:
@@ -127,7 +148,7 @@ def fetch_page(url):
         with sync_playwright() as pw:
             browser = pw.chromium.launch(
                 headless=True,
-                proxy={"server": proxy} if proxy.startswith("http") else None,
+                proxy={"server": proxy} if proxy and proxy.startswith("http") else None,
                 args=["--no-sandbox"]
             )
 
