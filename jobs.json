@@ -1,5 +1,137 @@
 [
   {
+    "org": "SSC",
+    "title": "SSC Old Website",
+    "detailLink": "https://ssc.gov.in/",
+    "category": "vacancy"
+  },
+  {
+    "org": "SSC",
+    "title": "Chairman’s Message",
+    "detailLink": "https://ssc.gov.in/chairman-message",
+    "category": "vacancy"
+  },
+  {
+    "org": "SSC",
+    "title": "Script Evaluation",
+    "detailLink": "https://ssc.gov.in/for-candidates/script-evaluation",
+    "category": "vacancy"
+  },
+  {
+    "org": "SSC",
+    "title": "Examination Calendar",
+    "detailLink": "https://ssc.gov.in/for-candidates/examination-calendar",
+    "category": "vacancy"
+  },
+  {
+    "org": "SSC",
+    "title": "Scheme of Examination",
+    "detailLink": "https://ssc.gov.in/for-candidates/scheme-of-examination",
+    "category": "vacancy"
+  },
+  {
+    "org": "SSC",
+    "title": "Special Instruction",
+    "detailLink": "https://ssc.gov.in/for-candidates/special-instruction",
+    "category": "vacancy"
+  },
+  {
+    "org": "SSC",
+    "title": "Previous Year Question Paper",
+    "detailLink": "https://ssc.gov.in/for-candidates/previous-year-question-paper",
+    "category": "vacancy"
+  },
+  {
+    "org": "SSC",
+    "title": "Format of Certificates",
+    "detailLink": "https://ssc.gov.in/for-candidates/form-of-certificates",
+    "category": "vacancy"
+  },
+  {
+    "org": "SSC",
+    "title": "Tentative Vacancy",
+    "detailLink": "https://ssc.gov.in/for-candidates/tentative-vacancy",
+    "category": "vacancy"
+  },
+  {
+    "org": "SSC",
+    "title": "Normalization Method",
+    "detailLink": "https://ssc.gov.in/for-candidates/normalization-method",
+    "category": "vacancy"
+  },
+  {
+    "org": "SSC",
+    "title": "Proactive Disclosure (RTI)",
+    "detailLink": "https://ssc.gov.in/rti/proactive-disclosure",
+    "category": "vacancy"
+  },
+  {
+    "org": "SSC",
+    "title": "Background of Commission",
+    "detailLink": "https://ssc.gov.in/about-us/background-of-commission",
+    "category": "vacancy"
+  },
+  {
+    "org": "SSC",
+    "title": "Setup of Commission",
+    "detailLink": "https://ssc.gov.in/about-us/commission",
+    "category": "vacancy"
+  },
+  {
+    "org": "SSC",
+    "title": "Organisation Structure",
+    "detailLink": "https://ssc.gov.in/about-us/organisation-structure",
+    "category": "vacancy"
+  },
+  {
+    "org": "SSC",
+    "title": "Function of Commission",
+    "detailLink": "https://ssc.gov.in/about-us/function-commission",
+    "category": "vacancy"
+  },
+  {
+    "org": "SSC",
+    "title": "Vision, Mission & Objectives of SSC",
+    "detailLink": "https://ssc.gov.in/about-us/objective-ssc",
+    "category": "vacancy"
+  },
+  {
+    "org": "SSC",
+    "title": "Regional Network",
+    "detailLink": "https://ssc.gov.in/about-us/regional-network",
+    "category": "vacancy"
+  },
+  {
+    "org": "SSC",
+    "title": "Citizen's Charter",
+    "detailLink": "https://ssc.gov.in/about-us/citizen-charter",
+    "category": "vacancy"
+  },
+  {
+    "org": "SSC",
+    "title": "Right To Information",
+    "detailLink": "https://ssc.gov.in/about-us/rti",
+    "category": "vacancy"
+  },
+  {
+    "org": "SSC",
+    "title": "Committee on Sexual Harassment",
+    "detailLink": "https://ssc.gov.in/about-us/harasment",
+    "category": "vacancy"
+  },
+  {
+    "org": "SSC",
+    "title": "Join Indian Navy",
+    "detailLink": "https://www.joinindiannavy.gov.in/",
+    "category": "vacancy"
+  },
+  {
+    "org": "SSC",
+    "title": "List of Debarred Candidates in Examinations Conducted by the Staff Selection Commission",
+    "detailLink": "https://ssc.gov.in/api/attachment/uploads/masterData/Others/debarreds_as_of_10th_Sept_2025_100925.pdf",
+    "category": "vacancy"
+  },
+  {
     "org": "UPPSC",
     "title": "भारत सरकारGOVERNMENT OF INDIA",
     "detailLink": "http://india.gov.in",
