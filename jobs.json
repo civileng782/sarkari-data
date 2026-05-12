@@ -457,12 +457,6 @@
   },
   {
     "org": "UPPSC",
-    "title": "NOTICE REGARDING MARKSHEET & CUT OFF FOR ADVT. NO. D-1-E-1-2023, [S-09-01], D-2-..",
-    "detailLink": "https://uppsc.up.nic.in/Open_PDF_DB.aspx?I4PnQ0tBagktt06NhTTxwitp2z3rTPh2",
-    "category": "vacancy"
-  },
-  {
-    "org": "UPPSC",
     "title": "NOTICE REGARDING ADVT. NO. A-5/E-1/2025, ASSISTANT TEACHER, TRAINED GRADUATE GRA..",
     "detailLink": "https://uppsc.up.nic.in/Open_PDF_DB.aspx?I4PnQ0tBagktt06NhTTxwg4dQjSSr6wI",
     "category": "vacancy"
@@ -825,6 +819,12 @@
     "org": "UPPSC",
     "title": "{{'Tenders_HM' | translate }}",
     "detailLink": "https://uppsc.up.nic.in/FooterPages/Tenders",
+    "category": "vacancy"
+  },
+  {
+    "org": "UPPSC",
+    "title": "NOTICE REGARDING MARKSHEET & CUT OFF FOR ADVT. NO. D-1-E-1-2023, [S-09-01], D-2-..",
+    "detailLink": "https://uppsc.up.nic.in/Open_PDF_DB.aspx?I4PnQ0tBagktt06NhTTxwitp2z3rTPh2",
     "category": "vacancy"
   },
   {
