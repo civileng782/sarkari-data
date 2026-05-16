@@ -463,12 +463,6 @@
   },
   {
     "org": "UPPSC",
-    "title": "NOTICE REGARDING ADVT. NO. A-5/E-1/2025, ASSISTANT TEACHER, TRAINED GRADUATE GRA..",
-    "detailLink": "https://uppsc.up.nic.in/Open_PDF_DB.aspx?I4PnQ0tBagmIoMuauzN3KfCtVwMAxVJG",
-    "category": "vacancy"
-  },
-  {
-    "org": "UPPSC",
     "title": "LIST OF PROVISIONALLY QUALIFIED CANDIDATES FOR MAINS IN ADVT. NO.\r\nA-8/E-1/2025,..",
     "detailLink": "https://uppsc.up.nic.in/Open_PDF_DB.aspx?I4PnQ0tBagmIoMuauzN3KdOOam9QCcMa",
     "category": "vacancy"
@@ -543,12 +537,6 @@
     "org": "UPPSC",
     "title": "RESULT OF ADVT. NO.D-2/E-1/2025, UTTAR PRADESH AYUSH (UNANI) DEPARTMENT / READER..",
     "detailLink": "https://uppsc.up.nic.in/Open_PDF_DB.aspx?I4PnQ0tBagldpN1/ndg4XfUxFIUPy82Y",
-    "category": "result"
-  },
-  {
-    "org": "UPPSC",
-    "title": "RESULT OF ADVT. NO.D-3/E-1/2025, DEPARTMENT OF GEOLOGY AND MINING UTTAR PRADESH ..",
-    "detailLink": "https://uppsc.up.nic.in/Open_PDF_DB.aspx?I4PnQ0tBagldpN1/ndg4XVamMTAwCoya",
     "category": "result"
   },
   {
@@ -796,6 +784,18 @@
     "title": "{{'Tenders_HM' | translate }}",
     "detailLink": "https://uppsc.up.nic.in/FooterPages/Tenders",
     "category": "vacancy"
+  },
+  {
+    "org": "UPPSC",
+    "title": "NOTICE REGARDING ADVT. NO. A-5/E-1/2025, ASSISTANT TEACHER, TRAINED GRADUATE GRA..",
+    "detailLink": "https://uppsc.up.nic.in/Open_PDF_DB.aspx?I4PnQ0tBagmIoMuauzN3KfCtVwMAxVJG",
+    "category": "vacancy"
+  },
+  {
+    "org": "UPPSC",
+    "title": "RESULT OF ADVT. NO.D-3/E-1/2025, DEPARTMENT OF GEOLOGY AND MINING UTTAR PRADESH ..",
+    "detailLink": "https://uppsc.up.nic.in/Open_PDF_DB.aspx?I4PnQ0tBagldpN1/ndg4XVamMTAwCoya",
+    "category": "result"
   },
   {
     "org": "UPPSC",
