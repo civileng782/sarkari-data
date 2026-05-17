@@ -565,12 +565,6 @@
   },
   {
     "org": "UPPSC",
-    "title": "CLICK HERE TO DOWNLOAD MARKSHEET & CUT OFF FOR ADVT. NO. D-1-E-1-2025 [S-02-01] & D-2-E-1-2025 [S-02-02].",
-    "detailLink": "https://uppsc.up.nic.in/CandidatePages/Advertismentwise_DownloadDocument.aspx?inptprmtr=mc",
-    "category": "vacancy"
-  },
-  {
-    "org": "UPPSC",
     "title": "{{'FromChMDesk_HM' | translate }}",
     "detailLink": "https://uppsc.up.nic.in/OuterPages/Chairman_Desk.aspx?msg=en",
     "category": "vacancy"
@@ -783,6 +777,12 @@
     "org": "UPPSC",
     "title": "{{'Tenders_HM' | translate }}",
     "detailLink": "https://uppsc.up.nic.in/FooterPages/Tenders",
+    "category": "vacancy"
+  },
+  {
+    "org": "UPPSC",
+    "title": "CLICK HERE TO DOWNLOAD MARKSHEET & CUT OFF FOR ADVT. NO. D-1-E-1-2025 [S-02-01] & D-2-E-1-2025 [S-02-02].",
+    "detailLink": "https://uppsc.up.nic.in/CandidatePages/Advertismentwise_DownloadDocument.aspx?inptprmtr=mc",
     "category": "vacancy"
   },
   {
