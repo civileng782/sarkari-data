@@ -433,12 +433,6 @@
   },
   {
     "org": "UPPSC",
-    "title": "RESULT OF ADVT. NO.D-4/E-1/2025, DIRECTORATE OF NATIONAL CADET CORPS UTTAR PRADE..",
-    "detailLink": "https://uppsc.up.nic.in/Open_PDF_DB.aspx?I4PnQ0tBaglRA8eD0dR3NyC6PQvbOelL",
-    "category": "result"
-  },
-  {
-    "org": "UPPSC",
     "title": "NOTICE REGARDING ADVT. NO. D-6/E-1/2025, FOOD SAFETY AND DRUG ADMINISTRATION UTT..",
     "detailLink": "https://uppsc.up.nic.in/Open_PDF_DB.aspx?I4PnQ0tBagldpN1/ndg4XQJWpYXr4Ud3",
     "category": "vacancy"
@@ -670,6 +664,12 @@
     "title": "{{'Tenders_HM' | translate }}",
     "detailLink": "https://uppsc.up.nic.in/FooterPages/Tenders",
     "category": "vacancy"
+  },
+  {
+    "org": "UPPSC",
+    "title": "RESULT OF ADVT. NO.D-4/E-1/2025, DIRECTORATE OF NATIONAL CADET CORPS UTTAR PRADE..",
+    "detailLink": "https://uppsc.up.nic.in/Open_PDF_DB.aspx?I4PnQ0tBaglRA8eD0dR3NyC6PQvbOelL",
+    "category": "result"
   },
   {
     "org": "SSC",
