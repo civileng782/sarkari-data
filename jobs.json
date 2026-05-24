@@ -415,12 +415,6 @@
   },
   {
     "org": "UPPSC",
-    "title": "RESULT OF ADVT. NO.D-4/E-1/2025, NAMAMI GANGE RURAL WATER SUPPLY DEPARTMENT U.P...",
-    "detailLink": "https://uppsc.up.nic.in/Open_PDF_DB.aspx?I4PnQ0tBaglRA8eD0dR3N7p0bzVnOpao",
-    "category": "result"
-  },
-  {
-    "org": "UPPSC",
     "title": "NOTICE REGARDING ADVT. NO. D-6/E-1/2025, FOOD SAFETY AND DRUG ADMINISTRATION UTT..",
     "detailLink": "https://uppsc.up.nic.in/Open_PDF_DB.aspx?I4PnQ0tBagldpN1/ndg4XQJWpYXr4Ud3",
     "category": "vacancy"
@@ -640,6 +634,12 @@
     "title": "{{'Tenders_HM' | translate }}",
     "detailLink": "https://uppsc.up.nic.in/FooterPages/Tenders",
     "category": "vacancy"
+  },
+  {
+    "org": "UPPSC",
+    "title": "RESULT OF ADVT. NO.D-4/E-1/2025, NAMAMI GANGE RURAL WATER SUPPLY DEPARTMENT U.P...",
+    "detailLink": "https://uppsc.up.nic.in/Open_PDF_DB.aspx?I4PnQ0tBaglRA8eD0dR3N7p0bzVnOpao",
+    "category": "result"
   },
   {
     "org": "UPSC",
