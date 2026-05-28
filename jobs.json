@@ -397,12 +397,6 @@
   },
   {
     "org": "UPPSC",
-    "title": "LIST OF SELECTED CANDIDATES IN ADVT. NO. A-5/E-1/2024,U.P. UNIVERSITY\r\n(CENTRALI..",
-    "detailLink": "https://uppsc.up.nic.in/Open_PDF_DB.aspx?I4PnQ0tBagmIoMuauzN3KWoaZ7AXUD9D",
-    "category": "vacancy"
-  },
-  {
-    "org": "UPPSC",
     "title": "NOTICE REGARDING ADVT. NO. D-6/E-1/2025, FOOD SAFETY AND DRUG ADMINISTRATION UTT..",
     "detailLink": "https://uppsc.up.nic.in/Open_PDF_DB.aspx?I4PnQ0tBagldpN1/ndg4XQJWpYXr4Ud3",
     "category": "vacancy"
@@ -633,6 +627,12 @@
     "org": "UPPSC",
     "title": "{{'Tenders_HM' | translate }}",
     "detailLink": "https://uppsc.up.nic.in/FooterPages/Tenders",
+    "category": "vacancy"
+  },
+  {
+    "org": "UPPSC",
+    "title": "LIST OF SELECTED CANDIDATES IN ADVT. NO. A-5/E-1/2024,U.P. UNIVERSITY\r\n(CENTRALI..",
+    "detailLink": "https://uppsc.up.nic.in/Open_PDF_DB.aspx?I4PnQ0tBagmIoMuauzN3KWoaZ7AXUD9D",
     "category": "vacancy"
   },
   {
