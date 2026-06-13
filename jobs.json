@@ -1,5 +1,137 @@
 [
   {
+    "org": "SSC",
+    "title": "SSC Old Website",
+    "detailLink": "https://ssc.gov.in/",
+    "category": "vacancy"
+  },
+  {
+    "org": "SSC",
+    "title": "Chairman’s Message",
+    "detailLink": "https://ssc.gov.in/chairman-message",
+    "category": "vacancy"
+  },
+  {
+    "org": "SSC",
+    "title": "Script Evaluation",
+    "detailLink": "https://ssc.gov.in/for-candidates/script-evaluation",
+    "category": "vacancy"
+  },
+  {
+    "org": "SSC",
+    "title": "Examination Calendar",
+    "detailLink": "https://ssc.gov.in/for-candidates/examination-calendar",
+    "category": "vacancy"
+  },
+  {
+    "org": "SSC",
+    "title": "Scheme of Examination",
+    "detailLink": "https://ssc.gov.in/for-candidates/scheme-of-examination",
+    "category": "vacancy"
+  },
+  {
+    "org": "SSC",
+    "title": "Special Instruction",
+    "detailLink": "https://ssc.gov.in/for-candidates/special-instruction",
+    "category": "vacancy"
+  },
+  {
+    "org": "SSC",
+    "title": "Previous Year Question Paper",
+    "detailLink": "https://ssc.gov.in/for-candidates/previous-year-question-paper",
+    "category": "vacancy"
+  },
+  {
+    "org": "SSC",
+    "title": "Format of Certificates",
+    "detailLink": "https://ssc.gov.in/for-candidates/form-of-certificates",
+    "category": "vacancy"
+  },
+  {
+    "org": "SSC",
+    "title": "Tentative Vacancy",
+    "detailLink": "https://ssc.gov.in/for-candidates/tentative-vacancy",
+    "category": "vacancy"
+  },
+  {
+    "org": "SSC",
+    "title": "Normalization Method",
+    "detailLink": "https://ssc.gov.in/for-candidates/normalization-method",
+    "category": "vacancy"
+  },
+  {
+    "org": "SSC",
+    "title": "Proactive Disclosure (RTI)",
+    "detailLink": "https://ssc.gov.in/rti/proactive-disclosure",
+    "category": "vacancy"
+  },
+  {
+    "org": "SSC",
+    "title": "Background of Commission",
+    "detailLink": "https://ssc.gov.in/about-us/background-of-commission",
+    "category": "vacancy"
+  },
+  {
+    "org": "SSC",
+    "title": "Setup of Commission",
+    "detailLink": "https://ssc.gov.in/about-us/commission",
+    "category": "vacancy"
+  },
+  {
+    "org": "SSC",
+    "title": "Organisation Structure",
+    "detailLink": "https://ssc.gov.in/about-us/organisation-structure",
+    "category": "vacancy"
+  },
+  {
+    "org": "SSC",
+    "title": "Function of Commission",
+    "detailLink": "https://ssc.gov.in/about-us/function-commission",
+    "category": "vacancy"
+  },
+  {
+    "org": "SSC",
+    "title": "Vision, Mission & Objectives of SSC",
+    "detailLink": "https://ssc.gov.in/about-us/objective-ssc",
+    "category": "vacancy"
+  },
+  {
+    "org": "SSC",
+    "title": "Regional Network",
+    "detailLink": "https://ssc.gov.in/about-us/regional-network",
+    "category": "vacancy"
+  },
+  {
+    "org": "SSC",
+    "title": "Citizen's Charter",
+    "detailLink": "https://ssc.gov.in/about-us/citizen-charter",
+    "category": "vacancy"
+  },
+  {
+    "org": "SSC",
+    "title": "Right To Information",
+    "detailLink": "https://ssc.gov.in/about-us/rti",
+    "category": "vacancy"
+  },
+  {
+    "org": "SSC",
+    "title": "Committee on Sexual Harassment",
+    "detailLink": "https://ssc.gov.in/about-us/harasment",
+    "category": "vacancy"
+  },
+  {
+    "org": "SSC",
+    "title": "Join Indian Navy",
+    "detailLink": "https://www.joinindiannavy.gov.in/",
+    "category": "vacancy"
+  },
+  {
+    "org": "SSC",
+    "title": "List of Debarred Candidates in Examinations Conducted by the Staff Selection Commission",
+    "detailLink": "https://ssc.gov.in/api/attachment/uploads/masterData/Others/debarreds_as_of_6th_April_2026_060426.pdf",
+    "category": "vacancy"
+  },
+  {
     "org": "UPPSC",
     "title": "भारत सरकारGOVERNMENT OF INDIA",
     "detailLink": "http://india.gov.in",
@@ -403,18 +535,6 @@
   },
   {
     "org": "UPPSC",
-    "title": "NOTICE REGARDING ADMIT CARD FOR ADVT. NO. A-5/E-1/2025, ASSISTANT TEACHER, TRAIN..",
-    "detailLink": "https://uppsc.up.nic.in/Open_PDF_DB.aspx?I4PnQ0tBagl4kdhULj6CxKkRS6gtExH1",
-    "category": "admit"
-  },
-  {
-    "org": "UPPSC",
-    "title": "NOTICE REGARDING ADVT NO: A-5/E-1/2025, ASSISTANT TEACHER, TRAINED GRADUATE GRAD..",
-    "detailLink": "https://uppsc.up.nic.in/Open_PDF_DB.aspx?I4PnQ0tBagl4kdhULj6CxHjq2z2EsCZn",
-    "category": "vacancy"
-  },
-  {
-    "org": "UPPSC",
     "title": "NOTICE REGARDING ADVT NO: A-5/E-1/2025, ASSISTANT TEACHER, TRAINED GRADUATE GRAD..",
     "detailLink": "https://uppsc.up.nic.in/Open_PDF_DB.aspx?I4PnQ0tBagl4kdhULj6CxLtS+k5mAiRG",
     "category": "vacancy"
@@ -466,30 +586,6 @@
     "title": "NOTICE REGARDING ADMIT CARD FOR ADVT. NO. A-6/E-1/2025, LECTURER (MALE/FEMALE) G..",
     "detailLink": "https://uppsc.up.nic.in/Open_PDF_DB.aspx?I4PnQ0tBagnxESX/pg/VGivttFHG8vrp",
     "category": "admit"
-  },
-  {
-    "org": "UPPSC",
-    "title": "NOTICE REGARDING ADMIT CARD FOR ADVT. NO. A-5/E-1/2025, ASSISTANT TEACHER, TRAIN..",
-    "detailLink": "https://uppsc.up.nic.in/Open_PDF_DB.aspx?I4PnQ0tBagmD25xyA4lUA+3ITY0aUmK9",
-    "category": "admit"
-  },
-  {
-    "org": "UPPSC",
-    "title": "NOTICE REGARDING ADMIT CARD FOR ADVT. NO. A-5/E-1/2025, ASSISTANT TEACHER, TRAIN..",
-    "detailLink": "https://uppsc.up.nic.in/Open_PDF_DB.aspx?I4PnQ0tBagmD25xyA4lUA9bZ4mDheHBY",
-    "category": "admit"
-  },
-  {
-    "org": "UPPSC",
-    "title": "NOTICE REGARDING ADVT NO: A-5/E-1/2025, ASSISTANT TEACHER, TRAINED GRADUATE GRAD..",
-    "detailLink": "https://uppsc.up.nic.in/Open_PDF_DB.aspx?I4PnQ0tBagmD25xyA4lUA4opbm0A074K",
-    "category": "vacancy"
-  },
-  {
-    "org": "UPPSC",
-    "title": "NOTICE REGARDING ADVT NO: A-5/E-1/2025, ASSISTANT TEACHER, TRAINED GRADUATE GRAD..",
-    "detailLink": "https://uppsc.up.nic.in/Open_PDF_DB.aspx?I4PnQ0tBagmD25xyA4lUAxeB17ahoVi2",
-    "category": "vacancy"
   },
   {
     "org": "UPPSC",
@@ -691,26 +787,14 @@
   },
   {
     "org": "UPPSC",
-    "title": "13 Jun2026NOTICE REGARDING ADMIT CARD FOR ADVT. NO. A-5/E-1/2025, ASSISTANT TEACHER, TRAINED GRADUATE GRADE (MALE / FEMALE BRANCH) (MAINS) EXAM - 2025 (ARTS)",
-    "detailLink": "https://uppsc.up.nic.in/Open_PDF.aspx?I4PnQ0tBagl4kdhULj6CxCj4UEIx8XkX",
-    "category": "admit"
-  },
-  {
-    "org": "UPPSC",
     "title": "17 Jun2026NOTICE REGARDING ADMIT CARD FOR ADVT. NO. A-6/E-1/2025, LECTURER (MALE/FEMALE) GOVERNMENT INTER COLLEGE (PRE.) EXAM.-2025 (PSYCHOLOGY /  CRIMINOLOGY .....",
     "detailLink": "https://uppsc.up.nic.in/Open_PDF.aspx?I4PnQ0tBagnxESX/pg/VGveceGu2C6ik",
     "category": "admit"
   },
   {
     "org": "UPPSC",
-    "title": "13 Jun2026NOTICE REGARDING ADMIT CARD FOR ADVT. NO. A-5/E-1/2025, ASSISTANT TEACHER, TRAINED GRADUATE GRADE (MALE / FEMALE BRANCH) (MAINS) EXAM - 2025 (BIOLOGY.....",
-    "detailLink": "https://uppsc.up.nic.in/Open_PDF.aspx?I4PnQ0tBagmD25xyA4lUA5dxHc6uiXvQ",
-    "category": "admit"
-  },
-  {
-    "org": "UPPSC",
-    "title": "13 Jun2026NOTICE REGARDING ADMIT CARD FOR ADVT. NO. A-5/E-1/2025, ASSISTANT TEACHER, TRAINED GRADUATE GRADE (MALE / FEMALE BRANCH) (MAINS) EXAM - 2025 (URDU)",
-    "detailLink": "https://uppsc.up.nic.in/Open_PDF.aspx?I4PnQ0tBagmD25xyA4lUAym6nExHP0K8",
+    "title": "14 Jun2026NOTICE REGARDING ADMIT CARD FOR ADVT. NO. A-6/E-1/2025, LECTURER (MALE/FEMALE) GOVERNMENT INTER COLLEGE (PRE.) EXAM.-2025",
+    "detailLink": "https://uppsc.up.nic.in/Open_PDF.aspx?I4PnQ0tBagmD25xyA4lUAxRZKAXmDk+Y",
     "category": "admit"
   },
   {
@@ -808,6 +892,60 @@
     "title": "{{'Tenders_HM' | translate }}",
     "detailLink": "https://uppsc.up.nic.in/FooterPages/Tenders",
     "category": "vacancy"
+  },
+  {
+    "org": "UPPSC",
+    "title": "NOTICE REGARDING ADMIT CARD FOR ADVT. NO. A-5/E-1/2025, ASSISTANT TEACHER, TRAIN..",
+    "detailLink": "https://uppsc.up.nic.in/Open_PDF_DB.aspx?I4PnQ0tBagl4kdhULj6CxKkRS6gtExH1",
+    "category": "admit"
+  },
+  {
+    "org": "UPPSC",
+    "title": "NOTICE REGARDING ADVT NO: A-5/E-1/2025, ASSISTANT TEACHER, TRAINED GRADUATE GRAD..",
+    "detailLink": "https://uppsc.up.nic.in/Open_PDF_DB.aspx?I4PnQ0tBagl4kdhULj6CxHjq2z2EsCZn",
+    "category": "vacancy"
+  },
+  {
+    "org": "UPPSC",
+    "title": "NOTICE REGARDING ADMIT CARD FOR ADVT. NO. A-5/E-1/2025, ASSISTANT TEACHER, TRAIN..",
+    "detailLink": "https://uppsc.up.nic.in/Open_PDF_DB.aspx?I4PnQ0tBagmD25xyA4lUA+3ITY0aUmK9",
+    "category": "admit"
+  },
+  {
+    "org": "UPPSC",
+    "title": "NOTICE REGARDING ADMIT CARD FOR ADVT. NO. A-5/E-1/2025, ASSISTANT TEACHER, TRAIN..",
+    "detailLink": "https://uppsc.up.nic.in/Open_PDF_DB.aspx?I4PnQ0tBagmD25xyA4lUA9bZ4mDheHBY",
+    "category": "admit"
+  },
+  {
+    "org": "UPPSC",
+    "title": "NOTICE REGARDING ADVT NO: A-5/E-1/2025, ASSISTANT TEACHER, TRAINED GRADUATE GRAD..",
+    "detailLink": "https://uppsc.up.nic.in/Open_PDF_DB.aspx?I4PnQ0tBagmD25xyA4lUA4opbm0A074K",
+    "category": "vacancy"
+  },
+  {
+    "org": "UPPSC",
+    "title": "NOTICE REGARDING ADVT NO: A-5/E-1/2025, ASSISTANT TEACHER, TRAINED GRADUATE GRAD..",
+    "detailLink": "https://uppsc.up.nic.in/Open_PDF_DB.aspx?I4PnQ0tBagmD25xyA4lUAxeB17ahoVi2",
+    "category": "vacancy"
+  },
+  {
+    "org": "UPPSC",
+    "title": "13 Jun2026NOTICE REGARDING ADMIT CARD FOR ADVT. NO. A-5/E-1/2025, ASSISTANT TEACHER, TRAINED GRADUATE GRADE (MALE / FEMALE BRANCH) (MAINS) EXAM - 2025 (ARTS)",
+    "detailLink": "https://uppsc.up.nic.in/Open_PDF.aspx?I4PnQ0tBagl4kdhULj6CxCj4UEIx8XkX",
+    "category": "admit"
+  },
+  {
+    "org": "UPPSC",
+    "title": "13 Jun2026NOTICE REGARDING ADMIT CARD FOR ADVT. NO. A-5/E-1/2025, ASSISTANT TEACHER, TRAINED GRADUATE GRADE (MALE / FEMALE BRANCH) (MAINS) EXAM - 2025 (BIOLOGY.....",
+    "detailLink": "https://uppsc.up.nic.in/Open_PDF.aspx?I4PnQ0tBagmD25xyA4lUA5dxHc6uiXvQ",
+    "category": "admit"
+  },
+  {
+    "org": "UPPSC",
+    "title": "13 Jun2026NOTICE REGARDING ADMIT CARD FOR ADVT. NO. A-5/E-1/2025, ASSISTANT TEACHER, TRAINED GRADUATE GRADE (MALE / FEMALE BRANCH) (MAINS) EXAM - 2025 (URDU)",
+    "detailLink": "https://uppsc.up.nic.in/Open_PDF.aspx?I4PnQ0tBagmD25xyA4lUAym6nExHP0K8",
+    "category": "admit"
   },
   {
     "org": "UPPSC",
@@ -1423,12 +1561,6 @@
   },
   {
     "org": "UPPSC",
-    "title": "14 Jun2026NOTICE REGARDING ADMIT CARD FOR ADVT. NO. A-6/E-1/2025, LECTURER (MALE/FEMALE) GOVERNMENT INTER COLLEGE (PRE.) EXAM.-2025",
-    "detailLink": "https://uppsc.up.nic.in/Open_PDF.aspx?I4PnQ0tBagmD25xyA4lUAxRZKAXmDk+Y",
-    "category": "admit"
-  },
-  {
-    "org": "UPPSC",
     "title": "12 Jun2026NOTICE REGARDING ADVT NO A-3/E-1/2025, STAFF NURSE UNANI(MALE/FEMALE) EXAMINATION 2025",
     "detailLink": "https://uppsc.up.nic.in/Open_PDF.aspx?I4PnQ0tBagm1+lNKMPfHe92JKAKLJZWo",
     "category": "vacancy"
@@ -1521,138 +1653,6 @@
     "org": "UPPSC",
     "title": "17 Dec2026NOTICE REGARDING ADVT. NO. D-2/E-1/2024, ASSISTANT ARCHITECT, S-06/01 (PUBLIC WORKS DEPARTMENT UTTAR PRADESH)(SCREENING) EXAM-2024",
     "detailLink": "https://uppsc.up.nic.in/Open_PDF.aspx?I4PnQ0tBagktt06NhTTxwrCJQ8FYSe0e",
-    "category": "vacancy"
-  },
-  {
-    "org": "SSC",
-    "title": "SSC Old Website",
-    "detailLink": "https://ssc.gov.in/",
-    "category": "vacancy"
-  },
-  {
-    "org": "SSC",
-    "title": "Chairman’s Message",
-    "detailLink": "https://ssc.gov.in/chairman-message",
-    "category": "vacancy"
-  },
-  {
-    "org": "SSC",
-    "title": "Script Evaluation",
-    "detailLink": "https://ssc.gov.in/for-candidates/script-evaluation",
-    "category": "vacancy"
-  },
-  {
-    "org": "SSC",
-    "title": "Examination Calendar",
-    "detailLink": "https://ssc.gov.in/for-candidates/examination-calendar",
-    "category": "vacancy"
-  },
-  {
-    "org": "SSC",
-    "title": "Scheme of Examination",
-    "detailLink": "https://ssc.gov.in/for-candidates/scheme-of-examination",
-    "category": "vacancy"
-  },
-  {
-    "org": "SSC",
-    "title": "Special Instruction",
-    "detailLink": "https://ssc.gov.in/for-candidates/special-instruction",
-    "category": "vacancy"
-  },
-  {
-    "org": "SSC",
-    "title": "Previous Year Question Paper",
-    "detailLink": "https://ssc.gov.in/for-candidates/previous-year-question-paper",
-    "category": "vacancy"
-  },
-  {
-    "org": "SSC",
-    "title": "Format of Certificates",
-    "detailLink": "https://ssc.gov.in/for-candidates/form-of-certificates",
-    "category": "vacancy"
-  },
-  {
-    "org": "SSC",
-    "title": "Tentative Vacancy",
-    "detailLink": "https://ssc.gov.in/for-candidates/tentative-vacancy",
-    "category": "vacancy"
-  },
-  {
-    "org": "SSC",
-    "title": "Normalization Method",
-    "detailLink": "https://ssc.gov.in/for-candidates/normalization-method",
-    "category": "vacancy"
-  },
-  {
-    "org": "SSC",
-    "title": "Proactive Disclosure (RTI)",
-    "detailLink": "https://ssc.gov.in/rti/proactive-disclosure",
-    "category": "vacancy"
-  },
-  {
-    "org": "SSC",
-    "title": "Background of Commission",
-    "detailLink": "https://ssc.gov.in/about-us/background-of-commission",
-    "category": "vacancy"
-  },
-  {
-    "org": "SSC",
-    "title": "Setup of Commission",
-    "detailLink": "https://ssc.gov.in/about-us/commission",
-    "category": "vacancy"
-  },
-  {
-    "org": "SSC",
-    "title": "Organisation Structure",
-    "detailLink": "https://ssc.gov.in/about-us/organisation-structure",
-    "category": "vacancy"
-  },
-  {
-    "org": "SSC",
-    "title": "Function of Commission",
-    "detailLink": "https://ssc.gov.in/about-us/function-commission",
-    "category": "vacancy"
-  },
-  {
-    "org": "SSC",
-    "title": "Vision, Mission & Objectives of SSC",
-    "detailLink": "https://ssc.gov.in/about-us/objective-ssc",
-    "category": "vacancy"
-  },
-  {
-    "org": "SSC",
-    "title": "Regional Network",
-    "detailLink": "https://ssc.gov.in/about-us/regional-network",
-    "category": "vacancy"
-  },
-  {
-    "org": "SSC",
-    "title": "Citizen's Charter",
-    "detailLink": "https://ssc.gov.in/about-us/citizen-charter",
-    "category": "vacancy"
-  },
-  {
-    "org": "SSC",
-    "title": "Right To Information",
-    "detailLink": "https://ssc.gov.in/about-us/rti",
-    "category": "vacancy"
-  },
-  {
-    "org": "SSC",
-    "title": "Committee on Sexual Harassment",
-    "detailLink": "https://ssc.gov.in/about-us/harasment",
-    "category": "vacancy"
-  },
-  {
-    "org": "SSC",
-    "title": "Join Indian Navy",
-    "detailLink": "https://www.joinindiannavy.gov.in/",
-    "category": "vacancy"
-  },
-  {
-    "org": "SSC",
-    "title": "List of Debarred Candidates in Examinations Conducted by the Staff Selection Commission",
-    "detailLink": "https://ssc.gov.in/api/attachment/uploads/masterData/Others/debarreds_as_of_6th_April_2026_060426.pdf",
     "category": "vacancy"
   },
   {
