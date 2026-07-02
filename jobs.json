@@ -403,12 +403,6 @@
   },
   {
     "org": "UPPSC",
-    "title": "NOTICE REGARDING ADVT. NO. A-5/E-1/2023, ADDITIONAL PRIVATE SECRETARY EXAM-2023",
-    "detailLink": "https://uppsc.up.nic.in/Open_PDF_DB.aspx?I4PnQ0tBaglkFvRfMi9SvgTDsAYwjENl",
-    "category": "vacancy"
-  },
-  {
-    "org": "UPPSC",
     "title": "CORRIGENDUM NOTICE REGARDING ADVT. NO. A-5/E-1/2025, ASSISTANT TEACHER, TRAINED ..",
     "detailLink": "https://uppsc.up.nic.in/Open_PDF_DB.aspx?I4PnQ0tBagnbSVudLPThSIF5PpKETlpi",
     "category": "vacancy"
@@ -645,6 +639,12 @@
     "org": "UPPSC",
     "title": "{{'Tenders_HM' | translate }}",
     "detailLink": "https://uppsc.up.nic.in/FooterPages/Tenders",
+    "category": "vacancy"
+  },
+  {
+    "org": "UPPSC",
+    "title": "NOTICE REGARDING ADVT. NO. A-5/E-1/2023, ADDITIONAL PRIVATE SECRETARY EXAM-2023",
+    "detailLink": "https://uppsc.up.nic.in/Open_PDF_DB.aspx?I4PnQ0tBaglkFvRfMi9SvgTDsAYwjENl",
     "category": "vacancy"
   },
   {
