@@ -325,12 +325,6 @@
   },
   {
     "org": "UPPSC",
-    "title": "NOTICE REGARDING ADVT. NO. A-1/E-1/2025, ASSISTANT CONSERVATOR OF FOREST (A.C.F...",
-    "detailLink": "https://uppsc.up.nic.in/Open_PDF_DB.aspx?I4PnQ0tBagkC/gT4ITeNgnuzZX+7sNqJ",
-    "category": "vacancy"
-  },
-  {
-    "org": "UPPSC",
     "title": "LIST OF SELECTED CANDIDATES IN ADVT. NO. A-7/E-1/2021, U.P. TECHNICAL EDUCATION ..",
     "detailLink": "https://uppsc.up.nic.in/Open_PDF_DB.aspx?I4PnQ0tBagkz0o52o77EYV3xGBfPBQae",
     "category": "vacancy"
@@ -615,6 +609,12 @@
     "org": "UPPSC",
     "title": "{{'Tenders_HM' | translate }}",
     "detailLink": "https://uppsc.up.nic.in/FooterPages/Tenders",
+    "category": "vacancy"
+  },
+  {
+    "org": "UPPSC",
+    "title": "NOTICE REGARDING ADVT. NO. A-1/E-1/2025, ASSISTANT CONSERVATOR OF FOREST (A.C.F...",
+    "detailLink": "https://uppsc.up.nic.in/Open_PDF_DB.aspx?I4PnQ0tBagkC/gT4ITeNgnuzZX+7sNqJ",
     "category": "vacancy"
   },
   {
