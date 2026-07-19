@@ -558,12 +558,6 @@
     "category": "vacancy"
   },
   {
-    "org": "UPSC",
-    "title": "Akiko Sherman Infotech",
-    "detailLink": "http://www.akikosherman.com/",
-    "category": "vacancy"
-  },
-  {
     "org": "UPPSC",
     "title": "भारत सरकारGOVERNMENT OF INDIA",
     "detailLink": "http://india.gov.in",
@@ -877,7 +871,7 @@
   },
   {
     "org": "UPPSC",
-    "title": "NOTICE REGARDING DOCUMENT VERIFICATION FOR ASSISTANT TEACHER\r\n(TRAINED GRADUATE ..",
+    "title": "NOTICE REGARDING DOCUMENT VERIFICATION FOR ASSISTANT TEACHER\n(TRAINED GRADUATE ..",
     "detailLink": "https://uppsc.up.nic.in/Open_PDF_DB.aspx?I4PnQ0tBagmmrtVdJ7QQ3PHE7wT2dvNZ",
     "category": "vacancy"
   },
@@ -1075,7 +1069,7 @@
   },
   {
     "org": "UPPSC",
-    "title": "24 Jul2026NOTICE REGARDING DOCUMENT VERIFICATION FOR ASSISTANT TEACHER\r\n(TRAINED GRADUATE M/F BRANCH) EXAM-2018 (SOCIAL SCIENCE, HINDI, ENGLISH AND ART)",
+    "title": "24 Jul2026NOTICE REGARDING DOCUMENT VERIFICATION FOR ASSISTANT TEACHER\n(TRAINED GRADUATE M/F BRANCH) EXAM-2018 (SOCIAL SCIENCE, HINDI, ENGLISH AND ART)",
     "detailLink": "https://uppsc.up.nic.in/Open_PDF.aspx?I4PnQ0tBagmmrtVdJ7QQ3M4E+bmNVWKY",
     "category": "vacancy"
   },
@@ -1185,6 +1179,12 @@
     "org": "UPPSC",
     "title": "{{'Tenders_HM' | translate }}",
     "detailLink": "https://uppsc.up.nic.in/FooterPages/Tenders",
+    "category": "vacancy"
+  },
+  {
+    "org": "UPSC",
+    "title": "Akiko Sherman Infotech",
+    "detailLink": "http://www.akikosherman.com/",
     "category": "vacancy"
   },
   {
