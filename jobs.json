@@ -277,18 +277,6 @@
   },
   {
     "org": "UPSC",
-    "title": "Press Note: Central Armed Police Forces (ACs) Examination, 2026",
-    "detailLink": "https://upsc.gov.in/whats-new/Central%20Armed%20Police%20Forces%20%28ACs%29%20Examination%2C%202026/Press%20Note",
-    "category": "vacancy"
-  },
-  {
-    "org": "UPSC",
-    "title": "e - Admit Card: Central Armed Police Forces (ACs) Examination, 2026",
-    "detailLink": "https://upsc.gov.in/whats-new/Central%20Armed%20Police%20Forces%20%28ACs%29%20Examination%2C%202026/e%20-%20Admit%20Card",
-    "category": "admit"
-  },
-  {
-    "org": "UPSC",
     "title": "Advertisement No.08 - 2026",
     "detailLink": "https://upsc.gov.in/whats-new/08 - 2026",
     "category": "vacancy"
@@ -343,12 +331,6 @@
   },
   {
     "org": "UPSC",
-    "title": "Advertisement No.07 - 2026",
-    "detailLink": "https://upsc.gov.in/whats-new/07 - 2026",
-    "category": "vacancy"
-  },
-  {
-    "org": "UPSC",
     "title": "Reserve List: Combined Medical Services Examination, 2025",
     "detailLink": "https://upsc.gov.in/whats-new/Combined%20Medical%20Services%20Examination%2C%202025/Reserve%20List",
     "category": "vacancy"
@@ -358,24 +340,6 @@
     "title": "Final Result: Combined Section Officers' (Grade 'B') LDCE-2025 and Combined Stenographers' (Grade 'B'-Grade-'I') LDCE-2019, 2020 & 2021",
     "detailLink": "https://upsc.gov.in/whats-new/Combined%20Section%20Officers%27%20%28Grade%20%27B%27%29%20LDCE-2025%20and%20Combined%20Stenographers%27%20%28Grade%20%27B%27-Grade-%27I%27%29%20LDCE-2019%2C%202020%20%26%202021/Final%20Result",
     "category": "result"
-  },
-  {
-    "org": "UPSC",
-    "title": "Final Result: 09 Posts of Medical Officer (Ayurveda), Govt. of Puducherry",
-    "detailLink": "https://upsc.gov.in/whats-new/09 Posts of Medical Officer (Ayurveda), Govt. of Puducherry/Final Result",
-    "category": "result"
-  },
-  {
-    "org": "UPSC",
-    "title": "Written Result (with name): Civil Services (Preliminary) Examination, 2026",
-    "detailLink": "https://upsc.gov.in/whats-new/Civil%20Services%20%28Preliminary%29%20Examination%2C%202026/Written%20Result%20%28with%20name%29",
-    "category": "result"
-  },
-  {
-    "org": "UPSC",
-    "title": "Examination Time Table: Central Armed Police Forces (ACs) Examination, 2026",
-    "detailLink": "https://upsc.gov.in/whats-new/Central%20Armed%20Police%20Forces%20%28ACs%29%20Examination%2C%202026/Examination%20Time%20Table",
-    "category": "vacancy"
   },
   {
     "org": "UPSC",
@@ -1179,6 +1143,42 @@
     "org": "UPPSC",
     "title": "{{'Tenders_HM' | translate }}",
     "detailLink": "https://uppsc.up.nic.in/FooterPages/Tenders",
+    "category": "vacancy"
+  },
+  {
+    "org": "UPSC",
+    "title": "Press Note: Central Armed Police Forces (ACs) Examination, 2026",
+    "detailLink": "https://upsc.gov.in/whats-new/Central%20Armed%20Police%20Forces%20%28ACs%29%20Examination%2C%202026/Press%20Note",
+    "category": "vacancy"
+  },
+  {
+    "org": "UPSC",
+    "title": "e - Admit Card: Central Armed Police Forces (ACs) Examination, 2026",
+    "detailLink": "https://upsc.gov.in/whats-new/Central%20Armed%20Police%20Forces%20%28ACs%29%20Examination%2C%202026/e%20-%20Admit%20Card",
+    "category": "admit"
+  },
+  {
+    "org": "UPSC",
+    "title": "Advertisement No.07 - 2026",
+    "detailLink": "https://upsc.gov.in/whats-new/07 - 2026",
+    "category": "vacancy"
+  },
+  {
+    "org": "UPSC",
+    "title": "Final Result: 09 Posts of Medical Officer (Ayurveda), Govt. of Puducherry",
+    "detailLink": "https://upsc.gov.in/whats-new/09 Posts of Medical Officer (Ayurveda), Govt. of Puducherry/Final Result",
+    "category": "result"
+  },
+  {
+    "org": "UPSC",
+    "title": "Written Result (with name): Civil Services (Preliminary) Examination, 2026",
+    "detailLink": "https://upsc.gov.in/whats-new/Civil%20Services%20%28Preliminary%29%20Examination%2C%202026/Written%20Result%20%28with%20name%29",
+    "category": "result"
+  },
+  {
+    "org": "UPSC",
+    "title": "Examination Time Table: Central Armed Police Forces (ACs) Examination, 2026",
+    "detailLink": "https://upsc.gov.in/whats-new/Central%20Armed%20Police%20Forces%20%28ACs%29%20Examination%2C%202026/Examination%20Time%20Table",
     "category": "vacancy"
   },
   {
