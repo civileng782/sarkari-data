@@ -534,6 +534,12 @@
     "category": "vacancy"
   },
   {
+    "org": "UPSC",
+    "title": "Akiko Sherman Infotech",
+    "detailLink": "http://www.akikosherman.com/",
+    "category": "vacancy"
+  },
+  {
     "org": "UPPSC",
     "title": "भारत सरकारGOVERNMENT OF INDIA",
     "detailLink": "http://india.gov.in",
@@ -829,12 +835,6 @@
   },
   {
     "org": "UPPSC",
-    "title": "CORRIGENDUM NOTICE REGARDING ADVT. NO. A-6/E-1/2025, LECT. (M./F.) GOVT. INTER C..",
-    "detailLink": "https://uppsc.up.nic.in/Open_PDF_DB.aspx?I4PnQ0tBaglP18XMjN55aKMuS/dm69+a",
-    "category": "vacancy"
-  },
-  {
-    "org": "UPPSC",
     "title": "LIST OF CANDIDATES PROVISIONALLY QUALIFIED FOR MAINS IN ADVT. NO.\r\nA-6/E-1/2025,..",
     "detailLink": "https://uppsc.up.nic.in/Open_PDF_DB.aspx?I4PnQ0tBaglP18XMjN55aHcs5xataPLZ",
     "category": "vacancy"
@@ -922,18 +922,6 @@
     "title": "LIST OF SELECTED CANDIDATES IN ADVT. NO. A-7/E-1/2021, U.P. TECHNICAL EDUCATION ..",
     "detailLink": "https://uppsc.up.nic.in/Open_PDF_DB.aspx?I4PnQ0tBagloISrijFpWKASZZjdb3vC+",
     "category": "vacancy"
-  },
-  {
-    "org": "UPPSC",
-    "title": "RESULT OF CANDIDATE SELECTED IN ADVT NO. D-4/E-1/2025 FOR THE POST OF REGIONAL A..",
-    "detailLink": "https://uppsc.up.nic.in/Open_PDF_DB.aspx?I4PnQ0tBagloISrijFpWKJK4mFkCc1xW",
-    "category": "result"
-  },
-  {
-    "org": "UPPSC",
-    "title": "LIST OF PROVISIONALLY SELECTED CANDIDATES AS SUPPLEMENTARY RESULT IN ADVT NO A-3..",
-    "detailLink": "https://uppsc.up.nic.in/Open_PDF_DB.aspx?I4PnQ0tBagloISrijFpWKD2C54bGK0YR",
-    "category": "result"
   },
   {
     "org": "UPPSC",
@@ -1057,12 +1045,6 @@
   },
   {
     "org": "UPPSC",
-    "title": "22 Jul2026CORRIGENDUM NOTICE REGARDING ADVT. NO. A-6/E-1/2025, LECT. (M./F.) GOVT. INTER COLLEGE EXAM.-2025, SOCIOLOGY, GEOGRAPHY",
-    "detailLink": "https://uppsc.up.nic.in/Open_PDF.aspx?I4PnQ0tBaglP18XMjN55aCR5Eer9JcoY",
-    "category": "vacancy"
-  },
-  {
-    "org": "UPPSC",
     "title": "30 Jul2026NOTICE REGARDING ADVT NO. D-4/E-1/2025, S-10/02 FOR THE POST OF SYSTEM ANALYST, UPPSC",
     "detailLink": "https://uppsc.up.nic.in/Open_PDF.aspx?I4PnQ0tBagkKFmHgqmmkW5msNWsnaPK2",
     "category": "vacancy"
@@ -1077,6 +1059,12 @@
     "org": "UPPSC",
     "title": "24 Jul2026NOTICE REGARDING DOCUMENT VERIFICATION FOR ASSISTANT TEACHER\r\n(TRAINED GRADUATE M/F BRANCH) EXAM-2018 (SOCIAL SCIENCE, HINDI, ENGLISH AND ART)",
     "detailLink": "https://uppsc.up.nic.in/Open_PDF.aspx?I4PnQ0tBagmmrtVdJ7QQ3M4E+bmNVWKY",
+    "category": "vacancy"
+  },
+  {
+    "org": "UPPSC",
+    "title": "08 Aug2026NOTICE REGARDING ONE TIME REGISTRATION (O.T.R.)",
+    "detailLink": "https://uppsc.up.nic.in/Open_PDF.aspx?I4PnQ0tBagkC/gT4ITeNguFzTj3iROBQ",
     "category": "vacancy"
   },
   {
@@ -1182,9 +1170,27 @@
     "category": "vacancy"
   },
   {
-    "org": "UPSC",
-    "title": "Akiko Sherman Infotech",
-    "detailLink": "http://www.akikosherman.com/",
+    "org": "UPPSC",
+    "title": "CORRIGENDUM NOTICE REGARDING ADVT. NO. A-6/E-1/2025, LECT. (M./F.) GOVT. INTER C..",
+    "detailLink": "https://uppsc.up.nic.in/Open_PDF_DB.aspx?I4PnQ0tBaglP18XMjN55aKMuS/dm69+a",
+    "category": "vacancy"
+  },
+  {
+    "org": "UPPSC",
+    "title": "RESULT OF CANDIDATE SELECTED IN ADVT NO. D-4/E-1/2025 FOR THE POST OF REGIONAL A..",
+    "detailLink": "https://uppsc.up.nic.in/Open_PDF_DB.aspx?I4PnQ0tBagloISrijFpWKJK4mFkCc1xW",
+    "category": "result"
+  },
+  {
+    "org": "UPPSC",
+    "title": "LIST OF PROVISIONALLY SELECTED CANDIDATES AS SUPPLEMENTARY RESULT IN ADVT NO A-3..",
+    "detailLink": "https://uppsc.up.nic.in/Open_PDF_DB.aspx?I4PnQ0tBagloISrijFpWKD2C54bGK0YR",
+    "category": "result"
+  },
+  {
+    "org": "UPPSC",
+    "title": "22 Jul2026CORRIGENDUM NOTICE REGARDING ADVT. NO. A-6/E-1/2025, LECT. (M./F.) GOVT. INTER COLLEGE EXAM.-2025, SOCIOLOGY, GEOGRAPHY",
+    "detailLink": "https://uppsc.up.nic.in/Open_PDF.aspx?I4PnQ0tBaglP18XMjN55aCR5Eer9JcoY",
     "category": "vacancy"
   },
   {
@@ -1203,12 +1209,6 @@
     "org": "UPSC",
     "title": "Important instructions for the candidates qualified for the Indian Forest Service (Main) Examination, 2026",
     "detailLink": "https://upsc.gov.in/content/important-instructions-candidates-qualified-indian-forest-service-main-examination-2026",
-    "category": "vacancy"
-  },
-  {
-    "org": "UPPSC",
-    "title": "08 Aug2026NOTICE REGARDING ONE TIME REGISTRATION (O.T.R.)",
-    "detailLink": "https://uppsc.up.nic.in/Open_PDF.aspx?I4PnQ0tBagkC/gT4ITeNguFzTj3iROBQ",
     "category": "vacancy"
   },
   {
