@@ -421,12 +421,6 @@
   },
   {
     "org": "UPSC",
-    "title": "Important Notice : New Online Application Portal Launched",
-    "detailLink": "https://upsc.gov.in/content/important-notice-new-online-application-portal-launched",
-    "category": "vacancy"
-  },
-  {
-    "org": "UPSC",
     "title": "Annual Calendar 2026",
     "detailLink": "https://upsc.gov.in/content/annual-calendar-2026",
     "category": "vacancy"
@@ -531,12 +525,6 @@
     "org": "UPSC",
     "title": "Web Information Manager",
     "detailLink": "https://upsc.gov.in/web-information-manager",
-    "category": "vacancy"
-  },
-  {
-    "org": "UPSC",
-    "title": "Akiko Sherman Infotech",
-    "detailLink": "http://www.akikosherman.com/",
     "category": "vacancy"
   },
   {
@@ -1167,6 +1155,18 @@
     "org": "UPPSC",
     "title": "{{'Tenders_HM' | translate }}",
     "detailLink": "https://uppsc.up.nic.in/FooterPages/Tenders",
+    "category": "vacancy"
+  },
+  {
+    "org": "UPSC",
+    "title": "Important Notice : New Online Application Portal Launched",
+    "detailLink": "https://upsc.gov.in/content/important-notice-new-online-application-portal-launched",
+    "category": "vacancy"
+  },
+  {
+    "org": "UPSC",
+    "title": "Akiko Sherman Infotech",
+    "detailLink": "http://www.akikosherman.com/",
     "category": "vacancy"
   },
   {
