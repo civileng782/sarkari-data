@@ -241,12 +241,6 @@
   },
   {
     "org": "UPSC",
-    "title": "Provisional Answer Key: Central Armed Police Forces (ACs) Examination, 2026",
-    "detailLink": "https://upsc.gov.in/whats-new/Central%20Armed%20Police%20Forces%20%28ACs%29%20Examination%2C%202026/Provisional%20Answer%20Key",
-    "category": "answer"
-  },
-  {
-    "org": "UPSC",
     "title": "Notice: 156 Posts of Enforcement Officer - Accounts Officer in EPFO",
     "detailLink": "https://upsc.gov.in/whats-new/156 Posts of Enforcement Officer - Accounts Officer in EPFO/Notice",
     "category": "vacancy"
@@ -381,18 +375,6 @@
     "org": "UPSC",
     "title": "Written Result: 01 Post of Data Processing Assistant, Ministry of Defence",
     "detailLink": "https://upsc.gov.in/whats-new/01 Post of Data Processing Assistant, Ministry of Defence/Written Result",
-    "category": "result"
-  },
-  {
-    "org": "UPSC",
-    "title": "Reserve List: Combined Medical Services Examination, 2025",
-    "detailLink": "https://upsc.gov.in/whats-new/Combined%20Medical%20Services%20Examination%2C%202025/Reserve%20List",
-    "category": "vacancy"
-  },
-  {
-    "org": "UPSC",
-    "title": "Final Result: Combined Section Officers' (Grade 'B') LDCE-2025 and Combined Stenographers' (Grade 'B'-Grade-'I') LDCE-2019, 2020 & 2021",
-    "detailLink": "https://upsc.gov.in/whats-new/Combined%20Section%20Officers%27%20%28Grade%20%27B%27%29%20LDCE-2025%20and%20Combined%20Stenographers%27%20%28Grade%20%27B%27-Grade-%27I%27%29%20LDCE-2019%2C%202020%20%26%202021/Final%20Result",
     "category": "result"
   },
   {
@@ -544,6 +526,24 @@
     "title": "Web Information Manager",
     "detailLink": "https://upsc.gov.in/web-information-manager",
     "category": "vacancy"
+  },
+  {
+    "org": "UPSC",
+    "title": "Provisional Answer Key: Central Armed Police Forces (ACs) Examination, 2026",
+    "detailLink": "https://upsc.gov.in/whats-new/Central%20Armed%20Police%20Forces%20%28ACs%29%20Examination%2C%202026/Provisional%20Answer%20Key",
+    "category": "answer"
+  },
+  {
+    "org": "UPSC",
+    "title": "Reserve List: Combined Medical Services Examination, 2025",
+    "detailLink": "https://upsc.gov.in/whats-new/Combined%20Medical%20Services%20Examination%2C%202025/Reserve%20List",
+    "category": "vacancy"
+  },
+  {
+    "org": "UPSC",
+    "title": "Final Result: Combined Section Officers' (Grade 'B') LDCE-2025 and Combined Stenographers' (Grade 'B'-Grade-'I') LDCE-2019, 2020 & 2021",
+    "detailLink": "https://upsc.gov.in/whats-new/Combined%20Section%20Officers%27%20%28Grade%20%27B%27%29%20LDCE-2025%20and%20Combined%20Stenographers%27%20%28Grade%20%27B%27-Grade-%27I%27%29%20LDCE-2019%2C%202020%20%26%202021/Final%20Result",
+    "category": "result"
   },
   {
     "org": "UPSC",
