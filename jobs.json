@@ -534,6 +534,12 @@
     "category": "vacancy"
   },
   {
+    "org": "UPSC",
+    "title": "Akiko Sherman Infotech",
+    "detailLink": "http://www.akikosherman.com/",
+    "category": "vacancy"
+  },
+  {
     "org": "UPPSC",
     "title": "भारत सरकारGOVERNMENT OF INDIA",
     "detailLink": "http://india.gov.in",
@@ -907,12 +913,6 @@
   },
   {
     "org": "UPPSC",
-    "title": "NOTICE REGARDING ADMIT CARD FOR ADVT. NO. A-1/E-1/2025, ASSISTANT CONSERVATOR OF..",
-    "detailLink": "https://uppsc.up.nic.in/Open_PDF_DB.aspx?I4PnQ0tBagkC/gT4ITeNgr2lGuWeHTiD",
-    "category": "admit"
-  },
-  {
-    "org": "UPPSC",
     "title": "LIST OF SELECTED CANDIDATES IN ADVT. NO. A-7/E-1/2021, U.P. TECHNICAL EDUCATION ..",
     "detailLink": "https://uppsc.up.nic.in/Open_PDF_DB.aspx?I4PnQ0tBagkz0o52o77EYV3xGBfPBQae",
     "category": "vacancy"
@@ -939,12 +939,6 @@
     "org": "UPPSC",
     "title": "NOTICE REGARDING ADVT. NO. D-6/E-1/2025, UTTAR PRADESH LIVESTOCK DEPARTMENT, VET..",
     "detailLink": "https://uppsc.up.nic.in/Open_PDF_DB.aspx?I4PnQ0tBagm1I38phqc5aj9szEEFmvLl",
-    "category": "vacancy"
-  },
-  {
-    "org": "UPPSC",
-    "title": "CORRIGENDUM NOTICE REGARDING ADVT. NO. A-5/E-1/2025, ASSISTANT TEACHER, TRAINED ..",
-    "detailLink": "https://uppsc.up.nic.in/Open_PDF_DB.aspx?I4PnQ0tBagnbSVudLPThSIF5PpKETlpi",
     "category": "vacancy"
   },
   {
@@ -1081,12 +1075,6 @@
   },
   {
     "org": "UPPSC",
-    "title": "28 Jul2026NOTICE REGARDING ADMIT CARD FOR ADVT. NO. A-1/E-1/2025, ASSISTANT CONSERVATOR OF FOREST (A.C.F.) / RANGE FOREST OFFICER (R.F.O.) SERVICES (MAINS) EXA.....",
-    "detailLink": "https://uppsc.up.nic.in/Open_PDF.aspx?I4PnQ0tBagkC/gT4ITeNgto2OzZNOra1",
-    "category": "admit"
-  },
-  {
-    "org": "UPPSC",
     "title": "Click here to view List of Candidates who are not selected in P.C.S. Examination-2022, but Qualified for Interview in P.C.S - 2022 (In Merit Order).",
     "detailLink": "https://uppsc.up.nic.in/Open_PDF.aspx?I4PnQ0tBagk9q6upnHHyW7Pdh9qfF6wa",
     "category": "vacancy"
@@ -1182,10 +1170,22 @@
     "category": "vacancy"
   },
   {
-    "org": "UPSC",
-    "title": "Akiko Sherman Infotech",
-    "detailLink": "http://www.akikosherman.com/",
+    "org": "UPPSC",
+    "title": "NOTICE REGARDING ADMIT CARD FOR ADVT. NO. A-1/E-1/2025, ASSISTANT CONSERVATOR OF..",
+    "detailLink": "https://uppsc.up.nic.in/Open_PDF_DB.aspx?I4PnQ0tBagkC/gT4ITeNgr2lGuWeHTiD",
+    "category": "admit"
+  },
+  {
+    "org": "UPPSC",
+    "title": "CORRIGENDUM NOTICE REGARDING ADVT. NO. A-5/E-1/2025, ASSISTANT TEACHER, TRAINED ..",
+    "detailLink": "https://uppsc.up.nic.in/Open_PDF_DB.aspx?I4PnQ0tBagnbSVudLPThSIF5PpKETlpi",
     "category": "vacancy"
+  },
+  {
+    "org": "UPPSC",
+    "title": "28 Jul2026NOTICE REGARDING ADMIT CARD FOR ADVT. NO. A-1/E-1/2025, ASSISTANT CONSERVATOR OF FOREST (A.C.F.) / RANGE FOREST OFFICER (R.F.O.) SERVICES (MAINS) EXA.....",
+    "detailLink": "https://uppsc.up.nic.in/Open_PDF.aspx?I4PnQ0tBagkC/gT4ITeNgto2OzZNOra1",
+    "category": "admit"
   },
   {
     "org": "UPPSC",
