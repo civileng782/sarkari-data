@@ -540,12 +540,6 @@
     "category": "vacancy"
   },
   {
-    "org": "UPSC",
-    "title": "Akiko Sherman Infotech",
-    "detailLink": "http://www.akikosherman.com/",
-    "category": "vacancy"
-  },
-  {
     "org": "UPPSC",
     "title": "भारत सरकारGOVERNMENT OF INDIA",
     "detailLink": "http://india.gov.in",
@@ -835,7 +829,7 @@
   },
   {
     "org": "UPPSC",
-    "title": "NOTICE REGARDING ADVT. NO. A-6/E-1/2026, LECTURER (MALE/FEMALE) GOVERNMENT INTER..",
+    "title": "NOTICE REGARDING ADVT. NO. A-6/E-1/2025, LECTURER (MALE/FEMALE) GOVERNMENT INTER..",
     "detailLink": "https://uppsc.up.nic.in/Open_PDF_DB.aspx?I4PnQ0tBaglP18XMjN55aIX3STSUK3sK",
     "category": "vacancy"
   },
@@ -1063,7 +1057,7 @@
   },
   {
     "org": "UPPSC",
-    "title": "19 Aug2026NOTICE REGARDING ADVT. NO. A-6/E-1/2026, LECTURER (MALE/FEMALE) GOVERNMENT INTER COLLEGE (MAINS) EXAM.-2025",
+    "title": "19 Aug2026NOTICE REGARDING ADVT. NO. A-6/E-1/2025, LECTURER (MALE/FEMALE) GOVERNMENT INTER COLLEGE (MAINS) EXAM.-2025",
     "detailLink": "https://uppsc.up.nic.in/Open_PDF.aspx?I4PnQ0tBaglP18XMjN55aC0yd/NT6FMr",
     "category": "vacancy"
   },
@@ -1179,6 +1173,12 @@
     "org": "UPPSC",
     "title": "{{'Tenders_HM' | translate }}",
     "detailLink": "https://uppsc.up.nic.in/FooterPages/Tenders",
+    "category": "vacancy"
+  },
+  {
+    "org": "UPSC",
+    "title": "Akiko Sherman Infotech",
+    "detailLink": "http://www.akikosherman.com/",
     "category": "vacancy"
   },
   {
