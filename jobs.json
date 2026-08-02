@@ -498,12 +498,6 @@
     "category": "vacancy"
   },
   {
-    "org": "UPSC",
-    "title": "Akiko Sherman Infotech",
-    "detailLink": "http://www.akikosherman.com/",
-    "category": "vacancy"
-  },
-  {
     "org": "UPPSC",
     "title": "भारत सरकारGOVERNMENT OF INDIA",
     "detailLink": "http://india.gov.in",
@@ -913,12 +907,6 @@
   },
   {
     "org": "UPPSC",
-    "title": "LIST OF SELECTED CANDIDATES IN ADVT. NO. A-7/E-1/2021, U.P. TECHNICAL EDUCATION ..",
-    "detailLink": "https://uppsc.up.nic.in/Open_PDF_DB.aspx?I4PnQ0tBagkz0o52o77EYV3xGBfPBQae",
-    "category": "vacancy"
-  },
-  {
-    "org": "UPPSC",
     "title": "CORRIGENDUM NOTICE REGARDING ADVT.NO.D-6/E-1/2025, DIRECTORATE OF HOMOEOPATHY UT..",
     "detailLink": "https://uppsc.up.nic.in/Open_PDF_DB.aspx?I4PnQ0tBagkz0o52o77EYRiV9UshCHNK",
     "category": "vacancy"
@@ -1185,6 +1173,18 @@
     "org": "UPPSC",
     "title": "{{'Tenders_HM' | translate }}",
     "detailLink": "https://uppsc.up.nic.in/FooterPages/Tenders",
+    "category": "vacancy"
+  },
+  {
+    "org": "UPSC",
+    "title": "Akiko Sherman Infotech",
+    "detailLink": "http://www.akikosherman.com/",
+    "category": "vacancy"
+  },
+  {
+    "org": "UPPSC",
+    "title": "LIST OF SELECTED CANDIDATES IN ADVT. NO. A-7/E-1/2021, U.P. TECHNICAL EDUCATION ..",
+    "detailLink": "https://uppsc.up.nic.in/Open_PDF_DB.aspx?I4PnQ0tBagkz0o52o77EYV3xGBfPBQae",
     "category": "vacancy"
   },
   {
