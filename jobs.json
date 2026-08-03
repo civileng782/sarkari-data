@@ -104,7 +104,7 @@
   {
     "org": "UPSC",
     "title": "Representation on Question Papers",
-    "detailLink": "https://upsconline.nic.in/login",
+    "detailLink": "https://upsc.gov.in/examinations/representation-question-papers",
     "category": "vacancy"
   },
   {
@@ -1137,6 +1137,12 @@
     "org": "UPPSC",
     "title": "{{'Tenders_HM' | translate }}",
     "detailLink": "https://uppsc.up.nic.in/FooterPages/Tenders",
+    "category": "vacancy"
+  },
+  {
+    "org": "UPSC",
+    "title": "Representation on Question Papers",
+    "detailLink": "https://upsconline.nic.in/login",
     "category": "vacancy"
   },
   {
