@@ -235,18 +235,6 @@
   },
   {
     "org": "UPSC",
-    "title": "Press Note: Combined Medical Services Examination, 2026",
-    "detailLink": "https://upsc.gov.in/whats-new/Combined%20Medical%20Services%20Examination%2C%202026/Press%20Note",
-    "category": "vacancy"
-  },
-  {
-    "org": "UPSC",
-    "title": "e - Admit Card: Combined Medical Services Examination, 2026",
-    "detailLink": "https://upsc.gov.in/whats-new/Combined%20Medical%20Services%20Examination%2C%202026/e%20-%20Admit%20Card",
-    "category": "admit"
-  },
-  {
-    "org": "UPSC",
     "title": "Written Result (with name): Engineering Services (Main) Examination, 2026",
     "detailLink": "https://upsc.gov.in/whats-new/Engineering%20Services%20%28Main%29%20Examination%2C%202026/Written%20Result%20%28with%20name%29",
     "category": "result"
@@ -273,12 +261,6 @@
     "org": "UPSC",
     "title": "Advertisement No.09 - 2026",
     "detailLink": "https://upsc.gov.in/whats-new/09 - 2026",
-    "category": "vacancy"
-  },
-  {
-    "org": "UPSC",
-    "title": "Notice: 156 Posts of Enforcement Officer - Accounts Officer in EPFO",
-    "detailLink": "https://upsc.gov.in/whats-new/156 Posts of Enforcement Officer - Accounts Officer in EPFO/Notice",
     "category": "vacancy"
   },
   {
@@ -319,12 +301,6 @@
   },
   {
     "org": "UPSC",
-    "title": "Scrutiny: 125 Posts of Medical Officer, Administration of UT of Ladakh",
-    "detailLink": "https://upsc.gov.in/whats-new/125 Posts of Medical Officer, Administration of UT of Ladakh/Scrutiny",
-    "category": "vacancy"
-  },
-  {
-    "org": "UPSC",
     "title": "Notice: 19 Posts of Assistant Public Prosecutor in CBI",
     "detailLink": "https://upsc.gov.in/whats-new/19 Posts of Assistant Public Prosecutor in CBI/Notice",
     "category": "vacancy"
@@ -357,18 +333,6 @@
     "org": "UPSC",
     "title": "Notice: 25 Posts of Public Prosecutor in CBI",
     "detailLink": "https://upsc.gov.in/whats-new/25 Posts of Public Prosecutor in CBI/Notice",
-    "category": "vacancy"
-  },
-  {
-    "org": "UPSC",
-    "title": "Final Result: 11 Posts of Assistant Director Grade-I (IEDS) (Leather & Footwear), Ministry of MSME",
-    "detailLink": "https://upsc.gov.in/whats-new/11 Posts of Assistant Director Grade-I (IEDS) (Leather & Footwear), Ministry of MSME/Final Result",
-    "category": "result"
-  },
-  {
-    "org": "UPSC",
-    "title": "Examination Time Table: Combined Medical Services Examination, 2026",
-    "detailLink": "https://upsc.gov.in/whats-new/Combined%20Medical%20Services%20Examination%2C%202026/Examination%20Time%20Table",
     "category": "vacancy"
   },
   {
@@ -495,12 +459,6 @@
     "org": "UPSC",
     "title": "Web Information Manager",
     "detailLink": "https://upsc.gov.in/web-information-manager",
-    "category": "vacancy"
-  },
-  {
-    "org": "UPSC",
-    "title": "Akiko Sherman Infotech",
-    "detailLink": "http://www.akikosherman.com/",
     "category": "vacancy"
   },
   {
@@ -1179,6 +1137,48 @@
     "org": "UPPSC",
     "title": "{{'Tenders_HM' | translate }}",
     "detailLink": "https://uppsc.up.nic.in/FooterPages/Tenders",
+    "category": "vacancy"
+  },
+  {
+    "org": "UPSC",
+    "title": "Press Note: Combined Medical Services Examination, 2026",
+    "detailLink": "https://upsc.gov.in/whats-new/Combined%20Medical%20Services%20Examination%2C%202026/Press%20Note",
+    "category": "vacancy"
+  },
+  {
+    "org": "UPSC",
+    "title": "e - Admit Card: Combined Medical Services Examination, 2026",
+    "detailLink": "https://upsc.gov.in/whats-new/Combined%20Medical%20Services%20Examination%2C%202026/e%20-%20Admit%20Card",
+    "category": "admit"
+  },
+  {
+    "org": "UPSC",
+    "title": "Notice: 156 Posts of Enforcement Officer - Accounts Officer in EPFO",
+    "detailLink": "https://upsc.gov.in/whats-new/156 Posts of Enforcement Officer - Accounts Officer in EPFO/Notice",
+    "category": "vacancy"
+  },
+  {
+    "org": "UPSC",
+    "title": "Scrutiny: 125 Posts of Medical Officer, Administration of UT of Ladakh",
+    "detailLink": "https://upsc.gov.in/whats-new/125 Posts of Medical Officer, Administration of UT of Ladakh/Scrutiny",
+    "category": "vacancy"
+  },
+  {
+    "org": "UPSC",
+    "title": "Final Result: 11 Posts of Assistant Director Grade-I (IEDS) (Leather & Footwear), Ministry of MSME",
+    "detailLink": "https://upsc.gov.in/whats-new/11 Posts of Assistant Director Grade-I (IEDS) (Leather & Footwear), Ministry of MSME/Final Result",
+    "category": "result"
+  },
+  {
+    "org": "UPSC",
+    "title": "Examination Time Table: Combined Medical Services Examination, 2026",
+    "detailLink": "https://upsc.gov.in/whats-new/Combined%20Medical%20Services%20Examination%2C%202026/Examination%20Time%20Table",
+    "category": "vacancy"
+  },
+  {
+    "org": "UPSC",
+    "title": "Akiko Sherman Infotech",
+    "detailLink": "http://www.akikosherman.com/",
     "category": "vacancy"
   },
   {
