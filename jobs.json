@@ -247,12 +247,6 @@
   },
   {
     "org": "UPSC",
-    "title": "Provisional Answer Key: Combined Medical Services Examination, 2026",
-    "detailLink": "https://upsc.gov.in/whats-new/Combined%20Medical%20Services%20Examination%2C%202026/Provisional%20Answer%20Key",
-    "category": "answer"
-  },
-  {
-    "org": "UPSC",
     "title": "Written Result (with name): Indian Economic Service - Indian Statistical Service Examination, 2026",
     "detailLink": "https://upsc.gov.in/whats-new/Indian%20Economic%20Service%20-%20Indian%20Statistical%20Service%20Examination%2C%202026/Written%20Result%20%28with%20name%29",
     "category": "result"
@@ -513,12 +507,6 @@
     "org": "UPSC",
     "title": "Web Information Manager",
     "detailLink": "https://upsc.gov.in/web-information-manager",
-    "category": "vacancy"
-  },
-  {
-    "org": "UPSC",
-    "title": "Akiko Sherman Infotech",
-    "detailLink": "http://www.akikosherman.com/",
     "category": "vacancy"
   },
   {
@@ -1191,6 +1179,18 @@
     "org": "UPPSC",
     "title": "{{'Tenders_HM' | translate }}",
     "detailLink": "https://uppsc.up.nic.in/FooterPages/Tenders",
+    "category": "vacancy"
+  },
+  {
+    "org": "UPSC",
+    "title": "Provisional Answer Key: Combined Medical Services Examination, 2026",
+    "detailLink": "https://upsc.gov.in/whats-new/Combined%20Medical%20Services%20Examination%2C%202026/Provisional%20Answer%20Key",
+    "category": "answer"
+  },
+  {
+    "org": "UPSC",
+    "title": "Akiko Sherman Infotech",
+    "detailLink": "http://www.akikosherman.com/",
     "category": "vacancy"
   },
   {
