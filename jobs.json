@@ -907,12 +907,6 @@
   },
   {
     "org": "UPPSC",
-    "title": "NOTICE REGARDING ADVT. NO. D-1/E-1/2025\tUTTAR PRADESH MEDICAL EDUCATION DEPARTME..",
-    "detailLink": "https://uppsc.up.nic.in/Open_PDF_DB.aspx?I4PnQ0tBaglP18XMjN55aCJx1sw3WLny",
-    "category": "vacancy"
-  },
-  {
-    "org": "UPPSC",
     "title": "NOTICE REGARDING ADVT. NO. A-3/E-1/2016, REVIEW OFFICER/ASSTT. REVIEW OFFICER ET..",
     "detailLink": "https://uppsc.up.nic.in/Open_PDF_DB.aspx?I4PnQ0tBaglP18XMjN55aJeBzxf58HbR",
     "category": "vacancy"
@@ -1215,6 +1209,12 @@
     "org": "UPPSC",
     "title": "{{'Tenders_HM' | translate }}",
     "detailLink": "https://uppsc.up.nic.in/FooterPages/Tenders",
+    "category": "vacancy"
+  },
+  {
+    "org": "UPPSC",
+    "title": "NOTICE REGARDING ADVT. NO. D-1/E-1/2025\tUTTAR PRADESH MEDICAL EDUCATION DEPARTME..",
+    "detailLink": "https://uppsc.up.nic.in/Open_PDF_DB.aspx?I4PnQ0tBaglP18XMjN55aCJx1sw3WLny",
     "category": "vacancy"
   },
   {
