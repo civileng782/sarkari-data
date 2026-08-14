@@ -355,12 +355,6 @@
   },
   {
     "org": "UPSC",
-    "title": "Advertisement No.09 - 2026",
-    "detailLink": "https://upsc.gov.in/whats-new/09 - 2026",
-    "category": "vacancy"
-  },
-  {
-    "org": "UPSC",
     "title": "Written Result (with name): Combined Geo-Scientist (Main) Examination, 2026",
     "detailLink": "https://upsc.gov.in/whats-new/Combined%20Geo-Scientist%20%28Main%29%20Examination%2C%202026/Written%20Result%20%28with%20name%29",
     "category": "result"
@@ -1215,6 +1209,12 @@
     "org": "UPPSC",
     "title": "{{'Tenders_HM' | translate }}",
     "detailLink": "https://uppsc.up.nic.in/FooterPages/Tenders",
+    "category": "vacancy"
+  },
+  {
+    "org": "UPSC",
+    "title": "Advertisement No.09 - 2026",
+    "detailLink": "https://upsc.gov.in/whats-new/09 - 2026",
     "category": "vacancy"
   },
   {
