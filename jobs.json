@@ -967,18 +967,6 @@
   },
   {
     "org": "UPPSC",
-    "title": "RESULT OF CANDIDATE SELECTED IN ADVT. NO D-4/E-1/2025, DEPT. S-10/02, UPPSC SYST..",
-    "detailLink": "https://uppsc.up.nic.in/Open_PDF_DB.aspx?I4PnQ0tBagkKFmHgqmmkW30lDXcVzR9+",
-    "category": "result"
-  },
-  {
-    "org": "UPPSC",
-    "title": "NOTICE REGARDING ADVT.NO. D-3/E-1/2023, UTTAR PRADESH FORENSIC SCIENCE LABORATOR..",
-    "detailLink": "https://uppsc.up.nic.in/Open_PDF_DB.aspx?I4PnQ0tBagmmrtVdJ7QQ3OHtwQgttuDL",
-    "category": "vacancy"
-  },
-  {
-    "org": "UPPSC",
     "title": "NOTICE REGARDING OF ADVT NO: D-6/E-1/2025, UTTAR PRADESH LEGISLATIVE DEPARTMENT ..",
     "detailLink": "https://uppsc.up.nic.in/Open_PDF_DB.aspx?I4PnQ0tBagkC/gT4ITeNgrXkVJ6dwkRn",
     "category": "vacancy"
@@ -1233,6 +1221,18 @@
     "org": "UPPSC",
     "title": "{{'Tenders_HM' | translate }}",
     "detailLink": "https://uppsc.up.nic.in/FooterPages/Tenders",
+    "category": "vacancy"
+  },
+  {
+    "org": "UPPSC",
+    "title": "RESULT OF CANDIDATE SELECTED IN ADVT. NO D-4/E-1/2025, DEPT. S-10/02, UPPSC SYST..",
+    "detailLink": "https://uppsc.up.nic.in/Open_PDF_DB.aspx?I4PnQ0tBagkKFmHgqmmkW30lDXcVzR9+",
+    "category": "result"
+  },
+  {
+    "org": "UPPSC",
+    "title": "NOTICE REGARDING ADVT.NO. D-3/E-1/2023, UTTAR PRADESH FORENSIC SCIENCE LABORATOR..",
+    "detailLink": "https://uppsc.up.nic.in/Open_PDF_DB.aspx?I4PnQ0tBagmmrtVdJ7QQ3OHtwQgttuDL",
     "category": "vacancy"
   },
   {
