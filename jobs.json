@@ -540,12 +540,6 @@
     "category": "vacancy"
   },
   {
-    "org": "UPSC",
-    "title": "Akiko Sherman Infotech",
-    "detailLink": "http://www.akikosherman.com/",
-    "category": "vacancy"
-  },
-  {
     "org": "UPPSC",
     "title": "भारत सरकारGOVERNMENT OF INDIA",
     "detailLink": "http://india.gov.in",
@@ -1209,6 +1203,12 @@
     "org": "UPPSC",
     "title": "{{'Tenders_HM' | translate }}",
     "detailLink": "https://uppsc.up.nic.in/FooterPages/Tenders",
+    "category": "vacancy"
+  },
+  {
+    "org": "UPSC",
+    "title": "Akiko Sherman Infotech",
+    "detailLink": "http://www.akikosherman.com/",
     "category": "vacancy"
   },
   {
