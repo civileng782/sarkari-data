@@ -1,137 +1,5 @@
 [
   {
-    "org": "SSC",
-    "title": "SSC Old Website",
-    "detailLink": "https://ssc.gov.in/",
-    "category": "vacancy"
-  },
-  {
-    "org": "SSC",
-    "title": "Chairman’s Message",
-    "detailLink": "https://ssc.gov.in/chairman-message",
-    "category": "vacancy"
-  },
-  {
-    "org": "SSC",
-    "title": "Script Evaluation",
-    "detailLink": "https://ssc.gov.in/for-candidates/script-evaluation",
-    "category": "vacancy"
-  },
-  {
-    "org": "SSC",
-    "title": "Examination Calendar",
-    "detailLink": "https://ssc.gov.in/for-candidates/examination-calendar",
-    "category": "vacancy"
-  },
-  {
-    "org": "SSC",
-    "title": "Scheme of Examination",
-    "detailLink": "https://ssc.gov.in/for-candidates/scheme-of-examination",
-    "category": "vacancy"
-  },
-  {
-    "org": "SSC",
-    "title": "Special Instruction",
-    "detailLink": "https://ssc.gov.in/for-candidates/special-instruction",
-    "category": "vacancy"
-  },
-  {
-    "org": "SSC",
-    "title": "Previous Year Question Paper",
-    "detailLink": "https://ssc.gov.in/for-candidates/previous-year-question-paper",
-    "category": "vacancy"
-  },
-  {
-    "org": "SSC",
-    "title": "Format of Certificates",
-    "detailLink": "https://ssc.gov.in/for-candidates/form-of-certificates",
-    "category": "vacancy"
-  },
-  {
-    "org": "SSC",
-    "title": "Tentative Vacancy",
-    "detailLink": "https://ssc.gov.in/for-candidates/tentative-vacancy",
-    "category": "vacancy"
-  },
-  {
-    "org": "SSC",
-    "title": "Normalization Method",
-    "detailLink": "https://ssc.gov.in/for-candidates/normalization-method",
-    "category": "vacancy"
-  },
-  {
-    "org": "SSC",
-    "title": "Proactive Disclosure (RTI)",
-    "detailLink": "https://ssc.gov.in/rti/proactive-disclosure",
-    "category": "vacancy"
-  },
-  {
-    "org": "SSC",
-    "title": "Background of Commission",
-    "detailLink": "https://ssc.gov.in/about-us/background-of-commission",
-    "category": "vacancy"
-  },
-  {
-    "org": "SSC",
-    "title": "Setup of Commission",
-    "detailLink": "https://ssc.gov.in/about-us/commission",
-    "category": "vacancy"
-  },
-  {
-    "org": "SSC",
-    "title": "Organisation Structure",
-    "detailLink": "https://ssc.gov.in/about-us/organisation-structure",
-    "category": "vacancy"
-  },
-  {
-    "org": "SSC",
-    "title": "Function of Commission",
-    "detailLink": "https://ssc.gov.in/about-us/function-commission",
-    "category": "vacancy"
-  },
-  {
-    "org": "SSC",
-    "title": "Vision, Mission & Objectives of SSC",
-    "detailLink": "https://ssc.gov.in/about-us/objective-ssc",
-    "category": "vacancy"
-  },
-  {
-    "org": "SSC",
-    "title": "Regional Network",
-    "detailLink": "https://ssc.gov.in/about-us/regional-network",
-    "category": "vacancy"
-  },
-  {
-    "org": "SSC",
-    "title": "Citizen's Charter",
-    "detailLink": "https://ssc.gov.in/about-us/citizen-charter",
-    "category": "vacancy"
-  },
-  {
-    "org": "SSC",
-    "title": "Right To Information",
-    "detailLink": "https://ssc.gov.in/about-us/rti",
-    "category": "vacancy"
-  },
-  {
-    "org": "SSC",
-    "title": "Committee on Sexual Harassment",
-    "detailLink": "https://ssc.gov.in/about-us/harasment",
-    "category": "vacancy"
-  },
-  {
-    "org": "SSC",
-    "title": "Join Indian Navy",
-    "detailLink": "https://www.joinindiannavy.gov.in/",
-    "category": "vacancy"
-  },
-  {
-    "org": "SSC",
-    "title": "List of Debarred Candidates in Examinations Conducted by the Staff Selection Commission",
-    "detailLink": "https://ssc.gov.in/api/attachment/uploads/masterData/Others/debarreds_as_of_6th_April_2026_060426.pdf",
-    "category": "vacancy"
-  },
-  {
     "org": "UPPSC",
     "title": "भारत सरकारGOVERNMENT OF INDIA",
     "detailLink": "http://india.gov.in",
@@ -145,278 +13,224 @@
   },
   {
     "org": "UPPSC",
-    "title": "{{'Setting_HM' | translate }}",
-    "detailLink": "https://uppsc.up.nic.in/#siteSettings",
-    "category": "vacancy"
-  },
-  {
-    "org": "UPPSC",
-    "title": "{{'AboutUs_HM' | translate }}",
-    "detailLink": "https://uppsc.up.nic.in/",
-    "category": "vacancy"
-  },
-  {
-    "org": "UPPSC",
-    "title": "{{'TheCommission_HM' | translate }}",
-    "detailLink": "https://uppsc.up.nic.in/PublicPages/com.aspx?ID=DE",
-    "category": "vacancy"
-  },
-  {
-    "org": "UPPSC",
-    "title": "{{'ConstitutionalProvisions_HM' | translate }}",
+    "title": "Constitutional Provisions",
     "detailLink": "https://uppsc.up.nic.in/PublicPages/com.aspx?ID=CP",
     "category": "vacancy"
   },
   {
     "org": "UPPSC",
-    "title": "{{'SetupofCommission_HM' | translate }}",
+    "title": "Composition of Commission",
     "detailLink": "https://uppsc.up.nic.in/PublicPages/com.aspx?ID=CC",
     "category": "vacancy"
   },
   {
     "org": "UPPSC",
-    "title": "{{'OrganisationStructure_HM' | translate }}",
+    "title": "Structure of Organisation",
     "detailLink": "https://uppsc.up.nic.in/PublicPages/com.aspx?ID=OS",
     "category": "vacancy"
   },
   {
     "org": "UPPSC",
-    "title": "{{'FunctionCommission_HM' | translate }}",
+    "title": "Functions of Commission",
     "detailLink": "https://uppsc.up.nic.in/PublicPages/com.aspx?ID=FC",
     "category": "vacancy"
   },
   {
     "org": "UPPSC",
-    "title": "{{'CitizensCharter_HM' | translate }}",
+    "title": "Citizens' Charter",
     "detailLink": "https://uppsc.up.nic.in/PublicPages/com.aspx?ID=CZ",
     "category": "vacancy"
   },
   {
     "org": "UPPSC",
-    "title": "{{'ActiveExam_HM' | translate }}",
+    "title": "Active Examinations",
     "detailLink": "https://uppsc.up.nic.in/FooterPages/Upcoming-Exams",
     "category": "vacancy"
   },
   {
     "org": "UPPSC",
-    "title": "{{'ExamCal_HM' | translate }}",
+    "title": "Examination Calendar",
     "detailLink": "https://uppsc.up.nic.in/PublicPages/Examinations_Details.aspx?ID=EC",
     "category": "vacancy"
   },
   {
     "org": "UPPSC",
-    "title": "{{'DebardAppList_HM' | translate }}",
+    "title": "Debarred/Rejected Applicant List",
     "detailLink": "https://uppsc.up.nic.in/PublicPages/ReptDebardList.aspx?ID=dcl",
     "category": "vacancy"
   },
   {
     "org": "UPPSC",
-    "title": "{{'DebardECList_HM' | translate }}",
+    "title": "Debarred Examination Centre List",
     "detailLink": "https://uppsc.up.nic.in/PublicPages/ReptDebardList.aspx?ID=decl",
     "category": "vacancy"
   },
   {
     "org": "UPPSC",
-    "title": "{{'OnlineNotifications_HM' | translate }}",
+    "title": "Online Notifications",
     "detailLink": "https://uppsc.up.nic.in/CandidatePages/Notifications.aspx",
     "category": "vacancy"
   },
   {
     "org": "UPPSC",
-    "title": "{{'InterviewOnly_HM' | translate }}",
-    "detailLink": "https://uppsc.up.nic.in/PublicPages/Recruitment_Details.aspx?ID=IO",
-    "category": "vacancy"
-  },
-  {
-    "org": "UPPSC",
-    "title": "{{'ScreeningTestInt_HM' | translate }}",
+    "title": "Screening Test And Interview",
     "detailLink": "https://uppsc.up.nic.in/PublicPages/Recruitment_Details.aspx?ID=SI",
     "category": "vacancy"
   },
   {
     "org": "UPPSC",
-    "title": "{{'ExaminationOnly_HM' | translate }}",
+    "title": "Examination Only",
     "detailLink": "https://uppsc.up.nic.in/PublicPages/Recruitment_Details.aspx?ID=EO",
     "category": "vacancy"
   },
   {
     "org": "UPPSC",
-    "title": "{{'ExaminationAndInterviewOnly_HM' | translate }}",
+    "title": "Examination And Interview Only",
     "detailLink": "https://uppsc.up.nic.in/PublicPages/Recruitment_Details.aspx?ID=EI",
     "category": "vacancy"
   },
   {
     "org": "UPPSC",
-    "title": "{{'PreExamMainExamInt_HM' | translate }}",
+    "title": "Pre Examination, Main Examination And Interview",
     "detailLink": "https://uppsc.up.nic.in/PublicPages/Recruitment_Details.aspx?ID=EIM",
     "category": "vacancy"
   },
   {
     "org": "UPPSC",
-    "title": "{{'ExpertForm_HM' | translate }}",
+    "title": "Expert's Corner",
+    "detailLink": "https://uppsc.up.nic.in/",
+    "category": "vacancy"
+  },
+  {
+    "org": "UPPSC",
+    "title": "Download Expert Biodata Form",
     "detailLink": "https://uppsc.up.nic.in/ExpertCorner/Frm_ExpertBioData.aspx",
     "category": "vacancy"
   },
   {
     "org": "UPPSC",
-    "title": "{{'AppDashBoard_HM' | translate }}",
+    "title": "Candidate Dashboard Login",
     "detailLink": "https://uppsc.up.nic.in/CandidatePages/OTRAppForm/Applicant_OtrAuthentication.aspx?WEqGEem9m0+8Y4tNQqJiNYurmbKsjJR/fgSlThSTh6o=",
     "category": "vacancy"
   },
   {
     "org": "UPPSC",
-    "title": "{{'CheckApp_HM' | translate }}",
+    "title": "Check Status of Application Forms",
     "detailLink": "https://uppsc.up.nic.in/CandidatePages/Status/ViewStatus.aspx",
     "category": "vacancy"
   },
   {
     "org": "UPPSC",
-    "title": "{{'DwldAdminCard_HM' | translate }}",
+    "title": "Download Admit Card",
     "detailLink": "https://uppsc.up.nic.in/CandidatePages/Advertismentwise_DownloadDocument.aspx?inptprmtr=ac",
-    "category": "vacancy"
+    "category": "admit"
   },
   {
     "org": "UPPSC",
-    "title": "{{'DisplayNoticeE_HM' | translate }}",
+    "title": "View Notices for Download Eligibility Form - Direct",
     "detailLink": "https://uppsc.up.nic.in/OuterPages/DisplayOnlineNotice.aspx?ID=1",
     "category": "vacancy"
   },
   {
     "org": "UPPSC",
-    "title": "{{'DwldEligibilityFormDirect_HM' | translate }}",
+    "title": "Download Eligibility Form - Direct",
     "detailLink": "https://uppsc.up.nic.in/CandidatePages/ElgbtChkg/DownloadForm_EligibilityChecking_New.aspx",
     "category": "vacancy"
   },
   {
     "org": "UPPSC",
-    "title": "{{'DisplayNoticeI_HM' | translate }}",
+    "title": "View Notices for Download Interview Letter - Direct",
     "detailLink": "https://uppsc.up.nic.in/OuterPages/DisplayOnlineNotice.aspx?ID=2",
     "category": "vacancy"
   },
   {
     "org": "UPPSC",
-    "title": "{{'DwldInterviewLetterDirect_HM' | translate }}",
+    "title": "Download Interview Letter - Direct",
     "detailLink": "https://uppsc.up.nic.in/CandidatePages/IntLtr/Interview_DetailsShowByAdvertisement_New.aspx",
     "category": "vacancy"
   },
   {
     "org": "UPPSC",
-    "title": "{{'DwldPreYearQuesPpr_HM' | translate }}",
+    "title": "Download Previous Year Question Papers",
     "detailLink": "https://uppsc.up.nic.in/OuterPages/PreQuesPapers.aspx?ID=PrevQues",
     "category": "vacancy"
   },
   {
     "org": "UPPSC",
-    "title": "{{'DwldSyllabus_HM' | translate }}",
+    "title": "Download Syllabus",
     "detailLink": "https://uppsc.up.nic.in/CandidatePages/Syllabus/Syllabus_PostWise.aspx?ID=4",
     "category": "vacancy"
   },
   {
     "org": "UPPSC",
-    "title": "{{'RejectedList_HM' | translate }}",
+    "title": "Objection raised w.r.t. Application",
     "detailLink": "https://uppsc.up.nic.in/CandidatePages/InputPages/Objected_Candidate_List.aspx",
     "category": "vacancy"
   },
   {
     "org": "UPPSC",
-    "title": "{{'ToppersList_HM' | translate }}",
+    "title": "Success Stories and Toppers List",
     "detailLink": "https://uppsc.up.nic.in/PublicPages/ToppersList.aspx?ID=strscs",
     "category": "vacancy"
   },
   {
     "org": "UPPSC",
-    "title": "{{'HOUP_HM' | translate }}",
+    "title": "Head Office, UPPSC Prayagraj",
     "detailLink": "https://uppsc.up.nic.in/PublicPages/Contus.aspx",
     "category": "vacancy"
   },
   {
     "org": "UPPSC",
-    "title": "{{'FGSE_HM' | translate }}",
+    "title": "File Grievance/Suggestion/Enquiry",
     "detailLink": "https://uppsc.up.nic.in/CandidatePages/InputPages/FeedBack.aspx",
     "category": "vacancy"
   },
   {
     "org": "UPPSC",
-    "title": "{{'CSGSE_HM' | translate }}",
+    "title": "Check Status of Grievance/Enquiry",
     "detailLink": "https://uppsc.up.nic.in/CandidatePages/InputPages/Grievance_Search.aspx",
     "category": "vacancy"
   },
   {
     "org": "UPPSC",
-    "title": "{{'MRTI_HM' | translate }}",
+    "title": "Right To Information",
     "detailLink": "https://uppsc.up.nic.in/FooterPages/RTI.aspx",
     "category": "vacancy"
   },
   {
     "org": "UPPSC",
-    "title": "{{'PICG_HM' | translate }}",
-    "detailLink": "https://uppsc.up.nic.in/PublicPages/Album.aspx",
-    "category": "vacancy"
-  },
-  {
-    "org": "UPPSC",
-    "title": "{{'MediaSection_HM' | translate }}",
-    "detailLink": "https://uppsc.up.nic.in/PublicPages/MediaSection.aspx",
-    "category": "vacancy"
-  },
-  {
-    "org": "UPPSC",
-    "title": "{{'GUIDELINES_HM' | translate }}",
+    "title": "General/Miscellaneous Guidelines",
     "detailLink": "https://uppsc.up.nic.in/PublicPages/GeneralGuidelines.aspx?ID=guidlns",
     "category": "vacancy"
   },
   {
     "org": "UPPSC",
-    "title": "{{'FAQ_HM' | translate }}",
+    "title": "Frequently Asked Questions (FAQ)",
     "detailLink": "https://uppsc.up.nic.in/FAQ/FAQ.aspx?ID=faq",
     "category": "vacancy"
   },
   {
     "org": "UPPSC",
-    "title": "{{'UserMannual_HM' | translate }}",
-    "detailLink": "https://uppsc.up.nic.in/OTR_Section/OTR_UserMannual.aspx",
-    "category": "vacancy"
-  },
-  {
-    "org": "UPPSC",
-    "title": "{{'SampleForm_HM' | translate }}",
-    "detailLink": "https://uppsc.up.nic.in/OTR_Section/Otr_SampleForm.aspx",
-    "category": "vacancy"
-  },
-  {
-    "org": "UPPSC",
-    "title": "{{'SimplifiedForm_HM' | translate }}",
+    "title": "Insts. for uploading Photo and Sign",
     "detailLink": "https://uppsc.up.nic.in/OTR_Section/Otr_SimplifiedForm.aspx",
     "category": "vacancy"
   },
   {
     "org": "UPPSC",
-    "title": "{{'OTRREG_HM' | translate }}",
-    "detailLink": "https://uppsc.up.nic.in/OTR_Section/OTR_Registartion.aspx",
-    "category": "vacancy"
-  },
-  {
-    "org": "UPPSC",
-    "title": "{{'KYOTRNO_HM' | translate }}",
+    "title": "Know your OTR number",
     "detailLink": "https://uppsc.up.nic.in/PublicPages/KnowOTRNo.aspx",
     "category": "vacancy"
   },
   {
     "org": "UPPSC",
-    "title": "{{'OTRFBK_HM' | translate }}",
+    "title": "File Grievance/Query related to O.T.R. Process",
     "detailLink": "https://uppsc.up.nic.in/CandidatePages/InputPages/FeedBack.aspx?ID=OTR_Queries",
     "category": "vacancy"
   },
   {
     "org": "UPPSC",
-    "title": "{{'OTR_Registration_HM' | translate }}",
+    "title": "One Time Registration (O.T.R.) for Applicants",
     "detailLink": "https://otr.pariksha.nic.in/",
-    "category": "vacancy"
-  },
-  {
-    "org": "UPPSC",
-    "title": "{{'WhatsNew_HM' | translate }}",
-    "detailLink": "https://uppsc.up.nic.in/FooterPages/Latest-News",
     "category": "vacancy"
   },
   {
@@ -601,7 +415,7 @@
   },
   {
     "org": "UPPSC",
-    "title": "{{'OTRNo_HM' | translate }}",
+    "title": "Get O.T.R. Number",
     "detailLink": "https://uppsc.up.nic.in/OTR_Section/OtrRedirect.aspx",
     "category": "vacancy"
   },
@@ -613,25 +427,13 @@
   },
   {
     "org": "UPPSC",
-    "title": "{{'FromChMDesk_HM' | translate }}",
-    "detailLink": "https://uppsc.up.nic.in/OuterPages/Chairman_Desk.aspx?msg=en",
-    "category": "vacancy"
-  },
-  {
-    "org": "UPPSC",
-    "title": "{{'FromChMDesk_HI_HM' | translate }}",
-    "detailLink": "https://uppsc.up.nic.in/OuterPages/Chairman_Desk.aspx?msg=hi",
-    "category": "vacancy"
-  },
-  {
-    "org": "UPPSC",
-    "title": "{{'DoubleVerification_HM' | translate }}",
+    "title": "Double Verification mode",
     "detailLink": "https://uppsc.up.nic.in/CandidatePages/InputPages/UpdateTransaction_DV.aspx",
     "category": "vacancy"
   },
   {
     "org": "UPPSC",
-    "title": "{{'ViewAnswerKey_HM' | translate }}",
+    "title": "View Answer Key",
     "detailLink": "https://uppsc.up.nic.in/CandidatePages/Status/ViewAnswerKey.aspx?ID=5",
     "category": "answer"
   },
@@ -727,26 +529,254 @@
   },
   {
     "org": "UPPSC",
-    "title": "{{'eParikshaUP_HM' | translate }}",
+    "title": "e-Pariksha - UP",
     "detailLink": "http://pariksha.up.nic.in",
     "category": "vacancy"
   },
   {
     "org": "UPPSC",
-    "title": "{{'eParikshaIndia_HM' | translate }}",
+    "title": "e-Pariksha - Govt of India",
     "detailLink": "http://pariksha.nic.in",
     "category": "vacancy"
   },
   {
     "org": "UPPSC",
-    "title": "{{'eCourtServices_HM' | translate }}",
+    "title": "eCourt India Services - Gov",
     "detailLink": "https://services.ecourts.gov.in/",
     "category": "vacancy"
   },
   {
     "org": "UPPSC",
-    "title": "{{'OtherPSC_HM' | translate }}",
+    "title": "UPSC and Other PSC",
     "detailLink": "https://uppsc.up.nic.in/OuterPages/Other_PSC.aspx",
+    "category": "vacancy"
+  },
+  {
+    "org": "UPPSC",
+    "title": "RTI - Online Portal",
+    "detailLink": "https://rtionline.gov.in/",
+    "category": "vacancy"
+  },
+  {
+    "org": "UPPSC",
+    "title": "Terms And Conditions",
+    "detailLink": "https://uppsc.up.nic.in/FooterPages/tnc.aspx",
+    "category": "vacancy"
+  },
+  {
+    "org": "UPPSC",
+    "title": "Hyper Linking Policy",
+    "detailLink": "https://uppsc.up.nic.in/FooterPages/hlp.aspx",
+    "category": "vacancy"
+  },
+  {
+    "org": "UPPSC",
+    "title": "Copyright Policy",
+    "detailLink": "https://uppsc.up.nic.in/FooterPages/CopyrightPolicy.aspx",
+    "category": "vacancy"
+  },
+  {
+    "org": "UPPSC",
+    "title": "Screen Accessibility",
+    "detailLink": "https://uppsc.up.nic.in/FooterPages/ScreenAccess.aspx",
+    "category": "vacancy"
+  },
+  {
+    "org": "SSC",
+    "title": "SSC Old Website",
+    "detailLink": "https://ssc.gov.in/",
+    "category": "vacancy"
+  },
+  {
+    "org": "SSC",
+    "title": "Chairman’s Message",
+    "detailLink": "https://ssc.gov.in/chairman-message",
+    "category": "vacancy"
+  },
+  {
+    "org": "SSC",
+    "title": "Script Evaluation",
+    "detailLink": "https://ssc.gov.in/for-candidates/script-evaluation",
+    "category": "vacancy"
+  },
+  {
+    "org": "SSC",
+    "title": "Examination Calendar",
+    "detailLink": "https://ssc.gov.in/for-candidates/examination-calendar",
+    "category": "vacancy"
+  },
+  {
+    "org": "SSC",
+    "title": "Scheme of Examination",
+    "detailLink": "https://ssc.gov.in/for-candidates/scheme-of-examination",
+    "category": "vacancy"
+  },
+  {
+    "org": "SSC",
+    "title": "Special Instruction",
+    "detailLink": "https://ssc.gov.in/for-candidates/special-instruction",
+    "category": "vacancy"
+  },
+  {
+    "org": "SSC",
+    "title": "Previous Year Question Paper",
+    "detailLink": "https://ssc.gov.in/for-candidates/previous-year-question-paper",
+    "category": "vacancy"
+  },
+  {
+    "org": "SSC",
+    "title": "Format of Certificates",
+    "detailLink": "https://ssc.gov.in/for-candidates/form-of-certificates",
+    "category": "vacancy"
+  },
+  {
+    "org": "SSC",
+    "title": "Tentative Vacancy",
+    "detailLink": "https://ssc.gov.in/for-candidates/tentative-vacancy",
+    "category": "vacancy"
+  },
+  {
+    "org": "SSC",
+    "title": "Normalization Method",
+    "detailLink": "https://ssc.gov.in/for-candidates/normalization-method",
+    "category": "vacancy"
+  },
+  {
+    "org": "SSC",
+    "title": "Proactive Disclosure (RTI)",
+    "detailLink": "https://ssc.gov.in/rti/proactive-disclosure",
+    "category": "vacancy"
+  },
+  {
+    "org": "SSC",
+    "title": "Background of Commission",
+    "detailLink": "https://ssc.gov.in/about-us/background-of-commission",
+    "category": "vacancy"
+  },
+  {
+    "org": "SSC",
+    "title": "Setup of Commission",
+    "detailLink": "https://ssc.gov.in/about-us/commission",
+    "category": "vacancy"
+  },
+  {
+    "org": "SSC",
+    "title": "Organisation Structure",
+    "detailLink": "https://ssc.gov.in/about-us/organisation-structure",
+    "category": "vacancy"
+  },
+  {
+    "org": "SSC",
+    "title": "Function of Commission",
+    "detailLink": "https://ssc.gov.in/about-us/function-commission",
+    "category": "vacancy"
+  },
+  {
+    "org": "SSC",
+    "title": "Vision, Mission & Objectives of SSC",
+    "detailLink": "https://ssc.gov.in/about-us/objective-ssc",
+    "category": "vacancy"
+  },
+  {
+    "org": "SSC",
+    "title": "Regional Network",
+    "detailLink": "https://ssc.gov.in/about-us/regional-network",
+    "category": "vacancy"
+  },
+  {
+    "org": "SSC",
+    "title": "Citizen's Charter",
+    "detailLink": "https://ssc.gov.in/about-us/citizen-charter",
+    "category": "vacancy"
+  },
+  {
+    "org": "SSC",
+    "title": "Right To Information",
+    "detailLink": "https://ssc.gov.in/about-us/rti",
+    "category": "vacancy"
+  },
+  {
+    "org": "SSC",
+    "title": "Committee on Sexual Harassment",
+    "detailLink": "https://ssc.gov.in/about-us/harasment",
+    "category": "vacancy"
+  },
+  {
+    "org": "SSC",
+    "title": "Join Indian Navy",
+    "detailLink": "https://www.joinindiannavy.gov.in/",
+    "category": "vacancy"
+  },
+  {
+    "org": "SSC",
+    "title": "List of Debarred Candidates in Examinations Conducted by the Staff Selection Commission",
+    "detailLink": "https://ssc.gov.in/api/attachment/uploads/masterData/Others/debarreds_as_of_6th_April_2026_060426.pdf",
+    "category": "vacancy"
+  },
+  {
+    "org": "UPPSC",
+    "title": "{{'Setting_HM' | translate }}",
+    "detailLink": "https://uppsc.up.nic.in/#siteSettings",
+    "category": "vacancy"
+  },
+  {
+    "org": "UPPSC",
+    "title": "{{'TheCommission_HM' | translate }}",
+    "detailLink": "https://uppsc.up.nic.in/PublicPages/com.aspx?ID=DE",
+    "category": "vacancy"
+  },
+  {
+    "org": "UPPSC",
+    "title": "{{'InterviewOnly_HM' | translate }}",
+    "detailLink": "https://uppsc.up.nic.in/PublicPages/Recruitment_Details.aspx?ID=IO",
+    "category": "vacancy"
+  },
+  {
+    "org": "UPPSC",
+    "title": "{{'PICG_HM' | translate }}",
+    "detailLink": "https://uppsc.up.nic.in/PublicPages/Album.aspx",
+    "category": "vacancy"
+  },
+  {
+    "org": "UPPSC",
+    "title": "{{'MediaSection_HM' | translate }}",
+    "detailLink": "https://uppsc.up.nic.in/PublicPages/MediaSection.aspx",
+    "category": "vacancy"
+  },
+  {
+    "org": "UPPSC",
+    "title": "{{'UserMannual_HM' | translate }}",
+    "detailLink": "https://uppsc.up.nic.in/OTR_Section/OTR_UserMannual.aspx",
+    "category": "vacancy"
+  },
+  {
+    "org": "UPPSC",
+    "title": "{{'SampleForm_HM' | translate }}",
+    "detailLink": "https://uppsc.up.nic.in/OTR_Section/Otr_SampleForm.aspx",
+    "category": "vacancy"
+  },
+  {
+    "org": "UPPSC",
+    "title": "{{'OTRREG_HM' | translate }}",
+    "detailLink": "https://uppsc.up.nic.in/OTR_Section/OTR_Registartion.aspx",
+    "category": "vacancy"
+  },
+  {
+    "org": "UPPSC",
+    "title": "{{'WhatsNew_HM' | translate }}",
+    "detailLink": "https://uppsc.up.nic.in/FooterPages/Latest-News",
+    "category": "vacancy"
+  },
+  {
+    "org": "UPPSC",
+    "title": "{{'FromChMDesk_HM' | translate }}",
+    "detailLink": "https://uppsc.up.nic.in/OuterPages/Chairman_Desk.aspx?msg=en",
+    "category": "vacancy"
+  },
+  {
+    "org": "UPPSC",
+    "title": "{{'FromChMDesk_HI_HM' | translate }}",
+    "detailLink": "https://uppsc.up.nic.in/OuterPages/Chairman_Desk.aspx?msg=hi",
     "category": "vacancy"
   },
   {
@@ -757,44 +787,14 @@
   },
   {
     "org": "UPPSC",
-    "title": "{{'RTIOnline_HM' | translate }}",
-    "detailLink": "https://rtionline.gov.in/",
-    "category": "vacancy"
-  },
-  {
-    "org": "UPPSC",
     "title": "{{'Home_HM' | translate }}",
     "detailLink": "https://uppsc.up.nic.in/Home",
     "category": "vacancy"
   },
   {
     "org": "UPPSC",
-    "title": "{{'TNC_HM' | translate }}",
-    "detailLink": "https://uppsc.up.nic.in/FooterPages/tnc.aspx",
-    "category": "vacancy"
-  },
-  {
-    "org": "UPPSC",
     "title": "{{'PP_HM' | translate }}",
     "detailLink": "https://uppsc.up.nic.in/FooterPages/PrivacyPolicy.aspx",
-    "category": "vacancy"
-  },
-  {
-    "org": "UPPSC",
-    "title": "{{'HLP_HM' | translate }}",
-    "detailLink": "https://uppsc.up.nic.in/FooterPages/hlp.aspx",
-    "category": "vacancy"
-  },
-  {
-    "org": "UPPSC",
-    "title": "{{'CP_HM' | translate }}",
-    "detailLink": "https://uppsc.up.nic.in/FooterPages/CopyrightPolicy.aspx",
-    "category": "vacancy"
-  },
-  {
-    "org": "UPPSC",
-    "title": "{{'SCA_HM' | translate }}",
-    "detailLink": "https://uppsc.up.nic.in/FooterPages/ScreenAccess.aspx",
     "category": "vacancy"
   },
   {
