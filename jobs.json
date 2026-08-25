@@ -1,833 +1,5 @@
 [
   {
-    "org": "UPPSC",
-    "title": "भारत सरकारGOVERNMENT OF INDIA",
-    "detailLink": "http://india.gov.in",
-    "category": "vacancy"
-  },
-  {
-    "org": "UPPSC",
-    "title": "उत्तर प्रदेशUttar Pradesh",
-    "detailLink": "http://up.gov.in/",
-    "category": "vacancy"
-  },
-  {
-    "org": "UPPSC",
-    "title": "{{'Setting_HM' | translate }}",
-    "detailLink": "https://uppsc.up.nic.in/#siteSettings",
-    "category": "vacancy"
-  },
-  {
-    "org": "UPPSC",
-    "title": "{{'AboutUs_HM' | translate }}",
-    "detailLink": "https://uppsc.up.nic.in/",
-    "category": "vacancy"
-  },
-  {
-    "org": "UPPSC",
-    "title": "{{'TheCommission_HM' | translate }}",
-    "detailLink": "https://uppsc.up.nic.in/PublicPages/com.aspx?ID=DE",
-    "category": "vacancy"
-  },
-  {
-    "org": "UPPSC",
-    "title": "{{'ConstitutionalProvisions_HM' | translate }}",
-    "detailLink": "https://uppsc.up.nic.in/PublicPages/com.aspx?ID=CP",
-    "category": "vacancy"
-  },
-  {
-    "org": "UPPSC",
-    "title": "{{'SetupofCommission_HM' | translate }}",
-    "detailLink": "https://uppsc.up.nic.in/PublicPages/com.aspx?ID=CC",
-    "category": "vacancy"
-  },
-  {
-    "org": "UPPSC",
-    "title": "{{'OrganisationStructure_HM' | translate }}",
-    "detailLink": "https://uppsc.up.nic.in/PublicPages/com.aspx?ID=OS",
-    "category": "vacancy"
-  },
-  {
-    "org": "UPPSC",
-    "title": "{{'FunctionCommission_HM' | translate }}",
-    "detailLink": "https://uppsc.up.nic.in/PublicPages/com.aspx?ID=FC",
-    "category": "vacancy"
-  },
-  {
-    "org": "UPPSC",
-    "title": "{{'CitizensCharter_HM' | translate }}",
-    "detailLink": "https://uppsc.up.nic.in/PublicPages/com.aspx?ID=CZ",
-    "category": "vacancy"
-  },
-  {
-    "org": "UPPSC",
-    "title": "{{'ActiveExam_HM' | translate }}",
-    "detailLink": "https://uppsc.up.nic.in/FooterPages/Upcoming-Exams",
-    "category": "vacancy"
-  },
-  {
-    "org": "UPPSC",
-    "title": "{{'ExamCal_HM' | translate }}",
-    "detailLink": "https://uppsc.up.nic.in/PublicPages/Examinations_Details.aspx?ID=EC",
-    "category": "vacancy"
-  },
-  {
-    "org": "UPPSC",
-    "title": "{{'DebardAppList_HM' | translate }}",
-    "detailLink": "https://uppsc.up.nic.in/PublicPages/ReptDebardList.aspx?ID=dcl",
-    "category": "vacancy"
-  },
-  {
-    "org": "UPPSC",
-    "title": "{{'DebardECList_HM' | translate }}",
-    "detailLink": "https://uppsc.up.nic.in/PublicPages/ReptDebardList.aspx?ID=decl",
-    "category": "vacancy"
-  },
-  {
-    "org": "UPPSC",
-    "title": "{{'OnlineNotifications_HM' | translate }}",
-    "detailLink": "https://uppsc.up.nic.in/CandidatePages/Notifications.aspx",
-    "category": "vacancy"
-  },
-  {
-    "org": "UPPSC",
-    "title": "{{'InterviewOnly_HM' | translate }}",
-    "detailLink": "https://uppsc.up.nic.in/PublicPages/Recruitment_Details.aspx?ID=IO",
-    "category": "vacancy"
-  },
-  {
-    "org": "UPPSC",
-    "title": "{{'ScreeningTestInt_HM' | translate }}",
-    "detailLink": "https://uppsc.up.nic.in/PublicPages/Recruitment_Details.aspx?ID=SI",
-    "category": "vacancy"
-  },
-  {
-    "org": "UPPSC",
-    "title": "{{'ExaminationOnly_HM' | translate }}",
-    "detailLink": "https://uppsc.up.nic.in/PublicPages/Recruitment_Details.aspx?ID=EO",
-    "category": "vacancy"
-  },
-  {
-    "org": "UPPSC",
-    "title": "{{'ExaminationAndInterviewOnly_HM' | translate }}",
-    "detailLink": "https://uppsc.up.nic.in/PublicPages/Recruitment_Details.aspx?ID=EI",
-    "category": "vacancy"
-  },
-  {
-    "org": "UPPSC",
-    "title": "{{'PreExamMainExamInt_HM' | translate }}",
-    "detailLink": "https://uppsc.up.nic.in/PublicPages/Recruitment_Details.aspx?ID=EIM",
-    "category": "vacancy"
-  },
-  {
-    "org": "UPPSC",
-    "title": "{{'ExpertForm_HM' | translate }}",
-    "detailLink": "https://uppsc.up.nic.in/ExpertCorner/Frm_ExpertBioData.aspx",
-    "category": "vacancy"
-  },
-  {
-    "org": "UPPSC",
-    "title": "{{'AppDashBoard_HM' | translate }}",
-    "detailLink": "https://uppsc.up.nic.in/CandidatePages/OTRAppForm/Applicant_OtrAuthentication.aspx?WEqGEem9m0+8Y4tNQqJiNYurmbKsjJR/fgSlThSTh6o=",
-    "category": "vacancy"
-  },
-  {
-    "org": "UPPSC",
-    "title": "{{'CheckApp_HM' | translate }}",
-    "detailLink": "https://uppsc.up.nic.in/CandidatePages/Status/ViewStatus.aspx",
-    "category": "vacancy"
-  },
-  {
-    "org": "UPPSC",
-    "title": "{{'DwldAdminCard_HM' | translate }}",
-    "detailLink": "https://uppsc.up.nic.in/CandidatePages/Advertismentwise_DownloadDocument.aspx?inptprmtr=ac",
-    "category": "vacancy"
-  },
-  {
-    "org": "UPPSC",
-    "title": "{{'DisplayNoticeE_HM' | translate }}",
-    "detailLink": "https://uppsc.up.nic.in/OuterPages/DisplayOnlineNotice.aspx?ID=1",
-    "category": "vacancy"
-  },
-  {
-    "org": "UPPSC",
-    "title": "{{'DwldEligibilityFormDirect_HM' | translate }}",
-    "detailLink": "https://uppsc.up.nic.in/CandidatePages/ElgbtChkg/DownloadForm_EligibilityChecking_New.aspx",
-    "category": "vacancy"
-  },
-  {
-    "org": "UPPSC",
-    "title": "{{'DisplayNoticeI_HM' | translate }}",
-    "detailLink": "https://uppsc.up.nic.in/OuterPages/DisplayOnlineNotice.aspx?ID=2",
-    "category": "vacancy"
-  },
-  {
-    "org": "UPPSC",
-    "title": "{{'DwldInterviewLetterDirect_HM' | translate }}",
-    "detailLink": "https://uppsc.up.nic.in/CandidatePages/IntLtr/Interview_DetailsShowByAdvertisement_New.aspx",
-    "category": "vacancy"
-  },
-  {
-    "org": "UPPSC",
-    "title": "{{'DwldPreYearQuesPpr_HM' | translate }}",
-    "detailLink": "https://uppsc.up.nic.in/OuterPages/PreQuesPapers.aspx?ID=PrevQues",
-    "category": "vacancy"
-  },
-  {
-    "org": "UPPSC",
-    "title": "{{'DwldSyllabus_HM' | translate }}",
-    "detailLink": "https://uppsc.up.nic.in/CandidatePages/Syllabus/Syllabus_PostWise.aspx?ID=4",
-    "category": "vacancy"
-  },
-  {
-    "org": "UPPSC",
-    "title": "{{'RejectedList_HM' | translate }}",
-    "detailLink": "https://uppsc.up.nic.in/CandidatePages/InputPages/Objected_Candidate_List.aspx",
-    "category": "vacancy"
-  },
-  {
-    "org": "UPPSC",
-    "title": "{{'ToppersList_HM' | translate }}",
-    "detailLink": "https://uppsc.up.nic.in/PublicPages/ToppersList.aspx?ID=strscs",
-    "category": "vacancy"
-  },
-  {
-    "org": "UPPSC",
-    "title": "{{'HOUP_HM' | translate }}",
-    "detailLink": "https://uppsc.up.nic.in/PublicPages/Contus.aspx",
-    "category": "vacancy"
-  },
-  {
-    "org": "UPPSC",
-    "title": "{{'FGSE_HM' | translate }}",
-    "detailLink": "https://uppsc.up.nic.in/CandidatePages/InputPages/FeedBack.aspx",
-    "category": "vacancy"
-  },
-  {
-    "org": "UPPSC",
-    "title": "{{'CSGSE_HM' | translate }}",
-    "detailLink": "https://uppsc.up.nic.in/CandidatePages/InputPages/Grievance_Search.aspx",
-    "category": "vacancy"
-  },
-  {
-    "org": "UPPSC",
-    "title": "{{'MRTI_HM' | translate }}",
-    "detailLink": "https://uppsc.up.nic.in/FooterPages/RTI.aspx",
-    "category": "vacancy"
-  },
-  {
-    "org": "UPPSC",
-    "title": "{{'PICG_HM' | translate }}",
-    "detailLink": "https://uppsc.up.nic.in/PublicPages/Album.aspx",
-    "category": "vacancy"
-  },
-  {
-    "org": "UPPSC",
-    "title": "{{'MediaSection_HM' | translate }}",
-    "detailLink": "https://uppsc.up.nic.in/PublicPages/MediaSection.aspx",
-    "category": "vacancy"
-  },
-  {
-    "org": "UPPSC",
-    "title": "{{'GUIDELINES_HM' | translate }}",
-    "detailLink": "https://uppsc.up.nic.in/PublicPages/GeneralGuidelines.aspx?ID=guidlns",
-    "category": "vacancy"
-  },
-  {
-    "org": "UPPSC",
-    "title": "{{'FAQ_HM' | translate }}",
-    "detailLink": "https://uppsc.up.nic.in/FAQ/FAQ.aspx?ID=faq",
-    "category": "vacancy"
-  },
-  {
-    "org": "UPPSC",
-    "title": "{{'UserMannual_HM' | translate }}",
-    "detailLink": "https://uppsc.up.nic.in/OTR_Section/OTR_UserMannual.aspx",
-    "category": "vacancy"
-  },
-  {
-    "org": "UPPSC",
-    "title": "{{'SampleForm_HM' | translate }}",
-    "detailLink": "https://uppsc.up.nic.in/OTR_Section/Otr_SampleForm.aspx",
-    "category": "vacancy"
-  },
-  {
-    "org": "UPPSC",
-    "title": "{{'SimplifiedForm_HM' | translate }}",
-    "detailLink": "https://uppsc.up.nic.in/OTR_Section/Otr_SimplifiedForm.aspx",
-    "category": "vacancy"
-  },
-  {
-    "org": "UPPSC",
-    "title": "{{'OTRREG_HM' | translate }}",
-    "detailLink": "https://uppsc.up.nic.in/OTR_Section/OTR_Registartion.aspx",
-    "category": "vacancy"
-  },
-  {
-    "org": "UPPSC",
-    "title": "{{'KYOTRNO_HM' | translate }}",
-    "detailLink": "https://uppsc.up.nic.in/PublicPages/KnowOTRNo.aspx",
-    "category": "vacancy"
-  },
-  {
-    "org": "UPPSC",
-    "title": "{{'OTRFBK_HM' | translate }}",
-    "detailLink": "https://uppsc.up.nic.in/CandidatePages/InputPages/FeedBack.aspx?ID=OTR_Queries",
-    "category": "vacancy"
-  },
-  {
-    "org": "UPPSC",
-    "title": "{{'OTR_Registration_HM' | translate }}",
-    "detailLink": "https://otr.pariksha.nic.in/",
-    "category": "vacancy"
-  },
-  {
-    "org": "UPPSC",
-    "title": "{{'WhatsNew_HM' | translate }}",
-    "detailLink": "https://uppsc.up.nic.in/FooterPages/Latest-News",
-    "category": "vacancy"
-  },
-  {
-    "org": "UPPSC",
-    "title": "NOTICE REGARDING ADMIT CARD FOR ADVT.NO. A-11/E-1/2025, LECTURER U.P. TECHNICAL ..",
-    "detailLink": "https://uppsc.up.nic.in/Open_PDF_DB.aspx?I4PnQ0tBagnM8dHr1ViOnseKfh32h8Kz",
-    "category": "admit"
-  },
-  {
-    "org": "UPPSC",
-    "title": "NOTICE REGARDING ADVT. NO. A-9/E-1/2025, STATE PLANNING INSTITUTE (NEW DIVISION)..",
-    "detailLink": "https://uppsc.up.nic.in/Open_PDF_DB.aspx?I4PnQ0tBagnM8dHr1ViOnnnNFW5qzQ+T",
-    "category": "vacancy"
-  },
-  {
-    "org": "UPPSC",
-    "title": "LIST OF SELECTED CANDIDATES IN ADVT. NO. A-7/E-1/2021, U.P. TECH. EDU.(TCHG.) SE..",
-    "detailLink": "https://uppsc.up.nic.in/Open_PDF_DB.aspx?I4PnQ0tBagnM8dHr1ViOnkuvDrTd7Cob",
-    "category": "vacancy"
-  },
-  {
-    "org": "UPPSC",
-    "title": "NOTICE REGARDING ADMIT CARD FOR ADVT. NO.A-6/E-1/2026, LECTURER (MALE/FEMALE) GO..",
-    "detailLink": "https://uppsc.up.nic.in/Open_PDF_DB.aspx?I4PnQ0tBagmtuZKZH/DenxmfTZaveVl2",
-    "category": "admit"
-  },
-  {
-    "org": "UPPSC",
-    "title": "NOTICE REGARDING  ADVT. NO. A-7/E-1/2025, ASST. PROF., GOVT. DEGREE COLLEGE (MAI..",
-    "detailLink": "https://uppsc.up.nic.in/Open_PDF_DB.aspx?I4PnQ0tBagmtuZKZH/Den9fBY0BCQxD2",
-    "category": "vacancy"
-  },
-  {
-    "org": "UPPSC",
-    "title": "NOTICE REGARDING  ADVT. NO. A-7/E-1/2025, ASST. PROF., GOVT. DEGREE COLLEGE (MAI..",
-    "detailLink": "https://uppsc.up.nic.in/Open_PDF_DB.aspx?I4PnQ0tBagmtuZKZH/Den7256mvEQdeD",
-    "category": "vacancy"
-  },
-  {
-    "org": "UPPSC",
-    "title": "LIST OF CANDIDATES PROV. QUAL. FOR MAINS IN ADVT. NO. A-7/E-1/2025, ASST. PROF.,..",
-    "detailLink": "https://uppsc.up.nic.in/Open_PDF_DB.aspx?I4PnQ0tBagmtuZKZH/Den21D9l77+Qjn",
-    "category": "vacancy"
-  },
-  {
-    "org": "UPPSC",
-    "title": "NOTICE REGARDING DOWNLOAD MARKSHEET & CUT OFF FOR ADVT. NO. D-2-E-1-2024, [S-09-..",
-    "detailLink": "https://uppsc.up.nic.in/Open_PDF_DB.aspx?I4PnQ0tBagmtuZKZH/Den+TiD+7HnBYY",
-    "category": "vacancy"
-  },
-  {
-    "org": "UPPSC",
-    "title": "LIST OF CANDIDATES PROV. QUAL. FOR MAINS IN ADVT. NO. A-7/E-1/2025, ASST. PROF.,..",
-    "detailLink": "https://uppsc.up.nic.in/Open_PDF_DB.aspx?I4PnQ0tBagmtuZKZH/Den4JuCea9TggI",
-    "category": "vacancy"
-  },
-  {
-    "org": "UPPSC",
-    "title": "RESULT OF ADVT. NO. D-4/E-1/2025, U.P. AYUSH (AYURVEDA) PROFESSOR(SPECIALIST) AG..",
-    "detailLink": "https://uppsc.up.nic.in/Open_PDF_DB.aspx?I4PnQ0tBagmtuZKZH/DenzRcUXubicMB",
-    "category": "result"
-  },
-  {
-    "org": "UPPSC",
-    "title": "RESULT OF ADVT. NO. D-4/E-1/2025, U.P. AYUSH (AYURVEDA) DEPARTMENT/PROFESSOR(SPE..",
-    "detailLink": "https://uppsc.up.nic.in/Open_PDF_DB.aspx?I4PnQ0tBagkKN9rKVhlu7z0vaAs91GKj",
-    "category": "result"
-  },
-  {
-    "org": "UPPSC",
-    "title": "LIST OF CANDIDATES PROVISIONALLY QUALIFIED FOR MAINS IN ADVT. NO. A-7/E-1/2025, ..",
-    "detailLink": "https://uppsc.up.nic.in/Open_PDF_DB.aspx?I4PnQ0tBagkKN9rKVhlu7/LtnZvN8L6L",
-    "category": "vacancy"
-  },
-  {
-    "org": "UPPSC",
-    "title": "RESULT OF ADVT. NO. D-4/E-1/2025, DIRECTORATE GENERAL OF FAMILY WELFARE UTTAR PR..",
-    "detailLink": "https://uppsc.up.nic.in/Open_PDF_DB.aspx?I4PnQ0tBagkKN9rKVhlu7ysKNFjEqVIK",
-    "category": "result"
-  },
-  {
-    "org": "UPPSC",
-    "title": "LIST OF CANDIDATES PROVISIONALLY QUALIFIED FOR MAINS IN ADVT. NO. A-7/E-1/2025, ..",
-    "detailLink": "https://uppsc.up.nic.in/Open_PDF_DB.aspx?I4PnQ0tBagkKN9rKVhlu7xNKmJ4M19az",
-    "category": "vacancy"
-  },
-  {
-    "org": "UPPSC",
-    "title": "RESULT OF ADVT. NO. D-5/E-1/2025, UTTAR PRADESH STATE ARCHAEOLOGICAL DIRECTORATE..",
-    "detailLink": "https://uppsc.up.nic.in/Open_PDF_DB.aspx?I4PnQ0tBagkKN9rKVhlu76/9na81EE1P",
-    "category": "result"
-  },
-  {
-    "org": "UPPSC",
-    "title": "NOTICE REGARDING ADVT. NO. A-6/E-1/2025, UTTAR PRADESH JAIL TRAINING SCHOOL (TEA..",
-    "detailLink": "https://uppsc.up.nic.in/Open_PDF_DB.aspx?I4PnQ0tBagkKN9rKVhlu70EFhRM02jL4",
-    "category": "vacancy"
-  },
-  {
-    "org": "UPPSC",
-    "title": "RESULT OF ADVT. NO.2/2019-2020, U. P. AYUSH (UNANI) DEPTT./PRINCIPAL, S-11/02",
-    "detailLink": "https://uppsc.up.nic.in/Open_PDF_DB.aspx?I4PnQ0tBaglovGFVjGJMaNLk/ffKn7jL",
-    "category": "result"
-  },
-  {
-    "org": "UPPSC",
-    "title": "RESULT OF ADVT. NO.D-2/E-1/2025, UTTAR PRADESH DAIRY DEVELOPMENT/DEPUTY DAIRY DE..",
-    "detailLink": "https://uppsc.up.nic.in/Open_PDF_DB.aspx?I4PnQ0tBaglovGFVjGJMaEk+muvLsysO",
-    "category": "result"
-  },
-  {
-    "org": "UPPSC",
-    "title": "LIST OF CANDIDATES PROVISIONALLY QUALIFIED FOR MAINS IN ADVT. NO. A-6/E-1/2025, ..",
-    "detailLink": "https://uppsc.up.nic.in/Open_PDF_DB.aspx?I4PnQ0tBaglovGFVjGJMaGv+qUEygD5p",
-    "category": "vacancy"
-  },
-  {
-    "org": "UPPSC",
-    "title": "LIST OF CANDIDATES PROVISIONALLY QUALIFIED FOR MAINS IN ADVT. NO. A-6/E-1/2025, ..",
-    "detailLink": "https://uppsc.up.nic.in/Open_PDF_DB.aspx?I4PnQ0tBaglP18XMjN55aE9ItFZfq9nY",
-    "category": "vacancy"
-  },
-  {
-    "org": "UPPSC",
-    "title": "NOTICE REGARDING ADVT. NO. A-3/E-1/2016, REVIEW OFFICER/ASSTT. REVIEW OFFICER ET..",
-    "detailLink": "https://uppsc.up.nic.in/Open_PDF_DB.aspx?I4PnQ0tBaglP18XMjN55aJeBzxf58HbR",
-    "category": "vacancy"
-  },
-  {
-    "org": "UPPSC",
-    "title": "NOTICE REGARDING OF ADVT NO: D-6/E-1/2025, UTTAR PRADESH LEGISLATIVE DEPARTMENT ..",
-    "detailLink": "https://uppsc.up.nic.in/Open_PDF_DB.aspx?I4PnQ0tBagkC/gT4ITeNgrXkVJ6dwkRn",
-    "category": "vacancy"
-  },
-  {
-    "org": "UPPSC",
-    "title": "CORRIGENDUM NOTICE REGARDING ADVT.NO.D-6/E-1/2025, DIRECTORATE OF HOMOEOPATHY UT..",
-    "detailLink": "https://uppsc.up.nic.in/Open_PDF_DB.aspx?I4PnQ0tBagkz0o52o77EYRiV9UshCHNK",
-    "category": "vacancy"
-  },
-  {
-    "org": "UPPSC",
-    "title": "CORRIGENDUM NOTICE REGARDING ADVT.NO.D-6/E-1/2025, LABOUR DEPARTMENT UTTAR PRADE..",
-    "detailLink": "https://uppsc.up.nic.in/Open_PDF_DB.aspx?I4PnQ0tBagkz0o52o77EYeOz5T9WBNmY",
-    "category": "vacancy"
-  },
-  {
-    "org": "UPPSC",
-    "title": "CORRIGENDUM NOTICE REGARDING ADVT.NO.D-6/E-1/2025, DIRECTORATE OF UNANI UTTAR PR..",
-    "detailLink": "https://uppsc.up.nic.in/Open_PDF_DB.aspx?I4PnQ0tBagkz0o52o77EYadVpmKbwEUn",
-    "category": "vacancy"
-  },
-  {
-    "org": "UPPSC",
-    "title": "NOTICE REGARDING ADVT. NO. D-6/E-1/2025, UTTAR PRADESH LIVESTOCK DEPARTMENT, VET..",
-    "detailLink": "https://uppsc.up.nic.in/Open_PDF_DB.aspx?I4PnQ0tBagm1I38phqc5aj9szEEFmvLl",
-    "category": "vacancy"
-  },
-  {
-    "org": "UPPSC",
-    "title": "CORRIGENDUM NOTICE REGARDING ADVT. NO. D-6/E-1/2025, MEDICAL HEALTH AND FAMILY W..",
-    "detailLink": "https://uppsc.up.nic.in/Open_PDF_DB.aspx?I4PnQ0tBagnSFF+2PuzLq8yhYQ7psXl2",
-    "category": "vacancy"
-  },
-  {
-    "org": "UPPSC",
-    "title": "NOTICE REGARDING ADVT. NO. D-2/E-1/2024, ASSISTANT ARCHITECT, S-06/01 (PUBLIC WO..",
-    "detailLink": "https://uppsc.up.nic.in/Open_PDF_DB.aspx?I4PnQ0tBagktt06NhTTxwivFUuvsdMCE",
-    "category": "vacancy"
-  },
-  {
-    "org": "UPPSC",
-    "title": "NOTICE REGARDING ADVT. NO. D-6/E-1/2025, FOOD SAFETY AND DRUG ADMINISTRATION UTT..",
-    "detailLink": "https://uppsc.up.nic.in/Open_PDF_DB.aspx?I4PnQ0tBagldpN1/ndg4XQJWpYXr4Ud3",
-    "category": "vacancy"
-  },
-  {
-    "org": "UPPSC",
-    "title": "NOTICE REGARDING ADVT. NO. D-6/E-1/2025, DIRECTORATE GENERAL OF FAMILY WELFARE U..",
-    "detailLink": "https://uppsc.up.nic.in/Open_PDF_DB.aspx?I4PnQ0tBagnFvgVqjblDZARklky4+2Ju",
-    "category": "vacancy"
-  },
-  {
-    "org": "UPPSC",
-    "title": "UPPSC Exam Calendar 2026",
-    "detailLink": "https://uppsc.up.nic.in/Open_PDF_DB.aspx?I4PnQ0tBagmIqec6cDg6BUi0bxHlS/Ba",
-    "category": "vacancy"
-  },
-  {
-    "org": "UPPSC",
-    "title": "{{'OTRNo_HM' | translate }}",
-    "detailLink": "https://uppsc.up.nic.in/OTR_Section/OtrRedirect.aspx",
-    "category": "vacancy"
-  },
-  {
-    "org": "UPPSC",
-    "title": "CLICK HERE TO DOWNLOAD MARKSHEET & CUT OFF FOR ADVT. NO. D-2-E-1-2024, [S-09-05], [S-09-08], [S-09-09], [S-09-12] & [S-09-19].",
-    "detailLink": "https://uppsc.up.nic.in/CandidatePages/Advertismentwise_DownloadDocument.aspx?inptprmtr=mc",
-    "category": "vacancy"
-  },
-  {
-    "org": "UPPSC",
-    "title": "{{'FromChMDesk_HM' | translate }}",
-    "detailLink": "https://uppsc.up.nic.in/OuterPages/Chairman_Desk.aspx?msg=en",
-    "category": "vacancy"
-  },
-  {
-    "org": "UPPSC",
-    "title": "{{'FromChMDesk_HI_HM' | translate }}",
-    "detailLink": "https://uppsc.up.nic.in/OuterPages/Chairman_Desk.aspx?msg=hi",
-    "category": "vacancy"
-  },
-  {
-    "org": "UPPSC",
-    "title": "{{'DoubleVerification_HM' | translate }}",
-    "detailLink": "https://uppsc.up.nic.in/CandidatePages/InputPages/UpdateTransaction_DV.aspx",
-    "category": "vacancy"
-  },
-  {
-    "org": "UPPSC",
-    "title": "{{'ViewAnswerKey_HM' | translate }}",
-    "detailLink": "https://uppsc.up.nic.in/CandidatePages/Status/ViewAnswerKey.aspx?ID=5",
-    "category": "answer"
-  },
-  {
-    "org": "UPPSC",
-    "title": "24 Oct2026CORRIGENDUM NOTICE REGARDING ADVT.NO.D-6/E-1/2025, DIRECTORATE OF HOMOEOPATHY UTTAR PRADESH / HOMOEOPATHIC MEDICAL OFFICER, S-11/32",
-    "detailLink": "https://uppsc.up.nic.in/Open_PDF.aspx?I4PnQ0tBagkz0o52o77EYehACV4lKyrV",
-    "category": "vacancy"
-  },
-  {
-    "org": "UPPSC",
-    "title": "24 Oct2026CORRIGENDUM NOTICE REGARDING ADVT.NO.D-6/E-1/2025, LABOUR DEPARTMENT UTTAR PRADESH / CHIKITSA ADHIKARI (HOMOEOPATHIC), S-11/31",
-    "detailLink": "https://uppsc.up.nic.in/Open_PDF.aspx?I4PnQ0tBagkz0o52o77EYbVztd2XC1Km",
-    "category": "vacancy"
-  },
-  {
-    "org": "UPPSC",
-    "title": "18 Dec2026CORRIGENDUM NOTICE REGARDING ADVT.NO.D-6/E-1/2025, DIRECTORATE OF UNANI UTTAR PRADESH / CHIKITSA ADHIKARI (UNANI), S-11/30",
-    "detailLink": "https://uppsc.up.nic.in/Open_PDF.aspx?I4PnQ0tBagkz0o52o77EYd5icBBuNfGC",
-    "category": "vacancy"
-  },
-  {
-    "org": "UPPSC",
-    "title": "31 Dec2026UPPSC Exam Calendar 2026",
-    "detailLink": "https://uppsc.up.nic.in/Open_PDF.aspx?I4PnQ0tBagmIqec6cDg6Bagq4jCvO4Zt",
-    "category": "vacancy"
-  },
-  {
-    "org": "UPPSC",
-    "title": "21 Sep2026LIST OF SELECTED CANDIDATES IN ADVT. NO. A-7/E-1/2021, U.P. TECH. EDU.(TCHG.) SER. EXAM.-2021, LECT. PAINT TECH.,LEATHER TECH.,TEXTILE CHEM.,TEXTILE .....",
-    "detailLink": "https://uppsc.up.nic.in/Open_PDF.aspx?I4PnQ0tBagnM8dHr1ViOnsNJdDCKf+Ko",
-    "category": "vacancy"
-  },
-  {
-    "org": "UPPSC",
-    "title": "18 Sep2026LIST OF CANDIDATES PROV. QUAL. FOR MAINS IN ADVT. NO. A-7/E-1/2025, ASST. PROF., GOVT. DEGREE COLLEGE EXAM-2025, BOTANY, PHY. EDU., POLIT. SCIEN., PS.....",
-    "detailLink": "https://uppsc.up.nic.in/Open_PDF.aspx?I4PnQ0tBagmtuZKZH/Den1RNit9Mc9EU",
-    "category": "vacancy"
-  },
-  {
-    "org": "UPPSC",
-    "title": "14 Sep2026LIST OF CANDIDATES PROV. QUAL. FOR MAINS IN ADVT. NO. A-7/E-1/2025, ASST. PROF., GOVT. DEGREE COLLEGE EXAM-2025, COMMERCE, DRAW./PAINT., HINDI, MATHS.....",
-    "detailLink": "https://uppsc.up.nic.in/Open_PDF.aspx?I4PnQ0tBagmtuZKZH/Den0Qdgrsw/6y1",
-    "category": "vacancy"
-  },
-  {
-    "org": "UPPSC",
-    "title": "13 Sep2026RESULT OF ADVT. NO. D-4/E-1/2025, U.P. AYUSH (AYURVEDA) PROFESSOR(SPECIALIST) AGAD TANTRA EVAM VIDHI AYURVADA, S-09/01",
-    "detailLink": "https://uppsc.up.nic.in/Open_PDF.aspx?I4PnQ0tBagmtuZKZH/DenzYmB9Cagj1q",
-    "category": "result"
-  },
-  {
-    "org": "UPPSC",
-    "title": "08 Sep2026NOTICE REGARDING ADVT. NO. A-9/E-1/2025, STATE PLANNING INSTITUTE (NEW DIVISION) PLANNING DEPARTMENT U.P., RESEARCH ASSISTANT (ENGINEERING).",
-    "detailLink": "https://uppsc.up.nic.in/Open_PDF.aspx?I4PnQ0tBagnM8dHr1ViOnojaovpca2eH",
-    "category": "vacancy"
-  },
-  {
-    "org": "UPPSC",
-    "title": "07 Sep2026NOTICE REGARDING  ADVT. NO. A-7/E-1/2025, ASST. PROF., GOVT. DEGREE COLLEGE (MAINS) EXAM-2025, BOTANY, PHY. EDU., POLIT. SCIEN., PSYCLGY., MUSIC VOC......",
-    "detailLink": "https://uppsc.up.nic.in/Open_PDF.aspx?I4PnQ0tBagmtuZKZH/DenyDwQE5eK/aJ",
-    "category": "vacancy"
-  },
-  {
-    "org": "UPPSC",
-    "title": "07 Sep2026NOTICE REGARDING  ADVT. NO. A-7/E-1/2025, ASST. PROF., GOVT. DEGREE COLLEGE (MAINS)EXAM-2025,",
-    "detailLink": "https://uppsc.up.nic.in/Open_PDF.aspx?I4PnQ0tBagmtuZKZH/Den1QzowNc4jNU",
-    "category": "vacancy"
-  },
-  {
-    "org": "UPPSC",
-    "title": "27 Aug2026NOTICE REGARDING ADVT. NO. A-6/E-1/2025, UTTAR PRADESH JAIL TRAINING SCHOOL (TEACHING STAFF) SERVICE, (PSYCHOLOGY, CRIMINOLOGY AND PENOLOGY) MAINS EX.....",
-    "detailLink": "https://uppsc.up.nic.in/Open_PDF.aspx?I4PnQ0tBagkKN9rKVhlu72YMvmXd6tCs",
-    "category": "vacancy"
-  },
-  {
-    "org": "UPPSC",
-    "title": "06 Sep2026NOTICE REGARDING ADMIT CARD FOR ADVT.NO. A-11/E-1/2025, LECTURER U.P. TECHNICAL EDUCATION (TEACHING) SERVICE EXAM.-2025",
-    "detailLink": "https://uppsc.up.nic.in/Open_PDF.aspx?I4PnQ0tBagnM8dHr1ViOno+G4Pgym5CR",
-    "category": "admit"
-  },
-  {
-    "org": "UPPSC",
-    "title": "31 Aug2026NOTICE REGARDING ADMIT CARD FOR ADVT. NO.A-6/E-1/2026, LECTURER (MALE/FEMALE) GOVERNMENT INTER COLLEGE (MAINS) EXAM.-2025",
-    "detailLink": "https://uppsc.up.nic.in/Open_PDF.aspx?I4PnQ0tBagmtuZKZH/Den6BU5d6iBz8b",
-    "category": "admit"
-  },
-  {
-    "org": "UPPSC",
-    "title": "25 Aug2026NOTICE REGARDING DOWNLOAD MARKSHEET & CUT OFF FOR ADVT. NO. D-2-E-1-2024, [S-09-05], [S-09-08], [S-09-09], [S-09-12] & [S-09-19]",
-    "detailLink": "https://uppsc.up.nic.in/Open_PDF.aspx?I4PnQ0tBagmtuZKZH/Denw4gEOq/FMc+",
-    "category": "vacancy"
-  },
-  {
-    "org": "UPPSC",
-    "title": "Click here to view List of Candidates who are not selected in P.C.S. Examination-2022, but Qualified for Interview in P.C.S - 2022 (In Merit Order).",
-    "detailLink": "https://uppsc.up.nic.in/Open_PDF.aspx?I4PnQ0tBagk9q6upnHHyW7Pdh9qfF6wa",
-    "category": "vacancy"
-  },
-  {
-    "org": "UPPSC",
-    "title": "{{'eParikshaUP_HM' | translate }}",
-    "detailLink": "http://pariksha.up.nic.in",
-    "category": "vacancy"
-  },
-  {
-    "org": "UPPSC",
-    "title": "{{'eParikshaIndia_HM' | translate }}",
-    "detailLink": "http://pariksha.nic.in",
-    "category": "vacancy"
-  },
-  {
-    "org": "UPPSC",
-    "title": "{{'eCourtServices_HM' | translate }}",
-    "detailLink": "https://services.ecourts.gov.in/",
-    "category": "vacancy"
-  },
-  {
-    "org": "UPPSC",
-    "title": "{{'OtherPSC_HM' | translate }}",
-    "detailLink": "https://uppsc.up.nic.in/OuterPages/Other_PSC.aspx",
-    "category": "vacancy"
-  },
-  {
-    "org": "UPPSC",
-    "title": "{{'ContactUs_HG' | translate }}",
-    "detailLink": "https://uppsc.up.nic.in/FooterPages/AnyProblemReport.aspx",
-    "category": "vacancy"
-  },
-  {
-    "org": "UPPSC",
-    "title": "{{'RTIOnline_HM' | translate }}",
-    "detailLink": "https://rtionline.gov.in/",
-    "category": "vacancy"
-  },
-  {
-    "org": "UPPSC",
-    "title": "{{'Home_HM' | translate }}",
-    "detailLink": "https://uppsc.up.nic.in/Home",
-    "category": "vacancy"
-  },
-  {
-    "org": "UPPSC",
-    "title": "{{'TNC_HM' | translate }}",
-    "detailLink": "https://uppsc.up.nic.in/FooterPages/tnc.aspx",
-    "category": "vacancy"
-  },
-  {
-    "org": "UPPSC",
-    "title": "{{'PP_HM' | translate }}",
-    "detailLink": "https://uppsc.up.nic.in/FooterPages/PrivacyPolicy.aspx",
-    "category": "vacancy"
-  },
-  {
-    "org": "UPPSC",
-    "title": "{{'HLP_HM' | translate }}",
-    "detailLink": "https://uppsc.up.nic.in/FooterPages/hlp.aspx",
-    "category": "vacancy"
-  },
-  {
-    "org": "UPPSC",
-    "title": "{{'CP_HM' | translate }}",
-    "detailLink": "https://uppsc.up.nic.in/FooterPages/CopyrightPolicy.aspx",
-    "category": "vacancy"
-  },
-  {
-    "org": "UPPSC",
-    "title": "{{'SCA_HM' | translate }}",
-    "detailLink": "https://uppsc.up.nic.in/FooterPages/ScreenAccess.aspx",
-    "category": "vacancy"
-  },
-  {
-    "org": "UPPSC",
-    "title": "{{'DIS_HM' | translate }}",
-    "detailLink": "https://uppsc.up.nic.in/FooterPages/Disclaimer.aspx",
-    "category": "vacancy"
-  },
-  {
-    "org": "UPPSC",
-    "title": "{{'SiteMap_HM' | translate }}",
-    "detailLink": "https://uppsc.up.nic.in/FooterPages/SiteMap.aspx",
-    "category": "vacancy"
-  },
-  {
-    "org": "UPPSC",
-    "title": "{{'Tenders_HM' | translate }}",
-    "detailLink": "https://uppsc.up.nic.in/FooterPages/Tenders",
-    "category": "vacancy"
-  },
-  {
-    "org": "SSC",
-    "title": "SSC Old Website",
-    "detailLink": "https://ssc.gov.in/",
-    "category": "vacancy"
-  },
-  {
-    "org": "SSC",
-    "title": "Chairman’s Message",
-    "detailLink": "https://ssc.gov.in/chairman-message",
-    "category": "vacancy"
-  },
-  {
-    "org": "SSC",
-    "title": "Script Evaluation",
-    "detailLink": "https://ssc.gov.in/for-candidates/script-evaluation",
-    "category": "vacancy"
-  },
-  {
-    "org": "SSC",
-    "title": "Examination Calendar",
-    "detailLink": "https://ssc.gov.in/for-candidates/examination-calendar",
-    "category": "vacancy"
-  },
-  {
-    "org": "SSC",
-    "title": "Scheme of Examination",
-    "detailLink": "https://ssc.gov.in/for-candidates/scheme-of-examination",
-    "category": "vacancy"
-  },
-  {
-    "org": "SSC",
-    "title": "Special Instruction",
-    "detailLink": "https://ssc.gov.in/for-candidates/special-instruction",
-    "category": "vacancy"
-  },
-  {
-    "org": "SSC",
-    "title": "Previous Year Question Paper",
-    "detailLink": "https://ssc.gov.in/for-candidates/previous-year-question-paper",
-    "category": "vacancy"
-  },
-  {
-    "org": "SSC",
-    "title": "Format of Certificates",
-    "detailLink": "https://ssc.gov.in/for-candidates/form-of-certificates",
-    "category": "vacancy"
-  },
-  {
-    "org": "SSC",
-    "title": "Tentative Vacancy",
-    "detailLink": "https://ssc.gov.in/for-candidates/tentative-vacancy",
-    "category": "vacancy"
-  },
-  {
-    "org": "SSC",
-    "title": "Normalization Method",
-    "detailLink": "https://ssc.gov.in/for-candidates/normalization-method",
-    "category": "vacancy"
-  },
-  {
-    "org": "SSC",
-    "title": "Proactive Disclosure (RTI)",
-    "detailLink": "https://ssc.gov.in/rti/proactive-disclosure",
-    "category": "vacancy"
-  },
-  {
-    "org": "SSC",
-    "title": "Background of Commission",
-    "detailLink": "https://ssc.gov.in/about-us/background-of-commission",
-    "category": "vacancy"
-  },
-  {
-    "org": "SSC",
-    "title": "Setup of Commission",
-    "detailLink": "https://ssc.gov.in/about-us/commission",
-    "category": "vacancy"
-  },
-  {
-    "org": "SSC",
-    "title": "Organisation Structure",
-    "detailLink": "https://ssc.gov.in/about-us/organisation-structure",
-    "category": "vacancy"
-  },
-  {
-    "org": "SSC",
-    "title": "Function of Commission",
-    "detailLink": "https://ssc.gov.in/about-us/function-commission",
-    "category": "vacancy"
-  },
-  {
-    "org": "SSC",
-    "title": "Vision, Mission & Objectives of SSC",
-    "detailLink": "https://ssc.gov.in/about-us/objective-ssc",
-    "category": "vacancy"
-  },
-  {
-    "org": "SSC",
-    "title": "Regional Network",
-    "detailLink": "https://ssc.gov.in/about-us/regional-network",
-    "category": "vacancy"
-  },
-  {
-    "org": "SSC",
-    "title": "Citizen's Charter",
-    "detailLink": "https://ssc.gov.in/about-us/citizen-charter",
-    "category": "vacancy"
-  },
-  {
-    "org": "SSC",
-    "title": "Right To Information",
-    "detailLink": "https://ssc.gov.in/about-us/rti",
-    "category": "vacancy"
-  },
-  {
-    "org": "SSC",
-    "title": "Committee on Sexual Harassment",
-    "detailLink": "https://ssc.gov.in/about-us/harasment",
-    "category": "vacancy"
-  },
-  {
-    "org": "SSC",
-    "title": "Join Indian Navy",
-    "detailLink": "https://www.joinindiannavy.gov.in/",
-    "category": "vacancy"
-  },
-  {
-    "org": "SSC",
-    "title": "List of Debarred Candidates in Examinations Conducted by the Staff Selection Commission",
-    "detailLink": "https://ssc.gov.in/api/attachment/uploads/masterData/Others/debarreds_as_of_6th_April_2026_060426.pdf",
-    "category": "vacancy"
-  },
-  {
     "org": "UPSC",
     "title": "Skip to main content",
     "detailLink": "https://upsc.gov.in/#main-content",
@@ -1255,24 +427,6 @@
   },
   {
     "org": "UPSC",
-    "title": "Written Result (with name): Engineering Services (Main) Examination, 2026",
-    "detailLink": "https://upsc.gov.in/whats-new/Engineering%20Services%20%28Main%29%20Examination%2C%202026/Written%20Result%20%28with%20name%29",
-    "category": "result"
-  },
-  {
-    "org": "UPSC",
-    "title": "Written Result: Engineering Services (Main) Examination, 2026",
-    "detailLink": "https://upsc.gov.in/whats-new/Engineering%20Services%20%28Main%29%20Examination%2C%202026/Written%20Result",
-    "category": "result"
-  },
-  {
-    "org": "UPSC",
-    "title": "Final Result: 04 Posts of Assistant Veterinary Surgeon, NDMC",
-    "detailLink": "https://upsc.gov.in/whats-new/04 Posts of Assistant Veterinary Surgeon, NDMC/Final Result",
-    "category": "result"
-  },
-  {
-    "org": "UPSC",
     "title": "Examination Time Table: Civil Services (Main) Examination, 2026",
     "detailLink": "https://upsc.gov.in/whats-new/Civil%20Services%20%28Main%29%20Examination%2C%202026/Examination%20Time%20Table",
     "category": "vacancy"
@@ -1408,6 +562,876 @@
     "title": "Web Information Manager",
     "detailLink": "https://upsc.gov.in/web-information-manager",
     "category": "vacancy"
+  },
+  {
+    "org": "UPPSC",
+    "title": "भारत सरकारGOVERNMENT OF INDIA",
+    "detailLink": "http://india.gov.in",
+    "category": "vacancy"
+  },
+  {
+    "org": "UPPSC",
+    "title": "उत्तर प्रदेशUttar Pradesh",
+    "detailLink": "http://up.gov.in/",
+    "category": "vacancy"
+  },
+  {
+    "org": "UPPSC",
+    "title": "Constitutional Provisions",
+    "detailLink": "https://uppsc.up.nic.in/PublicPages/com.aspx?ID=CP",
+    "category": "vacancy"
+  },
+  {
+    "org": "UPPSC",
+    "title": "Composition of Commission",
+    "detailLink": "https://uppsc.up.nic.in/PublicPages/com.aspx?ID=CC",
+    "category": "vacancy"
+  },
+  {
+    "org": "UPPSC",
+    "title": "Structure of Organisation",
+    "detailLink": "https://uppsc.up.nic.in/PublicPages/com.aspx?ID=OS",
+    "category": "vacancy"
+  },
+  {
+    "org": "UPPSC",
+    "title": "Functions of Commission",
+    "detailLink": "https://uppsc.up.nic.in/PublicPages/com.aspx?ID=FC",
+    "category": "vacancy"
+  },
+  {
+    "org": "UPPSC",
+    "title": "Citizens' Charter",
+    "detailLink": "https://uppsc.up.nic.in/PublicPages/com.aspx?ID=CZ",
+    "category": "vacancy"
+  },
+  {
+    "org": "UPPSC",
+    "title": "Active Examinations",
+    "detailLink": "https://uppsc.up.nic.in/FooterPages/Upcoming-Exams",
+    "category": "vacancy"
+  },
+  {
+    "org": "UPPSC",
+    "title": "Examination Calendar",
+    "detailLink": "https://uppsc.up.nic.in/PublicPages/Examinations_Details.aspx?ID=EC",
+    "category": "vacancy"
+  },
+  {
+    "org": "UPPSC",
+    "title": "Debarred/Rejected Applicant List",
+    "detailLink": "https://uppsc.up.nic.in/PublicPages/ReptDebardList.aspx?ID=dcl",
+    "category": "vacancy"
+  },
+  {
+    "org": "UPPSC",
+    "title": "Debarred Examination Centre List",
+    "detailLink": "https://uppsc.up.nic.in/PublicPages/ReptDebardList.aspx?ID=decl",
+    "category": "vacancy"
+  },
+  {
+    "org": "UPPSC",
+    "title": "Online Notifications",
+    "detailLink": "https://uppsc.up.nic.in/CandidatePages/Notifications.aspx",
+    "category": "vacancy"
+  },
+  {
+    "org": "UPPSC",
+    "title": "Screening Test And Interview",
+    "detailLink": "https://uppsc.up.nic.in/PublicPages/Recruitment_Details.aspx?ID=SI",
+    "category": "vacancy"
+  },
+  {
+    "org": "UPPSC",
+    "title": "Examination Only",
+    "detailLink": "https://uppsc.up.nic.in/PublicPages/Recruitment_Details.aspx?ID=EO",
+    "category": "vacancy"
+  },
+  {
+    "org": "UPPSC",
+    "title": "Examination And Interview Only",
+    "detailLink": "https://uppsc.up.nic.in/PublicPages/Recruitment_Details.aspx?ID=EI",
+    "category": "vacancy"
+  },
+  {
+    "org": "UPPSC",
+    "title": "Pre Examination, Main Examination And Interview",
+    "detailLink": "https://uppsc.up.nic.in/PublicPages/Recruitment_Details.aspx?ID=EIM",
+    "category": "vacancy"
+  },
+  {
+    "org": "UPPSC",
+    "title": "Expert's Corner",
+    "detailLink": "https://uppsc.up.nic.in/",
+    "category": "vacancy"
+  },
+  {
+    "org": "UPPSC",
+    "title": "Download Expert Biodata Form",
+    "detailLink": "https://uppsc.up.nic.in/ExpertCorner/Frm_ExpertBioData.aspx",
+    "category": "vacancy"
+  },
+  {
+    "org": "UPPSC",
+    "title": "Candidate Dashboard Login",
+    "detailLink": "https://uppsc.up.nic.in/CandidatePages/OTRAppForm/Applicant_OtrAuthentication.aspx?WEqGEem9m0+8Y4tNQqJiNYurmbKsjJR/fgSlThSTh6o=",
+    "category": "vacancy"
+  },
+  {
+    "org": "UPPSC",
+    "title": "Check Status of Application Forms",
+    "detailLink": "https://uppsc.up.nic.in/CandidatePages/Status/ViewStatus.aspx",
+    "category": "vacancy"
+  },
+  {
+    "org": "UPPSC",
+    "title": "Download Admit Card",
+    "detailLink": "https://uppsc.up.nic.in/CandidatePages/Advertismentwise_DownloadDocument.aspx?inptprmtr=ac",
+    "category": "admit"
+  },
+  {
+    "org": "UPPSC",
+    "title": "View Notices for Download Eligibility Form - Direct",
+    "detailLink": "https://uppsc.up.nic.in/OuterPages/DisplayOnlineNotice.aspx?ID=1",
+    "category": "vacancy"
+  },
+  {
+    "org": "UPPSC",
+    "title": "Download Eligibility Form - Direct",
+    "detailLink": "https://uppsc.up.nic.in/CandidatePages/ElgbtChkg/DownloadForm_EligibilityChecking_New.aspx",
+    "category": "vacancy"
+  },
+  {
+    "org": "UPPSC",
+    "title": "View Notices for Download Interview Letter - Direct",
+    "detailLink": "https://uppsc.up.nic.in/OuterPages/DisplayOnlineNotice.aspx?ID=2",
+    "category": "vacancy"
+  },
+  {
+    "org": "UPPSC",
+    "title": "Download Interview Letter - Direct",
+    "detailLink": "https://uppsc.up.nic.in/CandidatePages/IntLtr/Interview_DetailsShowByAdvertisement_New.aspx",
+    "category": "vacancy"
+  },
+  {
+    "org": "UPPSC",
+    "title": "Download Previous Year Question Papers",
+    "detailLink": "https://uppsc.up.nic.in/OuterPages/PreQuesPapers.aspx?ID=PrevQues",
+    "category": "vacancy"
+  },
+  {
+    "org": "UPPSC",
+    "title": "Download Syllabus",
+    "detailLink": "https://uppsc.up.nic.in/CandidatePages/Syllabus/Syllabus_PostWise.aspx?ID=4",
+    "category": "vacancy"
+  },
+  {
+    "org": "UPPSC",
+    "title": "Objection raised w.r.t. Application",
+    "detailLink": "https://uppsc.up.nic.in/CandidatePages/InputPages/Objected_Candidate_List.aspx",
+    "category": "vacancy"
+  },
+  {
+    "org": "UPPSC",
+    "title": "Success Stories and Toppers List",
+    "detailLink": "https://uppsc.up.nic.in/PublicPages/ToppersList.aspx?ID=strscs",
+    "category": "vacancy"
+  },
+  {
+    "org": "UPPSC",
+    "title": "Head Office, UPPSC Prayagraj",
+    "detailLink": "https://uppsc.up.nic.in/PublicPages/Contus.aspx",
+    "category": "vacancy"
+  },
+  {
+    "org": "UPPSC",
+    "title": "File Grievance/Suggestion/Enquiry",
+    "detailLink": "https://uppsc.up.nic.in/CandidatePages/InputPages/FeedBack.aspx",
+    "category": "vacancy"
+  },
+  {
+    "org": "UPPSC",
+    "title": "Check Status of Grievance/Enquiry",
+    "detailLink": "https://uppsc.up.nic.in/CandidatePages/InputPages/Grievance_Search.aspx",
+    "category": "vacancy"
+  },
+  {
+    "org": "UPPSC",
+    "title": "Right To Information",
+    "detailLink": "https://uppsc.up.nic.in/FooterPages/RTI.aspx",
+    "category": "vacancy"
+  },
+  {
+    "org": "UPPSC",
+    "title": "General/Miscellaneous Guidelines",
+    "detailLink": "https://uppsc.up.nic.in/PublicPages/GeneralGuidelines.aspx?ID=guidlns",
+    "category": "vacancy"
+  },
+  {
+    "org": "UPPSC",
+    "title": "Frequently Asked Questions (FAQ)",
+    "detailLink": "https://uppsc.up.nic.in/FAQ/FAQ.aspx?ID=faq",
+    "category": "vacancy"
+  },
+  {
+    "org": "UPPSC",
+    "title": "Insts. for uploading Photo and Sign",
+    "detailLink": "https://uppsc.up.nic.in/OTR_Section/Otr_SimplifiedForm.aspx",
+    "category": "vacancy"
+  },
+  {
+    "org": "UPPSC",
+    "title": "Know your OTR number",
+    "detailLink": "https://uppsc.up.nic.in/PublicPages/KnowOTRNo.aspx",
+    "category": "vacancy"
+  },
+  {
+    "org": "UPPSC",
+    "title": "File Grievance/Query related to O.T.R. Process",
+    "detailLink": "https://uppsc.up.nic.in/CandidatePages/InputPages/FeedBack.aspx?ID=OTR_Queries",
+    "category": "vacancy"
+  },
+  {
+    "org": "UPPSC",
+    "title": "One Time Registration (O.T.R.) for Applicants",
+    "detailLink": "https://otr.pariksha.nic.in/",
+    "category": "vacancy"
+  },
+  {
+    "org": "UPPSC",
+    "title": "NOTICE REGARDING PRACTICAL TEST FOR ADVT.NO. A-2-E-1-2020, REGIONAL INSPECTOR (T..",
+    "detailLink": "https://uppsc.up.nic.in/Open_PDF_DB.aspx?I4PnQ0tBagnM8dHr1ViOngH7ODJiVLOG",
+    "category": "vacancy"
+  },
+  {
+    "org": "UPPSC",
+    "title": "NOTICE REGARDING ADVT.NO. A-2-E-1-2020, REGIONAL INSPECTOR (TECHNICAL) EXAM-2020",
+    "detailLink": "https://uppsc.up.nic.in/Open_PDF_DB.aspx?I4PnQ0tBagnM8dHr1ViOng000cGwJ0vc",
+    "category": "vacancy"
+  },
+  {
+    "org": "UPPSC",
+    "title": "NOTICE REGARDING ADMIT CARD FOR ADVT.NO. A-11/E-1/2025, LECTURER U.P. TECHNICAL ..",
+    "detailLink": "https://uppsc.up.nic.in/Open_PDF_DB.aspx?I4PnQ0tBagnM8dHr1ViOnseKfh32h8Kz",
+    "category": "admit"
+  },
+  {
+    "org": "UPPSC",
+    "title": "NOTICE REGARDING ADVT. NO. A-9/E-1/2025, STATE PLANNING INSTITUTE (NEW DIVISION)..",
+    "detailLink": "https://uppsc.up.nic.in/Open_PDF_DB.aspx?I4PnQ0tBagnM8dHr1ViOnnnNFW5qzQ+T",
+    "category": "vacancy"
+  },
+  {
+    "org": "UPPSC",
+    "title": "LIST OF SELECTED CANDIDATES IN ADVT. NO. A-7/E-1/2021, U.P. TECH. EDU.(TCHG.) SE..",
+    "detailLink": "https://uppsc.up.nic.in/Open_PDF_DB.aspx?I4PnQ0tBagnM8dHr1ViOnkuvDrTd7Cob",
+    "category": "vacancy"
+  },
+  {
+    "org": "UPPSC",
+    "title": "NOTICE REGARDING ADMIT CARD FOR ADVT. NO.A-6/E-1/2026, LECTURER (MALE/FEMALE) GO..",
+    "detailLink": "https://uppsc.up.nic.in/Open_PDF_DB.aspx?I4PnQ0tBagmtuZKZH/DenxmfTZaveVl2",
+    "category": "admit"
+  },
+  {
+    "org": "UPPSC",
+    "title": "NOTICE REGARDING  ADVT. NO. A-7/E-1/2025, ASST. PROF., GOVT. DEGREE COLLEGE (MAI..",
+    "detailLink": "https://uppsc.up.nic.in/Open_PDF_DB.aspx?I4PnQ0tBagmtuZKZH/Den9fBY0BCQxD2",
+    "category": "vacancy"
+  },
+  {
+    "org": "UPPSC",
+    "title": "NOTICE REGARDING  ADVT. NO. A-7/E-1/2025, ASST. PROF., GOVT. DEGREE COLLEGE (MAI..",
+    "detailLink": "https://uppsc.up.nic.in/Open_PDF_DB.aspx?I4PnQ0tBagmtuZKZH/Den7256mvEQdeD",
+    "category": "vacancy"
+  },
+  {
+    "org": "UPPSC",
+    "title": "LIST OF CANDIDATES PROV. QUAL. FOR MAINS IN ADVT. NO. A-7/E-1/2025, ASST. PROF.,..",
+    "detailLink": "https://uppsc.up.nic.in/Open_PDF_DB.aspx?I4PnQ0tBagmtuZKZH/Den21D9l77+Qjn",
+    "category": "vacancy"
+  },
+  {
+    "org": "UPPSC",
+    "title": "NOTICE REGARDING DOWNLOAD MARKSHEET & CUT OFF FOR ADVT. NO. D-2-E-1-2024, [S-09-..",
+    "detailLink": "https://uppsc.up.nic.in/Open_PDF_DB.aspx?I4PnQ0tBagmtuZKZH/Den+TiD+7HnBYY",
+    "category": "vacancy"
+  },
+  {
+    "org": "UPPSC",
+    "title": "LIST OF CANDIDATES PROV. QUAL. FOR MAINS IN ADVT. NO. A-7/E-1/2025, ASST. PROF.,..",
+    "detailLink": "https://uppsc.up.nic.in/Open_PDF_DB.aspx?I4PnQ0tBagmtuZKZH/Den4JuCea9TggI",
+    "category": "vacancy"
+  },
+  {
+    "org": "UPPSC",
+    "title": "RESULT OF ADVT. NO. D-4/E-1/2025, U.P. AYUSH (AYURVEDA) PROFESSOR(SPECIALIST) AG..",
+    "detailLink": "https://uppsc.up.nic.in/Open_PDF_DB.aspx?I4PnQ0tBagmtuZKZH/DenzRcUXubicMB",
+    "category": "result"
+  },
+  {
+    "org": "UPPSC",
+    "title": "RESULT OF ADVT. NO. D-4/E-1/2025, U.P. AYUSH (AYURVEDA) DEPARTMENT/PROFESSOR(SPE..",
+    "detailLink": "https://uppsc.up.nic.in/Open_PDF_DB.aspx?I4PnQ0tBagkKN9rKVhlu7z0vaAs91GKj",
+    "category": "result"
+  },
+  {
+    "org": "UPPSC",
+    "title": "LIST OF CANDIDATES PROVISIONALLY QUALIFIED FOR MAINS IN ADVT. NO. A-7/E-1/2025, ..",
+    "detailLink": "https://uppsc.up.nic.in/Open_PDF_DB.aspx?I4PnQ0tBagkKN9rKVhlu7/LtnZvN8L6L",
+    "category": "vacancy"
+  },
+  {
+    "org": "UPPSC",
+    "title": "RESULT OF ADVT. NO. D-4/E-1/2025, DIRECTORATE GENERAL OF FAMILY WELFARE UTTAR PR..",
+    "detailLink": "https://uppsc.up.nic.in/Open_PDF_DB.aspx?I4PnQ0tBagkKN9rKVhlu7ysKNFjEqVIK",
+    "category": "result"
+  },
+  {
+    "org": "UPPSC",
+    "title": "LIST OF CANDIDATES PROVISIONALLY QUALIFIED FOR MAINS IN ADVT. NO. A-7/E-1/2025, ..",
+    "detailLink": "https://uppsc.up.nic.in/Open_PDF_DB.aspx?I4PnQ0tBagkKN9rKVhlu7xNKmJ4M19az",
+    "category": "vacancy"
+  },
+  {
+    "org": "UPPSC",
+    "title": "RESULT OF ADVT. NO. D-5/E-1/2025, UTTAR PRADESH STATE ARCHAEOLOGICAL DIRECTORATE..",
+    "detailLink": "https://uppsc.up.nic.in/Open_PDF_DB.aspx?I4PnQ0tBagkKN9rKVhlu76/9na81EE1P",
+    "category": "result"
+  },
+  {
+    "org": "UPPSC",
+    "title": "NOTICE REGARDING ADVT. NO. A-6/E-1/2025, UTTAR PRADESH JAIL TRAINING SCHOOL (TEA..",
+    "detailLink": "https://uppsc.up.nic.in/Open_PDF_DB.aspx?I4PnQ0tBagkKN9rKVhlu70EFhRM02jL4",
+    "category": "vacancy"
+  },
+  {
+    "org": "UPPSC",
+    "title": "RESULT OF ADVT. NO.2/2019-2020, U. P. AYUSH (UNANI) DEPTT./PRINCIPAL, S-11/02",
+    "detailLink": "https://uppsc.up.nic.in/Open_PDF_DB.aspx?I4PnQ0tBaglovGFVjGJMaNLk/ffKn7jL",
+    "category": "result"
+  },
+  {
+    "org": "UPPSC",
+    "title": "RESULT OF ADVT. NO.D-2/E-1/2025, UTTAR PRADESH DAIRY DEVELOPMENT/DEPUTY DAIRY DE..",
+    "detailLink": "https://uppsc.up.nic.in/Open_PDF_DB.aspx?I4PnQ0tBaglovGFVjGJMaEk+muvLsysO",
+    "category": "result"
+  },
+  {
+    "org": "UPPSC",
+    "title": "LIST OF CANDIDATES PROVISIONALLY QUALIFIED FOR MAINS IN ADVT. NO. A-6/E-1/2025, ..",
+    "detailLink": "https://uppsc.up.nic.in/Open_PDF_DB.aspx?I4PnQ0tBaglovGFVjGJMaGv+qUEygD5p",
+    "category": "vacancy"
+  },
+  {
+    "org": "UPPSC",
+    "title": "LIST OF CANDIDATES PROVISIONALLY QUALIFIED FOR MAINS IN ADVT. NO. A-6/E-1/2025, ..",
+    "detailLink": "https://uppsc.up.nic.in/Open_PDF_DB.aspx?I4PnQ0tBaglP18XMjN55aE9ItFZfq9nY",
+    "category": "vacancy"
+  },
+  {
+    "org": "UPPSC",
+    "title": "NOTICE REGARDING ADVT. NO. A-3/E-1/2016, REVIEW OFFICER/ASSTT. REVIEW OFFICER ET..",
+    "detailLink": "https://uppsc.up.nic.in/Open_PDF_DB.aspx?I4PnQ0tBaglP18XMjN55aJeBzxf58HbR",
+    "category": "vacancy"
+  },
+  {
+    "org": "UPPSC",
+    "title": "NOTICE REGARDING OF ADVT NO: D-6/E-1/2025, UTTAR PRADESH LEGISLATIVE DEPARTMENT ..",
+    "detailLink": "https://uppsc.up.nic.in/Open_PDF_DB.aspx?I4PnQ0tBagkC/gT4ITeNgrXkVJ6dwkRn",
+    "category": "vacancy"
+  },
+  {
+    "org": "UPPSC",
+    "title": "CORRIGENDUM NOTICE REGARDING ADVT.NO.D-6/E-1/2025, DIRECTORATE OF HOMOEOPATHY UT..",
+    "detailLink": "https://uppsc.up.nic.in/Open_PDF_DB.aspx?I4PnQ0tBagkz0o52o77EYRiV9UshCHNK",
+    "category": "vacancy"
+  },
+  {
+    "org": "UPPSC",
+    "title": "CORRIGENDUM NOTICE REGARDING ADVT.NO.D-6/E-1/2025, LABOUR DEPARTMENT UTTAR PRADE..",
+    "detailLink": "https://uppsc.up.nic.in/Open_PDF_DB.aspx?I4PnQ0tBagkz0o52o77EYeOz5T9WBNmY",
+    "category": "vacancy"
+  },
+  {
+    "org": "UPPSC",
+    "title": "CORRIGENDUM NOTICE REGARDING ADVT.NO.D-6/E-1/2025, DIRECTORATE OF UNANI UTTAR PR..",
+    "detailLink": "https://uppsc.up.nic.in/Open_PDF_DB.aspx?I4PnQ0tBagkz0o52o77EYadVpmKbwEUn",
+    "category": "vacancy"
+  },
+  {
+    "org": "UPPSC",
+    "title": "NOTICE REGARDING ADVT. NO. D-6/E-1/2025, UTTAR PRADESH LIVESTOCK DEPARTMENT, VET..",
+    "detailLink": "https://uppsc.up.nic.in/Open_PDF_DB.aspx?I4PnQ0tBagm1I38phqc5aj9szEEFmvLl",
+    "category": "vacancy"
+  },
+  {
+    "org": "UPPSC",
+    "title": "CORRIGENDUM NOTICE REGARDING ADVT. NO. D-6/E-1/2025, MEDICAL HEALTH AND FAMILY W..",
+    "detailLink": "https://uppsc.up.nic.in/Open_PDF_DB.aspx?I4PnQ0tBagnSFF+2PuzLq8yhYQ7psXl2",
+    "category": "vacancy"
+  },
+  {
+    "org": "UPPSC",
+    "title": "NOTICE REGARDING ADVT. NO. D-2/E-1/2024, ASSISTANT ARCHITECT, S-06/01 (PUBLIC WO..",
+    "detailLink": "https://uppsc.up.nic.in/Open_PDF_DB.aspx?I4PnQ0tBagktt06NhTTxwivFUuvsdMCE",
+    "category": "vacancy"
+  },
+  {
+    "org": "UPPSC",
+    "title": "NOTICE REGARDING ADVT. NO. D-6/E-1/2025, FOOD SAFETY AND DRUG ADMINISTRATION UTT..",
+    "detailLink": "https://uppsc.up.nic.in/Open_PDF_DB.aspx?I4PnQ0tBagldpN1/ndg4XQJWpYXr4Ud3",
+    "category": "vacancy"
+  },
+  {
+    "org": "UPPSC",
+    "title": "NOTICE REGARDING ADVT. NO. D-6/E-1/2025, DIRECTORATE GENERAL OF FAMILY WELFARE U..",
+    "detailLink": "https://uppsc.up.nic.in/Open_PDF_DB.aspx?I4PnQ0tBagnFvgVqjblDZARklky4+2Ju",
+    "category": "vacancy"
+  },
+  {
+    "org": "UPPSC",
+    "title": "UPPSC Exam Calendar 2026",
+    "detailLink": "https://uppsc.up.nic.in/Open_PDF_DB.aspx?I4PnQ0tBagmIqec6cDg6BUi0bxHlS/Ba",
+    "category": "vacancy"
+  },
+  {
+    "org": "UPPSC",
+    "title": "Get O.T.R. Number",
+    "detailLink": "https://uppsc.up.nic.in/OTR_Section/OtrRedirect.aspx",
+    "category": "vacancy"
+  },
+  {
+    "org": "UPPSC",
+    "title": "CLICK HERE TO DOWNLOAD MARKSHEET & CUT OFF FOR ADVT. NO. D-2-E-1-2024, [S-09-05], [S-09-08], [S-09-09], [S-09-12] & [S-09-19].",
+    "detailLink": "https://uppsc.up.nic.in/CandidatePages/Advertismentwise_DownloadDocument.aspx?inptprmtr=mc",
+    "category": "vacancy"
+  },
+  {
+    "org": "UPPSC",
+    "title": "Double Verification mode",
+    "detailLink": "https://uppsc.up.nic.in/CandidatePages/InputPages/UpdateTransaction_DV.aspx",
+    "category": "vacancy"
+  },
+  {
+    "org": "UPPSC",
+    "title": "View Answer Key",
+    "detailLink": "https://uppsc.up.nic.in/CandidatePages/Status/ViewAnswerKey.aspx?ID=5",
+    "category": "answer"
+  },
+  {
+    "org": "UPPSC",
+    "title": "24 Oct2026CORRIGENDUM NOTICE REGARDING ADVT.NO.D-6/E-1/2025, DIRECTORATE OF HOMOEOPATHY UTTAR PRADESH / HOMOEOPATHIC MEDICAL OFFICER, S-11/32",
+    "detailLink": "https://uppsc.up.nic.in/Open_PDF.aspx?I4PnQ0tBagkz0o52o77EYehACV4lKyrV",
+    "category": "vacancy"
+  },
+  {
+    "org": "UPPSC",
+    "title": "24 Oct2026CORRIGENDUM NOTICE REGARDING ADVT.NO.D-6/E-1/2025, LABOUR DEPARTMENT UTTAR PRADESH / CHIKITSA ADHIKARI (HOMOEOPATHIC), S-11/31",
+    "detailLink": "https://uppsc.up.nic.in/Open_PDF.aspx?I4PnQ0tBagkz0o52o77EYbVztd2XC1Km",
+    "category": "vacancy"
+  },
+  {
+    "org": "UPPSC",
+    "title": "18 Dec2026CORRIGENDUM NOTICE REGARDING ADVT.NO.D-6/E-1/2025, DIRECTORATE OF UNANI UTTAR PRADESH / CHIKITSA ADHIKARI (UNANI), S-11/30",
+    "detailLink": "https://uppsc.up.nic.in/Open_PDF.aspx?I4PnQ0tBagkz0o52o77EYd5icBBuNfGC",
+    "category": "vacancy"
+  },
+  {
+    "org": "UPPSC",
+    "title": "31 Dec2026UPPSC Exam Calendar 2026",
+    "detailLink": "https://uppsc.up.nic.in/Open_PDF.aspx?I4PnQ0tBagmIqec6cDg6Bagq4jCvO4Zt",
+    "category": "vacancy"
+  },
+  {
+    "org": "UPPSC",
+    "title": "21 Sep2026LIST OF SELECTED CANDIDATES IN ADVT. NO. A-7/E-1/2021, U.P. TECH. EDU.(TCHG.) SER. EXAM.-2021, LECT. PAINT TECH.,LEATHER TECH.,TEXTILE CHEM.,TEXTILE .....",
+    "detailLink": "https://uppsc.up.nic.in/Open_PDF.aspx?I4PnQ0tBagnM8dHr1ViOnsNJdDCKf+Ko",
+    "category": "vacancy"
+  },
+  {
+    "org": "UPPSC",
+    "title": "18 Sep2026LIST OF CANDIDATES PROV. QUAL. FOR MAINS IN ADVT. NO. A-7/E-1/2025, ASST. PROF., GOVT. DEGREE COLLEGE EXAM-2025, BOTANY, PHY. EDU., POLIT. SCIEN., PS.....",
+    "detailLink": "https://uppsc.up.nic.in/Open_PDF.aspx?I4PnQ0tBagmtuZKZH/Den1RNit9Mc9EU",
+    "category": "vacancy"
+  },
+  {
+    "org": "UPPSC",
+    "title": "14 Sep2026LIST OF CANDIDATES PROV. QUAL. FOR MAINS IN ADVT. NO. A-7/E-1/2025, ASST. PROF., GOVT. DEGREE COLLEGE EXAM-2025, COMMERCE, DRAW./PAINT., HINDI, MATHS.....",
+    "detailLink": "https://uppsc.up.nic.in/Open_PDF.aspx?I4PnQ0tBagmtuZKZH/Den0Qdgrsw/6y1",
+    "category": "vacancy"
+  },
+  {
+    "org": "UPPSC",
+    "title": "13 Sep2026RESULT OF ADVT. NO. D-4/E-1/2025, U.P. AYUSH (AYURVEDA) PROFESSOR(SPECIALIST) AGAD TANTRA EVAM VIDHI AYURVADA, S-09/01",
+    "detailLink": "https://uppsc.up.nic.in/Open_PDF.aspx?I4PnQ0tBagmtuZKZH/DenzYmB9Cagj1q",
+    "category": "result"
+  },
+  {
+    "org": "UPPSC",
+    "title": "08 Sep2026NOTICE REGARDING ADVT.NO. A-2-E-1-2020, REGIONAL INSPECTOR (TECHNICAL) EXAM-2020",
+    "detailLink": "https://uppsc.up.nic.in/Open_PDF.aspx?I4PnQ0tBagnM8dHr1ViOnjB/gMRvwvxp",
+    "category": "vacancy"
+  },
+  {
+    "org": "UPPSC",
+    "title": "08 Sep2026NOTICE REGARDING ADVT. NO. A-9/E-1/2025, STATE PLANNING INSTITUTE (NEW DIVISION) PLANNING DEPARTMENT U.P., RESEARCH ASSISTANT (ENGINEERING).",
+    "detailLink": "https://uppsc.up.nic.in/Open_PDF.aspx?I4PnQ0tBagnM8dHr1ViOnojaovpca2eH",
+    "category": "vacancy"
+  },
+  {
+    "org": "UPPSC",
+    "title": "07 Sep2026NOTICE REGARDING  ADVT. NO. A-7/E-1/2025, ASST. PROF., GOVT. DEGREE COLLEGE (MAINS) EXAM-2025, BOTANY, PHY. EDU., POLIT. SCIEN., PSYCLGY., MUSIC VOC......",
+    "detailLink": "https://uppsc.up.nic.in/Open_PDF.aspx?I4PnQ0tBagmtuZKZH/DenyDwQE5eK/aJ",
+    "category": "vacancy"
+  },
+  {
+    "org": "UPPSC",
+    "title": "07 Sep2026NOTICE REGARDING  ADVT. NO. A-7/E-1/2025, ASST. PROF., GOVT. DEGREE COLLEGE (MAINS)EXAM-2025,",
+    "detailLink": "https://uppsc.up.nic.in/Open_PDF.aspx?I4PnQ0tBagmtuZKZH/Den1QzowNc4jNU",
+    "category": "vacancy"
+  },
+  {
+    "org": "UPPSC",
+    "title": "14 Sep2026NOTICE REGARDING PRACTICAL TEST FOR ADVT.NO. A-2-E-1-2020, REGIONAL INSPECTOR (TECHNICAL) EXAM-2020",
+    "detailLink": "https://uppsc.up.nic.in/Open_PDF.aspx?I4PnQ0tBagnM8dHr1ViOnnEDecnjNRuP",
+    "category": "vacancy"
+  },
+  {
+    "org": "UPPSC",
+    "title": "06 Sep2026NOTICE REGARDING ADMIT CARD FOR ADVT.NO. A-11/E-1/2025, LECTURER U.P. TECHNICAL EDUCATION (TEACHING) SERVICE EXAM.-2025",
+    "detailLink": "https://uppsc.up.nic.in/Open_PDF.aspx?I4PnQ0tBagnM8dHr1ViOno+G4Pgym5CR",
+    "category": "admit"
+  },
+  {
+    "org": "UPPSC",
+    "title": "31 Aug2026NOTICE REGARDING ADMIT CARD FOR ADVT. NO.A-6/E-1/2026, LECTURER (MALE/FEMALE) GOVERNMENT INTER COLLEGE (MAINS) EXAM.-2025",
+    "detailLink": "https://uppsc.up.nic.in/Open_PDF.aspx?I4PnQ0tBagmtuZKZH/Den6BU5d6iBz8b",
+    "category": "admit"
+  },
+  {
+    "org": "UPPSC",
+    "title": "25 Aug2026NOTICE REGARDING DOWNLOAD MARKSHEET & CUT OFF FOR ADVT. NO. D-2-E-1-2024, [S-09-05], [S-09-08], [S-09-09], [S-09-12] & [S-09-19]",
+    "detailLink": "https://uppsc.up.nic.in/Open_PDF.aspx?I4PnQ0tBagmtuZKZH/Denw4gEOq/FMc+",
+    "category": "vacancy"
+  },
+  {
+    "org": "UPPSC",
+    "title": "Click here to view List of Candidates who are not selected in P.C.S. Examination-2022, but Qualified for Interview in P.C.S - 2022 (In Merit Order).",
+    "detailLink": "https://uppsc.up.nic.in/Open_PDF.aspx?I4PnQ0tBagk9q6upnHHyW7Pdh9qfF6wa",
+    "category": "vacancy"
+  },
+  {
+    "org": "UPPSC",
+    "title": "e-Pariksha - UP",
+    "detailLink": "http://pariksha.up.nic.in",
+    "category": "vacancy"
+  },
+  {
+    "org": "UPPSC",
+    "title": "e-Pariksha - Govt of India",
+    "detailLink": "http://pariksha.nic.in",
+    "category": "vacancy"
+  },
+  {
+    "org": "UPPSC",
+    "title": "eCourt India Services - Gov",
+    "detailLink": "https://services.ecourts.gov.in/",
+    "category": "vacancy"
+  },
+  {
+    "org": "UPPSC",
+    "title": "UPSC and Other PSC",
+    "detailLink": "https://uppsc.up.nic.in/OuterPages/Other_PSC.aspx",
+    "category": "vacancy"
+  },
+  {
+    "org": "UPPSC",
+    "title": "RTI - Online Portal",
+    "detailLink": "https://rtionline.gov.in/",
+    "category": "vacancy"
+  },
+  {
+    "org": "UPPSC",
+    "title": "Terms And Conditions",
+    "detailLink": "https://uppsc.up.nic.in/FooterPages/tnc.aspx",
+    "category": "vacancy"
+  },
+  {
+    "org": "UPPSC",
+    "title": "Hyper Linking Policy",
+    "detailLink": "https://uppsc.up.nic.in/FooterPages/hlp.aspx",
+    "category": "vacancy"
+  },
+  {
+    "org": "UPPSC",
+    "title": "Copyright Policy",
+    "detailLink": "https://uppsc.up.nic.in/FooterPages/CopyrightPolicy.aspx",
+    "category": "vacancy"
+  },
+  {
+    "org": "UPPSC",
+    "title": "Screen Accessibility",
+    "detailLink": "https://uppsc.up.nic.in/FooterPages/ScreenAccess.aspx",
+    "category": "vacancy"
+  },
+  {
+    "org": "UPPSC",
+    "title": "{{'Setting_HM' | translate }}",
+    "detailLink": "https://uppsc.up.nic.in/#siteSettings",
+    "category": "vacancy"
+  },
+  {
+    "org": "UPPSC",
+    "title": "{{'TheCommission_HM' | translate }}",
+    "detailLink": "https://uppsc.up.nic.in/PublicPages/com.aspx?ID=DE",
+    "category": "vacancy"
+  },
+  {
+    "org": "UPPSC",
+    "title": "{{'InterviewOnly_HM' | translate }}",
+    "detailLink": "https://uppsc.up.nic.in/PublicPages/Recruitment_Details.aspx?ID=IO",
+    "category": "vacancy"
+  },
+  {
+    "org": "UPPSC",
+    "title": "{{'PICG_HM' | translate }}",
+    "detailLink": "https://uppsc.up.nic.in/PublicPages/Album.aspx",
+    "category": "vacancy"
+  },
+  {
+    "org": "UPPSC",
+    "title": "{{'MediaSection_HM' | translate }}",
+    "detailLink": "https://uppsc.up.nic.in/PublicPages/MediaSection.aspx",
+    "category": "vacancy"
+  },
+  {
+    "org": "UPPSC",
+    "title": "{{'UserMannual_HM' | translate }}",
+    "detailLink": "https://uppsc.up.nic.in/OTR_Section/OTR_UserMannual.aspx",
+    "category": "vacancy"
+  },
+  {
+    "org": "UPPSC",
+    "title": "{{'SampleForm_HM' | translate }}",
+    "detailLink": "https://uppsc.up.nic.in/OTR_Section/Otr_SampleForm.aspx",
+    "category": "vacancy"
+  },
+  {
+    "org": "UPPSC",
+    "title": "{{'OTRREG_HM' | translate }}",
+    "detailLink": "https://uppsc.up.nic.in/OTR_Section/OTR_Registartion.aspx",
+    "category": "vacancy"
+  },
+  {
+    "org": "UPPSC",
+    "title": "{{'WhatsNew_HM' | translate }}",
+    "detailLink": "https://uppsc.up.nic.in/FooterPages/Latest-News",
+    "category": "vacancy"
+  },
+  {
+    "org": "UPPSC",
+    "title": "{{'FromChMDesk_HM' | translate }}",
+    "detailLink": "https://uppsc.up.nic.in/OuterPages/Chairman_Desk.aspx?msg=en",
+    "category": "vacancy"
+  },
+  {
+    "org": "UPPSC",
+    "title": "{{'FromChMDesk_HI_HM' | translate }}",
+    "detailLink": "https://uppsc.up.nic.in/OuterPages/Chairman_Desk.aspx?msg=hi",
+    "category": "vacancy"
+  },
+  {
+    "org": "UPPSC",
+    "title": "27 Aug2026NOTICE REGARDING ADVT. NO. A-6/E-1/2025, UTTAR PRADESH JAIL TRAINING SCHOOL (TEACHING STAFF) SERVICE, (PSYCHOLOGY, CRIMINOLOGY AND PENOLOGY) MAINS EX.....",
+    "detailLink": "https://uppsc.up.nic.in/Open_PDF.aspx?I4PnQ0tBagkKN9rKVhlu72YMvmXd6tCs",
+    "category": "vacancy"
+  },
+  {
+    "org": "UPPSC",
+    "title": "{{'ContactUs_HG' | translate }}",
+    "detailLink": "https://uppsc.up.nic.in/FooterPages/AnyProblemReport.aspx",
+    "category": "vacancy"
+  },
+  {
+    "org": "UPPSC",
+    "title": "{{'Home_HM' | translate }}",
+    "detailLink": "https://uppsc.up.nic.in/Home",
+    "category": "vacancy"
+  },
+  {
+    "org": "UPPSC",
+    "title": "{{'PP_HM' | translate }}",
+    "detailLink": "https://uppsc.up.nic.in/FooterPages/PrivacyPolicy.aspx",
+    "category": "vacancy"
+  },
+  {
+    "org": "UPPSC",
+    "title": "{{'DIS_HM' | translate }}",
+    "detailLink": "https://uppsc.up.nic.in/FooterPages/Disclaimer.aspx",
+    "category": "vacancy"
+  },
+  {
+    "org": "UPPSC",
+    "title": "{{'SiteMap_HM' | translate }}",
+    "detailLink": "https://uppsc.up.nic.in/FooterPages/SiteMap.aspx",
+    "category": "vacancy"
+  },
+  {
+    "org": "UPPSC",
+    "title": "{{'Tenders_HM' | translate }}",
+    "detailLink": "https://uppsc.up.nic.in/FooterPages/Tenders",
+    "category": "vacancy"
+  },
+  {
+    "org": "SSC",
+    "title": "SSC Old Website",
+    "detailLink": "https://ssc.gov.in/",
+    "category": "vacancy"
+  },
+  {
+    "org": "SSC",
+    "title": "Chairman’s Message",
+    "detailLink": "https://ssc.gov.in/chairman-message",
+    "category": "vacancy"
+  },
+  {
+    "org": "SSC",
+    "title": "Script Evaluation",
+    "detailLink": "https://ssc.gov.in/for-candidates/script-evaluation",
+    "category": "vacancy"
+  },
+  {
+    "org": "SSC",
+    "title": "Examination Calendar",
+    "detailLink": "https://ssc.gov.in/for-candidates/examination-calendar",
+    "category": "vacancy"
+  },
+  {
+    "org": "SSC",
+    "title": "Scheme of Examination",
+    "detailLink": "https://ssc.gov.in/for-candidates/scheme-of-examination",
+    "category": "vacancy"
+  },
+  {
+    "org": "SSC",
+    "title": "Special Instruction",
+    "detailLink": "https://ssc.gov.in/for-candidates/special-instruction",
+    "category": "vacancy"
+  },
+  {
+    "org": "SSC",
+    "title": "Previous Year Question Paper",
+    "detailLink": "https://ssc.gov.in/for-candidates/previous-year-question-paper",
+    "category": "vacancy"
+  },
+  {
+    "org": "SSC",
+    "title": "Format of Certificates",
+    "detailLink": "https://ssc.gov.in/for-candidates/form-of-certificates",
+    "category": "vacancy"
+  },
+  {
+    "org": "SSC",
+    "title": "Tentative Vacancy",
+    "detailLink": "https://ssc.gov.in/for-candidates/tentative-vacancy",
+    "category": "vacancy"
+  },
+  {
+    "org": "SSC",
+    "title": "Normalization Method",
+    "detailLink": "https://ssc.gov.in/for-candidates/normalization-method",
+    "category": "vacancy"
+  },
+  {
+    "org": "SSC",
+    "title": "Proactive Disclosure (RTI)",
+    "detailLink": "https://ssc.gov.in/rti/proactive-disclosure",
+    "category": "vacancy"
+  },
+  {
+    "org": "SSC",
+    "title": "Background of Commission",
+    "detailLink": "https://ssc.gov.in/about-us/background-of-commission",
+    "category": "vacancy"
+  },
+  {
+    "org": "SSC",
+    "title": "Setup of Commission",
+    "detailLink": "https://ssc.gov.in/about-us/commission",
+    "category": "vacancy"
+  },
+  {
+    "org": "SSC",
+    "title": "Organisation Structure",
+    "detailLink": "https://ssc.gov.in/about-us/organisation-structure",
+    "category": "vacancy"
+  },
+  {
+    "org": "SSC",
+    "title": "Function of Commission",
+    "detailLink": "https://ssc.gov.in/about-us/function-commission",
+    "category": "vacancy"
+  },
+  {
+    "org": "SSC",
+    "title": "Vision, Mission & Objectives of SSC",
+    "detailLink": "https://ssc.gov.in/about-us/objective-ssc",
+    "category": "vacancy"
+  },
+  {
+    "org": "SSC",
+    "title": "Regional Network",
+    "detailLink": "https://ssc.gov.in/about-us/regional-network",
+    "category": "vacancy"
+  },
+  {
+    "org": "SSC",
+    "title": "Citizen's Charter",
+    "detailLink": "https://ssc.gov.in/about-us/citizen-charter",
+    "category": "vacancy"
+  },
+  {
+    "org": "SSC",
+    "title": "Right To Information",
+    "detailLink": "https://ssc.gov.in/about-us/rti",
+    "category": "vacancy"
+  },
+  {
+    "org": "SSC",
+    "title": "Committee on Sexual Harassment",
+    "detailLink": "https://ssc.gov.in/about-us/harasment",
+    "category": "vacancy"
+  },
+  {
+    "org": "SSC",
+    "title": "Join Indian Navy",
+    "detailLink": "https://www.joinindiannavy.gov.in/",
+    "category": "vacancy"
+  },
+  {
+    "org": "SSC",
+    "title": "List of Debarred Candidates in Examinations Conducted by the Staff Selection Commission",
+    "detailLink": "https://ssc.gov.in/api/attachment/uploads/masterData/Others/debarreds_as_of_6th_April_2026_060426.pdf",
+    "category": "vacancy"
+  },
+  {
+    "org": "UPSC",
+    "title": "Written Result (with name): Engineering Services (Main) Examination, 2026",
+    "detailLink": "https://upsc.gov.in/whats-new/Engineering%20Services%20%28Main%29%20Examination%2C%202026/Written%20Result%20%28with%20name%29",
+    "category": "result"
+  },
+  {
+    "org": "UPSC",
+    "title": "Written Result: Engineering Services (Main) Examination, 2026",
+    "detailLink": "https://upsc.gov.in/whats-new/Engineering%20Services%20%28Main%29%20Examination%2C%202026/Written%20Result",
+    "category": "result"
+  },
+  {
+    "org": "UPSC",
+    "title": "Final Result: 04 Posts of Assistant Veterinary Surgeon, NDMC",
+    "detailLink": "https://upsc.gov.in/whats-new/04 Posts of Assistant Veterinary Surgeon, NDMC/Final Result",
+    "category": "result"
   },
   {
     "org": "UPSC",
