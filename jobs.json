@@ -564,12 +564,6 @@
     "category": "vacancy"
   },
   {
-    "org": "UPSC",
-    "title": "Akiko Sherman Infotech",
-    "detailLink": "http://www.akikosherman.com/",
-    "category": "vacancy"
-  },
-  {
     "org": "SSC",
     "title": "SSC Old Website",
     "detailLink": "https://ssc.gov.in/",
@@ -1299,6 +1293,12 @@
     "org": "UPPSC",
     "title": "Screen Accessibility",
     "detailLink": "https://uppsc.up.nic.in/FooterPages/ScreenAccess.aspx",
+    "category": "vacancy"
+  },
+  {
+    "org": "UPSC",
+    "title": "Akiko Sherman Infotech",
+    "detailLink": "http://www.akikosherman.com/",
     "category": "vacancy"
   },
   {
