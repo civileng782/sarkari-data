@@ -546,12 +546,6 @@
     "category": "vacancy"
   },
   {
-    "org": "UPSC",
-    "title": "Akiko Sherman Infotech",
-    "detailLink": "http://www.akikosherman.com/",
-    "category": "vacancy"
-  },
-  {
     "org": "UPPSC",
     "title": "भारत सरकारGOVERNMENT OF INDIA",
     "detailLink": "http://india.gov.in",
@@ -841,6 +835,12 @@
   },
   {
     "org": "UPPSC",
+    "title": "CENTRE CHANGE NOTICE REGARDING ADVT.NO. A-11/E-1/2025, LECTURER U.P. TECHNICAL E..",
+    "detailLink": "https://uppsc.up.nic.in/Open_PDF_DB.aspx?I4PnQ0tBagkgOS6AWCvRlehsk+pifiDY",
+    "category": "vacancy"
+  },
+  {
+    "org": "UPPSC",
     "title": "LIST OF PROVISIONALLY SELECTED CANDIDATES IN ADVT. NO. A-5/E-1/2025, ASSISTANT T..",
     "detailLink": "https://uppsc.up.nic.in/Open_PDF_DB.aspx?I4PnQ0tBagkgOS6AWCvRlSPaXqLdKVhI",
     "category": "vacancy"
@@ -1117,6 +1117,12 @@
   },
   {
     "org": "UPPSC",
+    "title": "06 Sep2026CENTRE CHANGE NOTICE REGARDING ADVT.NO. A-11/E-1/2025, LECTURER U.P. TECHNICAL EDUCATION (TEACHING) SERVICE EXAM.-2025",
+    "detailLink": "https://uppsc.up.nic.in/Open_PDF.aspx?I4PnQ0tBagkgOS6AWCvRlcHtltGWDZ9D",
+    "category": "vacancy"
+  },
+  {
+    "org": "UPPSC",
     "title": "14 Sep2026NOTICE REGARDING ADVT.NO. A-2-E-1-2020, REGIONAL INSPECTOR (TECHNICAL) EXAM-2020",
     "detailLink": "https://uppsc.up.nic.in/Open_PDF.aspx?I4PnQ0tBagnM8dHr1ViOnglN7oVj6hlC",
     "category": "vacancy"
@@ -1131,12 +1137,6 @@
     "org": "UPPSC",
     "title": "08 Sep2026NOTICE REGARDING ADVT.NO. A-2-E-1-2020, REGIONAL INSPECTOR (TECHNICAL) EXAM-2020",
     "detailLink": "https://uppsc.up.nic.in/Open_PDF.aspx?I4PnQ0tBagnM8dHr1ViOnjB/gMRvwvxp",
-    "category": "vacancy"
-  },
-  {
-    "org": "UPPSC",
-    "title": "08 Sep2026NOTICE REGARDING ADVT. NO. A-9/E-1/2025, STATE PLANNING INSTITUTE (NEW DIVISION) PLANNING DEPARTMENT U.P., RESEARCH ASSISTANT (ENGINEERING).",
-    "detailLink": "https://uppsc.up.nic.in/Open_PDF.aspx?I4PnQ0tBagnM8dHr1ViOnojaovpca2eH",
     "category": "vacancy"
   },
   {
@@ -1245,6 +1245,18 @@
     "org": "UPPSC",
     "title": "{{'Tenders_HM' | translate }}",
     "detailLink": "https://uppsc.up.nic.in/FooterPages/Tenders",
+    "category": "vacancy"
+  },
+  {
+    "org": "UPSC",
+    "title": "Akiko Sherman Infotech",
+    "detailLink": "http://www.akikosherman.com/",
+    "category": "vacancy"
+  },
+  {
+    "org": "UPPSC",
+    "title": "08 Sep2026NOTICE REGARDING ADVT. NO. A-9/E-1/2025, STATE PLANNING INSTITUTE (NEW DIVISION) PLANNING DEPARTMENT U.P., RESEARCH ASSISTANT (ENGINEERING).",
+    "detailLink": "https://uppsc.up.nic.in/Open_PDF.aspx?I4PnQ0tBagnM8dHr1ViOnojaovpca2eH",
     "category": "vacancy"
   },
   {
