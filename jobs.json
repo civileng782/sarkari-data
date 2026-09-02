@@ -205,6 +205,18 @@
   },
   {
     "org": "UPSC",
+    "title": "Exam Notification: Combined Geo-Scientist (Preliminary) Examination, 2027",
+    "detailLink": "https://upsc.gov.in/whats-new/Combined%20Geo-Scientist%20%28Preliminary%29%20Examination%2C%202027/Exam%20Notification",
+    "category": "vacancy"
+  },
+  {
+    "org": "UPSC",
+    "title": "Interview Schedule: Combined Geo-Scientist (Main) Examination, 2026",
+    "detailLink": "https://upsc.gov.in/whats-new/Combined%20Geo-Scientist%20%28Main%29%20Examination%2C%202026/Interview%20Schedule",
+    "category": "vacancy"
+  },
+  {
+    "org": "UPSC",
     "title": "Written Result (with name): Combined Medical Services Examination, 2026",
     "detailLink": "https://upsc.gov.in/whats-new/Combined%20Medical%20Services%20Examination%2C%202026/Written%20Result%20%28with%20name%29",
     "category": "result"
@@ -445,8 +457,8 @@
   },
   {
     "org": "UPSC",
-    "title": "S.O.-Steno (GD-B-GD-I) LDCE",
-    "detailLink": "https://upsc.gov.in/examinations/S.O.-Steno%20%28GD-B-GD-I%29%20LDCE",
+    "title": "इंजीनियरी सेवा (प्रारंभिक) परीक्षा, 2027",
+    "detailLink": "https://upsc.gov.in/examinations/%E0%A4%87%E0%A4%82%E0%A4%9C%E0%A5%80%E0%A4%A8%E0%A4%BF%E0%A4%AF%E0%A4%B0%E0%A5%80%20%E0%A4%B8%E0%A5%87%E0%A4%B5%E0%A4%BE%20%28%E0%A4%AA%E0%A5%8D%E0%A4%B0%E0%A4%BE%E0%A4%B0%E0%A4%82%E0%A4%AD%E0%A4%BF%E0%A4%95%29%20%E0%A4%AA%E0%A4%B0%E0%A5%80%E0%A4%95%E0%A5%8D%E0%A4%B7%E0%A4%BE%2C%202027",
     "category": "vacancy"
   },
   {
@@ -1263,6 +1275,12 @@
     "org": "UPPSC",
     "title": "{{'Tenders_HM' | translate }}",
     "detailLink": "https://uppsc.up.nic.in/FooterPages/Tenders",
+    "category": "vacancy"
+  },
+  {
+    "org": "UPSC",
+    "title": "S.O.-Steno (GD-B-GD-I) LDCE",
+    "detailLink": "https://upsc.gov.in/examinations/S.O.-Steno%20%28GD-B-GD-I%29%20LDCE",
     "category": "vacancy"
   },
   {
