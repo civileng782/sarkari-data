@@ -361,12 +361,6 @@
   },
   {
     "org": "UPSC",
-    "title": "Press Note: Civil Services (Main) Examination, 2026",
-    "detailLink": "https://upsc.gov.in/whats-new/Civil%20Services%20%28Main%29%20Examination%2C%202026/Press%20Note",
-    "category": "vacancy"
-  },
-  {
-    "org": "UPSC",
     "title": "Final Result: 20 Posts of Drugs Inspector (Medical Devices), Ministry of Health and Family Welfare",
     "detailLink": "https://upsc.gov.in/whats-new/20 Posts of Drugs Inspector (Medical Devices), Ministry of Health and Family Welfare/Final Result",
     "category": "result"
@@ -415,27 +409,9 @@
   },
   {
     "org": "UPSC",
-    "title": "Advertisement No.10 - 2026",
-    "detailLink": "https://upsc.gov.in/whats-new/10 - 2026",
-    "category": "vacancy"
-  },
-  {
-    "org": "UPSC",
     "title": "Interview Details: 02 Posts of Assistant Director Grade-II (IEDS) (Leather & Footwear), Ministry of MSME",
     "detailLink": "https://upsc.gov.in/whats-new/02 Posts of Assistant Director Grade-II (IEDS) (Leather & Footwear), Ministry of MSME/Interview Details",
     "category": "vacancy"
-  },
-  {
-    "org": "UPSC",
-    "title": "Written Result (with name): Indian Economic Service - Indian Statistical Service Examination, 2026",
-    "detailLink": "https://upsc.gov.in/whats-new/Indian%20Economic%20Service%20-%20Indian%20Statistical%20Service%20Examination%2C%202026/Written%20Result%20%28with%20name%29",
-    "category": "result"
-  },
-  {
-    "org": "UPSC",
-    "title": "Written Result: Indian Economic Service - Indian Statistical Service Examination, 2026",
-    "detailLink": "https://upsc.gov.in/whats-new/Indian%20Economic%20Service%20-%20Indian%20Statistical%20Service%20Examination%2C%202026/Written%20Result",
-    "category": "result"
   },
   {
     "org": "UPSC",
@@ -585,12 +561,6 @@
     "org": "UPSC",
     "title": "Web Information Manager",
     "detailLink": "https://upsc.gov.in/web-information-manager",
-    "category": "vacancy"
-  },
-  {
-    "org": "UPSC",
-    "title": "Akiko Sherman Infotech",
-    "detailLink": "http://www.akikosherman.com/",
     "category": "vacancy"
   },
   {
@@ -1281,6 +1251,36 @@
     "org": "UPPSC",
     "title": "{{'Tenders_HM' | translate }}",
     "detailLink": "https://uppsc.up.nic.in/FooterPages/Tenders",
+    "category": "vacancy"
+  },
+  {
+    "org": "UPSC",
+    "title": "Press Note: Civil Services (Main) Examination, 2026",
+    "detailLink": "https://upsc.gov.in/whats-new/Civil%20Services%20%28Main%29%20Examination%2C%202026/Press%20Note",
+    "category": "vacancy"
+  },
+  {
+    "org": "UPSC",
+    "title": "Advertisement No.10 - 2026",
+    "detailLink": "https://upsc.gov.in/whats-new/10 - 2026",
+    "category": "vacancy"
+  },
+  {
+    "org": "UPSC",
+    "title": "Written Result (with name): Indian Economic Service - Indian Statistical Service Examination, 2026",
+    "detailLink": "https://upsc.gov.in/whats-new/Indian%20Economic%20Service%20-%20Indian%20Statistical%20Service%20Examination%2C%202026/Written%20Result%20%28with%20name%29",
+    "category": "result"
+  },
+  {
+    "org": "UPSC",
+    "title": "Written Result: Indian Economic Service - Indian Statistical Service Examination, 2026",
+    "detailLink": "https://upsc.gov.in/whats-new/Indian%20Economic%20Service%20-%20Indian%20Statistical%20Service%20Examination%2C%202026/Written%20Result",
+    "category": "result"
+  },
+  {
+    "org": "UPSC",
+    "title": "Akiko Sherman Infotech",
+    "detailLink": "http://www.akikosherman.com/",
     "category": "vacancy"
   },
   {
