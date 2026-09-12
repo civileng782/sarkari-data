@@ -145,6 +145,12 @@
   },
   {
     "org": "UPPSC",
+    "title": "{{'DwldEncdlst_HM' | translate }}",
+    "detailLink": "https://uppsc.up.nic.in/CandidatePages/Advertismentwise_DownloadDocument.aspx?inptprmtr=ec",
+    "category": "vacancy"
+  },
+  {
+    "org": "UPPSC",
     "title": "{{'DisplayNoticeE_HM' | translate }}",
     "detailLink": "https://uppsc.up.nic.in/OuterPages/DisplayOnlineNotice.aspx?ID=1",
     "category": "vacancy"
@@ -286,6 +292,12 @@
     "title": "{{'WhatsNew_HM' | translate }}",
     "detailLink": "https://uppsc.up.nic.in/FooterPages/Latest-News",
     "category": "vacancy"
+  },
+  {
+    "org": "UPPSC",
+    "title": "NOTICE REGARDING ADMIT CARD OF ADVT. NO. A-7/E-1/2025, ASSISTANT PROFESSOR, GOVT..",
+    "detailLink": "https://uppsc.up.nic.in/Open_PDF_DB.aspx?I4PnQ0tBagnQ0/TjMEfCjG1nSVQb3U34",
+    "category": "admit"
   },
   {
     "org": "UPPSC",
@@ -559,6 +571,12 @@
   },
   {
     "org": "UPPSC",
+    "title": "01 Oct2026NOTICE REGARDING ADMIT CARD OF ADVT. NO. A-7/E-1/2025, ASSISTANT PROFESSOR, GOVT. DEGREE COLLEGE MAINS EXAM-2025",
+    "detailLink": "https://uppsc.up.nic.in/Open_PDF.aspx?I4PnQ0tBagnQ0/TjMEfCjDxCKVUIkbBP",
+    "category": "admit"
+  },
+  {
+    "org": "UPPSC",
     "title": "03 Oct2026NOTICE REGARDING FOR ADVT NO. A-10/E-1/2025, ASSISTANT TOWN PLANNER (SPL. RECT.) (MAIN.) EXAM.-2025",
     "detailLink": "https://uppsc.up.nic.in/Open_PDF.aspx?I4PnQ0tBaglFjifabMvCvXpg/AsjRD1Q",
     "category": "vacancy"
@@ -574,12 +592,6 @@
     "title": "01 Oct2026NOTICE REGARDING ADMIT CARD OF ADVT. NO. A-7/E-1/2025, ASSISTANT PROFESSOR, GOVT. DEGREE COLLEGE MAINS EXAM-2025",
     "detailLink": "https://uppsc.up.nic.in/Open_PDF.aspx?I4PnQ0tBaglFjifabMvCvUqhY4dxzbZV",
     "category": "admit"
-  },
-  {
-    "org": "UPPSC",
-    "title": "15 Sep2026NOTICE REGARDING ADVT.NO. A-10/E-1/2023, U.P. KHADI AND VILLAGE INDUSTRIES BOARD, PRASHIKSHAK (VILLAGE OIL),",
-    "detailLink": "https://uppsc.up.nic.in/Open_PDF.aspx?I4PnQ0tBagkgOS6AWCvRla1WjZ5MdeWg",
-    "category": "vacancy"
   },
   {
     "org": "UPPSC",
@@ -681,6 +693,12 @@
     "org": "UPPSC",
     "title": "{{'Tenders_HM' | translate }}",
     "detailLink": "https://uppsc.up.nic.in/FooterPages/Tenders",
+    "category": "vacancy"
+  },
+  {
+    "org": "UPPSC",
+    "title": "15 Sep2026NOTICE REGARDING ADVT.NO. A-10/E-1/2023, U.P. KHADI AND VILLAGE INDUSTRIES BOARD, PRASHIKSHAK (VILLAGE OIL),",
+    "detailLink": "https://uppsc.up.nic.in/Open_PDF.aspx?I4PnQ0tBagkgOS6AWCvRla1WjZ5MdeWg",
     "category": "vacancy"
   },
   {
