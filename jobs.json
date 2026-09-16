@@ -211,6 +211,36 @@
   },
   {
     "org": "UPSC",
+    "title": "Exam Notification: Engineering Services (Preliminary) Examination, 2027",
+    "detailLink": "https://upsc.gov.in/whats-new/Engineering%20Services%20%28Preliminary%29%20Examination%2C%202027/Exam%20Notification",
+    "category": "vacancy"
+  },
+  {
+    "org": "UPSC",
+    "title": "Exam Notification: Combined Section Officers (Grade-'B') LDCE - 2026 and Combined Stenographers (Grade - 'B' - Grade - 'I') LDCE -  2022, 2023 and 2024",
+    "detailLink": "https://upsc.gov.in/whats-new/Combined%20Section%20Officers%20%28Grade-%27B%27%29%20LDCE%20-%202026%20and%20Combined%20Stenographers%20%28Grade%20-%20%27B%27%20-%20Grade%20-%20%27I%27%29%20LDCE%20-%20%202022%2C%202023%20and%202024/Exam%20Notification",
+    "category": "vacancy"
+  },
+  {
+    "org": "UPSC",
+    "title": "Marks of Recommended Candidates: Combined Section Officers' (Grade 'B') LDCE-2025 and Combined Stenographers' (Grade 'B'-Grade-'I') LDCE-2019, 2020 & 2021",
+    "detailLink": "https://upsc.gov.in/whats-new/Combined%20Section%20Officers%27%20%28Grade%20%27B%27%29%20LDCE-2025%20and%20Combined%20Stenographers%27%20%28Grade%20%27B%27-Grade-%27I%27%29%20LDCE-2019%2C%202020%20%26%202021/Marks%20of%20Recommended%20Candidates",
+    "category": "vacancy"
+  },
+  {
+    "org": "UPSC",
+    "title": "Provisional Answer Key: Combined Defence Services Examination (II), 2026",
+    "detailLink": "https://upsc.gov.in/whats-new/Combined%20Defence%20Services%20Examination%20%28II%29%2C%202026/Provisional%20Answer%20Key",
+    "category": "answer"
+  },
+  {
+    "org": "UPSC",
+    "title": "Provisional Answer Key: National Defence Academy and Naval Academy Examination (II), 2026",
+    "detailLink": "https://upsc.gov.in/whats-new/National%20Defence%20Academy%20and%20Naval%20Academy%20Examination%20%28II%29%2C%202026/Provisional%20Answer%20Key",
+    "category": "answer"
+  },
+  {
+    "org": "UPSC",
     "title": "Written Result (with name): Combined Section Officers' (Grade 'B') LDCE-2025 and Combined Stenographers' (Grade 'B'-Grade-'I') LDCE-2019, 2020 & 2021",
     "detailLink": "https://upsc.gov.in/whats-new/Combined%20Section%20Officers%27%20%28Grade%20%27B%27%29%20LDCE-2025%20and%20Combined%20Stenographers%27%20%28Grade%20%27B%27-Grade-%27I%27%29%20LDCE-2019%2C%202020%20%26%202021/Written%20Result%20%28with%20name%29",
     "category": "result"
@@ -463,14 +493,8 @@
   },
   {
     "org": "UPSC",
-    "title": "Engineering Services (Preliminary) Examination, 2027",
-    "detailLink": "https://upsc.gov.in/examinations/Engineering%20Services%20%28Preliminary%29%20Examination%2C%202027",
-    "category": "vacancy"
-  },
-  {
-    "org": "UPSC",
-    "title": "S.O.-Steno (GD-B-GD-I) LDCE",
-    "detailLink": "https://upsc.gov.in/examinations/S.O.-Steno%20%28GD-B-GD-I%29%20LDCE",
+    "title": "CISF AC(EXE) LDCE-2027",
+    "detailLink": "https://upsc.gov.in/examinations/CISF%20AC%28EXE%29%20LDCE-2027",
     "category": "vacancy"
   },
   {
@@ -1233,6 +1257,18 @@
     "org": "UPPSC",
     "title": "{{'Tenders_HM' | translate }}",
     "detailLink": "https://uppsc.up.nic.in/FooterPages/Tenders",
+    "category": "vacancy"
+  },
+  {
+    "org": "UPSC",
+    "title": "Engineering Services (Preliminary) Examination, 2027",
+    "detailLink": "https://upsc.gov.in/examinations/Engineering%20Services%20%28Preliminary%29%20Examination%2C%202027",
+    "category": "vacancy"
+  },
+  {
+    "org": "UPSC",
+    "title": "S.O.-Steno (GD-B-GD-I) LDCE",
+    "detailLink": "https://upsc.gov.in/examinations/S.O.-Steno%20%28GD-B-GD-I%29%20LDCE",
     "category": "vacancy"
   },
   {
