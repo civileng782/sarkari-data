@@ -541,18 +541,6 @@
   },
   {
     "org": "UPPSC",
-    "title": "CLICK HERE TO DOWNLOAD MARKSHEET & CUT OFF FOR ADVT. NO. D-5-E-1-2025, [S-10-04].",
-    "detailLink": "https://uppsc.up.nic.in/CandidatePages/Advertismentwise_DownloadDocument.aspx?inptprmtr=mc",
-    "category": "vacancy"
-  },
-  {
-    "org": "UPPSC",
-    "title": "CLICK HERE TO DOWNLOAD DISTRICT INFORMATION SLIP FOR  ADVT NO. A-10/E-1/2025, ASSISTANT TOWN PLANNER (SPL. RECT.) (MAIN.) EXAM.-2025, (EXAM. DATED-06/10/2026).",
-    "detailLink": "https://uppsc.up.nic.in/CandidatePages/Advertismentwise_DownloadDocument.aspx?inptprmtr=dc",
-    "category": "vacancy"
-  },
-  {
-    "org": "UPPSC",
     "title": "{{'FromChMDesk_HM' | translate }}",
     "detailLink": "https://uppsc.up.nic.in/OuterPages/Chairman_Desk.aspx?msg=en",
     "category": "vacancy"
@@ -567,6 +555,12 @@
     "org": "UPPSC",
     "title": "{{'DoubleVerification_HM' | translate }}",
     "detailLink": "https://uppsc.up.nic.in/CandidatePages/InputPages/UpdateTransaction_DV.aspx",
+    "category": "vacancy"
+  },
+  {
+    "org": "UPPSC",
+    "title": "{{'DownloadExamDistSlip_HM' | translate }}",
+    "detailLink": "https://uppsc.up.nic.in/CandidatePages/Advertismentwise_DownloadDocument.aspx?inptprmtr=dc",
     "category": "vacancy"
   },
   {
@@ -753,6 +747,12 @@
     "org": "UPPSC",
     "title": "{{'Tenders_HM' | translate }}",
     "detailLink": "https://uppsc.up.nic.in/FooterPages/Tenders",
+    "category": "vacancy"
+  },
+  {
+    "org": "UPPSC",
+    "title": "CLICK HERE TO DOWNLOAD MARKSHEET & CUT OFF FOR ADVT. NO. D-5-E-1-2025, [S-10-04].",
+    "detailLink": "https://uppsc.up.nic.in/CandidatePages/Advertismentwise_DownloadDocument.aspx?inptprmtr=mc",
     "category": "vacancy"
   },
   {
