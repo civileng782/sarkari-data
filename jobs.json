@@ -349,12 +349,6 @@
   },
   {
     "org": "UPPSC",
-    "title": "NOTICE REGARDING ADMIT CARD FOR ADVT.NO.D-6/E-1/2025, SWASTHYA SHIKSHA ADHIKARI ..",
-    "detailLink": "https://uppsc.up.nic.in/Open_PDF_DB.aspx?I4PnQ0tBagmNKfqXmoSUnkhoZwOzbGVv",
-    "category": "admit"
-  },
-  {
-    "org": "UPPSC",
     "title": "NOTICE REAGARDING DOCUMENTS FOR APPOINTMENT FOR ADVT. NO. A-4/E-1/2025, COMPUTER..",
     "detailLink": "https://uppsc.up.nic.in/Open_PDF_DB.aspx?I4PnQ0tBagmNKfqXmoSUng3eJkJCe7CV",
     "category": "vacancy"
@@ -471,12 +465,6 @@
     "org": "UPPSC",
     "title": "NOTICE REGARDING ADVT. NO. D-6/E-1/2025, FOOD SAFETY AND DRUG ADMINISTRATION UTT..",
     "detailLink": "https://uppsc.up.nic.in/Open_PDF_DB.aspx?I4PnQ0tBagldpN1/ndg4XQJWpYXr4Ud3",
-    "category": "vacancy"
-  },
-  {
-    "org": "UPPSC",
-    "title": "NOTICE REGARDING ADVT. NO. D-6/E-1/2025, DIRECTORATE GENERAL OF FAMILY WELFARE U..",
-    "detailLink": "https://uppsc.up.nic.in/Open_PDF_DB.aspx?I4PnQ0tBagnFvgVqjblDZARklky4+2Ju",
     "category": "vacancy"
   },
   {
@@ -705,6 +693,18 @@
     "org": "UPPSC",
     "title": "{{'Tenders_HM' | translate }}",
     "detailLink": "https://uppsc.up.nic.in/FooterPages/Tenders",
+    "category": "vacancy"
+  },
+  {
+    "org": "UPPSC",
+    "title": "NOTICE REGARDING ADMIT CARD FOR ADVT.NO.D-6/E-1/2025, SWASTHYA SHIKSHA ADHIKARI ..",
+    "detailLink": "https://uppsc.up.nic.in/Open_PDF_DB.aspx?I4PnQ0tBagmNKfqXmoSUnkhoZwOzbGVv",
+    "category": "admit"
+  },
+  {
+    "org": "UPPSC",
+    "title": "NOTICE REGARDING ADVT. NO. D-6/E-1/2025, DIRECTORATE GENERAL OF FAMILY WELFARE U..",
+    "detailLink": "https://uppsc.up.nic.in/Open_PDF_DB.aspx?I4PnQ0tBagnFvgVqjblDZARklky4+2Ju",
     "category": "vacancy"
   },
   {
