@@ -145,12 +145,6 @@
   },
   {
     "org": "UPPSC",
-    "title": "{{'DwldEncdlst_HM' | translate }}",
-    "detailLink": "https://uppsc.up.nic.in/CandidatePages/Advertismentwise_DownloadDocument.aspx?inptprmtr=ec",
-    "category": "vacancy"
-  },
-  {
-    "org": "UPPSC",
     "title": "{{'DisplayNoticeE_HM' | translate }}",
     "detailLink": "https://uppsc.up.nic.in/OuterPages/DisplayOnlineNotice.aspx?ID=1",
     "category": "vacancy"
@@ -693,6 +687,12 @@
     "org": "UPPSC",
     "title": "{{'Tenders_HM' | translate }}",
     "detailLink": "https://uppsc.up.nic.in/FooterPages/Tenders",
+    "category": "vacancy"
+  },
+  {
+    "org": "UPPSC",
+    "title": "{{'DwldEncdlst_HM' | translate }}",
+    "detailLink": "https://uppsc.up.nic.in/CandidatePages/Advertismentwise_DownloadDocument.aspx?inptprmtr=ec",
     "category": "vacancy"
   },
   {
