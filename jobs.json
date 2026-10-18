@@ -397,12 +397,6 @@
   },
   {
     "org": "UPPSC",
-    "title": "LIST OF PROVISIONALLY SELECTED CANDIDATES IN ADVT. NO. A-5/E-1/2025,\r\nASSISTANT ..",
-    "detailLink": "https://uppsc.up.nic.in/Open_PDF_DB.aspx?I4PnQ0tBagnQ0/TjMEfCjLL4PcUughPB",
-    "category": "vacancy"
-  },
-  {
-    "org": "UPPSC",
     "title": "NOTICE REGARDING INTERVIEW SCHEDULE OF ADVT. NO. A-1/E-1/2025, COMBINED STATE/UP..",
     "detailLink": "https://uppsc.up.nic.in/Open_PDF_DB.aspx?I4PnQ0tBagnQ0/TjMEfCjD3K8mMdO/t9",
     "category": "vacancy"
@@ -681,6 +675,12 @@
     "org": "UPPSC",
     "title": "{{'Tenders_HM' | translate }}",
     "detailLink": "https://uppsc.up.nic.in/FooterPages/Tenders",
+    "category": "vacancy"
+  },
+  {
+    "org": "UPPSC",
+    "title": "LIST OF PROVISIONALLY SELECTED CANDIDATES IN ADVT. NO. A-5/E-1/2025,\r\nASSISTANT ..",
+    "detailLink": "https://uppsc.up.nic.in/Open_PDF_DB.aspx?I4PnQ0tBagnQ0/TjMEfCjLL4PcUughPB",
     "category": "vacancy"
   },
   {
