@@ -361,12 +361,6 @@
   },
   {
     "org": "UPPSC",
-    "title": "NOTICE REGARDING DISTRICT INFORMATION SLIP / ADMIT CARD FOR ADVT. NO:- D-3/E-1/2..",
-    "detailLink": "https://uppsc.up.nic.in/Open_PDF_DB.aspx?I4PnQ0tBagmzNJIRVKnDR0yp8H0q1cBz",
-    "category": "admit"
-  },
-  {
-    "org": "UPPSC",
     "title": "LIST OF PROVISIONALLY SELECTED CANDIDATES IN ADVT. NO. A-5/E-1/2025, ASST. TEACH..",
     "detailLink": "https://uppsc.up.nic.in/Open_PDF_DB.aspx?I4PnQ0tBagmzNJIRVKnDRwIQMjGyuh7N",
     "category": "vacancy"
@@ -388,12 +382,6 @@
     "title": "LIST OF PROVISIONALLY SELECTED CANDIDATES IN ADVT. NO. A-5/E-1/2025,\r\nASSISTANT ..",
     "detailLink": "https://uppsc.up.nic.in/Open_PDF_DB.aspx?I4PnQ0tBagmbO3OUZentgiXC/U69+f+i",
     "category": "vacancy"
-  },
-  {
-    "org": "UPPSC",
-    "title": "RESULT OF ADVT. NO. D-4/E-1/2025, UTTAR PRADESH AYUSH (AYURVEDA) DEPARTMENT, PRO..",
-    "detailLink": "https://uppsc.up.nic.in/Open_PDF_DB.aspx?I4PnQ0tBagmbO3OUZentgoSSgw34Mkau",
-    "category": "result"
   },
   {
     "org": "UPPSC",
@@ -445,12 +433,6 @@
   },
   {
     "org": "UPPSC",
-    "title": "CLICK HERE TO DOWNLOAD EXAM DISTRICT SLIP FOR ADVT. NO.- D-3/E-1/2023, LECTURERS UNDER UTTAR PRADESH AYUSH (AYURVEDA) DEPARTMENT (S-09/08,S-09/09,S-09/10,S-09/11,S-09/12,S-09/13,S-09/14,S-09/15,S-09/16,S-09/17) (EXAM DATE - 02/11/2026-06/11/2026).",
-    "detailLink": "https://uppsc.up.nic.in/CandidatePages/Advertismentwise_DownloadDocument.aspx?inptprmtr=dc",
-    "category": "vacancy"
-  },
-  {
-    "org": "UPPSC",
     "title": "{{'FromChMDesk_HM' | translate }}",
     "detailLink": "https://uppsc.up.nic.in/OuterPages/Chairman_Desk.aspx?msg=en",
     "category": "vacancy"
@@ -465,6 +447,12 @@
     "org": "UPPSC",
     "title": "{{'DoubleVerification_HM' | translate }}",
     "detailLink": "https://uppsc.up.nic.in/CandidatePages/InputPages/UpdateTransaction_DV.aspx",
+    "category": "vacancy"
+  },
+  {
+    "org": "UPPSC",
+    "title": "{{'DownloadExamDistSlip_HM' | translate }}",
+    "detailLink": "https://uppsc.up.nic.in/CandidatePages/Advertismentwise_DownloadDocument.aspx?inptprmtr=dc",
     "category": "vacancy"
   },
   {
@@ -640,6 +628,18 @@
     "title": "{{'Tenders_HM' | translate }}",
     "detailLink": "https://uppsc.up.nic.in/FooterPages/Tenders",
     "category": "vacancy"
+  },
+  {
+    "org": "UPPSC",
+    "title": "NOTICE REGARDING DISTRICT INFORMATION SLIP / ADMIT CARD FOR ADVT. NO:- D-3/E-1/2..",
+    "detailLink": "https://uppsc.up.nic.in/Open_PDF_DB.aspx?I4PnQ0tBagmzNJIRVKnDR0yp8H0q1cBz",
+    "category": "admit"
+  },
+  {
+    "org": "UPPSC",
+    "title": "RESULT OF ADVT. NO. D-4/E-1/2025, UTTAR PRADESH AYUSH (AYURVEDA) DEPARTMENT, PRO..",
+    "detailLink": "https://uppsc.up.nic.in/Open_PDF_DB.aspx?I4PnQ0tBagmbO3OUZentgoSSgw34Mkau",
+    "category": "result"
   },
   {
     "org": "UPPSC",
